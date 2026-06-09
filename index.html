@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>SarkariPixels | Online Image Compressor, Resizer & Govt Exam Photo Editor</title>
+  <meta name="description" content="Resize and compress photos or signatures for SSC, UPSC, BPSC, BSSC, and banking exams to exact KB & dimensions instantly. 100% free and client-side safe.">
+  <meta name="keywords" content="photo resizer, signature compressor, govt exam photo resizer, ssc photo date stamp, pan card dpi fixer, signature background cleaner, client side compressor">
+  <meta name="author" content="SarkariPixels">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              pink: '#fce7f3',
+              accent: '#4f46e5'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CDN Libraries are lazy-loaded dynamically in app.js for 90%+ performance boost -->
+
+  <style>
+    body {
+      background: radial-gradient(circle at 10% 20%, rgba(15, 23, 42, 0.02) 0%, rgba(252, 231, 243, 0.25) 40%, rgba(255, 255, 255, 1) 100%);
+      background-attachment: fixed;
+      font-family: 'Outfit', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-slide-up {
+      animation: slideUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800 antialiased flex flex-col transition-colors duration-300">
+
+  <!-- Background Interactive Glow blob -->
+  <div id="bg-glow" class="fixed pointer-events-none w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-pink-200/10 via-indigo-100/10 to-transparent blur-[100px] -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 ease-out z-[-1] opacity-75"></div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur-md border-b border-slate-100 px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3 cursor-pointer group" onclick="navigateTo('')">
+      <div class="h-10 w-10 rounded-xl flex items-center justify-center shadow-md shadow-indigo-200/50 bg-gradient-to-tr from-indigo-600 via-indigo-700 to-pink-500 shrink-0 transform group-hover:scale-105 transition-transform duration-200">
+        <svg viewBox="0 0 512 512" class="h-6 w-6 text-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Crop Accents -->
+          <path d="M 120 180 L 120 120 L 180 120" stroke="currentColor" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 392 180 L 392 120 L 332 120" stroke="currentColor" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 120 332 L 120 392 L 180 392" stroke="currentColor" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 392 332 L 392 392 L 332 392" stroke="currentColor" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Stylized S -->
+          <path d="M 320 165 C 320 130, 180 130, 180 200 C 180 260, 332 240, 332 300 C 332 370, 192 370, 192 335" stroke="currentColor" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <span class="text-2xl font-black tracking-tight bg-gradient-to-r from-indigo-600 via-indigo-700 to-pink-500 bg-clip-text text-transparent block">SarkariPixels</span>
+        <span class="text-[10px] block font-extrabold text-indigo-500/80 uppercase tracking-widest leading-none mt-0.5">100% LOCAL IMAGE EDITOR</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button onclick="shareApp()" class="flex items-center gap-2 px-3 py-1.5 border border-slate-200 hover:border-indigo-500 rounded-lg text-sm font-medium transition-all bg-white hover:bg-slate-50 shadow-sm" title="Share SarkariPixels">
+        <i class="fa-solid fa-share-nodes text-slate-500"></i>
+        <span class="hidden sm:inline">Share</span>
+      </button>
+      <button onclick="toggleTheme()" class="h-9 w-9 border border-slate-200 hover:border-indigo-500 rounded-lg flex items-center justify-center bg-white hover:bg-slate-50 shadow-sm transition-all" title="Toggle Mode">
+        <i id="theme-icon" class="fa-solid fa-moon text-slate-500"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Top Hero & Search Bar (Visible on Home Page - Compact for Fold Optimization) -->
+  <div id="hero-section" class="pt-3 pb-3 px-6 max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 bg-pink-100/80 border border-pink-200 rounded-full text-[11px] font-bold text-pink-700 uppercase tracking-wider mb-1.5 animate-pulse">
+      <i class="fa-solid fa-shield-halved"></i> 100% Secure & Privacy Friendly (No Uploads)
+    </div>
+    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-950 max-w-3xl mx-auto leading-[1.15] mb-1">
+      Never Get Your Exam Form <span class="bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">Rejected</span> Again.
+    </h1>
+    <p class="text-slate-600 text-xs sm:text-sm max-w-2xl mx-auto mb-3 font-medium">
+      Auto-format photos & signatures for 50+ Govt exams. Complete your resize, compression, and DPI adjustments instantly inside your local browser.
+    </p>
+
+    <!-- Global Search Bar -->
+    <div class="relative max-w-xl mx-auto shadow-md shadow-indigo-100 rounded-xl">
+      <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+      <input type="text" id="global-search" oninput="handleSearch(this.value)" placeholder="Search presets or tools (e.g. 'SSC', 'crop', 'DPI Fixer')..." class="w-full pl-10 pr-6 py-2 bg-white border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-inner font-medium text-sm placeholder:text-slate-400">
+      <span class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-semibold bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded hidden sm:inline select-none">ESC to Clear</span>
+    </div>
+  </div>
+
+  <!-- Workspace Container (Split: Sidebar on left 25%, Workspace Grid on right 75%) -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 md:px-6 pb-16 flex flex-col md:flex-row gap-8">
+    
+    <!-- Left Category Navigation Sidebar -->
+    <aside class="w-full md:w-1/4 shrink-0 md:sticky md:top-20 self-start h-fit">
+      <!-- Desktop Sidebar -->
+      <div class="hidden md:block bg-white border border-slate-200 rounded-2xl p-4 shadow-sm space-y-2">
+        <h3 class="px-3 text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-3">Categories</h3>
+        <nav class="space-y-1">
+          <button onclick="selectCategory('all')" id="cat-all" class="category-btn active flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-indigo-600 bg-indigo-50/80 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-grid-2"></i> All Tools</span>
+            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full font-bold">88</span>
+          </button>
+          <button onclick="selectCategory('most-used')" id="cat-most-used" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-star"></i> Most Used Tools</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">11</span>
+          </button>
+          <button onclick="selectCategory('basic-edit')" id="cat-basic-edit" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-wrench"></i> Basic Editing</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">18</span>
+          </button>
+          <button onclick="selectCategory('effects')" id="cat-effects" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-wand-magic-sparkles"></i> Blur, Pixlate and Special Effects</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">19</span>
+          </button>
+          <button onclick="selectCategory('dpi-quality')" id="cat-dpi-quality" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-print"></i> DPI & Quality</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">4</span>
+          </button>
+          <button onclick="selectCategory('id-sizes')" id="cat-id-sizes" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-id-card"></i> Passport & ID Photo Sizes</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">9</span>
+          </button>
+          <button onclick="selectCategory('general-compress')" id="cat-general-compress" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-box-archive"></i> General Compression</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">6</span>
+          </button>
+          <button onclick="selectCategory('target-sizes')" id="cat-target-sizes" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-weight-hanging"></i> Exact Target Sizes</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">16</span>
+          </button>
+          <button onclick="selectCategory('official-sizes')" id="cat-official-sizes" class="category-btn flex items-center justify-between w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-graduation-cap"></i> Resize Other Official Sizes</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">5</span>
+          </button>
+        </nav>
+        
+        <div class="h-[1px] bg-slate-100 my-4"></div>
+        
+        <h3 class="px-3 text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-3">Trust & Legal</h3>
+        <nav class="space-y-1">
+          <button onclick="navigateTo('page/privacy')" id="page-privacy" class="flex items-center gap-2.5 w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <i class="fa-solid fa-user-shield text-slate-400"></i> Privacy Policy
+          </button>
+          <button onclick="navigateTo('page/about')" id="page-about" class="flex items-center gap-2.5 w-full px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-slate-600 hover:text-indigo-600 hover:bg-slate-50 transition-all">
+            <i class="fa-solid fa-circle-info text-slate-400"></i> About Us & Terms
+          </button>
+        </nav>
+      </div>
+
+      <div class="md:hidden flex gap-2 overflow-x-auto pb-3 pt-1 px-1 custom-scrollbar scroll-smooth snap-x snap-mandatory">
+        <button onclick="selectCategory('all')" id="cat-all-mob" class="category-btn-mob active shrink-0 snap-start px-4 py-2 bg-indigo-50 border border-indigo-200 rounded-full text-xs font-bold text-indigo-700 flex items-center gap-1.5 transition-all">
+          All (88)
+        </button>
+        <button onclick="selectCategory('most-used')" id="cat-most-used-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Most Used Tools (11)
+        </button>
+        <button onclick="selectCategory('basic-edit')" id="cat-basic-edit-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Basic Editing (18)
+        </button>
+        <button onclick="selectCategory('effects')" id="cat-effects-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Blur & Special Effects (19)
+        </button>
+        <button onclick="selectCategory('dpi-quality')" id="cat-dpi-quality-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          DPI & Quality (4)
+        </button>
+        <button onclick="selectCategory('id-sizes')" id="cat-id-sizes-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Passport & ID Photo Sizes (9)
+        </button>
+        <button onclick="selectCategory('general-compress')" id="cat-general-compress-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          General Compression (6)
+        </button>
+        <button onclick="selectCategory('target-sizes')" id="cat-target-sizes-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Exact Target Sizes (16)
+        </button>
+        <button onclick="selectCategory('official-sizes')" id="cat-official-sizes-mob" class="category-btn-mob shrink-0 snap-start px-4 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold text-slate-600 flex items-center gap-1.5 transition-all">
+          Resize Other Official Sizes (5)
+        </button>
+      </div>
+    </aside>
+
+    <!-- Right Workspace Area -->
+    <section class="w-full md:w-3/4 flex flex-col gap-6">
+
+      <!-- Dynamic Views Switcher Container -->
+      <div id="dynamic-content">
+        
+        <!-- View 1: Tools Grid (Home View) -->
+        <div id="view-home" class="space-y-8">
+          <div class="flex items-center justify-between">
+            <h2 id="active-category-title" class="text-2xl font-extrabold text-slate-900">All Available Tools</h2>
+            <div id="search-status" class="hidden text-sm text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full"></div>
+          </div>
+          
+          <!-- The 3-column Grid for folder cards -->
+          <div id="tools-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamic tool cards inject here -->
+          </div>
+        </div>
+
+        <!-- View 2: Active Tool Detail Interface -->
+        <div id="view-tool" class="hidden space-y-6">
+          <!-- Back breadcrumb -->
+          <button onclick="navigateTo('')" class="flex items-center gap-2 text-indigo-600 hover:text-indigo-800 font-semibold transition-all mb-4 text-sm">
+            <i class="fa-solid fa-arrow-left"></i> Back to all tools
+          </button>
+          
+          <!-- Tool Header Panel -->
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div id="tool-view-icon-bg" class="h-14 w-14 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-2xl shadow-inner border border-indigo-100">
+                <i id="tool-view-icon" class="fa-solid fa-circle"></i>
+              </div>
+              <div>
+                <h2 id="tool-view-title" class="text-2xl font-extrabold text-slate-950 leading-tight">Tool Name</h2>
+                <p id="tool-view-desc" class="text-slate-500 text-sm mt-1 max-w-xl">Short description of this tool.</p>
+              </div>
+            </div>
+            <!-- Category Badge -->
+            <span id="tool-view-badge" class="px-3 py-1 bg-slate-100 text-slate-600 border border-slate-200 rounded-full text-xs font-bold uppercase tracking-wider">PRESET</span>
+          </div>
+
+          <!-- Main Tool Workspace (Split Editor: Left controls, Right preview) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Side controls (Editor settings panel) -->
+            <div class="lg:col-span-5 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-6">
+              
+              <!-- File Drag & Drop Dropzone -->
+              <div id="file-dropzone-container" class="space-y-2">
+                <label class="block text-xs font-extrabold text-slate-400 uppercase tracking-widest">Upload Image</label>
+                <div id="dropzone" class="border-2 border-dashed border-slate-200 hover:border-indigo-400 rounded-xl p-6 flex flex-col items-center justify-center cursor-pointer transition-all bg-slate-50/50 hover:bg-slate-50 relative">
+                  <input type="file" id="tool-file-input" class="absolute inset-0 opacity-0 cursor-pointer" accept="image/*">
+                  <div class="text-center space-y-2 pointer-events-none">
+                    <i class="fa-solid fa-cloud-arrow-up text-3xl text-indigo-500"></i>
+                    <p class="text-sm font-semibold text-slate-800">Drag & drop photo here</p>
+                    <p class="text-[11px] text-slate-400">Supports JPG, PNG, WEBP, HEIC (Auto-converted)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batch Upload Dropzone (Visible only for batch tools) -->
+              <div id="batch-dropzone-container" class="space-y-2 hidden">
+                <label class="block text-xs font-extrabold text-slate-400 uppercase tracking-widest">Upload Multiple Images</label>
+                <div id="batch-dropzone" class="border-2 border-dashed border-slate-200 hover:border-indigo-400 rounded-xl p-6 flex flex-col items-center justify-center cursor-pointer transition-all bg-slate-50/50 hover:bg-slate-50 relative">
+                  <input type="file" id="batch-file-input" class="absolute inset-0 opacity-0 cursor-pointer" accept="image/*" multiple>
+                  <div class="text-center space-y-2 pointer-events-none">
+                    <i class="fa-solid fa-images text-3xl text-indigo-500"></i>
+                    <p class="text-sm font-semibold text-slate-800">Drag & drop up to 100 photos</p>
+                    <p class="text-[11px] text-slate-400">Processes files concurrently via browser</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Active Tool settings panel (dynamically rendered inputs) -->
+              <div id="tool-settings-panel" class="space-y-4">
+                <!-- Inputs are injected here dynamically depending on selected tool -->
+              </div>
+
+              <!-- Action buttons -->
+              <div class="space-y-2 pt-2">
+                <button id="process-btn" onclick="executeActiveTool(true)" class="w-full py-3 bg-brand-navy hover:bg-slate-800 text-white font-bold rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-play"></i> Process Image
+                </button>
+                <button id="download-btn" disabled onclick="downloadProcessedImage()" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-100 disabled:text-slate-400 disabled:cursor-not-allowed text-white font-bold rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-circle-down"></i> Download Output
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Side Preview (Canvas / Output display) -->
+            <div class="lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4 flex flex-col justify-between h-fit">
+              <div>
+                <div class="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                  <span class="text-sm font-extrabold text-slate-400 uppercase tracking-widest">Live Output Preview</span>
+                  <div class="flex items-center gap-4 text-xs font-semibold text-slate-500">
+                    <span id="stats-original">Original: - KB</span>
+                    <span class="text-slate-300">|</span>
+                    <span id="stats-output" class="text-indigo-600 font-bold">Output: - KB</span>
+                  </div>
+                </div>
+
+                <!-- Preview window container (Compacted height matching upload zone) -->
+                <div class="border border-slate-100 rounded-xl bg-slate-50 overflow-hidden flex items-center justify-center relative h-[200px] max-h-[200px]" id="preview-viewport">
+                  <!-- Cropper.js workspace holder -->
+                  <div id="cropper-container" class="w-full h-full hidden">
+                    <img id="cropper-target" class="max-w-full max-h-[190px]">
+                  </div>
+                  <!-- Normal image / Canvas preview -->
+                  <img id="preview-image" class="max-w-full max-h-[190px] shadow-sm select-none" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23f8fafc'/><text x='50' y='55' font-family='sans-serif' font-size='10' fill='%2394a3b8' text-anchor='middle'>Ready to Preview</text></svg>">
+                  <!-- Loading spinner overlay -->
+                  <div id="loader-overlay" class="absolute inset-0 bg-white/85 flex flex-col items-center justify-center gap-3 hidden">
+                    <i class="fa-solid fa-circle-notch text-3xl text-indigo-600 animate-spin"></i>
+                    <p class="text-xs font-bold text-slate-600 tracking-wider uppercase text-center">Processing Canvas...</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra instructions / help box -->
+              <div class="bg-indigo-50/50 border border-indigo-100/50 rounded-xl p-4 mt-4 text-xs text-indigo-900/80 flex gap-3 items-start">
+                <i class="fa-solid fa-circle-info text-indigo-500 text-sm mt-0.5"></i>
+                <div>
+                  <h4 class="font-bold mb-0.5">Editor Guidelines</h4>
+                  <p id="tool-guide-text">Upload a picture and adjust parameters to compile changes. Files stay in browser memory.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dedicated Landing Section UI (SEO friendly Keyword section below the tool) -->
+          <div id="seo-landing-section" class="bg-slate-50 border border-slate-200 rounded-2xl p-8 space-y-6 mt-8">
+            <!-- Injected dynamically via JS depending on active tool -->
+          </div>
+
+        </div>
+
+        <!-- View 3: Legal Pages -->
+        <div id="view-page" class="hidden bg-white border border-slate-200 rounded-2xl p-8 shadow-sm space-y-6">
+          <!-- Injected legal content -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Light Gradient Footer (SEO & Mobile Responsive) -->
+  <footer class="bg-gradient-to-tr from-pink-100/20 via-slate-50 to-indigo-100/20 border-t border-slate-200 py-12 px-6 text-slate-600 text-sm">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <h4 class="text-slate-900 font-extrabold uppercase text-xs tracking-wider mb-4"><i class="fa-solid fa-star text-indigo-500 mr-1.5"></i> Most Used Tools</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="/tool/passport-maker" class="hover:text-indigo-600 transition-colors">Passport Photo Maker</a></li>
+          <li><a href="/tool/reduce-kb" class="hover:text-indigo-600 transition-colors">Reduce Size in KB</a></li>
+          <li><a href="/tool/resize-pixel" class="hover:text-indigo-600 transition-colors">Resize Image Pixel</a></li>
+          <li><a href="/tool/collage-maker" class="hover:text-indigo-600 transition-colors">Photo Collage Maker</a></li>
+          <li><a href="/tool/generate-signature" class="hover:text-indigo-600 transition-colors">Generate Signature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-slate-900 font-extrabold uppercase text-xs tracking-wider mb-4"><i class="fa-solid fa-wrench text-indigo-500 mr-1.5"></i> Basic Editing</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="/tool/free-crop" class="hover:text-indigo-600 transition-colors">Freehand Crop</a></li>
+          <li><a href="/tool/circle-crop" class="hover:text-indigo-600 transition-colors">Circle Crop</a></li>
+          <li><a href="/tool/square-crop" class="hover:text-indigo-600 transition-colors">Square Crop</a></li>
+          <li><a href="/tool/rotate-image" class="hover:text-indigo-600 transition-colors">Rotate Image</a></li>
+          <li><a href="/tool/flip-image" class="hover:text-indigo-600 transition-colors">Flip Image</a></li>
+          <li><a href="/tool/add-name-dob" class="hover:text-indigo-600 transition-colors">Add Name & DOB on Photo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-slate-900 font-extrabold uppercase text-xs tracking-wider mb-4"><i class="fa-solid fa-print text-indigo-500 mr-1.5"></i> DPI & Quality</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="/tool/convert-dpi" class="hover:text-indigo-600 transition-colors">Convert DPI (200, 300, 600)</a></li>
+          <li><a href="/tool/check-dpi" class="hover:text-indigo-600 transition-colors">Check Image DPI</a></li>
+          <li><a href="/tool/resize-2-2" class="hover:text-indigo-600 transition-colors">2 x 2 Inch Photo</a></li>
+          <li><a href="/tool/resize-3-4" class="hover:text-indigo-600 transition-colors">3 x 4 Inch Photo</a></li>
+          <li><a href="/tool/resize-4-6" class="hover:text-indigo-600 transition-colors">4 x 6 Inch Photo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-slate-900 font-extrabold uppercase text-xs tracking-wider mb-4"><i class="fa-solid fa-sitemap text-indigo-500 mr-1.5"></i> Trust & Sitemap</h4>
+        <ul class="space-y-2 text-xs font-semibold">
+          <li><a href="/page/privacy" class="hover:text-indigo-600 transition-colors">Privacy Policy</a></li>
+          <li><a href="/page/about" class="hover:text-indigo-600 transition-colors">About Us & Terms of Service</a></li>
+          <li><a href="/page/sitemap" class="hover:text-indigo-600 transition-colors font-bold text-indigo-600">HTML Sitemap (SEO)</a></li>
+          <li><a href="/sitemap.xml" target="_blank" class="hover:text-indigo-600 transition-colors">XML Sitemap Crawler</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-200 pt-6">
+      <div class="flex items-center gap-2.5">
+        <div class="h-8 w-8 rounded-lg flex items-center justify-center bg-gradient-to-tr from-indigo-600 to-pink-500 text-white shadow-sm shrink-0">
+          <svg viewBox="0 0 512 512" class="h-4 w-4 text-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 120 180 L 120 120 L 180 120" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 392 180 L 392 120 L 332 120" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 120 332 L 120 392 L 180 392" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 392 332 L 392 392 L 332 392" stroke="currentColor" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Stylized S -->
+            <path d="M 320 165 C 320 130, 180 130, 180 200 C 180 260, 332 240, 332 300 C 332 370, 192 370, 192 335" stroke="currentColor" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="text-lg font-black tracking-tight bg-gradient-to-r from-slate-900 to-indigo-800 bg-clip-text text-transparent">SarkariPixels</span>
+      </div>
+      <p class="text-xs text-slate-400 text-center sm:text-right">
+        &copy; 2026 SarkariPixels. 100% Client-Side Safe Processing (No uploads). Designed for Govt job & exam portal uploads.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot Widget (Bottom-right - Configured for Click-Through) -->
+  <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-none">
+    <!-- Chat Widget Window -->
+    <div id="chat-window" class="w-[330px] sm:w-[380px] h-[450px] bg-white border border-slate-200 rounded-2xl shadow-2xl flex flex-col overflow-hidden mb-3 transform scale-90 opacity-0 pointer-events-none origin-bottom-right transition-all duration-300">
+      <!-- Chat Header -->
+      <div class="bg-brand-navy p-4 flex items-center justify-between text-white">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-400 to-indigo-500 flex items-center justify-center font-bold text-xs shadow-inner">
+            AI
+          </div>
+          <div>
+            <h4 class="font-extrabold text-sm tracking-wide">SarkariPixels Assistant</h4>
+            <span class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live Specs Database
+            </span>
+          </div>
+        </div>
+        <button onclick="toggleChat()" class="pointer-events-auto text-slate-400 hover:text-white transition-all">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Chat Messages (Scrollable) -->
+      <div id="chat-messages" class="flex-grow p-4 overflow-y-auto space-y-3 custom-scrollbar bg-slate-50 text-xs">
+        <div class="flex items-start gap-2">
+          <div class="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center shrink-0 font-bold text-[10px]">AI</div>
+          <div class="bg-white border border-slate-200 rounded-2xl rounded-tl-none p-3 shadow-sm text-slate-700 leading-relaxed max-w-[80%]">
+            Hello there! I am your <strong>SarkariPixels AI Assistant</strong>. Ask me about specs or form sizes for exams like <strong>SSC, UPSC, BPSC, RRB, NTA</strong>, etc. I will fetch the rules and launch the right tool for you instantly!
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="p-3 border-t border-slate-100 bg-white flex items-center gap-2">
+        <input type="text" id="chat-input" onkeydown="handleChatKey(event)" placeholder="Ask e.g. 'SSC photo size?'..." class="pointer-events-auto flex-grow px-3 py-2 border border-slate-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-indigo-500 text-xs font-medium placeholder:text-slate-400 bg-slate-50/50 focus:bg-white">
+        <button onclick="sendChatMessage()" class="pointer-events-auto h-8 w-8 bg-indigo-600 text-white rounded-lg flex items-center justify-center hover:bg-indigo-700 transition-all shadow-sm">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Floating Trigger Button -->
+    <button onclick="toggleChat()" class="pointer-events-auto flex items-center gap-2 bg-brand-navy hover:bg-indigo-900 text-white font-extrabold px-4 py-3 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105" id="chat-trigger">
+      <i class="fa-regular fa-comments text-lg animate-bounce"></i>
+      <span class="text-xs uppercase tracking-widest font-extrabold pr-1">💬 SarkariPixels AI Assistant</span>
+    </button>
+  </div>
+
+  <!-- Link Core App Script logic -->
+  <script src="app.js"></script>
+</body>
+</html>

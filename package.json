@@ -1,0 +1,22 @@
+{
+  "name": "sarkaripixels",
+  "version": "1.0.0",
+  "description": "SarkariPixels - 100% Local Image Compressor & Govt Exam Photo Editor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "photo-resizer",
+    "image-compressor",
+    "exam-fitter",
+    "local-processing"
+  ],
+  "author": "SarkariPixels",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2"
+  }
+}

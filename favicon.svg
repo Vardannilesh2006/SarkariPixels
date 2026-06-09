@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#4f46e5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Container with Premium Gradient -->
+  <rect x="16" y="16" width="480" height="480" rx="128" fill="url(#glowGrad)" filter="url(#shadow)" />
+  
+  <!-- Outer Crop Borders / Accents -->
+  <path d="M 100 160 L 100 100 L 160 100" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+  <path d="M 412 160 L 412 100 L 352 100" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+  <path d="M 100 352 L 100 412 L 160 412" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+  <path d="M 412 352 L 412 412 L 352 412" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+
+  <!-- Stylized Premium letter 'S' -->
+  <path d="M 320 165 C 320 130, 180 130, 180 200 C 180 260, 332 240, 332 300 C 332 370, 192 370, 192 335" stroke="#ffffff" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Star Accent -->
+  <path d="M 390 150 Q 405 150 405 135 Q 405 150 420 150 Q 405 150 405 165 Q 405 150 390 150" fill="#ffffff" />
+</svg>
