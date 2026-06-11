@@ -2125,7 +2125,14 @@ async function sendChatMessage() {
     const indicator = document.getElementById('chat-typing-indicator');
     if (indicator) indicator.remove();
     
-    if (!response.ok) throw new Error("API request failed");
+    if (!response.ok) {
+      let errMsg = `Server error (Status ${response.status})`;
+      try {
+        const errData = await response.json();
+        if (errData && errData.error) errMsg = errData.error;
+      } catch (e) {}
+      throw new Error(errMsg);
+    }
     
     const data = await response.json();
     const replyText = data.choices[0].message.content;
@@ -2137,7 +2144,12 @@ async function sendChatMessage() {
     console.error(err);
     const indicator = document.getElementById('chat-typing-indicator');
     if (indicator) indicator.remove();
-    appendMessage("bot", "Sorry, I had trouble connecting. Please check your internet connection.");
+    
+    let displayMsg = "Sorry, I had trouble connecting. Please check your internet connection.";
+    if (err.message && err.message !== "API request failed" && !err.message.includes("Failed to fetch")) {
+      displayMsg = `Error: ${err.message}`;
+    }
+    appendMessage("bot", displayMsg);
   }
 }
 
