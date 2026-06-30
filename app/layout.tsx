@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-outfit",
 });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
@@ -135,7 +135,7 @@ export default function RootLayout({
           } catch(e) {}`}
         </Script>
       </head>
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${outfit.variable} font-sans`}>
         {/* GTM noscript */}
         <noscript>
           <iframe

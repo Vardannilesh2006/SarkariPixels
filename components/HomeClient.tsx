@@ -33,7 +33,7 @@ export default function HomeClient() {
     });
 
     // ── Category filter ───────────────────────────────────────────
-    const catBtns = document.querySelectorAll<HTMLButtonElement>("[data-category]");
+    const catBtns = document.querySelectorAll<HTMLButtonElement>("button[data-category]");
     const toolCards = document.querySelectorAll<HTMLAnchorElement>("#tool-grid [data-category]");
 
     function filterCategory(cat: string) {

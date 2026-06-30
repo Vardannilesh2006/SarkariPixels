@@ -25,8 +25,10 @@ export default function ToolEditor({ tool }: Props) {
   const [targetKB, setTargetKB] = useState(tool.targetKB || tool.defaultKB || 50);
   const [width, setWidth] = useState(tool.defaultW || 800);
   const [height, setHeight] = useState(tool.defaultH || 600);
-  const [unit] = useState(tool.unit || "px");
+  const [unit, setUnit] = useState<"px" | "cm" | "mm" | "inch">(tool.unit || "px");
   const [quality, setQuality] = useState(85);
+  const [aspectRatio, setAspectRatio] = useState<number>(1.333); // default 4:3
+  const [lockAspect, setLockAspect] = useState<boolean>(true);
 
   const DPI = 96;
 
@@ -50,6 +52,7 @@ export default function ToolEditor({ tool }: Props) {
         setOriginalSize(imageFile.size);
 
         const img = await loadImage(src);
+        setAspectRatio(img.naturalWidth / img.naturalHeight);
 
         setStep("resizing");
 
@@ -110,6 +113,16 @@ export default function ToolEditor({ tool }: Props) {
     },
     [tool, width, height, unit, quality, targetKB]
   );
+
+  // Auto-run processing when settings change
+  useEffect(() => {
+    if (file) {
+      const timer = setTimeout(() => {
+        processImage(file);
+      }, 300); // 300ms debounce
+      return () => clearTimeout(timer);
+    }
+  }, [file, width, height, unit, targetKB, quality, processImage]);
 
   function readFile(f: File): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -328,14 +341,118 @@ export default function ToolEditor({ tool }: Props) {
   const isCompress = tool.group === "compress" || tool.group === "increase-compress";
   const isResize = tool.group === "resize" || tool.group === "universal-resize";
 
+  const handleWidthChange = (val: number) => {
+    setWidth(val);
+    if (lockAspect && aspectRatio) {
+      setHeight(Number((val / aspectRatio).toFixed(unit === "px" ? 0 : 2)));
+    }
+  };
+
+  const handleHeightChange = (val: number) => {
+    setHeight(val);
+    if (lockAspect && aspectRatio) {
+      setWidth(Number((val * aspectRatio).toFixed(unit === "px" ? 0 : 2)));
+    }
+  };
+
   return (
     <div className="p-5 space-y-4">
       {/* Settings Panel */}
-      {(isCompress || isResize) && !file && (
-        <div className="flex flex-wrap gap-3 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700">
+      {isResize && tool.group === "universal-resize" && (
+        <div className="space-y-4 animate-slide-up p-4 bg-slate-50/50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-2xl">
+          {/* Unit Tabs */}
+          <div>
+            <label className="block text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-2">Select Unit</label>
+            <div className="grid grid-cols-4 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700">
+              {(["px", "inch", "cm", "mm"] as const).map((u) => {
+                const isActive = unit === u;
+                return (
+                  <button
+                    key={u}
+                    type="button"
+                    onClick={() => {
+                      setUnit(u);
+                      // Convert width/height roughly
+                      if (u === "px") {
+                        setWidth(Math.round(tool.defaultW || 800));
+                        setHeight(Math.round(tool.defaultH || 600));
+                      } else if (u === "cm") {
+                        setWidth(3.5);
+                        setHeight(4.5);
+                      } else if (u === "mm") {
+                        setWidth(35);
+                        setHeight(45);
+                      } else {
+                        setWidth(2);
+                        setHeight(2);
+                      }
+                    }}
+                    className={`py-1.5 text-xs font-bold rounded-lg text-center transition-all ${
+                      isActive
+                        ? "bg-gradient-to-r from-indigo-600 to-pink-500 text-white shadow-sm"
+                        : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+                    }`}
+                  >
+                    {u.toUpperCase()}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Dimension Inputs */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="border border-slate-200 dark:border-slate-700 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-indigo-500 rounded-xl p-3 bg-white dark:bg-slate-800 transition-all relative">
+              <label className="block text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Width</label>
+              <div className="flex items-center justify-between mt-1">
+                <input
+                  type="number"
+                  value={width}
+                  step="any"
+                  placeholder="Width"
+                  onChange={(e) => handleWidthChange(Number(e.target.value))}
+                  className="w-full bg-transparent border-0 p-0 text-sm font-semibold text-slate-900 dark:text-white focus:ring-0 focus:outline-none placeholder-slate-400"
+                />
+                <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase ml-2 select-none">{unit}</span>
+              </div>
+            </div>
+            <div className="border border-slate-200 dark:border-slate-700 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-indigo-500 rounded-xl p-3 bg-white dark:bg-slate-800 transition-all relative">
+              <label className="block text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Height</label>
+              <div className="flex items-center justify-between mt-1">
+                <input
+                  type="number"
+                  value={height}
+                  step="any"
+                  placeholder="Height"
+                  onChange={(e) => handleHeightChange(Number(e.target.value))}
+                  className="w-full bg-transparent border-0 p-0 text-sm font-semibold text-slate-900 dark:text-white focus:ring-0 focus:outline-none placeholder-slate-400"
+                />
+                <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase ml-2 select-none">{unit}</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 mt-2">
+            <input
+              type="checkbox"
+              id="lock-aspect"
+              checked={lockAspect}
+              onChange={(e) => setLockAspect(e.target.checked)}
+              className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+            />
+            <label htmlFor="lock-aspect" className="text-xs font-semibold text-slate-500 select-none">
+              Lock Aspect Ratio
+            </label>
+          </div>
+        </div>
+      )}
+
+      {/* Normal Resize and Compress Settings */}
+      {((isResize && tool.group !== "universal-resize") || isCompress) && (
+        <div className="flex flex-wrap gap-4 p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-200 dark:border-slate-700">
           {isCompress && (
             <div className="flex items-center gap-2">
-              <label className="text-xs font-semibold text-slate-500">Target KB:</label>
+              <label className="text-xs font-semibold text-slate-500 dark:text-slate-400">Target Size (KB):</label>
               <input
                 type="number"
                 value={targetKB}
@@ -346,27 +463,39 @@ export default function ToolEditor({ tool }: Props) {
               />
             </div>
           )}
-          {isResize && (
+          {isResize && tool.group !== "universal-resize" && (
             <>
               <div className="flex items-center gap-2">
-                <label className="text-xs font-semibold text-slate-500">W ({unit}):</label>
+                <label className="text-xs font-semibold text-slate-500 dark:text-slate-400">Width ({unit}):</label>
                 <input
                   type="number"
                   value={width}
-                  onChange={(e) => setWidth(Number(e.target.value))}
+                  onChange={(e) => handleWidthChange(Number(e.target.value))}
                   step={unit === "px" ? 1 : 0.1}
                   className="w-20 text-sm border border-slate-200 dark:border-slate-600 rounded-lg px-2 py-1.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-500"
                 />
               </div>
               <div className="flex items-center gap-2">
-                <label className="text-xs font-semibold text-slate-500">H ({unit}):</label>
+                <label className="text-xs font-semibold text-slate-500 dark:text-slate-400">Height ({unit}):</label>
                 <input
                   type="number"
                   value={height}
-                  onChange={(e) => setHeight(Number(e.target.value))}
+                  onChange={(e) => handleHeightChange(Number(e.target.value))}
                   step={unit === "px" ? 1 : 0.1}
                   className="w-20 text-sm border border-slate-200 dark:border-slate-600 rounded-lg px-2 py-1.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-indigo-500"
                 />
+              </div>
+              <div className="flex items-center gap-2 ml-auto">
+                <input
+                  type="checkbox"
+                  id="lock-aspect-simple"
+                  checked={lockAspect}
+                  onChange={(e) => setLockAspect(e.target.checked)}
+                  className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <label htmlFor="lock-aspect-simple" className="text-xs font-semibold text-slate-500 select-none">
+                  Lock Aspect
+                </label>
               </div>
             </>
           )}
