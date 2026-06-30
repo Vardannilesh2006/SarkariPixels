@@ -3,10 +3,9 @@
 import { useEffect } from "react";
 
 // HomeClient handles all client-side interactivity on the home page:
-// - Theme toggle
-// - Category filter
-// - Search
-// - Mouse glow effect
+// - Theme toggle (icon swap + class on <html>)
+// - Category sidebar filter (show/hide tool cards)
+// - Search input (live filtering by title/description)
 export default function HomeClient() {
   useEffect(() => {
     // ── Theme toggle ──────────────────────────────────────────────
@@ -18,18 +17,17 @@ export default function HomeClient() {
       localStorage.setItem("sp-theme", dark ? "dark" : "light");
       if (themeIcon) {
         themeIcon.className = dark
-          ? "fa-solid fa-sun text-amber-400 text-sm"
-          : "fa-solid fa-moon text-slate-500 text-sm";
+          ? "fa-solid fa-sun"
+          : "fa-solid fa-moon";
+        themeIcon.style.fontSize = "14px";
       }
     }
 
-    // Init theme icon based on current state
-    const isDark = document.documentElement.classList.contains("dark");
-    applyTheme(isDark);
+    // Sync icon with current state on mount
+    applyTheme(document.documentElement.classList.contains("dark"));
 
     themeBtn?.addEventListener("click", () => {
-      const current = document.documentElement.classList.contains("dark");
-      applyTheme(!current);
+      applyTheme(!document.documentElement.classList.contains("dark"));
     });
 
     // ── Category filter ───────────────────────────────────────────
@@ -40,18 +38,18 @@ export default function HomeClient() {
       catBtns.forEach((btn) => {
         const isActive = btn.dataset.category === cat;
         btn.classList.toggle("active", isActive);
+        btn.setAttribute("aria-pressed", String(isActive));
       });
       toolCards.forEach((card) => {
         const show = cat === "all" || card.dataset.category === cat;
-        card.style.display = show ? "" : "none";
+        // Use display: block (tool-card is a block-level <a>)
+        (card as HTMLElement).style.display = show ? "block" : "none";
       });
     }
 
-    // Attach to sidebar buttons (buttons have data-category)
-    document.querySelectorAll<HTMLButtonElement>("button[data-category]").forEach((btn) => {
+    catBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        const cat = btn.dataset.category || "all";
-        filterCategory(cat);
+        filterCategory(btn.dataset.category || "all");
       });
     });
 
@@ -61,30 +59,28 @@ export default function HomeClient() {
       const query = searchInput.value.toLowerCase().trim();
 
       if (!query) {
-        // Reset to "all" view
         filterCategory("all");
         return;
       }
 
-      // Reset category buttons
-      catBtns.forEach((b) => b.classList.remove("active"));
+      // Clear active state from category buttons when searching
+      catBtns.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-pressed", "false");
+      });
 
       toolCards.forEach((card) => {
         const title = card.dataset.title || "";
         const desc = card.querySelector("p")?.textContent?.toLowerCase() || "";
-        const match = title.includes(query) || desc.includes(query);
-        card.style.display = match ? "" : "none";
+        const show = title.includes(query) || desc.includes(query);
+        (card as HTMLElement).style.display = show ? "block" : "none";
       });
     });
 
-    // ── Mouse glow (desktop only) ────────────────────────────────
-    const glow = document.getElementById("bg-glow");
-    if (glow && window.innerWidth >= 1024) {
-      document.addEventListener("mousemove", (e) => {
-        glow.style.left = `${e.clientX}px`;
-        glow.style.top = `${e.clientY}px`;
-      });
-    }
+    // Cleanup on unmount
+    return () => {
+      themeBtn?.replaceWith(themeBtn.cloneNode(true)); // remove listeners
+    };
   }, []);
 
   return null;
