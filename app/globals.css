@@ -364,3 +364,126 @@ footer a:hover {
 .processing-step { color: var(--color-muted); font-size: .8125rem; }
 .processing-step.active { color: var(--color-accent); font-weight: 600; }
 .processing-step.done { color: #16a34a; }
+
+/* ────────────────────────────────────────────────────────────────────
+   BENTO MINI-CARDS (hero section)
+   Clickable tool cards with icon + name + spec data point.
+──────────────────────────────────────────────────────────────────── */
+.bento-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-bg);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    border-color .18s ease,
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+
+.bento-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, .10);
+}
+
+.bento-card:active {
+  transform: translateY(0);
+}
+
+.bento-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bento-name {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.bento-card:hover .bento-name {
+  color: var(--color-accent);
+}
+
+.bento-spec {
+  font-size: .6875rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  letter-spacing: .01em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dark mode tints — slightly lighter icon bg */
+.dark .bento-card {
+  background-color: var(--color-surface);
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   MARQUEE STRIP (between hero and trust strip)
+   Pure CSS infinite scroll — no JavaScript required.
+──────────────────────────────────────────────────────────────────── */
+@keyframes sp-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }   /* -50% because content is doubled */
+}
+
+.marquee-wrapper {
+  padding: 10px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: sp-marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;   /* pause on hover for readability */
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 20px;
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--color-muted);
+  white-space: nowrap;
+  letter-spacing: .01em;
+}
+
+.marquee-dot {
+  font-size: 5px;
+  color: var(--color-border);
+  flex-shrink: 0;
+}
+
+/* Stop animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px 16px;
+  }
+}

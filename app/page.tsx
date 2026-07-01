@@ -117,14 +117,122 @@ export default function HomePage() {
             <a href="#tools" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }}>
               Browse Tools
             </a>
+
+            {/* ── BENTO MINI-CARDS ──────────────────────────────────
+                 4 most-used tools, shown right inside the hero.
+                 Clickable — each goes directly to that tool page.
+            ─────────────────────────────────────────────────────── */}
+            <div
+              className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10 w-full max-w-2xl mx-auto"
+              role="list"
+              aria-label="Popular tools quick access"
+            >
+              {[
+                {
+                  href: "/tool/reduce-kb",
+                  icon: "fa-compress-alt",
+                  name: "Compress Photo",
+                  spec: "Any KB target",
+                  color: "#eff6ff",
+                  iconColor: "#2563eb",
+                },
+                {
+                  href: "/tool/ssc-photo",
+                  icon: "fa-id-card",
+                  name: "SSC Photo",
+                  spec: "200×230 px · 20 KB",
+                  color: "#fff7ed",
+                  iconColor: "#ea580c",
+                },
+                {
+                  href: "/tool/passport-maker",
+                  icon: "fa-passport",
+                  name: "Passport Size",
+                  spec: "35×45 mm",
+                  color: "#f0fdf4",
+                  iconColor: "#16a34a",
+                },
+                {
+                  href: "/tool/signature-resize",
+                  icon: "fa-signature",
+                  name: "Signature",
+                  spec: "≤ 10–30 KB",
+                  color: "#fdf4ff",
+                  iconColor: "#9333ea",
+                },
+              ].map((card) => (
+                <a
+                  key={card.href}
+                  href={card.href}
+                  className="bento-card"
+                  role="listitem"
+                  aria-label={`${card.name}: ${card.spec}`}
+                >
+                  <div
+                    className="bento-icon"
+                    style={{ backgroundColor: card.color }}
+                    aria-hidden="true"
+                  >
+                    <i
+                      className={`fa-solid ${card.icon}`}
+                      style={{ color: card.iconColor, fontSize: "16px" }}
+                    />
+                  </div>
+                  <span className="bento-name">{card.name}</span>
+                  <span className="bento-spec">{card.spec}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
+
+        {/* ── MARQUEE STRIP ──────────────────────────────────────────
+             Infinite CSS-only scroll of tool names.
+             Sits between hero and trust strip — acts as a "ticker"
+             showing users the breadth of the tool library.
+        ────────────────────────────────────────────────────────────── */}
+        <div
+          className="marquee-wrapper border-t border-b overflow-hidden"
+          style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
+          aria-hidden="true"
+        >
+          <div className="marquee-track">
+            {/* Duplicated twice so the loop is seamless */}
+            {[1, 2].map((n) => (
+              <div key={n} className="marquee-content">
+                {[
+                  "Compress to 50 KB",
+                  "SSC CGL Photo",
+                  "UPSC Photo",
+                  "Passport Size",
+                  "Signature Resize",
+                  "IBPS PO Photo",
+                  "RRB NTPC Photo",
+                  "NTA NEET Photo",
+                  "Compress to 20 KB",
+                  "BPSC Photo",
+                  "PAN Card Photo",
+                  "SBI PO Signature",
+                  "Compress to 100 KB",
+                  "Custom Resize",
+                  "DPI Converter",
+                  "Smart Resizer",
+                ].map((label) => (
+                  <span key={label} className="marquee-item">
+                    <i className="fa-solid fa-circle-small marquee-dot" aria-hidden="true" />
+                    {label}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* ── TRUST STRIP ────────────────────────────────────────────
              One row. Three facts. Plain, no competing shadows.
         ────────────────────────────────────────────────────────────── */}
         <section
-          className="py-6 px-4 sm:px-6 border-t border-b"
+          className="py-6 px-4 sm:px-6 border-b"
           style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
           aria-label="Key facts about SarkariPixels"
         >
