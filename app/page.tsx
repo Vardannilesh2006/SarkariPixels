@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { TOOLS, CATEGORY_COUNTS } from "@/lib/tools-data";
 import HomeClient from "@/components/HomeClient";
+import OrbitTools from "@/components/OrbitTools";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
@@ -118,110 +119,55 @@ export default function HomePage() {
               Browse Tools
             </a>
 
-            {/* ── BENTO MINI-CARDS ──────────────────────────────────
-                 4 most-used tools, shown right inside the hero.
-                 Clickable — each goes directly to that tool page.
+            {/* ── ORBIT RING (Idea 4) ───────────────────────────────
+                 5 tool icons orbit a center hub.
+                 Desktop: animated ring. Mobile: flat chip row.
             ─────────────────────────────────────────────────────── */}
-            <div
-              className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10 w-full max-w-2xl mx-auto"
-              role="list"
-              aria-label="Popular tools quick access"
-            >
-              {[
-                {
-                  href: "/tool/reduce-kb",
-                  icon: "fa-compress-alt",
-                  name: "Compress Photo",
-                  spec: "Any KB target",
-                  color: "#eff6ff",
-                  iconColor: "#2563eb",
-                },
-                {
-                  href: "/tool/ssc-photo",
-                  icon: "fa-id-card",
-                  name: "SSC Photo",
-                  spec: "200×230 px · 20 KB",
-                  color: "#fff7ed",
-                  iconColor: "#ea580c",
-                },
-                {
-                  href: "/tool/passport-maker",
-                  icon: "fa-passport",
-                  name: "Passport Size",
-                  spec: "35×45 mm",
-                  color: "#f0fdf4",
-                  iconColor: "#16a34a",
-                },
-                {
-                  href: "/tool/signature-resize",
-                  icon: "fa-signature",
-                  name: "Signature",
-                  spec: "≤ 10–30 KB",
-                  color: "#fdf4ff",
-                  iconColor: "#9333ea",
-                },
-              ].map((card) => (
-                <a
-                  key={card.href}
-                  href={card.href}
-                  className="bento-card"
-                  role="listitem"
-                  aria-label={`${card.name}: ${card.spec}`}
-                >
-                  <div
-                    className="bento-icon"
-                    style={{ backgroundColor: card.color }}
-                    aria-hidden="true"
-                  >
-                    <i
-                      className={`fa-solid ${card.icon}`}
-                      style={{ color: card.iconColor, fontSize: "16px" }}
-                    />
-                  </div>
-                  <span className="bento-name">{card.name}</span>
-                  <span className="bento-spec">{card.spec}</span>
-                </a>
-              ))}
+            <div className="mt-10">
+              <OrbitTools />
             </div>
           </div>
         </section>
 
         {/* ── MARQUEE STRIP ──────────────────────────────────────────
-             Infinite CSS-only scroll of tool names.
-             Sits between hero and trust strip — acts as a "ticker"
-             showing users the breadth of the tool library.
+             Infinite CSS-only scroll of tool names — all clickable links.
+             Sits between hero and trust strip.
         ────────────────────────────────────────────────────────────── */}
         <div
           className="marquee-wrapper border-t border-b overflow-hidden"
           style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
-          aria-hidden="true"
+          aria-label="Quick links to popular tools"
         >
           <div className="marquee-track">
-            {/* Duplicated twice so the loop is seamless */}
             {[1, 2].map((n) => (
-              <div key={n} className="marquee-content">
+              <div key={n} className="marquee-content" aria-hidden={n === 2 ? "true" : undefined}>
                 {[
-                  "Compress to 50 KB",
-                  "SSC CGL Photo",
-                  "UPSC Photo",
-                  "Passport Size",
-                  "Signature Resize",
-                  "IBPS PO Photo",
-                  "RRB NTPC Photo",
-                  "NTA NEET Photo",
-                  "Compress to 20 KB",
-                  "BPSC Photo",
-                  "PAN Card Photo",
-                  "SBI PO Signature",
-                  "Compress to 100 KB",
-                  "Custom Resize",
-                  "DPI Converter",
-                  "Smart Resizer",
-                ].map((label) => (
-                  <span key={label} className="marquee-item">
+                  { label: "Compress to 50 KB",  href: "/tool/compress-50" },
+                  { label: "SSC CGL Photo",       href: "/tool/ssc-photo" },
+                  { label: "UPSC Photo",          href: "/tool/upsc-photo-resize" },
+                  { label: "Passport Size",       href: "/tool/passport-maker" },
+                  { label: "Signature Resize",    href: "/tool/resize-signature" },
+                  { label: "Compress to 20 KB",  href: "/tool/compress-20" },
+                  { label: "PAN Card Photo",      href: "/tool/pan-card-resize" },
+                  { label: "Compress to 100 KB", href: "/tool/compress-100" },
+                  { label: "PSC Photo",           href: "/tool/psc-photo" },
+                  { label: "Smart Resizer",       href: "/tool/smart-resizer" },
+                  { label: "DPI Converter",       href: "/tool/convert-dpi" },
+                  { label: "Compress to 30 KB",  href: "/tool/compress-30" },
+                  { label: "Resize in cm",        href: "/tool/resize-cm" },
+                  { label: "Compress to 40 KB",  href: "/tool/compress-40" },
+                  { label: "A4 Size",             href: "/tool/resize-a4" },
+                  { label: "Compress to 200 KB", href: "/tool/compress-200" },
+                ].map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="marquee-item"
+                    tabIndex={n === 2 ? -1 : 0}
+                  >
                     <i className="fa-solid fa-circle-small marquee-dot" aria-hidden="true" />
-                    {label}
-                  </span>
+                    {item.label}
+                  </a>
                 ))}
               </div>
             ))}

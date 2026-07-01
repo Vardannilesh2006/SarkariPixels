@@ -487,3 +487,193 @@ footer a:hover {
     padding: 4px 16px;
   }
 }
+
+/* Marquee items are now links — add hover color */
+a.marquee-item {
+  text-decoration: none;
+  transition: color .15s;
+}
+a.marquee-item:hover {
+  color: var(--color-accent);
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   ORBIT RING (Idea 4)
+   5 tool icons orbit a center hub using pure CSS keyframes.
+   Each item has its own animation starting at a different angle.
+
+   Technique:
+     transform: rotate(θ) translateY(-R) rotate(-θ)
+     Counter-rotate keeps items upright while they travel the circle.
+──────────────────────────────────────────────────────────────────── */
+
+/* 5 keyframes — one per item, each starting at its own angle
+   Item 0: -90°  (12 o'clock)
+   Item 1: -18°  (about 1–2 o'clock)
+   Item 2:  54°  (about 4–5 o'clock)
+   Item 3: 126°  (about 7–8 o'clock)
+   Item 4: 198°  (about 10–11 o'clock)
+*/
+@keyframes sp-orbit-0 {
+  from { transform: translate(-50%, -50%) rotate(-90deg)  translateY(-108px) rotate(90deg); }
+  to   { transform: translate(-50%, -50%) rotate(270deg)  translateY(-108px) rotate(-270deg); }
+}
+@keyframes sp-orbit-1 {
+  from { transform: translate(-50%, -50%) rotate(-18deg)  translateY(-108px) rotate(18deg); }
+  to   { transform: translate(-50%, -50%) rotate(342deg)  translateY(-108px) rotate(-342deg); }
+}
+@keyframes sp-orbit-2 {
+  from { transform: translate(-50%, -50%) rotate(54deg)   translateY(-108px) rotate(-54deg); }
+  to   { transform: translate(-50%, -50%) rotate(414deg)  translateY(-108px) rotate(-414deg); }
+}
+@keyframes sp-orbit-3 {
+  from { transform: translate(-50%, -50%) rotate(126deg)  translateY(-108px) rotate(-126deg); }
+  to   { transform: translate(-50%, -50%) rotate(486deg)  translateY(-108px) rotate(-486deg); }
+}
+@keyframes sp-orbit-4 {
+  from { transform: translate(-50%, -50%) rotate(198deg)  translateY(-108px) rotate(-198deg); }
+  to   { transform: translate(-50%, -50%) rotate(558deg)  translateY(-108px) rotate(-558deg); }
+}
+
+/* Outer wrapper — centers everything */
+.orbit-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desktop orbit container */
+.orbit-container {
+  position: relative;
+  display: block;
+}
+
+/* Dashed ring (pure visual) */
+.orbit-ring-line {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px dashed var(--color-border);
+  pointer-events: none;
+}
+
+/* Center hub */
+.orbit-hub {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px; height: 72px;
+  border-radius: 18px;
+  background-color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  gap: 2px;
+  transition: background-color .15s;
+  z-index: 2;
+}
+.orbit-hub:hover { background-color: var(--color-accent-hv); }
+.orbit-hub-icon { font-weight: 900; line-height: 1; }
+.orbit-hub-label { font-size: 9px; font-weight: 700; letter-spacing: .04em; opacity: .85; }
+
+/* Each orbit item — sits at 50%/50% then the animation positions it */
+.orbit-item {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 68px;
+  height: 68px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-bg);
+  transition: border-color .15s, box-shadow .15s;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+.orbit-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, .12);
+  animation-play-state: paused;
+}
+
+/* Assign individual animation to each item */
+.orbit-item-0 { animation-name: sp-orbit-0; }
+.orbit-item-1 { animation-name: sp-orbit-1; }
+.orbit-item-2 { animation-name: sp-orbit-2; }
+.orbit-item-3 { animation-name: sp-orbit-3; }
+.orbit-item-4 { animation-name: sp-orbit-4; }
+
+.orbit-item-icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+.orbit-item-name {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: .01em;
+}
+.orbit-item:hover .orbit-item-name { color: var(--color-accent); }
+
+/* Dark mode */
+.dark .orbit-item { background-color: var(--color-surface); }
+
+/* Mobile fallback — hide orbit, show chip row */
+.orbit-mobile { display: none; }
+
+@media (max-width: 639px) {
+  .orbit-container { display: none; }
+  .orbit-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-2);
+    padding: 0 var(--sp-4);
+  }
+}
+
+.orbit-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background-color: var(--color-bg);
+  text-decoration: none;
+  transition: border-color .15s;
+}
+.orbit-chip:hover { border-color: var(--color-accent); }
+
+.orbit-chip-icon {
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.orbit-chip-text { display: flex; flex-direction: column; }
+.orbit-chip-name { font-size: .75rem; font-weight: 600; color: var(--color-text); }
+.orbit-chip-spec { font-size: .625rem; color: var(--color-muted); }
+
+/* Reduced motion — stop orbit, keep items visible at their start positions */
+@media (prefers-reduced-motion: reduce) {
+  .orbit-item { animation: none !important; }
+  /* Reposition each item statically */
+  .orbit-item-0 { transform: translate(-50%, -50%) rotate(-90deg) translateY(-108px) rotate(90deg); }
+  .orbit-item-1 { transform: translate(-50%, -50%) rotate(-18deg) translateY(-108px) rotate(18deg); }
+  .orbit-item-2 { transform: translate(-50%, -50%) rotate(54deg)  translateY(-108px) rotate(-54deg); }
+  .orbit-item-3 { transform: translate(-50%, -50%) rotate(126deg) translateY(-108px) rotate(-126deg); }
+  .orbit-item-4 { transform: translate(-50%, -50%) rotate(198deg) translateY(-108px) rotate(-198deg); }
+}
