@@ -97,19 +97,19 @@ export default function HomePage() {
              Clear whitespace above and below.
         ────────────────────────────────────────────────────────────── */}
         <section
-          className="py-20 sm:py-28 px-4 sm:px-6 text-center hero-anim"
+          className="py-8 sm:py-10 px-4 sm:px-6 text-center hero-anim"
           aria-labelledby="hero-headline"
         >
           <div className="max-w-2xl mx-auto">
             <h1
               id="hero-headline"
-              className="t-h1 mb-5"
+              className="t-h1 mb-3"
             >
               Exam Photo Size — Fixed in Seconds
             </h1>
             <p
-              className="t-body mb-8"
-              style={{ color: "var(--color-muted)", maxWidth: "480px", margin: "0 auto 2rem" }}
+              className="t-body"
+              style={{ color: "var(--color-muted)", maxWidth: "480px", margin: "0 auto 1.25rem" }}
             >
               Compress and resize passport photos or signatures for SSC, UPSC,
               BPSC, RRB, IBPS, and NTA portals — to the exact KB and pixel
@@ -123,7 +123,7 @@ export default function HomePage() {
                  5 tool icons orbit a center hub.
                  Desktop: animated ring. Mobile: flat chip row.
             ─────────────────────────────────────────────────────── */}
-            <div className="mt-10">
+            <div className="mt-6">
               <OrbitTools />
             </div>
           </div>
