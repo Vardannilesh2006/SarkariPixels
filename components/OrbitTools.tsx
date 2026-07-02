@@ -45,6 +45,14 @@ const ORBIT_TOOLS = [
     bg: "#fdf4ff",
     color: "#9333ea",
   },
+  {
+    href: "/tool/smart-resizer",
+    icon: "fa-up-right-and-down-left-from-center",
+    label: "Resize",
+    spec: "px/cm/mm/in",
+    bg: "#e0f2fe",
+    color: "#0ea5e9",
+  },
 ];
 
 // Radius and item size

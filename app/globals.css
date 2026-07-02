@@ -507,33 +507,39 @@ a.marquee-item:hover {
      Counter-rotate keeps items upright while they travel the circle.
 ──────────────────────────────────────────────────────────────────── */
 
-/* 5 keyframes — one per item, each starting at its own angle
+/* 6 keyframes — one per item, each starting at its own angle
    Item 0: -90°  (12 o'clock)
-   Item 1: -18°  (about 1–2 o'clock)
-   Item 2:  54°  (about 4–5 o'clock)
-   Item 3: 126°  (about 7–8 o'clock)
-   Item 4: 198°  (about 10–11 o'clock)
+   Item 1: -30°  (2 o'clock)
+   Item 2:  30°  (4 o'clock)
+   Item 3:  90°  (6 o'clock)
+   Item 4: 150°  (8 o'clock)
+   Item 5: 210°  (10 o'clock)
 */
 @keyframes sp-orbit-0 {
   from { transform: translate(-50%, -50%) rotate(-90deg)  translateY(-108px) rotate(90deg); }
   to   { transform: translate(-50%, -50%) rotate(270deg)  translateY(-108px) rotate(-270deg); }
 }
 @keyframes sp-orbit-1 {
-  from { transform: translate(-50%, -50%) rotate(-18deg)  translateY(-108px) rotate(18deg); }
-  to   { transform: translate(-50%, -50%) rotate(342deg)  translateY(-108px) rotate(-342deg); }
+  from { transform: translate(-50%, -50%) rotate(-30deg)  translateY(-108px) rotate(30deg); }
+  to   { transform: translate(-50%, -50%) rotate(330deg)  translateY(-108px) rotate(-330deg); }
 }
 @keyframes sp-orbit-2 {
-  from { transform: translate(-50%, -50%) rotate(54deg)   translateY(-108px) rotate(-54deg); }
-  to   { transform: translate(-50%, -50%) rotate(414deg)  translateY(-108px) rotate(-414deg); }
+  from { transform: translate(-50%, -50%) rotate(30deg)   translateY(-108px) rotate(-30deg); }
+  to   { transform: translate(-50%, -50%) rotate(390deg)  translateY(-108px) rotate(-390deg); }
 }
 @keyframes sp-orbit-3 {
-  from { transform: translate(-50%, -50%) rotate(126deg)  translateY(-108px) rotate(-126deg); }
-  to   { transform: translate(-50%, -50%) rotate(486deg)  translateY(-108px) rotate(-486deg); }
+  from { transform: translate(-50%, -50%) rotate(90deg)   translateY(-108px) rotate(-90deg); }
+  to   { transform: translate(-50%, -50%) rotate(450deg)  translateY(-108px) rotate(-450deg); }
 }
 @keyframes sp-orbit-4 {
-  from { transform: translate(-50%, -50%) rotate(198deg)  translateY(-108px) rotate(-198deg); }
-  to   { transform: translate(-50%, -50%) rotate(558deg)  translateY(-108px) rotate(-558deg); }
+  from { transform: translate(-50%, -50%) rotate(150deg)  translateY(-108px) rotate(-150deg); }
+  to   { transform: translate(-50%, -50%) rotate(510deg)  translateY(-108px) rotate(-510deg); }
 }
+@keyframes sp-orbit-5 {
+  from { transform: translate(-50%, -50%) rotate(210deg)  translateY(-108px) rotate(-210deg); }
+  to   { transform: translate(-50%, -50%) rotate(570deg)  translateY(-108px) rotate(-570deg); }
+}
+
 
 /* Outer wrapper — centers everything */
 .orbit-outer {
@@ -611,6 +617,7 @@ a.marquee-item:hover {
 .orbit-item-2 { animation-name: sp-orbit-2; }
 .orbit-item-3 { animation-name: sp-orbit-3; }
 .orbit-item-4 { animation-name: sp-orbit-4; }
+.orbit-item-5 { animation-name: sp-orbit-5; }
 
 .orbit-item-icon {
   width: 36px; height: 36px;
@@ -672,8 +679,9 @@ a.marquee-item:hover {
   .orbit-item { animation: none !important; }
   /* Reposition each item statically */
   .orbit-item-0 { transform: translate(-50%, -50%) rotate(-90deg) translateY(-108px) rotate(90deg); }
-  .orbit-item-1 { transform: translate(-50%, -50%) rotate(-18deg) translateY(-108px) rotate(18deg); }
-  .orbit-item-2 { transform: translate(-50%, -50%) rotate(54deg)  translateY(-108px) rotate(-54deg); }
-  .orbit-item-3 { transform: translate(-50%, -50%) rotate(126deg) translateY(-108px) rotate(-126deg); }
-  .orbit-item-4 { transform: translate(-50%, -50%) rotate(198deg) translateY(-108px) rotate(-198deg); }
+  .orbit-item-1 { transform: translate(-50%, -50%) rotate(-30deg) translateY(-108px) rotate(30deg); }
+  .orbit-item-2 { transform: translate(-50%, -50%) rotate(30deg)  translateY(-108px) rotate(-30deg); }
+  .orbit-item-3 { transform: translate(-50%, -50%) rotate(90deg)  translateY(-108px) rotate(-90deg); }
+  .orbit-item-4 { transform: translate(-50%, -50%) rotate(150deg) translateY(-108px) rotate(-150deg); }
+  .orbit-item-5 { transform: translate(-50%, -50%) rotate(210deg) translateY(-108px) rotate(-210deg); }
 }
