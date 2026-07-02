@@ -1,0 +1,22 @@
+{
+  "name": "SarkariPixels",
+  "short_name": "SarkariPixels",
+  "description": "88 free tools to resize and compress photos for SSC, UPSC, BPSC, RRB, IBPS, NTA government exam portals. 100% browser-based.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "screenshots": [],
+  "related_applications": []
+}

@@ -9,13 +9,17 @@ const SITE_URL =
 export const metadata: Metadata = {
   title: "SarkariPixels | Free Photo & Signature Resizer for Govt Exams",
   description:
-    "Resize and compress photos for SSC, UPSC, BPSC, RRB, IBPS exam portals. Exact KB and pixel limits. 100% browser-based — nothing is uploaded.",
-  alternates: { canonical: SITE_URL },
+    "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants resize and compress photos for SSC, UPSC, BPSC, RRB, IBPS exam portals. Exact KB and pixel limits. 100% browser-based — nothing is uploaded.",
+  alternates: {
+    canonical: SITE_URL,
+    languages: { "en-IN": SITE_URL },
+  },
   openGraph: {
     url: SITE_URL,
     title: "SarkariPixels | 88 Free Exam Photo Tools",
     description:
       "Compress and resize photos to exact KB and pixel limits for any Indian government exam portal. Browser-only, zero upload.",
+    images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
   },
 };
 
@@ -395,6 +399,53 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* ── FAQ SECTION ─────────────────────────────────────────────
+             FAQPage schema injected in JSON-LD below.
+             Targets: AI Overviews, ChatGPT, Perplexity citations.
+        ────────────────────────────────────────────────────────────── */}
+        <section className="py-14 px-4 sm:px-6 border-t" style={{ borderColor: "var(--color-border)" }} aria-labelledby="faq-heading">
+          <div className="max-w-3xl mx-auto">
+            <h2 id="faq-heading" className="t-h2 mb-2 text-center">Frequently Asked Questions</h2>
+            <p className="t-body mb-8 text-center" style={{ color: "var(--color-muted)" }}>Common exam photo questions — answered directly.</p>
+            <dl className="space-y-0 divide-y" style={{ borderColor: "var(--color-border)" }}>
+              {[
+                {
+                  q: "SSC exam ke liye photo size kya honi chahiye?",
+                  a: "SSC CGL, CHSL, MTS aur baaki SSC exams ke liye photo 3.5 cm × 4.5 cm (approximately 413 × 531 pixels at 300 DPI) honi chahiye. File size 20 KB se 50 KB ke beech honi chahiye, JPG/JPEG format mein, white ya light-colored plain background ke saath."
+                },
+                {
+                  q: "Phone ki photo ko 50KB se kam kaise karein?",
+                  a: "SarkariPixels pe 'Compress to 50KB' tool use karo — photo upload karo, aur tool automatically 50KB se kam mein compress kar dega. Koi file upload nahi hoti, sab kuch browser mein hota hai."
+                },
+                {
+                  q: "UPSC ke liye photo ka size kya hota hai?",
+                  a: "UPSC CSE ke liye photo 350 × 350 pixels (square format) honi chahiye, 20 KB se 300 KB ke beech, JPG format mein, white background ke saath. Signature 350 × 100 pixels, 10-100 KB chahiye."
+                },
+                {
+                  q: "Kya yeh tool mobile pe kaam karta hai?",
+                  a: "Haan, SarkariPixels fully mobile-friendly hai. Kisi bhi smartphone browser (Chrome, Firefox, Safari) mein kaam karta hai. 2G/3G slow internet pe bhi, kyunki sab processing device pe hi hoti hai — koi file upload nahi hoti."
+                },
+                {
+                  q: "Kya photo ka data upload hota hai server pe?",
+                  a: "Nahi. SarkariPixels 100% client-side hai — sab kuch aapke browser mein hota hai Canvas API se. Aapki photo kabhi bhi kisi server pe upload nahi hoti — na humare, na kisi aur ke."
+                },
+                {
+                  q: "IBPS PO ya Clerk ke liye signature resize kaise karein?",
+                  a: "IBPS ke liye signature 140 × 60 pixels, 10-20 KB, JPG format mein chahiye. SarkariPixels ka 'Signature Resize' tool use karo — exact dimensions pehle se set hain, bas upload karo aur download karo."
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className={i > 0 ? "pt-5 mt-5" : ""}>
+                  <dt className="flex items-start gap-2 font-semibold mb-2" style={{ fontSize: "0.9375rem", color: "var(--color-text)" }}>
+                    <i className="fa-solid fa-circle-question mt-0.5 shrink-0" style={{ fontSize: "13px", color: "var(--color-accent)" }} aria-hidden="true" />
+                    {q}
+                  </dt>
+                  <dd className="pl-6" style={{ fontSize: "0.875rem", color: "var(--color-muted)", lineHeight: "1.7" }}>{a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
       </main>
 
       {/* ── FOOTER ─────────────────────────────────────────────────── */}
@@ -473,6 +524,42 @@ export default function HomePage() {
           </span>
         </div>
       </footer>
+
+      {/* FAQPage + WebPage JSON-LD for homepage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              { "@type": "Question", name: "SSC exam ke liye photo size kya honi chahiye?", acceptedAnswer: { "@type": "Answer", text: "SSC CGL, CHSL, MTS ke liye photo 3.5 cm × 4.5 cm (413 × 531 pixels at 300 DPI) honi chahiye. File size 20–50 KB, JPG format, white background." } },
+              { "@type": "Question", name: "Phone ki photo ko 50KB se kam kaise karein?", acceptedAnswer: { "@type": "Answer", text: "SarkariPixels pe Compress to 50KB tool use karo — photo upload karo, tool automatically compress kar dega. Koi file upload nahi hoti." } },
+              { "@type": "Question", name: "UPSC ke liye photo ka size kya hota hai?", acceptedAnswer: { "@type": "Answer", text: "UPSC CSE ke liye photo 350 × 350 pixels (square), 20–300 KB, JPG, white background. Signature 350 × 100 pixels, 10-100 KB." } },
+              { "@type": "Question", name: "Kya yeh tool mobile pe kaam karta hai?", acceptedAnswer: { "@type": "Answer", text: "Haan, SarkariPixels fully mobile-friendly hai. Chrome, Firefox, Safari sab mein kaam karta hai. Processing device pe hoti hai — server pe upload nahi hota." } },
+              { "@type": "Question", name: "Kya photo ka data server pe upload hota hai?", acceptedAnswer: { "@type": "Answer", text: "Nahi. 100% client-side Canvas API. Photo kabhi server pe nahi jaati — na humare, na kisi aur ke." } },
+              { "@type": "Question", name: "IBPS ke liye signature resize kaise karein?", acceptedAnswer: { "@type": "Answer", text: "IBPS ke liye signature 140 × 60 pixels, 10-20 KB, JPG. SarkariPixels Signature Resize tool use karo — exact dimensions pre-set hain." } },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${SITE_URL}/#webpage`,
+            url: SITE_URL,
+            name: "SarkariPixels — Free Exam Photo Resizer",
+            description: "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications for SSC, UPSC, BPSC, RRB, IBPS, NTA, and state PSC exams.",
+            publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization` },
+            inLanguage: "en-IN",
+            isPartOf: { "@type": "WebSite", "@id": `${SITE_URL}/#website` },
+            dateModified: new Date().toISOString().split("T")[0],
+          }),
+        }}
+      />
 
       {/* Client: theme toggle + category filter + search */}
       <HomeClient />

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "SarkariPixels - Free Exam Photo Editor",
+        alt: "SarkariPixels - Free Exam Photo Resizer for SSC UPSC BPSC RRB IBPS",
       },
     ],
   },
@@ -66,12 +66,17 @@ export const metadata: Metadata = {
     title: "SarkariPixels | Free Photo Editor for Govt Exam Applications",
     description:
       "88 tools to resize and compress photos for SSC, UPSC, RRB exam portals. Browser-based, zero upload.",
+    images: [`${SITE_URL}/og-image.jpg`],
   },
   verification: {
     google: "98b75bc1f3bc0c44",
     other: {
       monetag: "9bcd118f7dcdd00f254abb8b7a3cae70",
     },
+  },
+  alternates: {
+    canonical: SITE_URL,
+    languages: { "en-IN": SITE_URL },
   },
   manifest: "/manifest.json",
   icons: {
@@ -119,11 +124,67 @@ export default function RootLayout({
           {`(function(s){s.dataset.zone='11180255',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
         </Script>
 
-        {/* Font Awesome */}
+        {/* Font Awesome — preconnect + async to prevent render-blocking */}
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          media="print"
+          // @ts-expect-error — onLoad trick for async CSS loading
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          />
+        </noscript>
+
+        {/* Organization + WebSite + SearchAction JSON-LD */}
+        <Script id="org-schema" type="application/ld+json" strategy="beforeInteractive">
+          {`{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "${SITE_URL}/#organization",
+      "name": "SarkariPixels",
+      "url": "${SITE_URL}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "${SITE_URL}/favicon.svg",
+        "width": 512,
+        "height": 512
+      },
+      "description": "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications for SSC, UPSC, BPSC, RRB, IBPS, NTA, and state PSC exams.",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@sarkaripixels.com",
+        "contactType": "customer support",
+        "availableLanguage": ["English", "Hindi"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "${SITE_URL}/#website",
+      "url": "${SITE_URL}",
+      "name": "SarkariPixels",
+      "description": "88 free tools to resize and compress photos for Indian government exam portals.",
+      "publisher": { "@id": "${SITE_URL}/#organization" },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "${SITE_URL}/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}`}
+        </Script>
 
         {/* Theme init — prevents flash */}
         <Script id="theme-init" strategy="beforeInteractive">

@@ -47,6 +47,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Guide pages (now exist — were 404 before)
+  const GUIDE_SLUGS = [
+    "ssc-cgl-photo-rejection",
+    "upsc-photo-requirements-2026",
+    "compress-photo-under-50kb",
+    "ibps-photo-size-guide",
+    "pan-card-photo-dpi-300",
+  ];
+  const guidePages: MetadataRoute.Sitemap = GUIDE_SLUGS.map((slug) => ({
+    url: `${SITE_URL}/guides/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
   // All 88 tool pages
   const toolPages: MetadataRoute.Sitemap = TOOLS.map((tool) => ({
     url: `${SITE_URL}/tool/${tool.id}`,
@@ -63,5 +78,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages, ...examPages];
+  return [...staticPages, ...guidePages, ...toolPages, ...examPages];
 }

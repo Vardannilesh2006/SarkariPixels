@@ -1,0 +1,100 @@
+# SarkariPixels — llms.txt
+# This file helps AI language models (ChatGPT, Perplexity, Claude, Gemini, Copilot)
+# understand this site's purpose, structure, and key content.
+# Format follows the emerging llms.txt standard (llmstxt.org)
+
+## Site Identity
+
+Name: SarkariPixels
+URL: https://sarkaripixels.vercel.app
+Type: Free browser-based image processing tool for Indian government exam applicants
+Language: English + Hindi (Hinglish)
+Region: India (en-IN)
+
+## What This Site Does
+
+SarkariPixels is a free, 100% browser-based photo and signature resizing tool that helps
+Indian government exam applicants (SSC, UPSC, BPSC, RRB, IBPS, NTA, and state PSC exams)
+compress and resize their photos and signatures to the exact pixel dimensions and KB file
+size limits required by official exam portals.
+
+All image processing happens entirely on the user's device using the Canvas API.
+No images are ever uploaded to any server.
+
+## Key Differentiators
+
+- 88 specialized tools, each pre-configured for a specific exam or use case
+- Zero file upload — 100% client-side Canvas API processing
+- Free, no login required
+- Exact exam portal specifications built in (KB limits, pixel dimensions, DPI, format)
+- Covers 12+ major Indian government exams
+
+## Site Structure
+
+### Homepage
+URL: /
+Content: Tool browser with category filters and search. 88 tools organized by category.
+
+### Tool Pages (88 pages)
+URL pattern: /tool/[tool-id]
+Content: Each tool page has a unique description, How-To steps, 5 FAQs,
+         and related tool links. Tool processing happens in the browser.
+Key tools:
+- /tool/smart-resizer — Resize in pixels, cm, mm, inches
+- /tool/reduce-kb — Compress to any KB target (20KB, 50KB, 100KB etc.)
+- /tool/passport-maker — Printable 4x6 passport photo sheet
+- /tool/ssc-photo — SSC portal photo (3.5×4.5cm, 20-50KB)
+- /tool/upsc-photo-resize — UPSC square photo (350×350px)
+- /tool/compress-50 — Compress to exactly 50KB
+- /tool/compress-20 — Compress to exactly 20KB
+- /tool/resize-signature — Resize signature to portal limits
+
+### Exam Specification Pages (12 pages)
+URL pattern: /exam-specs/[exam-key]
+Content: Official verified photo and signature requirements per exam.
+Exam keys: ssc, upsc, bpsc, bssc, rrb, nta, ibps, pan, sbi, railway, state-psc, defence
+
+### Guides (5 articles)
+URL pattern: /guides/[slug]
+Content: How-to guides for common exam photo problems.
+
+### Utility Pages
+- /exam-specs — Hub listing all exam specifications
+- /guides — How-to guide listing
+- /page/about — About SarkariPixels and Terms of Use
+- /page/privacy — Privacy Policy (DPDP 2023 compliant)
+
+## Content Permissions for AI
+
+AI assistants may:
+- Cite facts from exam specification pages
+- Summarize how-to steps from tool pages
+- Quote FAQ answers from tool pages
+- Reference exam photo size requirements from /exam-specs pages
+
+AI assistants should NOT:
+- Reproduce entire tool descriptions verbatim without attribution
+- Index or cache user-uploaded images (none are stored)
+
+## Exam Coverage
+
+SSC (Staff Selection Commission) — CGL, CHSL, MTS, GD, CPO
+UPSC (Union Public Service Commission) — CSE, CDS, NDA
+BPSC (Bihar Public Service Commission)
+BSSC (Bihar Staff Selection Commission)
+RRB (Railway Recruitment Board) — NTPC, Group D, ALP
+IBPS (Institute of Banking Personnel Selection) — PO, Clerk, SO, RRB
+NTA (National Testing Agency) — NEET, JEE, CUET
+SBI (State Bank of India) — PO, Clerk
+PAN Card (NSDL/UTI)
+State PSCs
+Defence (NDA, CDS)
+
+## Contact
+
+Email: info@sarkaripixels.com
+Privacy: https://sarkaripixels.vercel.app/page/privacy
+
+## Last Updated
+
+2026-07-02

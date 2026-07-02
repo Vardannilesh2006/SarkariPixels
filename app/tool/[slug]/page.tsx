@@ -51,7 +51,7 @@ export default async function ToolPage({ params }: Props) {
   const content = getToolContent(slug);
   const categoryLabel = CATEGORY_LABELS[tool.category];
 
-  // Structured data — SoftwareApplication + FAQPage
+  // Structured data — SoftwareApplication + FAQPage + HowTo + BreadcrumbList
   const faqSchema =
     content?.faqs && content.faqs.length > 0
       ? {
@@ -71,11 +71,69 @@ export default async function ToolPage({ params }: Props) {
     name: tool.title,
     applicationCategory: "MultimediaApplication",
     operatingSystem: "Web Browser",
+    browserRequirements: "Requires JavaScript",
+    softwareVersion: "2.0",
+    inLanguage: "en-IN",
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
     url: `${SITE_URL}/tool/${slug}`,
     description:
       content?.description ||
       `${tool.title}: ${tool.desc} Free, browser-based, no file upload needed.`,
+    featureList: [
+      "100% browser-based processing",
+      "No file upload required",
+      "Free to use",
+      "Supports JPG, PNG, WEBP formats",
+      "Instant download",
+    ],
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "SarkariPixels",
+    },
+    dateModified: new Date().toISOString().split("T")[0],
+  };
+
+  const howToSchema =
+    content?.howTo && content.howTo.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: `How to use ${tool.title}`,
+          description: `Step-by-step guide to use ${tool.title} on SarkariPixels.`,
+          tool: { "@type": "HowToTool", name: "SarkariPixels" },
+          step: content.howTo.map((step, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            name: `Step ${i + 1}`,
+            text: step,
+          })),
+        }
+      : null;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: categoryLabel,
+        item: `${SITE_URL}/#tools`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: tool.title,
+        item: `${SITE_URL}/tool/${slug}`,
+      },
+    ],
   };
 
   return (
@@ -85,10 +143,20 @@ export default async function ToolPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
       )}
 
