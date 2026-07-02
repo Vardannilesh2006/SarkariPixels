@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Split diagonally: gray on right -->
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M3 21L21 3v18H3z" fill="currentColor" fill-opacity="0.2" />
+</svg>

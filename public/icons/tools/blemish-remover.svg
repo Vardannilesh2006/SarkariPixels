@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Magic wand + blemish erasing -->
+    <path d="M19 2l2 2-10 10-2-2L19 2z" />
+    <circle cx="7" cy="17" r="1.5" stroke-dasharray="2 2" />
+    <path d="M14 6l1 1" />
+</svg>

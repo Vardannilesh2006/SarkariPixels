@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Accordion/squeezing photo -->
+    <path d="M4 12c0-4 1-6 4-6s4 2 4 6-1 6-4 6-4-2-4-6z" fill="currentColor" fill-opacity="0.1" />
+    <path d="M20 12c0-4-1-6-4-6s-4 2-4 6 1 6 4 6 4-2 4-6z" fill="currentColor" fill-opacity="0.1" />
+    <path d="M12 3v18" />
+</svg>

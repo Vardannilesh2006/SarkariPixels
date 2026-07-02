@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Square photo frame with a small seal badge -->
+    <rect x="4" y="4" width="16" height="16" rx="2" fill="currentColor" fill-opacity="0.1" />
+    <circle cx="16" cy="16" r="3" fill="#ffffff" stroke="currentColor" />
+    <path d="M15 16l1 1 2-2" />
+</svg>

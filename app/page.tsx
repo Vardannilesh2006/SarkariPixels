@@ -314,9 +314,20 @@ export default function HomePage() {
                             }}
                             aria-hidden="true"
                           >
-                            <i
-                              className={`fa-solid ${tool.icon}`}
-                              style={{ fontSize: "14px", color: catStyle.color }}
+                            <div
+                              style={{
+                                width: "18px",
+                                height: "18px",
+                                backgroundColor: catStyle.color,
+                                WebkitMaskImage: `url(/icons/tools/${tool.id}.svg)`,
+                                maskImage: `url(/icons/tools/${tool.id}.svg)`,
+                                WebkitMaskSize: "contain",
+                                maskSize: "contain",
+                                WebkitMaskPosition: "center",
+                                maskPosition: "center",
+                                WebkitMaskRepeat: "no-repeat",
+                                maskRepeat: "no-repeat",
+                              }}
                             />
                           </div>
                           <div className="min-w-0">

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Magnifying glass over grid dots -->
+    <circle cx="6" cy="6" r="1" fill="currentColor" />
+    <circle cx="12" cy="6" r="1" fill="currentColor" />
+    <circle cx="6" cy="12" r="1" fill="currentColor" />
+    <circle cx="14" cy="14" r="5" fill="currentColor" fill-opacity="0.1" />
+    <path d="M18 18l3 3" />
+</svg>

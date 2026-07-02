@@ -61,6 +61,7 @@ export default async function ToolPage({ params }: Props) {
 
   const content = getToolContent(slug);
   const categoryLabel = CATEGORY_LABELS[tool.category];
+  const catStyle = CATEGORY_COLORS[tool.category] || { color: "var(--color-muted)", bg: "var(--color-surface)" };
 
   // Structured data — SoftwareApplication + FAQPage + HowTo + BreadcrumbList
   const faqSchema =
@@ -266,14 +267,25 @@ export default async function ToolPage({ params }: Props) {
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
                     style={{
-                      backgroundColor: "var(--color-surface)",
+                      backgroundColor: catStyle.bg,
                       border: "1px solid var(--color-border)",
                     }}
                     aria-hidden="true"
                   >
-                    <i
-                      className={`fa-solid ${tool.icon}`}
-                      style={{ fontSize: "15px", color: "var(--color-accent)" }}
+                    <div
+                      style={{
+                        width: "18px",
+                        height: "18px",
+                        backgroundColor: catStyle.color,
+                        WebkitMaskImage: `url(/icons/tools/${tool.id}.svg)`,
+                        maskImage: `url(/icons/tools/${tool.id}.svg)`,
+                        WebkitMaskSize: "contain",
+                        maskSize: "contain",
+                        WebkitMaskPosition: "center",
+                        maskPosition: "center",
+                        WebkitMaskRepeat: "no-repeat",
+                        maskRepeat: "no-repeat",
+                      }}
                     />
                   </div>
                   <div>
@@ -391,9 +403,20 @@ export default async function ToolPage({ params }: Props) {
                           }}
                           aria-hidden="true"
                         >
-                          <i
-                            className={`fa-solid ${relTool.icon}`}
-                            style={{ fontSize: "12px", color: catStyle.color }}
+                          <div
+                            style={{
+                              width: "14px",
+                              height: "14px",
+                              backgroundColor: catStyle.color,
+                              WebkitMaskImage: `url(/icons/tools/${relTool.id}.svg)`,
+                              maskImage: `url(/icons/tools/${relTool.id}.svg)`,
+                              WebkitMaskSize: "contain",
+                              maskSize: "contain",
+                              WebkitMaskPosition: "center",
+                              maskPosition: "center",
+                              WebkitMaskRepeat: "no-repeat",
+                              maskRepeat: "no-repeat",
+                            }}
                           />
                         </div>
                         <span

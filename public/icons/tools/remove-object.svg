@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Eraser removing blemish -->
+    <path d="M4 14l10-10 6 6-10 10H4v-6z" fill="currentColor" fill-opacity="0.1" />
+    <path d="M17 11L13 7" />
+    <circle cx="19" cy="19" r="1.5" stroke-dasharray="2 2" />
+</svg>

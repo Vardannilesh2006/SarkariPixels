@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Face oval with wavy lines inside -->
+    <path d="M12 4a7 7 0 00-7 7c0 4.5 3 8 7 8s7-3.5 7-8a7 7 0 00-7-7z" />
+    <path d="M9 10c1-1 2-1 3 0s2 1 3 0" />
+</svg>

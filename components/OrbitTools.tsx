@@ -96,6 +96,7 @@ export default function OrbitTools() {
         {/* Orbit items — each has its own animation class */}
         {ORBIT_TOOLS.map((tool, i) => {
           // Place each item using CSS animation class sp-orbit-N
+          const toolId = tool.href.split("/").pop();
           return (
             <a
               key={tool.href}
@@ -108,9 +109,21 @@ export default function OrbitTools() {
                 className="orbit-item-icon"
                 style={{ backgroundColor: tool.bg }}
               >
-                <i
-                  className={`fa-solid ${tool.icon}`}
-                  style={{ color: tool.color, fontSize: 18 }}
+                <span
+                  style={{
+                    display: "block",
+                    width: "18px",
+                    height: "18px",
+                    backgroundColor: tool.color,
+                    WebkitMaskImage: `url(/icons/tools/${toolId}.svg)`,
+                    maskImage: `url(/icons/tools/${toolId}.svg)`,
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                  }}
                   aria-hidden="true"
                 />
               </span>
@@ -122,30 +135,45 @@ export default function OrbitTools() {
 
       {/* ── Mobile fallback — horizontal chip row ───────────────── */}
       <div className="orbit-mobile" role="list" aria-label="Popular tools">
-        {ORBIT_TOOLS.map((tool) => (
-          <a
-            key={tool.href}
-            href={tool.href}
-            className="orbit-chip"
-            role="listitem"
-            aria-label={`${tool.label}: ${tool.spec}`}
-          >
-            <span
-              className="orbit-chip-icon"
-              style={{ backgroundColor: tool.bg }}
-              aria-hidden="true"
+        {ORBIT_TOOLS.map((tool) => {
+          const toolId = tool.href.split("/").pop();
+          return (
+            <a
+              key={tool.href}
+              href={tool.href}
+              className="orbit-chip"
+              role="listitem"
+              aria-label={`${tool.label}: ${tool.spec}`}
             >
-              <i
-                className={`fa-solid ${tool.icon}`}
-                style={{ color: tool.color, fontSize: 13 }}
-              />
-            </span>
-            <span className="orbit-chip-text">
-              <span className="orbit-chip-name">{tool.label}</span>
-              <span className="orbit-chip-spec">{tool.spec}</span>
-            </span>
-          </a>
-        ))}
+              <span
+                className="orbit-chip-icon"
+                style={{ backgroundColor: tool.bg }}
+                aria-hidden="true"
+              >
+                <span
+                  style={{
+                    display: "block",
+                    width: "13px",
+                    height: "13px",
+                    backgroundColor: tool.color,
+                    WebkitMaskImage: `url(/icons/tools/${toolId}.svg)`,
+                    maskImage: `url(/icons/tools/${toolId}.svg)`,
+                    WebkitMaskSize: "contain",
+                    maskSize: "contain",
+                    WebkitMaskPosition: "center",
+                    maskPosition: "center",
+                    WebkitMaskRepeat: "no-repeat",
+                    maskRepeat: "no-repeat",
+                  }}
+                />
+              </span>
+              <span className="orbit-chip-text">
+                <span className="orbit-chip-name">{tool.label}</span>
+                <span className="orbit-chip-spec">{tool.spec}</span>
+              </span>
+            </a>
+          );
+        })}
       </div>
     </div>
   );

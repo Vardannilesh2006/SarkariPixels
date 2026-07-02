@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Checkerboard transparency with crop brackets -->
+    <path d="M4 4h4v4H4z" fill="currentColor" fill-opacity="0.1" />
+    <path d="M16 16h4v4h-4z" fill="currentColor" fill-opacity="0.1" />
+    <path d="M3 7v-4h4m10 0h4v4m0 10v4h-4m-10 0H3v-4" />
+</svg>

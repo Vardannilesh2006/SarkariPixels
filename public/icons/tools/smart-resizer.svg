@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Photo frame with corner resize arrows pointing outward -->
+    <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" fill-opacity="0.1" />
+    <path d="M3 13v6h6" />
+    <path d="M21 11V5h-6" />
+    <path d="M9 15l-6 6" />
+    <path d="M15 9l6-6" />
+</svg>
