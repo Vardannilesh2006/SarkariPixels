@@ -3,6 +3,17 @@ import { TOOLS, CATEGORY_COUNTS } from "@/lib/tools-data";
 import HomeClient from "@/components/HomeClient";
 import OrbitTools from "@/components/OrbitTools";
 
+const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
+  "basic-edit": { color: "#2563EB", bg: "#2563eb1a" },
+  "effects": { color: "#7C3AED", bg: "#7c3aed1a" },
+  "dpi-quality": { color: "#0EA5E9", bg: "#0ea5e91a" },
+  "id-sizes": { color: "#059669", bg: "#0596691a" },
+  "general-compress": { color: "#F97316", bg: "#f973161a" },
+  "target-sizes": { color: "#EA580C", bg: "#ea580c1a" },
+  "official-sizes": { color: "#DC2626", bg: "#dc26261a" },
+  "most-used": { color: "#2563EB", bg: "#2563eb1a" },
+};
+
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
 
@@ -283,36 +294,39 @@ export default function HomePage() {
                   className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3"
                   aria-label="Tool list"
                 >
-                  {TOOLS.map((tool) => (
-                    <a
-                      key={tool.id}
-                      href={`/tool/${tool.id}`}
-                      className="tool-card"
-                      data-category={tool.category}
-                      data-title={tool.title.toLowerCase()}
-                      aria-label={`${tool.title}: ${tool.desc}`}
-                    >
-                      <div className="flex items-start gap-3">
-                        <div
-                          className="w-8 h-8 rounded-md flex items-center justify-center shrink-0 mt-0.5"
-                          style={{
-                            backgroundColor: "var(--color-surface)",
-                            border: "1px solid var(--color-border)",
-                          }}
-                          aria-hidden="true"
-                        >
-                          <i
-                            className={`fa-solid ${tool.icon}`}
-                            style={{ fontSize: "13px", color: "var(--color-muted)" }}
-                          />
+                  {TOOLS.map((tool) => {
+                    const catStyle = CATEGORY_COLORS[tool.category] || { color: "var(--color-muted)", bg: "var(--color-surface)" };
+                    return (
+                      <a
+                        key={tool.id}
+                        href={`/tool/${tool.id}`}
+                        className="tool-card"
+                        data-category={tool.category}
+                        data-title={tool.title.toLowerCase()}
+                        aria-label={`${tool.title}: ${tool.desc}`}
+                      >
+                        <div className="flex items-start gap-3">
+                          <div
+                            className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
+                            style={{
+                              backgroundColor: catStyle.bg,
+                              border: "1px solid var(--color-border)",
+                            }}
+                            aria-hidden="true"
+                          >
+                            <i
+                              className={`fa-solid ${tool.icon}`}
+                              style={{ fontSize: "14px", color: catStyle.color }}
+                            />
+                          </div>
+                          <div className="min-w-0">
+                            <h3>{tool.title}</h3>
+                            <p className="line-clamp-2">{tool.desc}</p>
+                          </div>
                         </div>
-                        <div className="min-w-0">
-                          <h3>{tool.title}</h3>
-                          <p className="line-clamp-2">{tool.desc}</p>
-                        </div>
-                      </div>
-                    </a>
-                  ))}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
 
