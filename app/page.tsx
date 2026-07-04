@@ -135,53 +135,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── MARQUEE STRIP ──────────────────────────────────────────
-             Infinite CSS-only scroll of tool names — all clickable links.
-             Sits between hero and trust strip.
-        ────────────────────────────────────────────────────────────── */}
-        <div
-          className="marquee-wrapper border-t border-b overflow-hidden"
-          style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
-          aria-label="Quick links to popular tools"
-        >
-          <div className="marquee-track">
-            {[1, 2].map((n) => (
-              <div key={n} className="marquee-content" aria-hidden={n === 2 ? "true" : undefined}>
-                {[
-                  { label: "Compress to 50 KB",  href: "/tool/compress-50" },
-                  { label: "SSC CGL Photo",       href: "/tool/ssc-photo" },
-                  { label: "UPSC Photo",          href: "/tool/upsc-photo-resize" },
-                  { label: "Passport Size",       href: "/tool/passport-maker" },
-                  { label: "Signature Resize",    href: "/tool/resize-signature" },
-                  { label: "Compress to 20 KB",  href: "/tool/compress-20" },
-                  { label: "PAN Card Photo",      href: "/tool/pan-card-resize" },
-                  { label: "Compress to 100 KB", href: "/tool/compress-100" },
-                  { label: "PSC Photo",           href: "/tool/psc-photo" },
-                  { label: "Smart Resizer",       href: "/tool/smart-resizer" },
-                  { label: "DPI Converter",       href: "/tool/convert-dpi" },
-                  { label: "Compress to 30 KB",  href: "/tool/compress-30" },
-                  { label: "Resize in cm",        href: "/tool/resize-cm" },
-                  { label: "Compress to 40 KB",  href: "/tool/compress-40" },
-                  { label: "A4 Size",             href: "/tool/resize-a4" },
-                  { label: "Compress to 200 KB", href: "/tool/compress-200" },
-                ].map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="marquee-item"
-                    tabIndex={n === 2 ? -1 : 0}
-                  >
-                    <i className="fa-solid fa-circle-small marquee-dot" aria-hidden="true" />
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* ── TRUST STRIP ────────────────────────────────────────────
              One row. Three facts. Plain, no competing shadows.
+             Placed directly under the hero section.
         ────────────────────────────────────────────────────────────── */}
         <section
           className="py-6 px-4 sm:px-6 border-b"
@@ -222,6 +178,51 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* ── MARQUEE STRIP ──────────────────────────────────────────
+             Infinite CSS-only scroll of tool names — all clickable links.
+             Placed below the trust strip.
+        ────────────────────────────────────────────────────────────── */}
+        <div
+          className="marquee-wrapper border-b overflow-hidden"
+          style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
+          aria-label="Quick links to popular tools"
+        >
+          <div className="marquee-track">
+            {[1, 2].map((n) => (
+              <div key={n} className="marquee-content" aria-hidden={n === 2 ? "true" : undefined}>
+                {[
+                  { label: "Compress to 50 KB",  href: "/tool/compress-50" },
+                  { label: "SSC CGL Photo",       href: "/tool/ssc-photo" },
+                  { label: "UPSC Photo",          href: "/tool/upsc-photo-resize" },
+                  { label: "Passport Size",       href: "/tool/passport-maker" },
+                  { label: "Signature Resize",    href: "/tool/resize-signature" },
+                  { label: "Compress to 20 KB",  href: "/tool/compress-20" },
+                  { label: "PAN Card Photo",      href: "/tool/pan-card-resize" },
+                  { label: "Compress to 100 KB", href: "/tool/compress-100" },
+                  { label: "PSC Photo",           href: "/tool/psc-photo" },
+                  { label: "Smart Resizer",       href: "/tool/smart-resizer" },
+                  { label: "DPI Converter",       href: "/tool/convert-dpi" },
+                  { label: "Compress to 30 KB",  href: "/tool/compress-30" },
+                  { label: "Resize in cm",        href: "/tool/resize-cm" },
+                  { label: "Compress to 40 KB",  href: "/tool/compress-40" },
+                  { label: "A4 Size",             href: "/tool/resize-a4" },
+                  { label: "Compress to 200 KB", href: "/tool/compress-200" },
+                ].map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="marquee-item"
+                    tabIndex={n === 2 ? -1 : 0}
+                  >
+                    <i className="fa-solid fa-circle-small marquee-dot" aria-hidden="true" />
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* ── TOOL BROWSER ───────────────────────────────────────────
              Clearly separated from hero. Sidebar + grid.
