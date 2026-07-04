@@ -3,6 +3,17 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import type { Tool } from "@/lib/tools-data";
 
+const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
+  "basic-edit": { color: "#2563EB", bg: "#2563eb1a" },
+  "effects": { color: "#7C3AED", bg: "#7c3aed1a" },
+  "dpi-quality": { color: "#0EA5E9", bg: "#0ea5e91a" },
+  "id-sizes": { color: "#059669", bg: "#0596691a" },
+  "general-compress": { color: "#F97316", bg: "#f973161a" },
+  "target-sizes": { color: "#EA580C", bg: "#ea580c1a" },
+  "official-sizes": { color: "#DC2626", bg: "#dc26261a" },
+  "most-used": { color: "#2563EB", bg: "#2563eb1a" },
+};
+
 interface Props {
   tool: Tool;
 }
@@ -566,16 +577,27 @@ export default function ToolEditor({ tool }: Props) {
           }`}
         >
           <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+            className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4"
             style={{
-              backgroundColor: "var(--color-surface)",
+              backgroundColor: CATEGORY_COLORS[tool.category]?.bg || "var(--color-surface)",
               border: "1px solid var(--color-border)",
             }}
             aria-hidden="true"
           >
-            <i
-              className="fa-solid fa-cloud-arrow-up"
-              style={{ fontSize: "20px", color: "var(--color-accent)" }}
+            <div
+              style={{
+                width: "28px",
+                height: "28px",
+                backgroundColor: CATEGORY_COLORS[tool.category]?.color || "var(--color-accent)",
+                WebkitMaskImage: `url(/icons/tools/${tool.id}.svg)`,
+                maskImage: `url(/icons/tools/${tool.id}.svg)`,
+                WebkitMaskSize: "contain",
+                maskSize: "contain",
+                WebkitMaskPosition: "center",
+                maskPosition: "center",
+                WebkitMaskRepeat: "no-repeat",
+                maskRepeat: "no-repeat",
+              }}
             />
           </div>
           <p
