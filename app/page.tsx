@@ -190,13 +190,27 @@ export default function HomePage() {
         >
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-4">
             {[
-              { icon: "fa-shield-halved", label: "100% Browser-Based", sub: "No upload. Nothing leaves your device." },
-              { icon: "fa-layer-group", label: "88 Specialized Tools", sub: "Every exam portal covered." },
-              { icon: "fa-landmark", label: "12+ Exams Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
+              { icon: "trust-browser", label: "100% Browser-Based", sub: "No upload. Nothing leaves your device." },
+              { icon: "trust-tools", label: "88 Specialized Tools", sub: "Every exam portal covered." },
+              { icon: "trust-exams", label: "12+ Exams Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
             ].map((item) => (
               <div key={item.label} className="trust-item">
                 <div className="trust-icon" aria-hidden="true">
-                  <i className={`fa-solid ${item.icon}`} style={{ fontSize: "15px" }} />
+                  <div
+                    style={{
+                      width: "18px",
+                      height: "18px",
+                      backgroundColor: "currentColor",
+                      WebkitMaskImage: `url(/icons/${item.icon}.svg)`,
+                      maskImage: `url(/icons/${item.icon}.svg)`,
+                      WebkitMaskSize: "contain",
+                      maskSize: "contain",
+                      WebkitMaskPosition: "center",
+                      maskPosition: "center",
+                      WebkitMaskRepeat: "no-repeat",
+                      maskRepeat: "no-repeat",
+                    }}
+                  />
                 </div>
                 <div>
                   <span className="block text-sm font-semibold" style={{ color: "var(--color-text)" }}>
