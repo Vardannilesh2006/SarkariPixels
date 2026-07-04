@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -158,7 +158,7 @@ function PrivacyContent() {
         <li>• Nominate someone to exercise these rights on your behalf</li>
       </ul>
       <p className="t-body" style={{ color: "var(--color-muted)" }}>
-        To exercise these rights, contact: <a href="mailto:privacy@sarkaripixels.com" style={{ color: "var(--color-accent)" }}>privacy@sarkaripixels.com</a>
+        To exercise these rights, contact: <a href="mailto:privacy@sarkaripixels.online" style={{ color: "var(--color-accent)" }}>privacy@sarkaripixels.online</a>
       </p>
 
       <h2 className="t-h3 mb-3 mt-8">Cookies</h2>
@@ -183,9 +183,9 @@ function AboutContent() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "SarkariPixels",
-    url: "https://sarkaripixels.vercel.app",
+    url: "https://sarkaripixels.online",
     description: "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications.",
-    email: "info@sarkaripixels.com",
+    email: "info@sarkaripixels.online",
     foundingDate: "2024",
     knowsAbout: ["SSC exam photo requirements", "UPSC photo size", "Government exam photo compression", "Image resizing"],
   };
@@ -268,7 +268,7 @@ function AboutContent() {
       <h2 className="t-h3 mb-4">Contact</h2>
       <p className="t-body" style={{ color: "var(--color-muted)" }}>
         For queries, corrections to exam specifications, or feedback:{" "}
-        <a href="mailto:info@sarkaripixels.com" style={{ color: "var(--color-accent)" }}>info@sarkaripixels.com</a>
+        <a href="mailto:info@sarkaripixels.online" style={{ color: "var(--color-accent)" }}>info@sarkaripixels.online</a>
       </p>
     </article>
   );

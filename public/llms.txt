@@ -6,7 +6,7 @@
 ## Site Identity
 
 Name: SarkariPixels
-URL: https://sarkaripixels.vercel.app
+URL: https://sarkaripixels.online
 Type: Free browser-based image processing tool for Indian government exam applicants
 Language: English + Hindi (Hinglish)
 Region: India (en-IN)
@@ -92,8 +92,8 @@ Defence (NDA, CDS)
 
 ## Contact
 
-Email: info@sarkaripixels.com
-Privacy: https://sarkaripixels.vercel.app/page/privacy
+Email: info@sarkaripixels.online
+Privacy: https://sarkaripixels.online/page/privacy
 
 ## Last Updated
 

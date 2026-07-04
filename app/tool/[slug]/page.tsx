@@ -15,7 +15,7 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
   "most-used": { color: "#2563EB", bg: "#2563eb1a" },
 };
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 
 interface Props {
   params: Promise<{ slug: string }>;

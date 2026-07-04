@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-data";
 import { getAllExamKeys } from "@/lib/exam-specs";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -9,7 +9,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 const SITE_NAME = "SarkariPixels";
 
 export const metadata: Metadata = {
@@ -160,7 +160,7 @@ export default function RootLayout({
       "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
-        "email": "info@sarkaripixels.com",
+        "email": "info@sarkaripixels.online",
         "contactType": "customer support",
         "availableLanguage": ["English", "Hindi"]
       }
