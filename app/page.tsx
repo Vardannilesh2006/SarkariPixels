@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { TOOLS, CATEGORY_COUNTS } from "@/lib/tools-data";
 import HomeClient from "@/components/HomeClient";
-import OrbitTools from "@/components/OrbitTools";
 
 const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
   "basic-edit": { color: "#2563EB", bg: "#2563eb1a" },
@@ -112,7 +111,7 @@ export default function HomePage() {
              Clear whitespace above and below.
         ────────────────────────────────────────────────────────────── */}
         <section
-          className="py-8 sm:py-10 px-4 sm:px-6 text-center hero-anim"
+          className="pt-8 pb-5 sm:pt-10 sm:pb-7 px-4 sm:px-6 text-center hero-anim"
           aria-labelledby="hero-headline"
         >
           <div className="max-w-2xl mx-auto">
@@ -133,14 +132,6 @@ export default function HomePage() {
             <a href="#tools" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }}>
               Browse Tools
             </a>
-
-            {/* ── ORBIT RING (Idea 4) ───────────────────────────────
-                 5 tool icons orbit a center hub.
-                 Desktop: animated ring. Mobile: flat chip row.
-            ─────────────────────────────────────────────────────── */}
-            <div className="mt-6">
-              <OrbitTools />
-            </div>
           </div>
         </section>
 
