@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Photo frame -->
+  <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" fill-opacity="0.1" />
+  <!-- Bottom band divider -->
+  <line x1="3" y1="14" x2="21" y2="14" />
+  <!-- Name symbol (short line) -->
+  <line x1="6" y1="17" x2="11" y2="17" />
+  <!-- DOB calendar symbol (little square or date line) -->
+  <line x1="14" y1="17" x2="18" y2="17" />
+  <!-- Small portrait symbol inside upper space -->
+  <circle cx="12" cy="8" r="2.5" />
+  <path d="M7 14c0-2.5 2-3 5-3s5 0.5 5 3" />
+</svg>
