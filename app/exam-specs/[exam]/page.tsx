@@ -234,7 +234,7 @@ export default async function ExamSpecPage({ params }: Props) {
             {[
               { q: `${spec.name} photo size kya honi chahiye?`, a: `${spec.name} ke liye photo ${photoSize} honi chahiye, ${spec.photo.minKB}–${spec.photo.maxKB} KB, ${spec.photo.format} format, ${spec.photo.background} background.` },
               { q: `${spec.name} signature size kya hai?`, a: `Signature ${sigSize} honi chahiye, ${spec.signature.minKB}–${spec.signature.maxKB} KB, ${spec.signature.format} format mein.` },
-              { q: `${spec.name} photo free mein kaise resize karein?`, a: `SarkariPixels.vercel.app par jaayein, ${spec.name} tool select karein, photo upload karein — tool automatically sahi size mein convert kar dega. Bilkul free, koi upload nahi.` },
+              { q: `${spec.name} photo free mein kaise resize karein?`, a: `SarkariPixels.online par jaayein, ${spec.name} tool select karein, photo upload karein — tool automatically sahi size mein convert kar dega. Bilkul free, koi upload nahi.` },
             ].map(({ q, a }) => (
               <div key={q}>
                 <dt className="font-semibold mb-1" style={{ fontSize: "0.9375rem", color: "var(--color-text)" }}>
