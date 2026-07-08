@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TOOLS, CATEGORY_LABELS } from "@/lib/tools-data";
 import { notFound } from "next/navigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
@@ -183,7 +184,7 @@ function AboutContent() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "SarkariPixels",
-    url: "https://sarkaripixels.online",
+    url: SITE_URL,
     description: "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications.",
     email: "info@sarkaripixels.online",
     foundingDate: "2024",
@@ -327,10 +328,28 @@ function SitemapContent() {
       </section>
 
       <section>
-        <h2 className="t-h3 mb-3">All 88 Tools</h2>
-        <p className="text-sm" style={{ color: "var(--color-muted)" }}>
-          Browse all tools at <a href="/" style={{ color: "var(--color-accent)" }}>the home page</a> with category filters.
-        </p>
+        <h2 className="t-h3 mb-3">All {TOOLS.length} Tools</h2>
+        {Object.entries(
+          TOOLS.reduce<Record<string, typeof TOOLS>>((acc, tool) => {
+            const cat = tool.category;
+            if (!acc[cat]) acc[cat] = [];
+            acc[cat].push(tool);
+            return acc;
+          }, {})
+        ).map(([cat, tools]) => (
+          <div key={cat} className="mb-4">
+            <h3 className="text-sm font-semibold mb-1" style={{ color: "var(--color-text)" }}>
+              {(CATEGORY_LABELS as Record<string, string>)[cat] || cat}
+            </h3>
+            <ul className="space-y-0.5 text-sm">
+              {tools.map((tool) => (
+                <li key={tool.id}>
+                  <a href={`/tool/${tool.id}`} style={{ color: "var(--color-accent)" }}>{tool.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
     </div>
   );

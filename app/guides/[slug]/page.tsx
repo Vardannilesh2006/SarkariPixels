@@ -128,12 +128,50 @@ export default async function GuidePage({ params }: Props) {
     ],
   };
 
+  // FAQ data per guide
+  const FAQ_DATA: Record<string, { q: string; a: string }[]> = {
+    "ssc-cgl-photo-rejection": [
+      { q: "SSC CGL ke liye photo ka size kitna hona chahiye?", a: "SSC CGL ke liye photo 3.5 cm × 4.5 cm (413 × 531 px at 300 DPI) aur file size 20KB se 50KB ke beech honi chahiye, JPG format mein." },
+      { q: "SSC photo reject kyun hoti hai?", a: "SSC photo reject hone ke 7 common reasons hain: file size too large, wrong dimensions, wrong background, wrong file format, face not clearly visible, photo too old, ya blurry/low resolution photo." },
+      { q: "SSC ke liye photo ka background kaisa hona chahiye?", a: "SSC exams ke liye white ya light plain colored background chahiye. Colorful ya patterned background se photo rejection hoti hai." },
+    ],
+    "upsc-photo-requirements-2026": [
+      { q: "UPSC CSE 2026 ke liye photo size kya hai?", a: "UPSC CSE 2026 ke liye photo 350 × 350 pixels (square format) chahiye, file size 20KB se 300KB, JPG format mein, white background ke saath." },
+      { q: "UPSC signature ka size kya hona chahiye?", a: "UPSC ke liye signature 350 × 100 pixels, 10KB se 100KB, JPG format mein, white background pe honi chahiye." },
+      { q: "UPSC photo pe naam ka stamp kab lagana chahiye?", a: "Kuch UPSC exams ke admit card ya DAF ke liye photo ke neeche naam likhna hota hai. Yeh requirement form instructions mein mention hoti hai." },
+    ],
+    "compress-photo-under-50kb": [
+      { q: "Photo ko 50KB se kam kaise karein?", a: "SarkariPixels ka Compress to 50KB tool use karein — photo upload karein aur tool automatically JPEG quality adjust karke 50KB se kam mein compress kar dega, bina quality loss ke." },
+      { q: "Kya compress karne se photo quality kharab hoti hai?", a: "Smart compression mein minimal quality loss hota hai. SarkariPixels binary search algorithm use karta hai jo best possible quality maintain karta hai target KB mein." },
+    ],
+    "ibps-photo-size-guide": [
+      { q: "IBPS PO ke liye photo size kya hai?", a: "IBPS PO ke liye photo 200 × 230 pixels, 20KB se 50KB, JPG format mein chahiye. Background white ya light colored hona chahiye." },
+      { q: "IBPS signature ka size kya hona chahiye?", a: "IBPS ke liye signature 140 × 60 pixels, 10KB se 20KB, JPG format mein honi chahiye." },
+    ],
+    "pan-card-photo-dpi-300": [
+      { q: "PAN card photo ka DPI 300 kaise set karein?", a: "SarkariPixels ka DPI Converter tool use karein — photo upload karein, target DPI 300 set karein, aur download karein. Tool metadata mein DPI value set kar deta hai." },
+      { q: "PAN card ke liye photo size kya chahiye?", a: "NSDL/UTI PAN card application ke liye photo 3.5 × 4.5 cm, 300 DPI, 2KB se 20KB, JPG format mein chahiye." },
+    ],
+  };
+
+  const faqs = FAQ_DATA[slug] || [];
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  } : null;
+
   const ContentComponent = guide.content;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       {/* Header */}
       <header className="sticky top-0 z-40 border-b" style={{ backgroundColor: "var(--color-bg)", borderColor: "var(--color-border)" }}>
