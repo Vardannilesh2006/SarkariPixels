@@ -1,4 +1,8 @@
+// app/guides/page.tsx
+// Guides listing/hub page — dynamically displays all 20 guides.
+
 import type { Metadata } from "next";
+import { GUIDES } from "@/lib/guides-content";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 
@@ -17,49 +21,6 @@ export const metadata: Metadata = {
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
   },
 };
-
-const GUIDES = [
-  {
-    slug: "ssc-cgl-photo-rejection",
-    title: "SSC CGL Photo Reject Kyun Hoti Hai? 7 Common Reasons",
-    desc: "Form fill karte time photo reject hoti hai? Yeh 7 common reasons check karo — aur each ka fix.",
-    date: "June 2026",
-    readTime: "4 min",
-    category: "SSC",
-  },
-  {
-    slug: "upsc-photo-requirements-2026",
-    title: "UPSC Photo Requirements 2026 — Complete Guide",
-    desc: "UPSC ka square photo format, name stamp requirement, exact KB limits — sab ek jagah.",
-    date: "June 2026",
-    readTime: "5 min",
-    category: "UPSC",
-  },
-  {
-    slug: "compress-photo-under-50kb",
-    title: "Photo Ko 50KB Se Kam Kaise Karein — Step by Step",
-    desc: "Mobile phone ki 3MB photo ko 20-50KB mein compress karna — without quality loss.",
-    date: "June 2026",
-    readTime: "3 min",
-    category: "How-To",
-  },
-  {
-    slug: "ibps-photo-size-guide",
-    title: "IBPS Bank PO/Clerk Photo Size — 2026 Complete Guide",
-    desc: "IBPS PO, Clerk, SO sab ke photo aur signature requirements ek jagah.",
-    date: "June 2026",
-    readTime: "4 min",
-    category: "IBPS",
-  },
-  {
-    slug: "pan-card-photo-dpi-300",
-    title: "PAN Card Photo Ka DPI 300 Kaise Set Karein",
-    desc: "NSDL/UTI PAN application mein DPI 300 mandatory hai. Yeh tool se 2 steps mein fix karo.",
-    date: "June 2026",
-    readTime: "2 min",
-    category: "PAN Card",
-  },
-];
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -82,6 +43,8 @@ const collectionSchema = {
 };
 
 export default function GuidesPage() {
+  const guidesList = Object.values(GUIDES);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -120,36 +83,33 @@ export default function GuidesPage() {
           Real answers to real exam photo problems — written for students who have dealt with portal rejection errors.
         </p>
 
-        <div className="space-y-3">
-          {GUIDES.map((guide) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {guidesList.map((guide) => (
             <a
               key={guide.slug}
               href={`/guides/${guide.slug}`}
-              className="card"
-              style={{ display: "block", padding: "1.5rem", textDecoration: "none" }}
+              className="card flex flex-col justify-between"
+              style={{ padding: "1.5rem", textDecoration: "none", transition: "transform 0.2s, border-color 0.2s" }}
             >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-grow">
-                  <div className="flex items-center gap-2 mb-2 flex-wrap">
-                    <span
-                      className="text-xs font-bold rounded-full px-2 py-0.5"
-                      style={{ backgroundColor: "#eff6ff", color: "var(--color-accent)" }}
-                    >
-                      {guide.category}
-                    </span>
-                    <span className="t-caption">{guide.readTime} read</span>
-                    <span className="t-caption">· {guide.date}</span>
-                  </div>
-                  <h2 className="font-bold mb-2" style={{ color: "var(--color-text)", fontSize: "1rem", lineHeight: "1.4" }}>
-                    {guide.title}
-                  </h2>
-                  <p className="t-caption">{guide.desc}</p>
+              <div>
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <span
+                    className="text-xs font-bold rounded-full px-2 py-0.5"
+                    style={{ backgroundColor: "#eff6ff", color: "var(--color-accent)" }}
+                  >
+                    {guide.category}
+                  </span>
+                  <span className="t-caption">{guide.readTime} read</span>
+                  <span className="t-caption">· {guide.date}</span>
                 </div>
-                <i
-                  className="fa-solid fa-arrow-right mt-1 flex-shrink-0"
-                  style={{ color: "var(--color-border)", fontSize: "12px" }}
-                  aria-hidden="true"
-                />
+                <h2 className="font-bold mb-2" style={{ color: "var(--color-text)", fontSize: "1.05rem", lineHeight: "1.4" }}>
+                  {guide.title}
+                </h2>
+                <p className="t-caption line-clamp-3" style={{ marginBottom: "1rem" }}>{guide.desc}</p>
+              </div>
+              <div className="flex items-center gap-1 text-xs font-bold" style={{ color: "var(--color-accent)" }}>
+                Read Full Guide
+                <i className="fa-solid fa-arrow-right" style={{ fontSize: "10px" }} aria-hidden="true" />
               </div>
             </a>
           ))}

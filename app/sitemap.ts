@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-data";
 import { getAllExamKeys } from "@/lib/exam-specs";
+import { getAllGuideKeys } from "@/lib/guides-content";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
 
@@ -49,15 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Guide pages (now exist — were 404 before)
-  const GUIDE_SLUGS = [
-    "ssc-cgl-photo-rejection",
-    "upsc-photo-requirements-2026",
-    "compress-photo-under-50kb",
-    "ibps-photo-size-guide",
-    "pan-card-photo-dpi-300",
-  ];
-  const guidePages: MetadataRoute.Sitemap = GUIDE_SLUGS.map((slug) => ({
+  // Guide pages
+  const guidePages: MetadataRoute.Sitemap = getAllGuideKeys().map((slug) => ({
     url: `${SITE_URL}/guides/${slug}`,
     lastModified: contentDate,
     changeFrequency: "monthly" as const,

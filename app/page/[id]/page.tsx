@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { TOOLS, CATEGORY_LABELS } from "@/lib/tools-data";
+import { GUIDES } from "@/lib/guides-content";
 import { notFound } from "next/navigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
@@ -312,16 +313,12 @@ function SitemapContent() {
 
       <section className="mb-8">
         <h2 className="t-h3 mb-3">Guides</h2>
-        <ul className="space-y-1 text-sm">
-          {[
-            { href: "/guides/ssc-cgl-photo-rejection", label: "SSC CGL Photo Reject Kyun Hoti Hai?" },
-            { href: "/guides/upsc-photo-requirements-2026", label: "UPSC Photo Requirements 2026" },
-            { href: "/guides/compress-photo-under-50kb", label: "Photo Ko 50KB Se Kam Kaise Karein" },
-            { href: "/guides/ibps-photo-size-guide", label: "IBPS Bank PO/Clerk Photo Size Guide" },
-            { href: "/guides/pan-card-photo-dpi-300", label: "PAN Card Photo DPI 300 Guide" },
-          ].map((link) => (
-            <li key={link.href}>
-              <a href={link.href} style={{ color: "var(--color-accent)" }}>{link.label}</a>
+        <ul className="space-y-1 text-sm grid grid-cols-1 sm:grid-cols-2 gap-1">
+          {Object.values(GUIDES).map((guide) => (
+            <li key={guide.slug}>
+              <a href={`/guides/${guide.slug}`} style={{ color: "var(--color-accent)" }}>
+                {guide.title}
+              </a>
             </li>
           ))}
         </ul>
