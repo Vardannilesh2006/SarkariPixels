@@ -10,12 +10,6 @@
       "has": [{ "type": "host", "value": "www.sarkaripixels.online" }],
       "destination": "https://sarkaripixels.online/:path",
       "permanent": true
-    },
-    {
-      "source": "/:path(.*)",
-      "has": [{ "type": "host", "value": "sarkaripixels.vercel.app" }],
-      "destination": "https://sarkaripixels.online/:path",
-      "permanent": true
     }
   ]
 }
