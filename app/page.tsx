@@ -14,7 +14,7 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
 };
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 export const metadata: Metadata = {
   title: "SarkariPixels | Free Photo & Signature Resizer for Govt Exams",

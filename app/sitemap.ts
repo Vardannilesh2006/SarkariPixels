@@ -3,7 +3,7 @@ import { TOOLS } from "@/lib/tools-data";
 import { getAllExamKeys } from "@/lib/exam-specs";
 import { getAllGuideKeys } from "@/lib/guides-content";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use meaningful static dates instead of dynamic 'now' to avoid misleading Google

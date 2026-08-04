@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { EXAM_SPECS } from "@/lib/exam-specs";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 // System prompt grounded in actual exam-specs data
 function buildSystemPrompt(): string {

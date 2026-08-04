@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 import { GUIDES, getGuideByKey, getAllGuideKeys } from "@/lib/guides-content";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 interface Props {
   params: Promise<{ slug: string }>;

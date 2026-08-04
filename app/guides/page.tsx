@@ -4,7 +4,7 @@
 import type { Metadata } from "next";
 import { GUIDES } from "@/lib/guides-content";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 export const metadata: Metadata = {
   title: "Guides — SSC UPSC Exam Photo Tips | SarkariPixels",

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getExamByKey, getAllExamKeys } from "@/lib/exam-specs";
 import { getToolById } from "@/lib/tools-data";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sarkaripixels.online";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
 
 interface Props {
   params: Promise<{ exam: string }>;
