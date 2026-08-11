@@ -83,7 +83,7 @@ export default function NotFound() {
               { href: "/tool/compress-50", label: "Compress Photo to 50KB" },
               { href: "/tool/ssc-photo", label: "SSC Photo Resize" },
               { href: "/tool/upsc-photo-resize", label: "UPSC Photo Resize" },
-              { href: "/tool/passport-photo", label: "Passport Photo Maker" },
+              { href: "/tool/passport-maker", label: "Passport Photo Maker" },
               { href: "/tool/smart-resizer", label: "Smart Image Resizer" },
               { href: "/tool/convert-dpi", label: "DPI Converter" },
             ].map((link) => (
