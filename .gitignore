@@ -27,3 +27,6 @@ package-lock-next.json
 
 # Vercel
 .vercel
+
+# SEO audit outputs (generated, not committed)
+metadata-crawl-report.json

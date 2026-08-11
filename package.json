@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seo:check": "node scripts/seo-ssr-regression-check.mjs",
+    "metadata:crawl": "node scripts/metadata-crawl-check.mjs"
   },
   "keywords": [
     "photo-resizer",
@@ -27,6 +29,7 @@
     "dotenv": "^17.4.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.47.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -34,6 +37,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "playwright": "^1.47.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

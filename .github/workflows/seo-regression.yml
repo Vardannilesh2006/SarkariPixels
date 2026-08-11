@@ -1,0 +1,52 @@
+name: SEO & SSR Regression Check
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Base URL to check (defaults to production)"
+        required: false
+        default: "https://www.sarkaripixels.online"
+
+# Cancel stale runs on the same PR
+concurrency:
+  group: seo-regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  seo-regression:
+    name: SSR / SEO Regression Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Run SSR & SEO regression check
+        env:
+          BASE_URL: ${{ github.event.inputs.base_url || 'https://www.sarkaripixels.online' }}
+        run: node scripts/seo-ssr-regression-check.mjs --base-url=$BASE_URL
+
+      - name: Upload check results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-regression-failure-${{ github.run_number }}
+          path: |
+            scripts/seo-ssr-regression-check.mjs
+          retention-days: 7
