@@ -158,10 +158,39 @@ export default async function ExamSpecPage({ params }: Props) {
 
         <h1 className="t-h1 mb-2">{spec.name} Photo &amp; Signature Requirements</h1>
         <p className="t-body mb-1" style={{ color: "var(--color-muted)" }}>{spec.fullName}</p>
-        <p className="t-caption mb-8">
+        <p className="t-caption mb-6">
           <i className="fa-solid fa-calendar-check mr-1" aria-hidden="true" />
-          Last Verified: {spec.lastVerified} — Hamesha official notification se cross-check karein
+          Last Verified: {spec.lastVerified} — Official notification specifications
         </p>
+
+        {/* GEO Quick Specs & Tool Callout Box */}
+        <div className="card p-5 mb-6 border-l-4" style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider block mb-1" style={{ color: "var(--color-accent)" }}>
+                ⚡ Quick Official Specs Summary
+              </span>
+              <h2 className="text-base font-bold" style={{ color: "var(--color-text)" }}>
+                {spec.name} Application Portal Specifications (2026)
+              </h2>
+            </div>
+            {primaryTool && (
+              <a href={`/tool/${spec.toolIds[0]}`} className="btn btn-primary shrink-0" style={{ fontSize: "0.875rem", padding: "10px 20px" }}>
+                Resize {spec.name} Photo Now →
+              </a>
+            )}
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs" style={{ color: "var(--color-text)" }}>
+            <div className="p-2.5 rounded-lg border" style={{ borderColor: "var(--color-border)" }}>
+              <strong className="block mb-0.5">Photo Specification:</strong>
+              <span style={{ color: "var(--color-muted)" }}>{photoSize} · {spec.photo.minKB}KB–{spec.photo.maxKB}KB · {spec.photo.format}</span>
+            </div>
+            <div className="p-2.5 rounded-lg border" style={{ borderColor: "var(--color-border)" }}>
+              <strong className="block mb-0.5">Signature Specification:</strong>
+              <span style={{ color: "var(--color-muted)" }}>{sigSize} · {spec.signature.minKB}KB–{spec.signature.maxKB}KB · {spec.signature.format}</span>
+            </div>
+          </div>
+        </div>
 
         {/* Photo Specs */}
         <div className="card p-6 mb-4">
