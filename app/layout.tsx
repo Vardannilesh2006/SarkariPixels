@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: "SarkariPixels | Free Photo Editor for Govt Exam Applications",
-    template: "%s | SarkariPixels",
+    template: "%s",
   },
   description:
     "Resize, compress and edit photos for SSC, UPSC, BPSC, BSSC, RRB, IBPS exam applications. 100% free, browser-based — your photos never leave your device.",

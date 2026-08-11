@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${SITE_URL}/exam-specs/${exam}`;
   return {
-    title: `${spec.name} Photo Size & Specification 2026 | SarkariPixels`,
+    title: { absolute: `${spec.name} Photo Size & Specification 2026 | SarkariPixels` },
     description: `Official ${spec.name} (${spec.fullName}) photo and signature size requirements. Exact KB limits, pixel dimensions, DPI, format. Verified ${spec.lastVerified}. Direct resize tool link included.`,
     alternates: {
       canonical: url,

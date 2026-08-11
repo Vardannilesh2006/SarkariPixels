@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return { title: "Page Not Found" };
 
   return {
-    title: page.title,
+    title: { absolute: page.title },
     description: page.desc,
     alternates: {
       canonical: `${SITE_URL}/page/${id}`,
