@@ -195,6 +195,21 @@ export default function RootLayout({
             }
           } catch(e) {}`}
         </Script>
+        {/* Speculation Rules API for instant 0ms internal navigation on Chrome/Android */}
+        <script
+          type="speculationrules"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              prefetch: [
+                {
+                  source: "document",
+                  where: { href_matches: "/*" },
+                  eagerness: "moderate",
+                },
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={`${inter.variable} font-sans`}>
         {/* GTM noscript */}
