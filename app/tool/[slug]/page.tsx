@@ -318,8 +318,40 @@ export default async function ToolPage({ params }: Props) {
             </div>
           </div>
 
-          {/* ── Right: SEO content (SSR) ───────────────────────────── */}
+          {/* ── Right: SEO content (SSR & GEO) ───────────────────────────── */}
           <div className="lg:col-span-2 space-y-4">
+
+            {/* GEO Direct Answer Block — structured for Google AI Overviews & Perplexity */}
+            <div
+              className="card p-5 border-l-4"
+              style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <i className="fa-solid fa-bolt" style={{ color: "var(--color-accent)", fontSize: "14px" }} aria-hidden="true" />
+                <h2 className="text-sm font-bold uppercase tracking-wider" style={{ color: "var(--color-text)" }}>
+                  ⚡ Quick Answer &amp; Tool Summary
+                </h2>
+              </div>
+              <p className="text-xs leading-relaxed" style={{ color: "var(--color-muted)" }}>
+                <strong>{tool.title}</strong> is a 100% browser-side utility.
+                It allows applicants to process photos for Indian government exam portals (SSC, UPSC, BPSC, RRB, IBPS, NTA) 
+                to exact KB limits and pixel dimensions without uploading images to any remote server.
+              </p>
+              <ul className="mt-3 space-y-1.5 text-xs" style={{ color: "var(--color-text)" }}>
+                <li className="flex items-center gap-2">
+                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
+                  <span><strong>Processing:</strong> HTML5 Canvas (Local Device)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
+                  <span><strong>Privacy:</strong> Zero Server Upload (DPDP Act 2023 Compliant)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
+                  <span><strong>Formats:</strong> JPG, JPEG, PNG, WEBP Output</span>
+                </li>
+              </ul>
+            </div>
 
             {/* Description */}
             {content && (
@@ -439,6 +471,38 @@ export default async function ToolPage({ params }: Props) {
                 </div>
               </div>
             )}
+
+            {/* Product Funnel Interlinking: Exam Specs & Guides */}
+            <div className="card p-6 space-y-3">
+              <h2 className="text-base font-bold" style={{ color: "var(--color-text)" }}>
+                Exam Specifications &amp; Guides
+              </h2>
+              <div className="space-y-2 text-xs">
+                <a
+                  href="/exam-specs"
+                  className="flex items-center justify-between p-2.5 rounded-lg border transition-colors hover:border-blue-500"
+                  style={{ borderColor: "var(--color-border)" }}
+                >
+                  <span className="font-semibold" style={{ color: "var(--color-text)" }}>
+                    <i className="fa-solid fa-list-check mr-2 text-blue-600" aria-hidden="true" />
+                    All Official Exam Specifications
+                  </span>
+                  <i className="fa-solid fa-chevron-right text-muted" style={{ fontSize: "10px" }} aria-hidden="true" />
+                </a>
+                <a
+                  href="/guides"
+                  className="flex items-center justify-between p-2.5 rounded-lg border transition-colors hover:border-blue-500"
+                  style={{ borderColor: "var(--color-border)" }}
+                >
+                  <span className="font-semibold" style={{ color: "var(--color-text)" }}>
+                    <i className="fa-solid fa-book-open mr-2 text-purple-600" aria-hidden="true" />
+                    Photo Preparation Guides &amp; Tips
+                  </span>
+                  <i className="fa-solid fa-chevron-right text-muted" style={{ fontSize: "10px" }} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 

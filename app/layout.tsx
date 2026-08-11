@@ -209,6 +209,15 @@ export default function RootLayout({
 
         {children}
 
+        {/* Service Worker Registration for Offline PWA Support */}
+        <Script id="sw-reg" strategy="lazyOnload">
+          {`if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+              navigator.serviceWorker.register('/sw.js').catch(function(err) {});
+            });
+          }`}
+        </Script>
+
         {/* Effectivecpmnetwork Banner Ad */}
         <Script
           src="https://pl29794697.effectivecpmnetwork.com/7bdd7128495aad86bdf1f0a96fe0d215/invoke.js"

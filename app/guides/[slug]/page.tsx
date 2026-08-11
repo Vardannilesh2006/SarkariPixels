@@ -115,7 +115,27 @@ export default async function GuidePage({ params }: Props) {
           <span className="t-caption">· {guide.date}</span>
         </div>
 
-        <h1 className="t-h1 mb-8">{guide.title}</h1>
+        <h1 className="t-h1 mb-6">{guide.title}</h1>
+
+        {/* Top Interactive Tool Callout (Product Funnel Conversion) */}
+        <div className="card p-5 mb-8 border-l-4" style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider block mb-1" style={{ color: "var(--color-accent)" }}>
+                ⚡ Quick Tool Action
+              </span>
+              <p className="text-sm font-semibold" style={{ color: "var(--color-text)" }}>
+                Need to fix your exam photo or signature right now?
+              </p>
+              <p className="text-xs" style={{ color: "var(--color-muted)" }}>
+                100% free, browser-based — photos never leave your device.
+              </p>
+            </div>
+            <a href="/#tools" className="btn btn-primary shrink-0" style={{ fontSize: "0.875rem", padding: "10px 20px" }}>
+              Resize Photo Now →
+            </a>
+          </div>
+        </div>
 
         <ContentComponent />
 

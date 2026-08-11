@@ -119,19 +119,25 @@ export default function HomePage() {
               id="hero-headline"
               className="t-h1 mb-3"
             >
-              Exam Photo Size — Fixed in Seconds
+              Resize Exam Photos & Signatures to Exact Specs — 100% Free
             </h1>
             <p
               className="t-body"
-              style={{ color: "var(--color-muted)", maxWidth: "480px", margin: "0 auto 1.25rem" }}
+              style={{ color: "var(--color-muted)", maxWidth: "560px", margin: "0 auto 1.25rem", lineHeight: "1.6" }}
             >
-              Compress and resize passport photos or signatures for SSC, UPSC,
-              BPSC, RRB, IBPS, and NTA portals — to the exact KB and pixel
-              limit required. Free. Nothing is uploaded.
+              Compress and resize passport photos for <strong>SSC, UPSC, BPSC, RRB, IBPS & NTA</strong>. 
+              Set exact KB, pixels, or cm in seconds.{" "}
+              <span style={{ color: "#059669", fontWeight: 600 }}>100% Private — photos never leave your phone.</span>
             </p>
-            <a href="#tools" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }}>
-              Browse Tools
-            </a>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a href="#tools" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }}>
+                Browse 88 Tools
+              </a>
+              <a href="/exam-specs" className="btn btn-ghost" style={{ fontSize: "0.9375rem", padding: "12px 24px" }}>
+                <i className="fa-solid fa-list-check mr-2" aria-hidden="true" />
+                View Official Specs
+              </a>
+            </div>
           </div>
         </section>
 
