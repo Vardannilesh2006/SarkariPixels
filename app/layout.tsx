@@ -94,6 +94,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5EBGBRC049"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5EBGBRC049');`}
+        </Script>
+
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -101,18 +113,6 @@ export default function RootLayout({
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KMK8392M');`}
-        </Script>
-
-        {/* Google Analytics (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KNQ135CJNM"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-KNQ135CJNM');`}
         </Script>
 
         {/* Monetag Popunder */}
