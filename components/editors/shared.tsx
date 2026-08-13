@@ -149,13 +149,17 @@ export function UploadZone({ tool, onFile, accept = "image/*", label, id = "file
         {label || "Drag or Browse Image"}
       </p>
       <p className="t-caption">JPG, PNG, WebP · Max 20MB</p>
-      <input
-        id={id}
-        type="file"
-        accept={accept}
-        className="hidden"
-        onChange={(e) => e.target.files?.[0] && onFile(e.target.files[0])}
-      />
+      <label htmlFor={id} className="sr-only cursor-pointer">
+        Upload image file for {tool.title}
+        <input
+          id={id}
+          type="file"
+          accept={accept}
+          aria-label={`Upload image file for ${tool.title}`}
+          className="hidden"
+          onChange={(e) => e.target.files?.[0] && onFile(e.target.files[0])}
+        />
+      </label>
     </div>
   );
 }

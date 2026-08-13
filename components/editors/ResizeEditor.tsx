@@ -171,10 +171,12 @@ export default function ResizeEditor({ tool }: Props) {
 
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-lg p-3 border" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-bg)" }}>
-            <label className="t-caption uppercase tracking-wider block font-semibold">Width</label>
+            <label htmlFor="resize-width" className="t-caption uppercase tracking-wider block font-semibold cursor-pointer">Width</label>
             <div className="flex items-center justify-between mt-1">
               <input
+                id="resize-width"
                 type="number"
+                aria-label="Image width"
                 value={width}
                 onChange={(e) => handleWidthChange(Number(e.target.value))}
                 className="w-full bg-transparent border-0 p-0 text-sm font-semibold focus:ring-0 focus:outline-none"
@@ -185,10 +187,12 @@ export default function ResizeEditor({ tool }: Props) {
           </div>
 
           <div className="rounded-lg p-3 border" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-bg)" }}>
-            <label className="t-caption uppercase tracking-wider block font-semibold">Height</label>
+            <label htmlFor="resize-height" className="t-caption uppercase tracking-wider block font-semibold cursor-pointer">Height</label>
             <div className="flex items-center justify-between mt-1">
               <input
+                id="resize-height"
                 type="number"
+                aria-label="Image height"
                 value={height}
                 onChange={(e) => handleHeightChange(Number(e.target.value))}
                 className="w-full bg-transparent border-0 p-0 text-sm font-semibold focus:ring-0 focus:outline-none"

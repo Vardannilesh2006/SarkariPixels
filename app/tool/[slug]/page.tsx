@@ -255,61 +255,81 @@ export default async function ToolPage({ params }: Props) {
           {/* ── Left: Editor (client component) ───────────────────── */}
           <div className="lg:col-span-3">
             <div
-              className="card overflow-hidden"
-              style={{ borderRadius: "var(--radius-lg)" }}
+              className="card overflow-hidden shadow-lg border"
+              style={{ borderRadius: "var(--radius-lg)", borderColor: "var(--color-border)" }}
             >
               {/* Tool header bar */}
               <div
                 className="px-6 py-5 border-b"
-                style={{ borderColor: "var(--color-border)" }}
+                style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                    style={{
-                      backgroundColor: catStyle.bg,
-                      border: "1px solid var(--color-border)",
-                    }}
-                    aria-hidden="true"
-                  >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
+                  <div className="flex items-center gap-3">
                     <div
+                      className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 shadow-sm"
                       style={{
-                        width: "18px",
-                        height: "18px",
-                        backgroundColor: catStyle.color,
-                        WebkitMaskImage: `url(/icons/tools/${tool.id}.svg)`,
-                        maskImage: `url(/icons/tools/${tool.id}.svg)`,
-                        WebkitMaskSize: "contain",
-                        maskSize: "contain",
-                        WebkitMaskPosition: "center",
-                        maskPosition: "center",
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
+                        backgroundColor: catStyle.bg,
+                        border: "1px solid var(--color-border)",
                       }}
-                    />
-                  </div>
-                  <div>
-                    <h1
-                      className="text-xl font-bold leading-tight"
-                      style={{ color: "var(--color-text)" }}
+                      aria-hidden="true"
                     >
-                      {content?.h1 || tool.title}
-                    </h1>
-                    <span className="t-caption">{categoryLabel}</span>
+                      <div
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          backgroundColor: catStyle.color,
+                          WebkitMaskImage: `url(/icons/tools/${tool.id}.svg)`,
+                          maskImage: `url(/icons/tools/${tool.id}.svg)`,
+                          WebkitMaskSize: "contain",
+                          maskSize: "contain",
+                          WebkitMaskPosition: "center",
+                          maskPosition: "center",
+                          WebkitMaskRepeat: "no-repeat",
+                          maskRepeat: "no-repeat",
+                        }}
+                      />
+                    </div>
+                    <div>
+                      <h1
+                        className="text-xl font-bold leading-tight"
+                        style={{ color: "var(--color-text)" }}
+                      >
+                        {content?.h1 || tool.title}
+                      </h1>
+                      <span className="t-caption font-medium">{categoryLabel}</span>
+                    </div>
+                  </div>
+
+                  <div
+                    className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 self-start sm:self-auto"
+                    style={{
+                      backgroundColor: "#f0fdf4",
+                      color: "#166534",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                    }}
+                  >
+                    <i className="fa-solid fa-shield-halved text-emerald-600" aria-hidden="true" />
+                    <span>100% Client-Side Privacy</span>
                   </div>
                 </div>
 
-                <div
-                  className="inline-flex items-center gap-1.5 rounded-full px-3 py-1"
-                  style={{
-                    backgroundColor: "#f0fdf4",
-                    color: "#166534",
-                    fontSize: "0.75rem",
-                    fontWeight: 500,
-                  }}
-                >
-                  <i className="fa-solid fa-shield-halved" aria-hidden="true" />
-                  <span>100% Browser-Based — No File Upload</span>
+                {/* Visual Step Breadcrumb Indicator */}
+                <div className="flex items-center gap-2 pt-2 border-t text-[11px] font-semibold text-slate-500 overflow-x-auto" style={{ borderColor: "var(--color-border)" }}>
+                  <span className="flex items-center gap-1 text-blue-600 dark:text-blue-400">
+                    <span className="w-4 h-4 rounded-full bg-blue-600 text-white text-[9px] font-bold flex items-center justify-center">1</span>
+                    Upload Photo
+                  </span>
+                  <span>→</span>
+                  <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
+                    <span className="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-[9px] font-bold flex items-center justify-center">2</span>
+                    Set KB / Size
+                  </span>
+                  <span>→</span>
+                  <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
+                    <span className="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-[9px] font-bold flex items-center justify-center">3</span>
+                    Download JPG
+                  </span>
                 </div>
               </div>
 
@@ -323,7 +343,7 @@ export default async function ToolPage({ params }: Props) {
 
             {/* GEO Direct Answer Block — structured for Google AI Overviews & Perplexity */}
             <div
-              className="card p-5 border-l-4"
+              className="card p-5 border-l-4 shadow-sm"
               style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}
             >
               <div className="flex items-center gap-2 mb-2">
@@ -333,24 +353,27 @@ export default async function ToolPage({ params }: Props) {
                 </h2>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: "var(--color-muted)" }}>
-                <strong>{tool.title}</strong> is a 100% browser-side utility.
-                It allows applicants to process photos for Indian government exam portals (SSC, UPSC, BPSC, RRB, IBPS, NTA) 
-                to exact KB limits and pixel dimensions without uploading images to any remote server.
+                <strong>{tool.title}</strong> is an in-browser image optimization tool tailored for Indian competitive recruitment portals (SSC, UPSC, BPSC, RRB, IBPS, NTA).
+                It converts and scales images to strict KB limits and pixel/cm dimensions locally on your device.
               </p>
-              <ul className="mt-3 space-y-1.5 text-xs" style={{ color: "var(--color-text)" }}>
-                <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
-                  <span><strong>Processing:</strong> HTML5 Canvas (Local Device)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
-                  <span><strong>Privacy:</strong> Zero Server Upload (DPDP Act 2023 Compliant)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-emerald-600" style={{ fontSize: "11px" }} aria-hidden="true" />
-                  <span><strong>Formats:</strong> JPG, JPEG, PNG, WEBP Output</span>
-                </li>
-              </ul>
+              <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
+                <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Processing</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200">HTML5 Canvas (0ms)</span>
+                </div>
+                <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Privacy</span>
+                  <span className="font-semibold text-emerald-600 dark:text-emerald-400">Zero File Upload</span>
+                </div>
+                <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Output Format</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200">JPG / JPEG (300 DPI)</span>
+                </div>
+                <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">DPDP Act 2023</span>
+                  <span className="font-semibold text-blue-600 dark:text-blue-400">100% Compliant</span>
+                </div>
+              </div>
             </div>
 
             {/* Description */}
