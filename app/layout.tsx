@@ -94,17 +94,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google tag (gtag.js) */}
-        <Script
+        {/* Google tag (gtag.js) — Direct HTML Head script for instant GA4 verification */}
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-5EBGBRC049"
-          strategy="afterInteractive"
         />
-        <Script id="ga4-gtag" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-5EBGBRC049');`}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5EBGBRC049', { send_page_view: true });
+            `,
+          }}
+        />
 
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
