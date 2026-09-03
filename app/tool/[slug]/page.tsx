@@ -79,7 +79,7 @@ export default async function ToolPage({ params }: Props) {
 
   const softwareSchema = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": ["SoftwareApplication", "WebApplication"],
     name: tool.title,
     applicationCategory: "MultimediaApplication",
     operatingSystem: "Web Browser",

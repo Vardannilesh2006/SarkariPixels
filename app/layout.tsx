@@ -185,6 +185,16 @@ export default function RootLayout({
         },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "${SITE_URL}/#webapp",
+      "name": "SarkariPixels",
+      "url": "${SITE_URL}",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "description": "Free browser-based photo resizer and compressor for government exam portals."
     }
   ]
 }`}
