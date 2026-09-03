@@ -18,6 +18,44 @@ export interface ToolContent {
 }
 
 export const TOOL_CONTENT: Record<string, ToolContent> = {
+  "crop-image": {
+    metaTitle: "Crop Image Online Free — Free Online Tool | SarkariPixels",
+    metaDesc: "Use our free online crop image online free tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
+    h1: "Crop Image Online Free Online Free",
+    description: `Crop Image Online Free tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    howTo: [
+      "Select your image file by clicking Upload or drag & drop",
+      "Configure your desired dimensions or compression options",
+      "Click Process to execute instant in-browser optimization",
+      "Download your ready-to-use image instantly"
+    ],
+    faqs: [
+      { q: "Is this Crop Image Online Free tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
+      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
+      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "compress-image": {
+    metaTitle: "Compress Image Online Free — Free Online Tool | SarkariPixels",
+    metaDesc: "Use our free online compress image online free tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
+    h1: "Compress Image Online Free Online Free",
+    description: `Compress Image Online Free tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    howTo: [
+      "Select your image file by clicking Upload or drag & drop",
+      "Configure your desired dimensions or compression options",
+      "Click Process to execute instant in-browser optimization",
+      "Download your ready-to-use image instantly"
+    ],
+    faqs: [
+      { q: "Is this Compress Image Online Free tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
+      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
+      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
   // ── Most Used ────────────────────────────────────────────────────────────
 
   "smart-resizer": {

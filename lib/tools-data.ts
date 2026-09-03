@@ -888,6 +888,24 @@ export const TOOLS: Tool[] = [
     defaultH: 4.5,
     unit: "cm",
   },
+  {
+    id: "compress-image",
+    category: "general-compress",
+    icon: "fa-compress",
+    title: "Compress Image Online",
+    desc: "Free online image compressor. Fast, 100% private in-browser compression.",
+    group: "compress",
+    targetKB: 50,
+  },
+  {
+    id: "crop-image",
+    category: "basic-edit",
+    icon: "fa-crop",
+    title: "Crop Image Online Free",
+    desc: "Free online crop image online free tool. Fast, 100% private in-browser processing with zero server uploads.",
+    group: "crop",
+    targetKB: 50,
+  },
 ];
 
 // Tool count verification — must equal 88
