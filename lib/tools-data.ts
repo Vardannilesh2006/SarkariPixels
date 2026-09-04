@@ -906,6 +906,15 @@ export const TOOLS: Tool[] = [
     group: "crop",
     targetKB: 50,
   },
+  {
+    id: "resize-image",
+    category: "general-compress",
+    icon: "fa-expand",
+    title: "Resize multiple images at once!",
+    desc: "Free online resize multiple images at once! tool. Fast, 100% private in-browser processing with zero server uploads.",
+    group: "resize",
+    targetKB: 50,
+  },
 ];
 
 // Tool count verification — must equal 88
