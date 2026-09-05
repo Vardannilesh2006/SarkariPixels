@@ -230,26 +230,27 @@ Output white background par clear signature — bilkul waise jaisa portals maang
   },
 
   "increase-kb": {
-    metaTitle: "Increase Image Size in KB — Add File Size Without Quality Loss | SarkariPixels",
-    metaDesc: "Increase image KB size to meet minimum file size requirements for exam portals. EXIF padding technique. Free, browser-based.",
+    metaTitle: "Increase Image Size in KB — Add File Size Safely | SarkariPixels",
+    metaDesc: "Increase image KB size to meet minimum file size requirements for exam portals. Understand re-encoding risks and safe pixel scaling methods. Free.",
     h1: "Increase Image File Size in KB",
-    description: `Kuch rare exam portals minimum file size bhi enforce karte hain — jaise "photo must be between 20KB and 50KB." Agar photo 8KB hai toh "too small" error aata hai.
+    description: `Kuch exam portals minimum file size enforce karte hain — jaise "photo must be between 20KB and 50KB." Agar photo 8KB hai toh portal "file too small" error dekar upload reject kar deta hai.
 
-Yeh tool harmless EXIF metadata blocks add karta hai file size badhaane ke liye — actual image quality ya dimensions nahi badte. Purely for portal compliance.
+Yeh tool dummy byte padding add karta hai file footprint badhaane ke liye bina image visual alter kiye.
 
-Note: Yeh tool tabhi use karo jab actually minimum size error aa raha ho. Normally compress karna hi kaam aata hai.`,
+Important Disclosure: Dhyan rahe ki kayi recruitment portals (jaise SSC aur state PSCs) image upload hone par server par auto-recompress karte hain. Agar photo sirf padding bits se badhayi gayi hai, toh portal compression un dummy bytes ko strip kar sakti hai aur photo wapas choti ho jayegi. Genuine file size increase ke liye hamara Resize Image Pixel tool use karke physical dimensions (pixels) ko upscale karein.`,
     howTo: [
       "Photo upload karein",
-      "Target minimum KB enter karein",
-      "Process karein",
-      "Download — same image, larger file size",
+      "Target minimum KB enter karein (jaise 20KB ya 50KB)",
+      "Process karein aur target file size preview dekhein",
+      "Download karein — agar portal re-compress kare toh physical pixel scale tool use karein",
     ],
     faqs: [
-      { q: "Photo quality kharab hogi increase karne se?", a: "Nahi. Sirf invisible metadata blocks add hote hain." },
-      { q: "Kab zaroorat padti hai size increase ki?", a: "Jab portal 'file too small' error de — jaise UPSC ka minimum 20KB requirement." },
-      { q: "Kitna increase kar sakte hain?", a: "Reasonable range mein — 5KB se 500KB tak." },
+      { q: "Kya portal padded KB image ko reject kar sakta hai?", a: "Haan, agar portal upload hone par server-side re-compression run karta hai, toh dummy padding bytes strip ho sakti hain aur size wapas minimum se kam ho sakta hai. Is risk se bachne ke liye physical pixel dimensions upscale karein (Resize Image Pixel tool)." },
+      { q: "Photo quality kharab hogi increase karne se?", a: "Nahi. Original visual clarity preserve rehti hai." },
+      { q: "Kab zaroorat padti hai size increase ki?", a: "Jab portal 'file too small' error de — jaise UPSC ya RRB ka minimum 20KB requirement." },
+      { q: "Genuine size badhane ka sabse safe tarika kya hai?", a: "Resize Image Pixel tool use karke width aur height ko proportionately 10-20% bada dein, ya camera ki higher resolution wali photo select karein." },
     ],
-    relatedTools: ["reduce-kb", "compress-20"],
+    relatedTools: ["resize-pixel", "reduce-kb", "compress-20"],
   },
 
   "photo-enhancer": {

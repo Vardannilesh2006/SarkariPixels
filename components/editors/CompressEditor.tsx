@@ -143,6 +143,34 @@ export default function CompressEditor({ tool }: Props) {
         </div>
       </div>
 
+      {tool.group === "increase-compress" && (
+        <div
+          className="p-3.5 rounded-lg text-xs leading-relaxed border"
+          style={{
+            backgroundColor: "#fffbeb",
+            borderColor: "#fde68a",
+            color: "#92400e",
+          }}
+        >
+          <div className="flex items-start gap-2">
+            <i className="fa-solid fa-triangle-exclamation text-amber-600 mt-0.5 shrink-0" aria-hidden="true" />
+            <div>
+              <strong className="block mb-1 text-amber-900 font-bold">
+                Important Portal Re-Encoding Warning:
+              </strong>
+              Many government exam portals (such as SSC, UPSC, and state PSCs) automatically re-compress uploaded images on their servers. If an image was artificially padded with dummy bytes to increase its KB footprint, server-side re-compression will strip those padding bytes, causing the file to shrink back below the portal&apos;s minimum KB threshold.
+              <div className="mt-2 text-amber-950 font-medium">
+                💡 <strong>Safe Alternative:</strong> To genuinely increase file size without rejection risk, upscale physical pixel dimensions using our{" "}
+                <a href="/tool/resize-pixel" className="underline font-bold hover:text-amber-800">
+                  Resize Image Pixel tool
+                </a>{" "}
+                or use a higher-resolution camera capture.
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {!file && <UploadZone tool={tool} onFile={handleFileChange} />}
 
       {processing && <ProcessingSpinner step="compressing" />}

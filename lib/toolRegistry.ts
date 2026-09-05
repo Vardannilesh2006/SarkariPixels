@@ -62,6 +62,19 @@ const CUSTOM_TOOL_METADATA: Record<string, Partial<ToolRegistryItem>> = {
       { step: 3, title: "Download Enhanced JPG" },
     ],
   },
+  "increase-kb": {
+    workflowType: "compress",
+    acceptedInputs: ["JPG", "JPEG", "PNG"],
+    outputFormat: "JPG (Padded Bytes)",
+    setsDPI: false,
+    summary:
+      "Increase image file size in KB via padding to satisfy recruitment portal minimum limits. Discloses server-side re-compression stripping risks and recommends physical pixel upscaling via Resize Image Pixel for permanent compliance.",
+    steps: [
+      { step: 1, title: "Upload Image" },
+      { step: 2, title: "Set Minimum KB" },
+      { step: 3, title: "Download Padded JPG" },
+    ],
+  },
   "check-dpi": {
     workflowType: "utility",
     acceptedInputs: ["JPG", "JPEG"],
