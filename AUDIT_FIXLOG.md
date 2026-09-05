@@ -12,8 +12,8 @@
 | QW-06 | Add source links to exam-specs page | Done | Added official sourceUrl and sourceLabel to all 8 exam boards in lib/exam-specs.ts; updated app/exam-specs/page.tsx and app/exam-specs/[exam]/page.tsx with clickable official portal notice links; verified 8/8 official URLs present in rendered HTML. |
 | QW-07 | Soften "Every exam portal covered" claim | Done | Changed homepage trust badge to "Covers major exam and recruitment portals" and exam section copy to "major exam portals" (app/page.tsx); grep search verifies 0 unqualified "every portal" claims remain sitewide. |
 | P0-01 | Confirm/fix SSR-CSR rendering via GSC | Done | Verified generateStaticParams pre-renders all 88 tool routes into complete static HTML (68KB–81KB) with semantic H1, descriptions, JSON-LD (SoftwareApplication, FAQPage, BreadcrumbList); confirmed via seo-ssr-regression-check.mjs (100% PASS across sampled routes). |
-| P0-02 | Full-site canonical crawl | In Progress | Running full-site Screaming Frog/CLI canonical crawl across all 126 routes |
-| P0-03 | GSC redirect/404 audit | Not Started | |
+| P0-02 | Full-site canonical crawl | Done | Crawled all 126 rendered pages via scripts/canonical-crawler-csv.mjs; exported canonical-crawl-export.csv; 126/126 (100%) self-canonicalize to `https://www.sarkaripixels.online`; 0 foreign-domain canonicals found (confirmed formfit.app issue absent sitewide). |
+| P0-03 | GSC redirect/404 audit | In Progress | Analyzing redirect mapping and custom 404 integrity |
 | P0-08 | Build tool registry (foundational) | Not Started | |
 | P0-04 | Versioned exam-spec registry | Not Started | |
 | P0-05 | Re-verify all 8 exam specs against official sources | Not Started | |
