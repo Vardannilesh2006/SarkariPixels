@@ -86,7 +86,12 @@ export default function ExamSpecsHubPage() {
             <div key={exam.key} className="card p-6">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h2 className="t-h3">{exam.name}</h2>
+                  <div className="flex items-center gap-2 mb-1">
+                    <h2 className="t-h3 mb-0">{exam.name}</h2>
+                    <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+                      Cycle {exam.recruitmentCycle}
+                    </span>
+                  </div>
                   <p className="t-caption">{exam.fullName}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1.5 shrink-0">
@@ -94,10 +99,10 @@ export default function ExamSpecsHubPage() {
                     className="text-xs rounded-full px-2.5 py-0.5 font-semibold"
                     style={{ backgroundColor: "#eff6ff", color: "var(--color-accent)", fontSize: "0.6875rem" }}
                   >
-                    Verified: {exam.lastVerified}
+                    Checked: {exam.lastCheckedDate}
                   </span>
                   <a
-                    href={exam.sourceUrl}
+                    href={exam.notificationUrl || exam.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-[11px] font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"

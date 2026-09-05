@@ -12,7 +12,8 @@
     "metadata:crawl": "node scripts/metadata-crawl-check.mjs",
     "check:canonicals": "node scripts/check-canonicals.mjs",
     "audit:404": "node scripts/audit-redirects-404.mjs",
-    "test:registry": "node scripts/verify-tool-registry.mjs"
+    "test:registry": "node scripts/verify-tool-registry.mjs",
+    "test:specs": "node scripts/verify-exam-specs.mjs"
   },
   "keywords": [
     "photo-resizer",

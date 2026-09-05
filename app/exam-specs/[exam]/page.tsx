@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getExamByKey, getAllExamKeys } from "@/lib/exam-specs";
+import { getExamByKey, getAllExamKeys, isExamReviewDue } from "@/lib/exam-specs";
 import { getToolById } from "@/lib/tools-data";
 
 import { SITE_URL } from "@/lib/constants";
@@ -43,6 +43,7 @@ export default async function ExamSpecPage({ params }: Props) {
 
   const primaryTool = spec.toolIds[0] ? getToolById(spec.toolIds[0]) : null;
   const canonicalUrl = `${SITE_URL}/exam-specs/${exam}`;
+  const isReviewDue = isExamReviewDue(spec);
 
   // BreadcrumbList JSON-LD
   const breadcrumbSchema = {
@@ -157,23 +158,73 @@ export default async function ExamSpecPage({ params }: Props) {
         </nav>
 
         <h1 className="t-h1 mb-2">{spec.name} Photo &amp; Signature Requirements</h1>
-        <p className="t-body mb-1" style={{ color: "var(--color-muted)" }}>{spec.fullName}</p>
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-          <p className="t-caption">
+        <p className="t-body mb-3" style={{ color: "var(--color-muted)" }}>{spec.fullName}</p>
+        
+        {/* Versioning & Official Source Badges */}
+        <div className="flex flex-wrap items-center gap-2 mb-6">
+          <span className="text-xs font-semibold px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
+            Cycle: {spec.recruitmentCycle}
+          </span>
+          <span className="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
             <i className="fa-solid fa-calendar-check mr-1" aria-hidden="true" />
-            Last Verified: {spec.lastVerified} — Official notification specifications
-          </p>
+            Verified: {spec.lastCheckedDate}
+          </span>
+          <span className="text-xs font-medium px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+            Next Review Due: {spec.reviewDueDate}
+          </span>
           <a
-            href={spec.sourceUrl}
+            href={spec.notificationUrl || spec.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
-            aria-label={`Official portal source for ${spec.name}`}
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline sm:ml-auto"
+            aria-label={`Official portal notification for ${spec.name}`}
           >
             <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: "10px" }} aria-hidden="true" />
-            Official Portal Notice ({spec.sourceLabel})
+            Official Portal Notification ({spec.sourceLabel})
           </a>
         </div>
+
+        {/* Auto-Expiry / Review Due Notice Banner */}
+        <div
+          className="rounded-lg p-4 mb-6 text-xs flex items-start gap-3"
+          style={{
+            backgroundColor: isReviewDue ? "#fffbeb" : "var(--color-surface)",
+            border: `1px solid ${isReviewDue ? "#fde68a" : "var(--color-border)"}`,
+            color: isReviewDue ? "#92400e" : "var(--color-muted)",
+          }}
+        >
+          <i
+            className={`fa-solid ${isReviewDue ? "fa-triangle-exclamation text-amber-600" : "fa-shield-halved text-blue-600"} mt-0.5`}
+            style={{ fontSize: "14px" }}
+            aria-hidden="true"
+          />
+          <div>
+            <strong className="block mb-0.5" style={{ color: isReviewDue ? "#78350f" : "var(--color-text)" }}>
+              {isReviewDue ? "Scheduled Periodic Review Active" : "Official Specification Guarantee"}
+            </strong>
+            Specifications for {spec.name} are reviewed on a 90-day cycle against active recruitment notices. Always cross-check with the official portal notification ({spec.sourceLabel}) prior to final form submission.
+          </div>
+        </div>
+
+        {/* Portal Exceptions & Special Instructions */}
+        {spec.exceptions && spec.exceptions.length > 0 && (
+          <div className="card p-5 mb-6 border-l-4" style={{ borderLeftColor: "#f59e0b", backgroundColor: "var(--color-surface)" }}>
+            <div className="flex items-center gap-2 mb-2">
+              <i className="fa-solid fa-circle-exclamation text-amber-500" style={{ fontSize: "15px" }} aria-hidden="true" />
+              <h2 className="text-sm font-bold uppercase tracking-wider" style={{ color: "var(--color-text)" }}>
+                Important Portal Exceptions &amp; Rules ({spec.name})
+              </h2>
+            </div>
+            <ul className="space-y-2 text-xs leading-relaxed" style={{ color: "var(--color-muted)" }}>
+              {spec.exceptions.map((ex, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <span className="text-amber-500 font-bold shrink-0">•</span>
+                  <span>{ex}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* GEO Quick Specs & Tool Callout Box */}
         <div className="card p-5 mb-6 border-l-4" style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}>
