@@ -125,8 +125,8 @@ export const TOOLS: Tool[] = [
     id: "photo-enhancer",
     category: "most-used",
     icon: "fa-wand-magic-sparkles",
-    title: "AI Photo Enhancer",
-    desc: "Adjust contrast and details.",
+    title: "Smart Photo Enhancer",
+    desc: "Adjust contrast and details with smart browser filters.",
     group: "filter",
     filterType: "enhance",
   },
@@ -451,9 +451,9 @@ export const TOOLS: Tool[] = [
   {
     id: "ai-face",
     category: "effects",
-    icon: "fa-robot",
-    title: "AI Face Generator",
-    desc: "Create random dummy face.",
+    icon: "fa-user",
+    title: "Dummy Face Avatar Generator",
+    desc: "Create procedural dummy face avatar.",
     group: "ai-face",
   },
   {

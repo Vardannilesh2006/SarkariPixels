@@ -253,9 +253,9 @@ Note: Yeh tool tabhi use karo jab actually minimum size error aa raha ho. Normal
   },
 
   "photo-enhancer": {
-    metaTitle: "AI Photo Enhancer — Improve Contrast & Clarity Online | SarkariPixels",
-    metaDesc: "Enhance dark or dull photos online. Auto-adjust brightness, contrast, and sharpness. Free browser-based tool. No upload needed.",
-    h1: "AI Photo Enhancer — Auto Brightness & Contrast Fix",
+    metaTitle: "Smart Photo Enhancer — Improve Contrast & Clarity Online | SarkariPixels",
+    metaDesc: "Enhance dark or dull photos online. Auto-adjust brightness, contrast, and sharpness with smart browser filters. Free, instant, zero upload.",
+    h1: "Smart Photo Enhancer — Auto Brightness & Contrast Fix",
     description: `Phone camera se dark ya flat photo aayi? Room lighting achi nahi thi? Yeh tool automatic contrast enhancement, brightness correction, aur sharpening apply karta hai.
 
 Khas taur par useful jab photo thodi dark ho aur face clearly visible na ho — jo ID verification mein rejection cause karta hai. Processing browser mein hoti hai Canvas API se.`,
@@ -266,7 +266,7 @@ Khas taur par useful jab photo thodi dark ho aur face clearly visible na ho — 
       "Download karein",
     ],
     faqs: [
-      { q: "Kya yeh truly 'AI' hai?", a: "Canvas-based smart filters use hote hain — histogram equalization aur adaptive sharpening. Deep learning nahi, lekin most cases mein kaafi effective hai." },
+      { q: "Kya yeh tool AI use karta hai?", a: "Nahi, yeh tool deterministic Canvas smart filters use karta hai — histogram equalization aur adaptive contrast sharpening. Deep learning model nahi hai, sabhi adjustments aapke browser mein localized algorithms se hote hain bina koi photo upload kiye." },
       { q: "Bahut dark photo theek hogi?", a: "Partially. Extreme underexposure ka perfect fix nahi hai. Decent result ke liye original mein kuch detail honi chahiye." },
       { q: "Enhance karne se file size badhegi?", a: "Thodi badh sakti hai. Reduce KB tool baad mein use karo agar zaroorat ho." },
     ],
@@ -712,13 +712,13 @@ Note: Severely blurry photos fully recover nahi hoti. Moderate blur correction k
   },
 
   "ai-face": {
-    metaTitle: "AI Face Generator — Random Dummy Face Creator | SarkariPixels",
-    metaDesc: "Generate random AI dummy face photos online. Testing and placeholder use. Browser-based canvas generation.",
-    h1: "AI Face Generator — Random Dummy Face",
-    description: `Testing purposes ke liye random synthetic face generate karo. UI prototyping, placeholder photos, ya demo content ke liye — real person ki photo nahi.`,
-    howTo: ["Generate click karo", "Ek random face create hoga", "Download karo ya regenerate karo"],
+    metaTitle: "Dummy Face Avatar Generator — Procedural Face Creator | SarkariPixels",
+    metaDesc: "Generate random procedural dummy face avatars online. Testing and placeholder use. Browser-based canvas generation.",
+    h1: "Dummy Face Avatar Generator — Procedural Canvas Face",
+    description: `Testing purposes ke liye random synthetic face avatar generate karo. UI prototyping, placeholder photos, ya demo content ke liye — real person ki photo nahi.`,
+    howTo: ["Generate click karo", "Ek random avatar create hoga", "Download karo ya regenerate karo"],
     faqs: [
-      { q: "Kya yeh real person hai?", a: "Nahi. Completely synthetic, algorithmically generated face hai." },
+      { q: "Kya yeh real person hai?", a: "Nahi. Completely synthetic, procedural canvas drawing hai." },
     ],
     relatedTools: ["passport-maker", "photo-enhancer"],
   },
