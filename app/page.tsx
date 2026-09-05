@@ -152,8 +152,8 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-4">
             {[
               { icon: "trust-browser", label: "100% Browser-Based", sub: "No upload. Nothing leaves your device." },
-              { icon: "trust-tools", label: "88 Specialized Tools", sub: "Every exam portal covered." },
-              { icon: "trust-exams", label: "12+ Exams Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
+              { icon: "trust-tools", label: "88 Specialized Tools", sub: "Covers major exam and recruitment portals." },
+              { icon: "trust-exams", label: "Major Boards Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
             ].map((item) => (
               <div key={item.label} className="trust-item">
                 <div className="trust-icon" aria-hidden="true">
@@ -416,7 +416,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 id="exams-heading" className="t-h2 mb-3">Supported Exams</h2>
             <p className="t-body mb-8" style={{ color: "var(--color-muted)" }}>
-              Exact photo and signature specs for every portal — pre-loaded.
+              Exact photo and signature specs for major exam portals — pre-loaded.
             </p>
             <div className="flex flex-wrap justify-center gap-2" role="list" aria-label="Supported exam portals">
               {[

@@ -10,8 +10,8 @@
 | QW-04 | Rename/disclose "AI Photo Enhancer" | Done | Renamed to "Smart Photo Enhancer" in lib/tools-data.ts and lib/tool-content.ts; FAQ clarifies deterministic Canvas histogram equalization/adaptive sharpening; verified 0 instances of "AI Photo Enhancer" remain sitewide. |
 | QW-05 | Remove static "0ms" processing badge | Done | Replaced static "Processing HTML5 Canvas (0ms)" in app/tool/[slug]/page.tsx with "Runs locally in your browser"; grep verification confirms 0 static "0ms" claims sitewide. |
 | QW-06 | Add source links to exam-specs page | Done | Added official sourceUrl and sourceLabel to all 8 exam boards in lib/exam-specs.ts; updated app/exam-specs/page.tsx and app/exam-specs/[exam]/page.tsx with clickable official portal notice links; verified 8/8 official URLs present in rendered HTML. |
-| QW-07 | Soften "Every exam portal covered" claim | In Progress | Reviewing and updating broad portal coverage claims sitewide |
-| P0-01 | Confirm/fix SSR-CSR rendering via GSC | Not Started | |
+| QW-07 | Soften "Every exam portal covered" claim | Done | Changed homepage trust badge to "Covers major exam and recruitment portals" and exam section copy to "major exam portals" (app/page.tsx); grep search verifies 0 unqualified "every portal" claims remain sitewide. |
+| P0-01 | Confirm/fix SSR-CSR rendering via GSC | In Progress | Checking SSR/SSG output across tool routes |
 | P0-02 | Full-site canonical crawl | Not Started | |
 | P0-03 | GSC redirect/404 audit | Not Started | |
 | P0-08 | Build tool registry (foundational) | Not Started | |
