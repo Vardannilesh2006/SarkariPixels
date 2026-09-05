@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import type { Tool } from "@/lib/tools-data";
 
 /* ── Category Colors ────────────────────────────────────────────────── */
@@ -189,6 +189,20 @@ export function ResultPreview({
   const targetBytesLimit = targetKB ? targetKB * 1024 : undefined;
   const isCompliant = targetBytesLimit ? outputSize <= targetBytesLimit : true;
 
+  const [outputDimensions, setOutputDimensions] = useState<{ width: number; height: number } | null>(null);
+
+  useEffect(() => {
+    if (outputBlob) {
+      const img = new Image();
+      const objUrl = URL.createObjectURL(outputBlob);
+      img.onload = () => {
+        setOutputDimensions({ width: img.naturalWidth, height: img.naturalHeight });
+        URL.revokeObjectURL(objUrl);
+      };
+      img.src = objUrl;
+    }
+  }, [outputBlob]);
+
   function download() {
     const url = URL.createObjectURL(outputBlob);
     const a = document.createElement("a");
@@ -254,6 +268,63 @@ export function ResultPreview({
             {targetKB && <span className="t-caption">Target: {targetKB} KB</span>}
           </div>
         </div>
+      </div>
+
+      {/* Pre-Download Portal Validation Checker */}
+      <div
+        className="rounded-xl border p-4 text-xs space-y-2.5"
+        style={{
+          backgroundColor: isCompliant ? "var(--color-surface)" : "#fff1f2",
+          borderColor: isCompliant ? "var(--color-border)" : "#fca5a5",
+        }}
+      >
+        <div className="flex items-center justify-between border-b pb-2" style={{ borderColor: "var(--color-border)" }}>
+          <div className="flex items-center gap-1.5 font-bold" style={{ color: "var(--color-text)" }}>
+            <i className={`fa-solid ${isCompliant ? "fa-circle-check text-emerald-600" : "fa-triangle-exclamation text-rose-600"}`} aria-hidden="true" />
+            <span>Pre-Download Portal Validation Check</span>
+          </div>
+          <span
+            className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+            style={{
+              backgroundColor: isCompliant ? "#dcfce7" : "#fee2e2",
+              color: isCompliant ? "#15803d" : "#b91c1c",
+            }}
+          >
+            {isCompliant ? "Portal Ready" : "Limit Exceeded"}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <div className="p-2 rounded-lg bg-white dark:bg-slate-900 border" style={{ borderColor: "var(--color-border)" }}>
+            <span className="text-[10px] uppercase font-bold text-slate-400 block">File Size</span>
+            <div className="flex items-center gap-1 font-semibold mt-0.5">
+              <span className={isCompliant ? "text-emerald-600 dark:text-emerald-400" : "text-rose-600 dark:text-rose-400"}>
+                {formatSize(outputSize)}
+              </span>
+              {targetKB && <span className="text-slate-400 font-normal text-[11px]">(max {targetKB}KB)</span>}
+            </div>
+          </div>
+
+          <div className="p-2 rounded-lg bg-white dark:bg-slate-900 border" style={{ borderColor: "var(--color-border)" }}>
+            <span className="text-[10px] uppercase font-bold text-slate-400 block">Dimensions</span>
+            <span className="font-semibold text-slate-800 dark:text-slate-200 mt-0.5 block">
+              {outputDimensions ? `${outputDimensions.width} × ${outputDimensions.height} px` : "Verifying..."}
+            </span>
+          </div>
+
+          <div className="p-2 rounded-lg bg-white dark:bg-slate-900 border" style={{ borderColor: "var(--color-border)" }}>
+            <span className="text-[10px] uppercase font-bold text-slate-400 block">MIME Format</span>
+            <span className="font-semibold text-slate-800 dark:text-slate-200 mt-0.5 block">
+              {outputBlob.type || outputFormat.toUpperCase()}
+            </span>
+          </div>
+        </div>
+
+        {!isCompliant && (
+          <div className="p-2.5 rounded-lg bg-rose-50 dark:bg-rose-950/40 text-rose-800 dark:text-rose-300 text-[11px] leading-relaxed border border-rose-200 dark:border-rose-900">
+            ⚠️ <strong>Rejection Warning:</strong> Your file size ({formatSize(outputSize)}) exceeds the target limit ({targetKB} KB). Government recruitment portals (SSC, UPSC, etc.) automatically reject files that exceed maximum thresholds. Please adjust the target KB or decrease physical dimensions before submitting.
+          </div>
+        )}
       </div>
 
       {/* Action buttons */}

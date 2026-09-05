@@ -16,7 +16,8 @@
     "test:specs": "node scripts/verify-exam-specs.mjs",
     "test:dpi": "node scripts/verify-dpi-accuracy.mjs",
     "test:increase-kb": "node scripts/verify-increase-kb-disclosure.mjs",
-    "test:schemas": "node scripts/verify-workflow-schemas.mjs"
+    "test:schemas": "node scripts/verify-workflow-schemas.mjs",
+    "test:validation": "node scripts/verify-validation-checker.mjs"
   },
   "keywords": [
     "photo-resizer",
