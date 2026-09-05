@@ -7,6 +7,8 @@ export interface ExamSpec {
   key: string;
   name: string;
   fullName: string;
+  sourceUrl: string;
+  sourceLabel: string;
   photo: {
     widthCm?: number;
     heightCm?: number;
@@ -39,6 +41,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "ssc",
     name: "SSC",
     fullName: "Staff Selection Commission (SSC)",
+    sourceUrl: "https://ssc.gov.in",
+    sourceLabel: "ssc.gov.in",
     photo: {
       widthCm: 3.5,
       heightCm: 4.5,
@@ -71,6 +75,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "upsc",
     name: "UPSC",
     fullName: "Union Public Service Commission (UPSC)",
+    sourceUrl: "https://upsconline.nic.in",
+    sourceLabel: "upsconline.nic.in",
     photo: {
       widthPx: 350,
       heightPx: 350,
@@ -102,6 +108,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "bpsc",
     name: "BPSC",
     fullName: "Bihar Public Service Commission (BPSC)",
+    sourceUrl: "https://bpsc.bih.nic.in",
+    sourceLabel: "bpsc.bih.nic.in",
     photo: {
       widthPx: 250,
       heightPx: 327,
@@ -132,6 +140,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "bssc",
     name: "BSSC",
     fullName: "Bihar Staff Selection Commission (BSSC)",
+    sourceUrl: "https://bssc.bihar.gov.in",
+    sourceLabel: "bssc.bihar.gov.in",
     photo: {
       widthCm: 3.5,
       heightCm: 4.5,
@@ -160,6 +170,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "rrb",
     name: "RRB",
     fullName: "Railway Recruitment Board (RRB / RRC)",
+    sourceUrl: "https://indianrailways.gov.in",
+    sourceLabel: "indianrailways.gov.in",
     photo: {
       widthCm: 3.5,
       heightCm: 4.5,
@@ -191,6 +203,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "nta",
     name: "NTA / JEE / NEET",
     fullName: "National Testing Agency (NTA) — JEE, NEET, CUET etc.",
+    sourceUrl: "https://nta.ac.in",
+    sourceLabel: "nta.ac.in",
     photo: {
       widthPx: 100,
       heightPx: 120,
@@ -219,6 +233,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "ibps",
     name: "IBPS / Bank PO",
     fullName: "Institute of Banking Personnel Selection (IBPS) & SBI",
+    sourceUrl: "https://ibps.in",
+    sourceLabel: "ibps.in",
     photo: {
       widthPx: 200,
       heightPx: 230,
@@ -249,6 +265,8 @@ export const EXAM_SPECS: ExamSpec[] = [
     key: "pan",
     name: "PAN Card",
     fullName: "NSDL / UTI PAN Card Application",
+    sourceUrl: "https://incometax.gov.in",
+    sourceLabel: "incometax.gov.in",
     photo: {
       widthCm: 2.5,
       heightCm: 3.5,

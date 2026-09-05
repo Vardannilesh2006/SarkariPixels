@@ -158,10 +158,22 @@ export default async function ExamSpecPage({ params }: Props) {
 
         <h1 className="t-h1 mb-2">{spec.name} Photo &amp; Signature Requirements</h1>
         <p className="t-body mb-1" style={{ color: "var(--color-muted)" }}>{spec.fullName}</p>
-        <p className="t-caption mb-6">
-          <i className="fa-solid fa-calendar-check mr-1" aria-hidden="true" />
-          Last Verified: {spec.lastVerified} — Official notification specifications
-        </p>
+        <div className="flex flex-wrap items-center gap-3 mb-6">
+          <p className="t-caption">
+            <i className="fa-solid fa-calendar-check mr-1" aria-hidden="true" />
+            Last Verified: {spec.lastVerified} — Official notification specifications
+          </p>
+          <a
+            href={spec.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
+            aria-label={`Official portal source for ${spec.name}`}
+          >
+            <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: "10px" }} aria-hidden="true" />
+            Official Portal Notice ({spec.sourceLabel})
+          </a>
+        </div>
 
         {/* GEO Quick Specs & Tool Callout Box */}
         <div className="card p-5 mb-6 border-l-4" style={{ borderLeftColor: "var(--color-accent)", backgroundColor: "var(--color-surface)" }}>

@@ -89,12 +89,24 @@ export default function ExamSpecsHubPage() {
                   <h2 className="t-h3">{exam.name}</h2>
                   <p className="t-caption">{exam.fullName}</p>
                 </div>
-                <span
-                  className="text-xs rounded-full px-2 py-1 font-semibold shrink-0"
-                  style={{ backgroundColor: "#eff6ff", color: "var(--color-accent)", fontSize: "0.6875rem" }}
-                >
-                  Verified: {exam.lastVerified}
-                </span>
+                <div className="flex flex-col items-end gap-1.5 shrink-0">
+                  <span
+                    className="text-xs rounded-full px-2.5 py-0.5 font-semibold"
+                    style={{ backgroundColor: "#eff6ff", color: "var(--color-accent)", fontSize: "0.6875rem" }}
+                  >
+                    Verified: {exam.lastVerified}
+                  </span>
+                  <a
+                    href={exam.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 hover:underline"
+                    aria-label={`Official notification source for ${exam.name}`}
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: "9px" }} aria-hidden="true" />
+                    Official Notice ({exam.sourceLabel})
+                  </a>
+                </div>
               </div>
 
               <div className="space-y-3 text-sm mb-4">
