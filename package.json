@@ -13,7 +13,8 @@
     "check:canonicals": "node scripts/check-canonicals.mjs",
     "audit:404": "node scripts/audit-redirects-404.mjs",
     "test:registry": "node scripts/verify-tool-registry.mjs",
-    "test:specs": "node scripts/verify-exam-specs.mjs"
+    "test:specs": "node scripts/verify-exam-specs.mjs",
+    "test:dpi": "node scripts/verify-dpi-accuracy.mjs"
   },
   "keywords": [
     "photo-resizer",

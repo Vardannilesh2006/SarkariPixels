@@ -367,7 +367,14 @@ export default async function ToolPage({ params }: Props) {
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Output Format</span>
-                  <span className="font-semibold text-slate-800 dark:text-slate-200">{registryEntry?.outputFormat || "JPG / JPEG"}</span>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="font-semibold text-slate-800 dark:text-slate-200">{registryEntry?.outputFormat || "JPG / JPEG"}</span>
+                    {registryEntry?.setsDPI && (
+                      <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/50 px-1.5 py-0.5 rounded border border-emerald-200 dark:border-emerald-800">
+                        JFIF APP0 Tagged
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Security</span>

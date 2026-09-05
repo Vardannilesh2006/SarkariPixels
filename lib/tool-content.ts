@@ -321,7 +321,7 @@ Print ke liye DPI matter karta hai — 300 DPI standard professional quality hai
     h1: "Resize Photo to 3.5 × 4.5 cm (SSC/RRB Standard)",
     description: `India ka sabse common exam photo size — 3.5 × 4.5 centimeters. SSC CGL, SSC CHSL, RRB NTPC, BPSC, BSSC, aur dozens of state PSCs — sab yahi size use karte hain.
 
-Ek click mein resize — koi settings nahi, koi confusion nahi. Bas photo upload karo aur download karo. Output automatically 300 DPI pe set hoti hai print quality ke liye.`,
+Ek click mein resize — koi settings nahi, koi confusion nahi. Bas photo upload karo aur download karo. Dimensions automatically 413 × 531 pixels scale hoti hain jo standard 300 DPI print density ke equivalent hain (DPI metadata embed karne ke liye hamara Convert DPI tool use karein).`,
     howTo: [
       "Apni photo upload karein",
       "'Resize to 3.5×4.5 cm' button dabayein",
@@ -826,10 +826,10 @@ Important: DPI metadata change karna actual pixels change nahi karta — sirf "p
   },
 
   "resize-sign-6-2": {
-    metaTitle: "Resize Signature 6cm × 2cm — 300 DPI | SarkariPixels",
-    metaDesc: "Resize signature to 6cm × 2cm at 300 DPI. Common signature size for Indian government forms. Free, instant.",
+    metaTitle: "Resize Signature 6cm × 2cm — 300 DPI Scale | SarkariPixels",
+    metaDesc: "Resize signature to 6cm × 2cm (708 × 236 px equivalent to 300 DPI). Common signature size for Indian government forms. Free, instant.",
     h1: "Resize Signature to 6cm × 2cm",
-    description: `Signature ko 6 cm × 2 cm dimension mein resize karo, 300 DPI pe. Kuch government applications aur notarized documents yeh size require karte hain.`,
+    description: `Signature ko 6 cm × 2 cm dimension (708 × 236 px equivalent to 300 DPI print scale) mein resize karo. Agar portal explicit JFIF DPI header check karta hai toh hamara Convert DPI tool use karein.`,
     howTo: ["Signature upload karein", "Resize click karein", "Download karein"],
     faqs: [],
     relatedTools: ["resize-signature", "generate-signature", "reduce-kb"],
