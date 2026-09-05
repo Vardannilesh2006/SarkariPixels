@@ -23,7 +23,9 @@
     "test:about-contact": "node scripts/verify-about-contact.mjs",
     "test:browser-matrix": "node scripts/verify-browser-matrix.mjs",
     "test:internet-claims": "node scripts/verify-internet-claims.mjs",
-    "test:causal-faqs": "node scripts/verify-causal-faqs.mjs"
+    "test:causal-faqs": "node scripts/verify-causal-faqs.mjs",
+    "test:qa": "node tests/tools-qa.test.mjs",
+    "test": "node tests/tools-qa.test.mjs"
   },
   "keywords": [
     "photo-resizer",
