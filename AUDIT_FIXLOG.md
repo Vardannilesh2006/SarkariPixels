@@ -5,8 +5,8 @@
 | ID | Title | Status | Evidence / Notes |
 |---|---|---|---|
 | QW-01 | Standardize canonical host (www vs non-www) | Done | Centralized BASE_URL in lib/constants.ts sitewide; verified with `npm run check:canonicals`: 126/126 public pages use `https://www.sarkaripixels.online`, 0 non-www, 0 missing; next.config.ts host 301 redirects active. |
-| QW-02 | Remove blanket "DPDP Act 2023 100% Compliant" badge | In Progress | Scanning and removing blanket compliance claims sitewide |
-| QW-03 | Fix Privacy page "Zero Data Collection" heading | Not Started | |
+| QW-02 | Remove blanket "DPDP Act 2023 100% Compliant" badge | Done | Replaced sitewide with "Images are processed locally in your browser" / "Processed in Browser" (app/page.tsx, app/tool/[slug]/page.tsx, app/page/[id]/page.tsx); grep search confirms 0 instances of "100% Compliant" or unqualified "DPDP Act 2023 compliant" sitewide. |
+| QW-03 | Fix Privacy page "Zero Data Collection" heading | In Progress | Refactoring PrivacyContent sections and adding vendor transparency table |
 | QW-04 | Rename/disclose "AI Photo Enhancer" | Not Started | |
 | QW-05 | Remove static "0ms" processing badge | Not Started | |
 | QW-06 | Add source links to exam-specs page | Not Started | |

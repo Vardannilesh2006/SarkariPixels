@@ -12,7 +12,7 @@ interface Props {
 const PAGES: Record<string, { title: string; desc: string }> = {
   privacy: {
     title: "Privacy Policy — SarkariPixels",
-    desc: "SarkariPixels operates 100% in your browser. No images are ever uploaded to any server. Read our complete privacy policy including DPDP Act 2023 compliance.",
+    desc: "SarkariPixels operates 100% in your browser. No images are ever uploaded to any server. Read our complete privacy policy.",
   },
   about: {
     title: "About SarkariPixels — Free Exam Photo Resizer",
@@ -122,7 +122,7 @@ function PrivacyContent() {
   return (
     <article>
       <h1 className="t-h1 mb-2">Privacy Policy</h1>
-      <p className="t-caption mb-8">Last updated: June 2026 · Version 2.0 (DPDP Act 2023 compliant)</p>
+      <p className="t-caption mb-8">Last updated: June 2026 · Version 2.0</p>
 
       <h2 className="t-h3 mb-3 mt-8">Zero Data Collection — How SarkariPixels Works</h2>
       <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>

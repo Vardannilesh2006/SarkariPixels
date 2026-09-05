@@ -556,7 +556,7 @@ export default function HomePage() {
             &copy; {new Date().getFullYear()} SarkariPixels. All rights reserved.
           </span>
           <span className="t-caption">
-            DPDP Act 2023 compliant. Images never leave your browser.
+            Images are processed locally in your browser.
           </span>
         </div>
       </footer>

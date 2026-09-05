@@ -370,8 +370,8 @@ export default async function ToolPage({ params }: Props) {
                   <span className="font-semibold text-slate-800 dark:text-slate-200">JPG / JPEG (300 DPI)</span>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block">DPDP Act 2023</span>
-                  <span className="font-semibold text-blue-600 dark:text-blue-400">100% Compliant</span>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Security</span>
+                  <span className="font-semibold text-blue-600 dark:text-blue-400">Processed in Browser</span>
                 </div>
               </div>
             </div>
