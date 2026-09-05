@@ -14,6 +14,7 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
 };
 
 import { SITE_URL } from "@/lib/constants";
+import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
 
 export const metadata: Metadata = {
   title: "SarkariPixels | Free Photo & Signature Resizer for Govt Exams",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: SITE_URL,
-    title: "SarkariPixels | 88 Free Exam Photo Tools",
+    title: `SarkariPixels | ${TOTAL_TOOLS_COUNT} Free Exam Photo Tools`,
     description:
       "Compress and resize photos to exact KB and pixel limits for any Indian government exam portal. Browser-only, zero upload.",
     images: [{ url: `${SITE_URL}/og-image.jpg`, width: 1200, height: 630 }],
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 const NAV_CATEGORIES = [
-  { key: "all", label: "All Tools", count: 88 },
+  { key: "all", label: "All Tools", count: TOTAL_TOOLS_COUNT },
   { key: "most-used", label: "Most Used", count: CATEGORY_COUNTS["most-used"] },
   { key: "basic-edit", label: "Basic Editing", count: CATEGORY_COUNTS["basic-edit"] },
   { key: "effects", label: "Effects", count: CATEGORY_COUNTS["effects"] },
@@ -130,7 +131,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a href="#tools" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 32px" }}>
-                Browse 88 Tools
+                Browse {TOTAL_TOOLS_COUNT} Tools
               </a>
               <a href="/exam-specs" className="btn btn-ghost" style={{ fontSize: "0.9375rem", padding: "12px 24px" }}>
                 <i className="fa-solid fa-list-check mr-2" aria-hidden="true" />
@@ -152,7 +153,7 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-4">
             {[
               { icon: "trust-browser", label: "100% Browser-Based", sub: "No upload. Nothing leaves your device." },
-              { icon: "trust-tools", label: "88 Specialized Tools", sub: "Covers major exam and recruitment portals." },
+              { icon: "trust-tools", label: `${TOTAL_TOOLS_COUNT} Specialized Tools`, sub: "Covers major exam and recruitment portals." },
               { icon: "trust-exams", label: "Major Boards Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
             ].map((item) => (
               <div key={item.label} className="trust-item">

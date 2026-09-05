@@ -2,10 +2,11 @@
 // Custom 404 page — helps with UX and SEO (reduces bounce rate from broken links)
 
 import Link from "next/link";
+import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
 
 export const metadata = {
   title: "Page Not Found — SarkariPixels",
-  description: "The page you're looking for doesn't exist. Browse our 88 free photo editing tools for government exam applications.",
+  description: `The page you're looking for doesn't exist. Browse our ${TOTAL_TOOLS_COUNT} free photo editing tools for government exam applications.`,
   robots: { index: false, follow: true },
 };
 
@@ -49,7 +50,7 @@ export default function NotFound() {
         {/* Quick Links */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">
           {[
-            { href: "/", icon: "fa-house", label: "All Tools", desc: "Browse 88 tools" },
+            { href: "/", icon: "fa-house", label: "All Tools", desc: `Browse ${TOTAL_TOOLS_COUNT} tools` },
             { href: "/exam-specs", icon: "fa-clipboard-list", label: "Exam Specs", desc: "Photo requirements" },
             { href: "/guides", icon: "fa-book-open", label: "Guides", desc: "Step-by-step help" },
           ].map((link) => (

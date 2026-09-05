@@ -4,6 +4,7 @@ import { GUIDES } from "@/lib/guides-content";
 import { notFound } from "next/navigation";
 
 import { SITE_URL } from "@/lib/constants";
+import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -16,7 +17,7 @@ const PAGES: Record<string, { title: string; desc: string }> = {
   },
   about: {
     title: "About SarkariPixels — Free Exam Photo Resizer",
-    desc: "About SarkariPixels — the free browser-based photo resizer built for Indian government exam applicants. Zero upload, 88 tools, covers SSC, UPSC, BPSC, RRB, IBPS.",
+    desc: `About SarkariPixels — the free browser-based photo resizer built for Indian government exam applicants. Zero upload, ${TOTAL_TOOLS_COUNT} tools, covers SSC, UPSC, BPSC, RRB, IBPS.`,
   },
   sitemap: {
     title: "HTML Sitemap — SarkariPixels",
@@ -232,7 +233,7 @@ function AboutContent() {
       </p>
 
       <p className="t-body mb-8" style={{ color: "var(--color-muted)" }}>
-        This site exists to solve exactly that — with 88 specific tools covering every major Indian exam&apos;s
+        This site exists to solve exactly that — with {TOTAL_TOOLS_COUNT} specific tools covering every major Indian exam&apos;s
         photo and signature requirements. All processing happens in your browser. Your photo never goes anywhere.
       </p>
 

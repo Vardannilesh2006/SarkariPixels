@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TOOLS, getToolById, CATEGORY_LABELS } from "@/lib/tools-data";
+import { getToolRegistryEntry } from "@/lib/toolRegistry";
 import { getToolContent } from "@/lib/tool-content";
 import ToolEditor from "@/components/ToolEditor";
 
@@ -60,6 +61,7 @@ export default async function ToolPage({ params }: Props) {
   if (!tool) notFound();
 
   const content = getToolContent(slug);
+  const registryEntry = getToolRegistryEntry(slug);
   const categoryLabel = CATEGORY_LABELS[tool.category];
   const catStyle = CATEGORY_COLORS[tool.category] || { color: "var(--color-muted)", bg: "var(--color-surface)" };
 
@@ -315,22 +317,21 @@ export default async function ToolPage({ params }: Props) {
                 </div>
 
                 {/* Visual Step Breadcrumb Indicator */}
-                <div className="flex items-center gap-2 pt-2 border-t text-[11px] font-semibold text-slate-500 overflow-x-auto" style={{ borderColor: "var(--color-border)" }}>
-                  <span className="flex items-center gap-1 text-blue-600 dark:text-blue-400">
-                    <span className="w-4 h-4 rounded-full bg-blue-600 text-white text-[9px] font-bold flex items-center justify-center">1</span>
-                    Upload Photo
-                  </span>
-                  <span>→</span>
-                  <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
-                    <span className="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-[9px] font-bold flex items-center justify-center">2</span>
-                    Set KB / Size
-                  </span>
-                  <span>→</span>
-                  <span className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
-                    <span className="w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-[9px] font-bold flex items-center justify-center">3</span>
-                    Download JPG
-                  </span>
-                </div>
+                {registryEntry?.steps && registryEntry.steps.length > 0 && (
+                  <div className="flex items-center gap-2 pt-2 border-t text-[11px] font-semibold text-slate-500 overflow-x-auto" style={{ borderColor: "var(--color-border)" }}>
+                    {registryEntry.steps.map((st, idx) => (
+                      <span key={st.step} className="flex items-center gap-1.5 shrink-0">
+                        {idx > 0 && <span className="text-slate-400 mr-1">→</span>}
+                        <span className={`flex items-center gap-1 ${idx === 0 ? "text-blue-600 dark:text-blue-400" : "text-slate-700 dark:text-slate-300"}`}>
+                          <span className={`w-4 h-4 rounded-full text-[9px] font-bold flex items-center justify-center ${idx === 0 ? "bg-blue-600 text-white" : "bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200"}`}>
+                            {st.step}
+                          </span>
+                          {st.title}
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Canvas Editor */}
@@ -353,8 +354,7 @@ export default async function ToolPage({ params }: Props) {
                 </h2>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: "var(--color-muted)" }}>
-                <strong>{tool.title}</strong> is an in-browser image optimization tool tailored for Indian competitive recruitment portals (SSC, UPSC, BPSC, RRB, IBPS, NTA).
-                It converts and scales images to strict KB limits and pixel/cm dimensions locally on your device.
+                <strong>{tool.title}</strong> — {registryEntry?.summary || `${tool.title} is an in-browser image optimization tool tailored for Indian competitive recruitment portals.`}
               </p>
               <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
@@ -362,12 +362,12 @@ export default async function ToolPage({ params }: Props) {
                   <span className="font-semibold text-slate-800 dark:text-slate-200">Runs locally in your browser</span>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Privacy</span>
-                  <span className="font-semibold text-emerald-600 dark:text-emerald-400">Zero File Upload</span>
+                  <span className="text-[10px] uppercase font-bold text-slate-400 block">Accepted Inputs</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200">{registryEntry?.acceptedInputs.join(", ") || "JPG, PNG, WEBP"}</span>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Output Format</span>
-                  <span className="font-semibold text-slate-800 dark:text-slate-200">JPG / JPEG (300 DPI)</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200">{registryEntry?.outputFormat || "JPG / JPEG"}</span>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Security</span>
