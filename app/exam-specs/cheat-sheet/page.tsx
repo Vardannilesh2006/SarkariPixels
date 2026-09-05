@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { EXAM_SPECS } from "@/lib/exam-specs";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: { absolute: "Indian Exam Photo & Signature Specifications Cheat Sheet 2026 | SarkariPixels" },

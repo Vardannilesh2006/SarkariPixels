@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getToolById } from "@/lib/tools-data";
 import ToolEditor from "@/components/ToolEditor";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
+import { SITE_URL } from "@/lib/constants";
 
 interface Props {
   params: Promise<{ slug: string }>;

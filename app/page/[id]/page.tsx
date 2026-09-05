@@ -3,7 +3,7 @@ import { TOOLS, CATEGORY_LABELS } from "@/lib/tools-data";
 import { GUIDES } from "@/lib/guides-content";
 import { notFound } from "next/navigation";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
+import { SITE_URL } from "@/lib/constants";
 
 interface Props {
   params: Promise<{ id: string }>;

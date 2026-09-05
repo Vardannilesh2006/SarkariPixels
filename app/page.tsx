@@ -13,8 +13,7 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
   "most-used": { color: "#2563EB", bg: "#2563eb1a" },
 };
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.sarkaripixels.online";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "SarkariPixels | Free Photo & Signature Resizer for Govt Exams",
