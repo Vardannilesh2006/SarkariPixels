@@ -79,11 +79,20 @@ export default async function ToolPage({ params }: Props) {
         }
       : null;
 
+  const appCategory =
+    registryEntry?.workflowType === "signature" || registryEntry?.workflowType === "id-sheet"
+      ? "DesignApplication"
+      : registryEntry?.workflowType === "enhance"
+      ? "PhotoApplication"
+      : registryEntry?.workflowType === "compress" || registryEntry?.workflowType === "convert"
+      ? "UtilitiesApplication"
+      : "MultimediaApplication";
+
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication", "WebApplication"],
     name: tool.title,
-    applicationCategory: "MultimediaApplication",
+    applicationCategory: appCategory,
     operatingSystem: "Web Browser",
     browserRequirements: "Requires JavaScript",
     softwareVersion: "2.0",
@@ -91,14 +100,16 @@ export default async function ToolPage({ params }: Props) {
     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
     url: `${SITE_URL}/tool/${slug}`,
     description:
+      registryEntry?.summary ||
       content?.description ||
       `${tool.title}: ${tool.desc} Free, browser-based, no file upload needed.`,
     featureList: [
-      "100% browser-based processing",
-      "No file upload required",
-      "Free to use",
-      "Supports JPG, PNG, WEBP formats",
-      "Instant download",
+      "100% browser-based processing (Canvas / Web API)",
+      "No server file upload required — private client-side sandbox",
+      `Accepted inputs: ${registryEntry?.acceptedInputs.join(", ") || "JPG, PNG, WEBP"}`,
+      `Output format: ${registryEntry?.outputFormat || "JPG / JPEG"}`,
+      ...(registryEntry?.setsDPI ? ["Embeds 300 DPI JFIF APP0 marker metadata"] : []),
+      "Free unlimited usage without login",
     ],
     publisher: {
       "@type": "Organization",
@@ -108,19 +119,32 @@ export default async function ToolPage({ params }: Props) {
     dateModified: new Date().toISOString().split("T")[0],
   };
 
-  const howToSchema =
+  const stepsList =
     content?.howTo && content.howTo.length > 0
+      ? content.howTo.map((text, i) => ({
+          position: i + 1,
+          name: `Step ${i + 1}: ${registryEntry?.steps[i]?.title || `Action ${i + 1}`}`,
+          text,
+        }))
+      : (registryEntry?.steps || []).map((st) => ({
+          position: st.step,
+          name: `Step ${st.step}: ${st.title}`,
+          text: `Use ${tool.title} to complete ${st.title.toLowerCase()} directly in your browser.`,
+        }));
+
+  const howToSchema =
+    stepsList.length > 0
       ? {
           "@context": "https://schema.org",
           "@type": "HowTo",
           name: `How to use ${tool.title}`,
-          description: `Step-by-step guide to use ${tool.title} on SarkariPixels.`,
+          description: `Step-by-step guide to use ${tool.title} on SarkariPixels with client-side processing.`,
           tool: { "@type": "HowToTool", name: "SarkariPixels" },
-          step: content.howTo.map((step, i) => ({
+          step: stepsList.map((step) => ({
             "@type": "HowToStep",
-            position: i + 1,
-            name: `Step ${i + 1}`,
-            text: step,
+            position: step.position,
+            name: step.name,
+            text: step.text,
           })),
         }
       : null;
