@@ -358,6 +358,48 @@ export default async function ToolPage({ params }: Props) {
                 )}
               </div>
 
+              {/* Target Size Quick-Switch Strip */}
+              {(tool.category === "target-sizes" || tool.group === "compress") && (
+                <div className="px-6 py-3 border-b bg-slate-50/50 dark:bg-slate-900/50" style={{ borderColor: "var(--color-border)" }}>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
+                      <i className="fa-solid fa-bolt text-amber-500" aria-hidden="true" />
+                      Switch Target Size:
+                    </span>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:inline">Portal presets</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {[
+                      { label: "10 KB", slug: "compress-10" },
+                      { label: "20 KB", slug: "compress-20" },
+                      { label: "20-50 KB", slug: "compress-20-50" },
+                      { label: "50 KB", slug: "compress-50" },
+                      { label: "100 KB", slug: "compress-100" },
+                      { label: "200 KB", slug: "compress-200" },
+                      { label: "300 KB", slug: "compress-300" },
+                      { label: "500 KB", slug: "compress-500" },
+                      { label: "1 MB", slug: "compress-1mb" },
+                      { label: "2 MB", slug: "compress-2mb" },
+                    ].map((preset) => {
+                      const isActive = tool.id === preset.slug;
+                      return (
+                        <a
+                          key={preset.slug}
+                          href={`/tool/${preset.slug}`}
+                          className={`px-2.5 py-1 rounded-md text-xs font-medium transition-all ${
+                            isActive
+                              ? "bg-blue-600 text-white shadow-sm font-semibold pointer-events-none"
+                              : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                          }`}
+                        >
+                          {preset.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
               {/* Canvas Editor */}
               <ToolEditor tool={tool} />
             </div>

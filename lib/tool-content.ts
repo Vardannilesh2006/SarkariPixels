@@ -979,173 +979,323 @@ Important: DPI metadata change karna actual pixels change nahi karta — sirf "p
   // ── Exact Target Sizes ───────────────────────────────────────────────────
 
   "compress-5": {
-    metaTitle: "Compress to 5KB — Minimum Size Extreme Compression | SarkariPixels",
-    metaDesc: "Compress image to 5KB. Extreme compression for very strict portals. Quality will be reduced significantly.",
-    h1: "Compress to 5KB",
-    description: `Photo ko 5KB tak compress karo. Yeh extreme compression hai — visible quality loss hogi. Sirf tabhi use karo jab portal strictly 5KB demand kare.`,
-    howTo: ["Photo upload karein", "Compress to 5KB click karein", "Download karein"],
+    metaTitle: "Compress Image to 5KB — Ultra-Low Size Reduction | SarkariPixels",
+    metaDesc: "Compress image file footprint down to 5KB for legacy government forms and low-bandwidth portals. 100% browser-based with instant visual quality preview.",
+    h1: "Compress Image to 5KB Online Free",
+    description: `Compress image files to strictly under 5KB. While modern central recruitment portals (SSC, UPSC) enforce higher minimum limits (typically 20KB), certain legacy state boards, scholarship forms, and regional portals still mandate extreme 5KB limits for thumbnails or mini-signatures.
+
+Note on Quality: Compressing a photo to 5KB requires high quantization compression, which may soften fine lines. Always verify text and facial clarity in the preview before downloading.`,
+    howTo: [
+      "Select your image or signature file",
+      "Click Process to execute localized in-browser compression to 5KB",
+      "Inspect the live side-by-side preview to verify essential text legibility",
+      "Download your 5KB JPEG file instantly",
+    ],
     faqs: [
-      { q: "5KB pe quality kaisi hogi?", a: "Significantly reduced. Image blocky dikhegi lekin recognizable rahegi. Agar portal allow kare toh 10-20KB use karo better quality ke liye." },
+      { q: "5KB compression se image blur toh nahi hogi?", a: "5KB extreme compression hai, isliye fine details thodi soften hoti hain. SarkariPixels adaptive canvas scaling use karta hai taaki face ya signature recognizable rahe." },
+      { q: "Konsi forms 5KB demand karti hain?", a: "Kuch older state scholarship portals, legacy railway apprentice slots, aur regional board admit card portals 5KB limit rakhte hain." },
     ],
     relatedTools: ["compress-10", "compress-20", "reduce-kb"],
   },
 
   "compress-10": {
-    metaTitle: "Compress to 10KB — JPEG 10KB Compression | SarkariPixels",
-    metaDesc: "Compress JPEG image to 10KB online. Strict size limit compression. Free, instant, browser-based.",
-    h1: "JPEG to 10KB",
-    description: `Photo ko exactly 10KB tak compress karo. Low size limit ke liye — some signature upload portals 10KB maximum enforce karte hain.`,
-    howTo: ["Photo upload karein", "Compress to 10KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-5", "compress-15", "compress-20"],
+    metaTitle: "Compress Image to 10KB — SSC & IBPS Signature Limit | SarkariPixels",
+    metaDesc: "Compress signature and document scans to 10KB online. Exact size for SSC, IBPS, and state board signature uploads. Zero server upload, instant download.",
+    h1: "Compress Image to 10KB (JPEG/JPG)",
+    description: `Target exactly 10KB file footprint for online examination applications. 10KB is the authoritative minimum signature limit for major central examination portals including Staff Selection Commission (SSC CGL, CHSL, MTS) and Institute of Banking Personnel Selection (IBPS PO, Clerk).
+
+All compression runs locally on your device via HTML5 Canvas, preserving dark ink contrast while eliminating extraneous metadata bloat.`,
+    howTo: [
+      "Upload your cropped signature or small photograph",
+      "Verify target threshold is set to 10KB",
+      "Review the Pre-Download Validation check to ensure file is under 10KB",
+      "Download your portal-ready 10KB JPEG file",
+    ],
+    faqs: [
+      { q: "SSC signature ke liye 10KB kyu required hai?", a: "SSC notifications ke mutabiq signature size strictly 10KB se 20KB ke beech honi chahiye. 10KB se kam hone par portal reject kar deta hai." },
+      { q: "Signature background white rahega?", a: "Haan, compression sirf byte density optimize karti hai; background aur ink contrast intact rehte hain." },
+    ],
+    relatedTools: ["compress-15", "compress-20", "generate-signature"],
   },
 
   "compress-15": {
-    metaTitle: "Compress to 15KB — Image Compression Online | SarkariPixels",
-    metaDesc: "Compress image to under 15KB. For portals with 15KB file limit. Free, browser-based.",
-    h1: "Compress to 15KB",
-    description: `Image ko 15KB limit ke andar compress karo. Kuch signature portals 15KB maximum allow karte hain.`,
-    howTo: ["Photo upload karein", "Compress to 15KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-10", "compress-20"],
+    metaTitle: "Compress Image to 15KB — BPSC Signature Limit | SarkariPixels",
+    metaDesc: "Compress signature images under 15KB for BPSC and state competitive exam applications. Fast, client-side, privacy-first image optimizer.",
+    h1: "Compress Image to 15KB Online",
+    description: `Compress scanned signatures and document slips to strictly under 15KB. Bihar Public Service Commission (BPSC) specifically mandates an upper file limit of 15KB for Hindi and English signature uploads.
+
+Using SarkariPixels, you achieve exact 15KB sizing in milliseconds without sending sensitive signatures across external networks.`,
+    howTo: [
+      "Select your signature image",
+      "Automatic algorithm optimizes byte density to under 15KB",
+      "Verify dimensions and size in the Pre-Download checklist",
+      "Download portal-ready 15KB JPG",
+    ],
+    faqs: [
+      { q: "BPSC signature limit kitni hoti hai?", a: "BPSC portal par Hindi aur English signature ka maximum file size strictly 15KB allow hota hai." },
+      { q: "Signature faint hone ka risk hai?", a: "Nahi, binary canvas compression ink darkness preserve karti hai taaki portal rejection na ho." },
+    ],
+    relatedTools: ["compress-10", "compress-20", "resize-pixel"],
   },
 
   "compress-20": {
-    metaTitle: "Compress to 20KB — Minimum SSC/BPSC Photo Size | SarkariPixels",
-    metaDesc: "Compress image to 20KB. Minimum size for SSC and BPSC photos. Good quality at 20KB for passport photos.",
-    h1: "Compress to 20KB",
-    description: `20KB — SSC aur BPSC photo ka minimum required size. Agar photo bahut badi hai toh 20KB tak compress karo.`,
-    howTo: ["Photo upload karein", "Compress to 20KB click karein", "Download karein"],
-    faqs: [
-      { q: "SSC photo 20KB minimum kyun?", a: "Portal rejects files jo too small hain — unreadable quality prevent karne ke liye." },
+    metaTitle: "Compress to 20KB — Minimum SSC & UPSC Photo Size | SarkariPixels",
+    metaDesc: "Compress passport photos and signatures to 20KB. Matches SSC, UPSC, and RRB portal minimum file size limits. Browser-based, no upload.",
+    h1: "Compress Image to 20KB Online Free",
+    description: `20KB represents the universal minimum threshold across major Indian recruitment portals. SSC, UPSC, RRB, and BPSC systems automatically flag and reject images below 20KB with 'File size too small' errors to prevent blurry or pixelated submissions.
+
+Compressing to 20KB strikes the ideal equilibrium between sharp facial definition and small file footprint.`,
+    howTo: [
+      "Upload your passport-style photograph",
+      "Tool automatically iterates quality factor to land at or just below 20KB",
+      "Inspect the live portal compliance badge",
+      "Download your verified 20KB JPEG file",
     ],
-    relatedTools: ["compress-50", "ssc-photo", "reduce-kb"],
+    faqs: [
+      { q: "Portals minimum 20KB kyu demand karte hain?", a: "Taaki print admit card par photo clear dikhe aur facial recognition me verification fail na ho." },
+      { q: "Agar photo pehle se 20KB se choti hai?", a: "Agar photo 20KB se kam hai toh hamara Increase Image Size in KB tool ya Resize Image Pixel use karke dimensions badhayein." },
+    ],
+    relatedTools: ["compress-50", "ssc-photo", "compress-20-50"],
   },
 
   "compress-20-50": {
-    metaTitle: "Compress Between 20KB-50KB — SSC BPSC Range | SarkariPixels",
-    metaDesc: "Compress image to between 20KB and 50KB. Perfect range for SSC, BPSC, RRB exam photo upload.",
-    h1: "Compress to 20KB–50KB Range",
-    description: `SSC, BPSC, RRB — sabka sweet spot 20-50KB hai. Yeh tool automatically 35KB target pe compress karta hai — guaranteed 20-50KB range ke andar.`,
-    howTo: ["Photo upload karein", "Compress click karein", "Auto-targets 35KB", "Download karein"],
-    faqs: [],
+    metaTitle: "Compress Image to 20KB–50KB — Universal Govt Exam Sweet Spot | SarkariPixels",
+    metaDesc: "Automatically compress photos into the 20KB–50KB bracket required by SSC, RRB, and state PSC portals. Perfectly calibrated 35KB target.",
+    h1: "Compress to 20KB–50KB Range (Universal Sweet Spot)",
+    description: `The 20KB to 50KB range is India's most ubiquitous competitive exam specification. SSC CGL, SSC CHSL, RRB NTPC, BPSC CCE, and state police recruitment boards all mandate photos strictly inside this window.
+
+This tool automatically targets 35KB — squarely in the middle of the acceptable bracket — guaranteeing zero risk of being either too large or too small.`,
+    howTo: [
+      "Upload your passport photograph",
+      "Algorithm auto-calibrates to exactly ~35KB (inside the 20-50KB bracket)",
+      "Verify 'Portal Ready' status in Pre-Download Validation Check",
+      "Download compliant image",
+    ],
+    faqs: [
+      { q: "35KB target kyun rakha gaya hai?", a: "35KB target 20KB minimum aur 50KB maximum ka exact safe center point hai, jo kisi bhi server analysis difference se reject nahi hota." },
+      { q: "Konsi exams 20-50KB accept karti hain?", a: "SSC CGL, CHSL, MTS, GD, RRB NTPC, Group D, BPSC, aur adhiktar state PSCs." },
+    ],
     relatedTools: ["compress-20", "compress-50", "ssc-photo"],
   },
 
   "compress-25": {
-    metaTitle: "Compress to 25KB — JPEG 25KB File Size | SarkariPixels",
-    metaDesc: "Compress JPEG to exactly 25KB online. For portals with 25KB maximum. Free, instant.",
-    h1: "JPEG to 25KB",
-    description: `Photo ko 25KB limit ke andar compress karo. Kuch specialized portals 25KB maximum enforce karte hain.`,
-    howTo: ["Photo upload karein", "Compress to 25KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-20", "compress-30"],
+    metaTitle: "Compress to 25KB — Police & Postal Recruitment Size | SarkariPixels",
+    metaDesc: "Compress image to 25KB online. Specific upper limit for state police recruitment and India Post GDS applications. Fast, client-side, free.",
+    h1: "Compress Image to 25KB",
+    description: `Compress photos and document scans to 25KB. While central portals permit up to 50KB, multiple state police recruitment boards (UP Police, MP Police) and India Post GDS cycles designate 25KB as their ceiling for photo uploads.
+
+Maintain crisp facial contours and facial hair definitions while comfortably fitting within 25KB constraints.`,
+    howTo: [
+      "Upload photo or document scan",
+      "Verify compression settings target 25KB",
+      "Check live preview to ensure photo is clear and under limit",
+      "Download your 25KB file",
+    ],
+    faqs: [
+      { q: "25KB limit kahan use hoti hai?", a: "State police recruitment, postal GDS applications, aur kuch judicial district court form slots me." },
+      { q: "Visual quality intact rahegi?", a: "Haan, 25KB standard 3.5×4.5cm passport photos ke liye kaafi sharp resolution provide karta hai." },
+    ],
+    relatedTools: ["compress-20", "compress-30", "compress-50"],
   },
 
   "compress-30": {
-    metaTitle: "Compress to 30KB — RRB Photo/Signature Size | SarkariPixels",
-    metaDesc: "Compress image to 30KB. RRB signature requirement range. Free, instant browser compression.",
-    h1: "JPEG to 30KB",
-    description: `Photo ko 30KB tak compress karo — RRB signatures aur kuch other portals 30KB limit use karte hain.`,
-    howTo: ["Photo upload karein", "Compress to 30KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-25", "compress-40", "compress-50"],
+    metaTitle: "Compress to 30KB — RRB Signature & Document Limit | SarkariPixels",
+    metaDesc: "Compress photos and signatures to under 30KB online. Exact specification for Railway Recruitment Board (RRB CEN) candidate signatures. Free.",
+    h1: "Compress Image to 30KB (RRB Standard)",
+    description: `Compress images and scanned signatures to 30KB. Railway Recruitment Boards (RRB ALP, Technician, NTPC, Group D) specifically stipulate that applicant signatures must be between 10KB and 30KB on white paper with dark ink.
+
+Achieve crisp, non-smudged signature strokes verified against the 30KB cap.`,
+    howTo: [
+      "Upload your signature or document file",
+      "Instant compression targets exactly 30KB maximum",
+      "Review Pre-Download Validation Check",
+      "Download your RRB-ready file",
+    ],
+    faqs: [
+      { q: "RRB me signature ka format kya hota hai?", a: "RRB CEN notices ke according signature 10KB se 30KB ke beech honi chahiye JPG/JPEG format me." },
+      { q: "Blue ya black ink chalega?", a: "Dono chalte hain, lekin black ink signature scanning ke baad zyada clear aati hai." },
+    ],
+    relatedTools: ["compress-20", "compress-50", "generate-signature"],
   },
 
   "compress-40": {
-    metaTitle: "Compress to 40KB — JPEG 40KB Online | SarkariPixels",
-    metaDesc: "Compress JPEG image to 40KB online. Near maximum for many exam portals. Free, instant.",
-    h1: "JPEG to 40KB",
-    description: `Photo ko 40KB pe compress karo — 50KB maximum limit wale portals ke liye safe buffer ke saath.`,
-    howTo: ["Photo upload karein", "Compress to 40KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-30", "compress-50"],
+    metaTitle: "Compress to 40KB — Safe Buffer for 50KB Portals | SarkariPixels",
+    metaDesc: "Compress photos to 40KB online. Provides a safe 10KB buffer for 50KB maximum portals like SSC, IBPS, and RRB. Prevents accidental over-size rejections.",
+    h1: "Compress Image to 40KB (Buffer Safe)",
+    description: `Compress photos to 40KB to provide a bulletproof buffer against strict 50KB portals. Many candidates compress right to 49.9KB, only to have portal servers report 50.1KB due to file header variations.
+
+Targeting 40KB ensures you never cross the 50KB barrier while retaining top-tier visual clarity.`,
+    howTo: [
+      "Select your passport photo",
+      "Tool sets compression threshold to 40KB",
+      "Inspect side-by-side comparison",
+      "Download your safe 40KB image",
+    ],
+    faqs: [
+      { q: "40KB kyu recommend kiya jata hai?", a: "50KB max wale portals me 40KB compression 10KB ka safe buffer deta hai taaki portal server round-off me reject na kare." },
+      { q: "Facial details blur hongi?", a: "Nahi, 40KB passport size photo ke liye optimal quality maintain karta hai." },
+    ],
+    relatedTools: ["compress-30", "compress-50", "reduce-kb"],
   },
 
   "compress-50": {
-    metaTitle: "Compress to 50KB — SSC IBPS Exam Photo Maximum | SarkariPixels",
-    metaDesc: "Compress photo to under 50KB. SSC CGL, IBPS, RRB maximum photo size. Free, instant, browser-based.",
-    h1: "Compress to 50KB — SSC/IBPS Maximum",
-    description: `50KB — India ka sabse common exam photo maximum size. SSC CGL, SSC CHSL, IBPS PO, IBPS Clerk, RRB NTPC — sab ka max 50KB hai. One click, zero guesswork.`,
-    howTo: ["Photo upload karein", "Compress to 50KB click karein", "Download karein"],
+    metaTitle: "Compress to 50KB — SSC, IBPS & RRB Exam Photo Maximum | SarkariPixels",
+    metaDesc: "Compress photo to under 50KB online. India's #1 exam photo standard for SSC CGL, CHSL, IBPS PO, Clerk, and RRB NTPC. 100% browser-based.",
+    h1: "Compress to 50KB (Universal Exam Photo Maximum)",
+    description: `50KB is the undisputed gold standard for Indian competitive recruitment portals. Staff Selection Commission (SSC), Institute of Banking Personnel Selection (IBPS), Railway Recruitment Board (RRB), and virtually every State Public Service Commission cap candidate passport photographs at exactly 50KB.
+
+Our intelligent compressor delivers high-fidelity 3.5×4.5cm passport photos that sit safely under the 50KB ceiling with clean white backgrounds and zero upload to external servers.`,
+    howTo: [
+      "Upload your passport photograph",
+      "Click Process or allow instant auto-compression to 50KB",
+      "Verify 'Portal Ready' status in the Pre-Download checker",
+      "Download your SSC/IBPS compliant 50KB JPEG",
+    ],
     faqs: [
-      { q: "50KB compress karne ke baad photo reject hogi?", a: "Agar dimensions bhi sahi hain (3.5×4.5cm) aur background white hai, toh nahi hogi." },
+      { q: "50KB compress karne ke baad photo reject hogi?", a: "Agar dimensions sahi hain (3.5×4.5cm) aur background plain white ya light hai, toh bilkul reject nahi hogi." },
+      { q: "SSC CGL ke liye kya yeh tool certified hai?", a: "SarkariPixels exact SSC 20-50KB standard follow karta hai client-side verification ke saath." },
     ],
     relatedTools: ["ssc-photo", "compress-20-50", "resize-35-45"],
   },
 
   "compress-100": {
-    metaTitle: "Compress to 100KB — Moderate Compression Online | SarkariPixels",
-    metaDesc: "Compress image to under 100KB. For portals with 100KB maximum. Good quality preserved. Free, instant.",
-    h1: "Compress to 100KB",
-    description: `100KB limit wale portals ke liye — IBPS SBI kuch times 100KB allow karte hain, kuch state portals bhi. Good quality maintained at this size.`,
-    howTo: ["Photo upload karein", "Compress to 100KB click karein", "Download karein"],
-    faqs: [],
+    metaTitle: "Compress to 100KB — SBI PO & Handwritten Declaration Size | SarkariPixels",
+    metaDesc: "Compress images and handwritten declarations to 100KB online. Matches SBI PO photo rules and IBPS declaration upload requirements. Free, instant.",
+    h1: "Compress Image to 100KB Online",
+    description: `Compress images, certificates, and handwritten declarations to 100KB. Banking recruitment portals like SBI PO allow photos up to 100KB, while IBPS mandates that candidate handwritten declarations must strictly be between 50KB and 100KB.
+
+Maintain high text clarity for scanned declarations and sharp facial contrast for photos.`,
+    howTo: [
+      "Upload your handwritten declaration or photo",
+      "Algorithm optimizes byte count to strictly under 100KB",
+      "Verify text readability in preview",
+      "Download your 100KB file",
+    ],
+    faqs: [
+      { q: "IBPS handwritten declaration 100KB me kyu hoti hai?", a: "IBPS notification ke mutabiq handwritten declaration 50KB se 100KB ke beech honi chahiye taaki text perfectly readable rahe." },
+      { q: "SBI PO photo limit kitni hai?", a: "SBI PO/Clerk applications me photo 100KB tak allow hoti hai." },
+    ],
     relatedTools: ["compress-50", "compress-150", "compress-200"],
   },
 
   "compress-150": {
-    metaTitle: "Compress to 150KB — JPEG 150KB Online | SarkariPixels",
-    metaDesc: "Compress JPEG image to 150KB online. Suitable for portals with 150-200KB limits. Free, instant.",
-    h1: "JPEG to 150KB",
-    description: `Photo ko 150KB limit ke andar compress karo — moderate size limit wale portals ke liye.`,
-    howTo: ["Photo upload karein", "Compress to 150KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-100", "compress-200"],
+    metaTitle: "Compress to 150KB — State PSC & Judicial Form Size | SarkariPixels",
+    metaDesc: "Compress photos and document scans to 150KB online. Exact fit for state judiciary, High Court, and municipal recruitment portals. Free.",
+    h1: "Compress Image to 150KB (JPEG/JPG)",
+    description: `Compress image files to under 150KB. Various High Court recruitment drives, state judicial service exams, and public sector undertaking (PSU) portals designate 150KB as their document and photo ceiling.
+
+Retain vivid details and clear signature outlines while eliminating unneeded megabytes.`,
+    howTo: [
+      "Select your document or photo file",
+      "Target is configured to 150KB",
+      "Inspect the live Pre-Download compliance card",
+      "Download compressed file",
+    ],
+    faqs: [
+      { q: "150KB size kahan required hoti hai?", a: "High Court clerk/stenographer recruitments, state public sector companies, aur specialized university form slots me." },
+      { q: "Kya document scan text legible rahega?", a: "Haan, 150KB standard A4 certificates ke text ko sharp aur readable banaye rakhta hai." },
+    ],
+    relatedTools: ["compress-100", "compress-200", "compress-300"],
   },
 
   "compress-200": {
-    metaTitle: "Compress to 200KB — NTA NEET JEE Photo Size | SarkariPixels",
-    metaDesc: "Compress image to 200KB. NTA NEET and JEE maximum photo size. Good quality at 200KB. Free, instant.",
-    h1: "Compress to 200KB — NTA NEET/JEE Size",
-    description: `200KB — NTA exams (NEET, JEE, CUET) ka photo maximum size. Ample KB space deta hai achhi quality ke saath.`,
-    howTo: ["Photo upload karein", "Compress to 200KB click karein", "Download karein"],
+    metaTitle: "Compress to 200KB — NTA NEET & JEE Photo Standard | SarkariPixels",
+    metaDesc: "Compress photos to 200KB for NTA NEET, JEE Main, and CUET exam portals. Meets official 10KB–200KB bulletin specifications. 100% private.",
+    h1: "Compress to 200KB (NTA NEET / JEE Standard)",
+    description: `200KB is the official upper limit defined by the National Testing Agency (NTA) for premier national entrance exams including NEET-UG, JEE Main, and CUET. NTA bulletins explicitly prescribe photos between 10KB and 200KB.
+
+Our in-browser compression keeps 80% facial coverage crisp with distinct ear visibility as mandated by NTA instructions.`,
+    howTo: [
+      "Upload your NEET / JEE passport photo",
+      "Tool sets 200KB ceiling with high image quality preservation",
+      "Review Pre-Download portal validation",
+      "Download your NTA-ready 200KB JPEG",
+    ],
     faqs: [
-      { q: "NEET photo size kya hai?", a: "NEET 2024: photo 10KB–200KB, JPEG format, 100×120 px minimum. 200KB tool se compress karo." },
+      { q: "NEET UG photo guidelines kya hain?", a: "NTA NEET 2026 guidelines ke anusar photo 10KB se 200KB honi chahiye, 80% face coverage ke saath aur dono kaan clearly visible hone chahiye." },
+      { q: "NEET postcard photo (4x6) bhi 200KB me hoti hai?", a: "Haan, postcard size photograph bhi 10KB se 200KB bracket me upload hoti hai." },
     ],
     relatedTools: ["compress-100", "compress-300", "reduce-kb"],
   },
 
   "compress-300": {
-    metaTitle: "Compress to 300KB — UPSC Photo Maximum Size | SarkariPixels",
-    metaDesc: "Compress image to 300KB. UPSC maximum photo size. Excellent quality maintained. Free, instant.",
-    h1: "Compress to 300KB — UPSC Maximum",
-    description: `300KB — UPSC ka maximum allowed photo size. High quality compression — at 300KB achi quality milti hai.`,
-    howTo: ["Photo upload karein", "Compress to 300KB click karein", "Download karein"],
+    metaTitle: "Compress to 300KB — UPSC Photo & Signature Ceiling | SarkariPixels",
+    metaDesc: "Compress photo and signature images to 300KB for UPSC Civil Services, NDA, and CDS online portals. Exact 20KB–300KB compliance. Free.",
+    h1: "Compress to 300KB (UPSC Civil Services Maximum)",
+    description: `300KB is the authoritative upper limit for Union Public Service Commission (UPSC) applications. The upsconline.nic.in portal accepts square photographs (350×350 to 1000×1000 pixels) and signatures within the 20KB to 300KB bracket.
+
+Compressing to 300KB gives maximum visual fidelity for candidate name and photo-date imprint stamps at the bottom margin.`,
+    howTo: [
+      "Upload your square UPSC photograph or signature",
+      "Compress comfortably within the 20KB-300KB threshold",
+      "Verify candidate name and date stamp remain easily readable",
+      "Download your UPSC-ready image",
+    ],
     faqs: [
-      { q: "UPSC photo ka maximum KB kya hai?", a: "UPSC allows 20KB minimum to 300KB maximum." },
+      { q: "UPSC photo ka maximum size kitna hai?", a: "UPSC online portal strictly 20KB minimum aur 300KB maximum allow karta hai." },
+      { q: "Name aur date stamp blur toh nahi hoga?", a: "300KB generous limit hai; name aur date stamp text 100% sharp aur readable rehta hai." },
     ],
     relatedTools: ["upsc-photo-resize", "resize-600-600", "compress-200"],
   },
 
   "compress-500": {
-    metaTitle: "Compress to 500KB — Large Portal Upload Size | SarkariPixels",
-    metaDesc: "Compress image to under 500KB. For portals allowing larger uploads. Excellent quality. Free, instant.",
-    h1: "JPEG to 500KB",
-    description: `Photo ko 500KB tak compress karo — kuch portals larger file sizes allow karte hain. Excellent visual quality at this size.`,
-    howTo: ["Photo upload karein", "Compress to 500KB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-300", "compress-1mb"],
+    metaTitle: "Compress to 500KB — High-Resolution Document & Certificate Upload | SarkariPixels",
+    metaDesc: "Compress certificates, marksheets, and identity scans to 500KB online. Perfect for college admissions and government document portals. Free.",
+    h1: "Compress Image to 500KB",
+    description: `Compress document scans, degree certificates, caste certificates, and marksheets to under 500KB. Government portals frequently allocate 500KB slots for supporting document verification.
+
+Ensure official government stamps, signatures, and roll numbers remain flawlessly legible.`,
+    howTo: [
+      "Upload scanned document or marksheet photo",
+      "Apply localized 500KB compression",
+      "Zoom in on preview to confirm seals and text clarity",
+      "Download optimized 500KB document",
+    ],
+    faqs: [
+      { q: "500KB me certificate text clear dikhega?", a: "Haan, 500KB standard scan documents ke liye excellent resolution preserve karta hai bina text blur kiye." },
+      { q: "PDF me convert karne se pehle use kar sakte hain?", a: "Haan, image ko 500KB compress karke PDF me convert karne par final PDF portal size limit ke andar rehti hai." },
+    ],
+    relatedTools: ["compress-300", "compress-1mb", "reduce-kb"],
   },
 
   "compress-1mb": {
-    metaTitle: "Compress to 1MB — Reduce Large Photos | SarkariPixels",
-    metaDesc: "Compress image to under 1MB. Reduce phone camera photos. Email and web upload optimization. Free, instant.",
-    h1: "Compress to 1MB",
-    description: `1MB limit ke andar compress karo — email attachments, web uploads, ya specific portals ke liye. Phone camera 10MB+ photos ko 1MB tak laao.`,
-    howTo: ["Photo upload karein", "Compress to 1MB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-2mb", "reduce-mb", "compress-500"],
+    metaTitle: "Compress to 1MB — Large Photo & Scanned PDF Upload | SarkariPixels",
+    metaDesc: "Compress large smartphone camera photos (5-15MB) down to 1MB online. Fast, browser-based, zero upload needed. Perfect for government portal document slots.",
+    h1: "Compress Image to 1MB Online Free",
+    description: `Compress modern smartphone camera photos (often 5MB to 15MB) down to under 1MB. Many state portals (such as OTR portals and state public service commissions) accept large document attachments up to 1MB.
+
+Downscale excessive megabytes without losing clarity or sharpness in official seals and candidate portraits.`,
+    howTo: [
+      "Select high-resolution phone camera photo",
+      "Tool executes smart downsampling to under 1MB",
+      "Check Pre-Download Validation report",
+      "Download lightweight 1MB image",
+    ],
+    faqs: [
+      { q: "Phone camera photo 1MB me kaise laayein?", a: "SarkariPixels directly browser memory me photo load karke Canvas compression se 10MB photo ko 1MB me convert karta hai bina privacy breach ke." },
+      { q: "1MB kahan accept hota hai?", a: "Central and state recruitment document slots, resume portals, aur university admission forms me." },
+    ],
+    relatedTools: ["compress-500", "compress-2mb", "reduce-mb"],
   },
 
   "compress-2mb": {
-    metaTitle: "Compress to 2MB — Large File Size Limit | SarkariPixels",
-    metaDesc: "Compress image to under 2MB. Light compression for large portals and email. Free, instant.",
-    h1: "Compress to 2MB",
-    description: `2MB limit wale portals ke liye — minimal compression, excellent quality. Heavy phone photos compress karo lightly.`,
-    howTo: ["Photo upload karein", "Compress to 2MB click karein", "Download karein"],
-    faqs: [],
-    relatedTools: ["compress-1mb", "reduce-mb"],
+    metaTitle: "Compress to 2MB — Heavy Document & Portfolio Compression | SarkariPixels",
+    metaDesc: "Compress heavy images down to 2MB online. Designed for maximum upload slots on government and institutional portals. Fast, client-side, zero upload.",
+    h1: "Compress Image to 2MB",
+    description: `Compress ultra-heavy camera captures and multi-certificate composites to under 2MB. 2MB is standard maximum ceiling for civil court, legal, and institutional portal uploads.
+
+Retain original high-resolution DPI grids while shedding heavy uncompressed payload.`,
+    howTo: [
+      "Upload large image or composite certificate",
+      "Confirm target limit is 2MB",
+      "Verify file size in validation card",
+      "Download optimized 2MB file",
+    ],
+    faqs: [
+      { q: "2MB compression me visual quality loss hoti hai?", a: "Minimal se zero visual loss. 2MB bahut generous size hai isliye full visual richness retain hoti hai." },
+      { q: "Kya heavy raw files support karta hai?", a: "JPG, PNG, aur WEBP standard camera formats fully supported hain." },
+    ],
+    relatedTools: ["compress-1mb", "reduce-mb", "compress-500"],
   },
 
   // ── Official Sizes ───────────────────────────────────────────────────────
