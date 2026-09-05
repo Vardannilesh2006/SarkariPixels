@@ -10,7 +10,8 @@
     "lint": "next lint",
     "seo:check": "node scripts/seo-ssr-regression-check.mjs",
     "metadata:crawl": "node scripts/metadata-crawl-check.mjs",
-    "check:canonicals": "node scripts/check-canonicals.mjs"
+    "check:canonicals": "node scripts/check-canonicals.mjs",
+    "audit:404": "node scripts/audit-redirects-404.mjs"
   },
   "keywords": [
     "photo-resizer",
