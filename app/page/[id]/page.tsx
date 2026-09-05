@@ -124,32 +124,50 @@ function PrivacyContent() {
       <h1 className="t-h1 mb-2">Privacy Policy</h1>
       <p className="t-caption mb-8">Last updated: June 2026 · Version 2.0</p>
 
-      <h2 className="t-h3 mb-3 mt-8">Zero Data Collection — How SarkariPixels Works</h2>
+      <h2 className="t-h3 mb-3 mt-8">Your Images Are Not Uploaded</h2>
       <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
-        SarkariPixels is a 100% client-side browser application. When you upload or process any image,
-        that image is processed <strong style={{ color: "var(--color-text)" }}>entirely on your device</strong> using the Canvas API.
-        No image data is ever transmitted to any server — not ours, not anyone else&apos;s.
+        SarkariPixels is an in-browser utility. When you resize, compress, or edit any image,
+        that file is processed <strong style={{ color: "var(--color-text)" }}>entirely on your local device</strong> using the browser HTML5 Canvas API.
+        Your photo and signature files are never transmitted to, stored on, or inspected by any server.
       </p>
 
-      <h2 className="t-h3 mb-3 mt-8">What Data We Do Collect</h2>
-      <p className="t-body mb-3" style={{ color: "var(--color-muted)" }}>We collect minimal, non-personal analytics data through the following third-party services:</p>
+      <h2 className="t-h3 mb-3 mt-8">Website Analytics &amp; Ads</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        While your images remain strictly on your device, our website uses standard web services for anonymous performance measurement, tag management, and advertising to keep our tools free:
+      </p>
 
-      <h3 className="font-semibold mb-2 mt-4" style={{ color: "var(--color-text)" }}>Analytics</h3>
-      <ul className="space-y-2 mb-4" style={{ color: "var(--color-muted)", fontSize: "0.9rem" }}>
-        <li>• <strong style={{ color: "var(--color-text)" }}>Google Analytics 4 (G-KNQ135CJNM)</strong> — Page views, tool usage events, session data. IP anonymized.</li>
-        <li>• <strong style={{ color: "var(--color-text)" }}>Google Tag Manager (GTM-KMK8392M)</strong> — Tag management for analytics scripts.</li>
-      </ul>
-
-      <h3 className="font-semibold mb-2 mt-4" style={{ color: "var(--color-text)" }}>Advertising</h3>
-      <ul className="space-y-2 mb-4" style={{ color: "var(--color-muted)", fontSize: "0.9rem" }}>
-        <li>• <strong style={{ color: "var(--color-text)" }}>Monetag</strong> — Ad network. May set cookies for ad targeting.</li>
-        <li>• <strong style={{ color: "var(--color-text)" }}>EffectiveCPM Network</strong> — Display and popunder ads. May set cookies.</li>
-      </ul>
-
-      <h3 className="font-semibold mb-2 mt-4" style={{ color: "var(--color-text)" }}>AI Assistant</h3>
-      <ul className="space-y-2 mb-4" style={{ color: "var(--color-muted)", fontSize: "0.9rem" }}>
-        <li>• <strong style={{ color: "var(--color-text)" }}>OpenRouter / OpenAI</strong> — When you use the AI assistant, your text questions are sent to OpenRouter&apos;s API. No image data is sent.</li>
-      </ul>
+      <div className="overflow-x-auto my-4 card border rounded-xl" style={{ borderColor: "var(--color-border)" }}>
+        <table className="w-full text-left text-xs border-collapse" style={{ minWidth: "600px" }}>
+          <thead>
+            <tr style={{ backgroundColor: "var(--color-surface)", borderBottom: "1px solid var(--color-border)" }}>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Service / Vendor</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Purpose</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Data Processed</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Retention</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+              <td className="p-3 font-medium" style={{ color: "var(--color-text)" }}>Google Analytics 4 (G-5EBGBRC049) &amp; GTM</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Aggregated traffic analytics &amp; tool usage trends</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Anonymized IP, browser/device type, pages visited, button events</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>14 months (Google Analytics default)</td>
+            </tr>
+            <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+              <td className="p-3 font-medium" style={{ color: "var(--color-text)" }}>Monetag &amp; EffectiveCPM Network</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Display advertisements to support free hosting</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Cookies, non-personal advertising identifiers, click/impression telemetry</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Per third-party ad network policies</td>
+            </tr>
+            <tr>
+              <td className="p-3 font-medium" style={{ color: "var(--color-text)" }}>OpenRouter / AI Assistant</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Optional user-initiated chat questions regarding exam guidelines</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>User-typed text query only (no images or documents transmitted)</td>
+              <td className="p-3" style={{ color: "var(--color-muted)" }}>Stateless API session; per OpenRouter terms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2 className="t-h3 mb-3 mt-8">Your Rights Under DPDP Act 2023</h2>
       <p className="t-body mb-3" style={{ color: "var(--color-muted)" }}>Under India&apos;s Digital Personal Data Protection Act 2023, you have the right to:</p>
