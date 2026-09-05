@@ -8,8 +8,8 @@
 | QW-02 | Remove blanket "DPDP Act 2023 100% Compliant" badge | Done | Replaced sitewide with "Images are processed locally in your browser" / "Processed in Browser" (app/page.tsx, app/tool/[slug]/page.tsx, app/page/[id]/page.tsx); grep search confirms 0 instances of "100% Compliant" or unqualified "DPDP Act 2023 compliant" sitewide. |
 | QW-03 | Fix Privacy page "Zero Data Collection" heading | Done | Renamed section in app/page/[id]/page.tsx to "Your Images Are Not Uploaded"; added structured "Website Analytics & Ads" table with Purpose, Data Processed, and Retention columns; verified 0 instances of "zero data collection" heading remaining sitewide. |
 | QW-04 | Rename/disclose "AI Photo Enhancer" | Done | Renamed to "Smart Photo Enhancer" in lib/tools-data.ts and lib/tool-content.ts; FAQ clarifies deterministic Canvas histogram equalization/adaptive sharpening; verified 0 instances of "AI Photo Enhancer" remain sitewide. |
-| QW-05 | Remove static "0ms" processing badge | In Progress | Locating and removing static "0ms" claims |
-| QW-06 | Add source links to exam-specs page | Not Started | |
+| QW-05 | Remove static "0ms" processing badge | Done | Replaced static "Processing HTML5 Canvas (0ms)" in app/tool/[slug]/page.tsx with "Runs locally in your browser"; grep verification confirms 0 static "0ms" claims sitewide. |
+| QW-06 | Add source links to exam-specs page | In Progress | Adding official notification URLs to all 8 exam boards on /exam-specs |
 | QW-07 | Soften "Every exam portal covered" claim | Not Started | |
 | P0-01 | Confirm/fix SSR-CSR rendering via GSC | Not Started | |
 | P0-02 | Full-site canonical crawl | Not Started | |

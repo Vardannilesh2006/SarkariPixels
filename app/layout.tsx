@@ -208,7 +208,7 @@ export default function RootLayout({
             }
           } catch(e) {}`}
         </Script>
-        {/* Speculation Rules API for instant 0ms internal navigation on Chrome/Android */}
+        {/* Speculation Rules API for instant prefetching on Chrome/Android */}
         <script
           type="speculationrules"
           dangerouslySetInnerHTML={{

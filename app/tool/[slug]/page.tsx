@@ -359,7 +359,7 @@ export default async function ToolPage({ params }: Props) {
               <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Processing</span>
-                  <span className="font-semibold text-slate-800 dark:text-slate-200">HTML5 Canvas (0ms)</span>
+                  <span className="font-semibold text-slate-800 dark:text-slate-200">Runs locally in your browser</span>
                 </div>
                 <div className="p-2 rounded-lg border bg-white dark:bg-slate-900" style={{ borderColor: "var(--color-border)" }}>
                   <span className="text-[10px] uppercase font-bold text-slate-400 block">Privacy</span>
