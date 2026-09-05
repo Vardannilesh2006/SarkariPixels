@@ -141,7 +141,7 @@ Uses iterative client-side compression to hit target thresholds precisely withou
     ],
     faqs: [
       { q: "SSC photo ke liye kitne KB chahiye?", a: "SSC photo 20KB se 50KB ke beech honi chahiye, JPEG format mein. Signature 10KB se 20KB ke beech." },
-      { q: "50KB se neeche compress karne par quality kharab hogi kya?", a: "Thodi hogi, lekin 20-50KB range mein compress karne par photo acceptable quality mein rehti hai. Form rejection photo quality se nahi, size se hota hai." },
+      { q: "50KB se neeche compress karne par quality kharab hogi kya?", a: "Thodi visual quality compromise hoti hai, lekin 20–50KB range mein photo readable aur clear rehti hai. Dhyan rahe ki portals file size limit aur visual clarity (chehra bilkul saaf dikhna) dono criteria enforce karte hain." },
       { q: "PNG compress hogi ya sirf JPG?", a: "PNG bhi compress hoti hai, lekin JPG mein convert karke better compression milti hai exam portals ke liye." },
       { q: "Phone se seedha upload kar sakta hun?", a: "Haan, mobile browser se seedha upload karo. Tool aapke phone par bhi kaam karta hai." },
       { q: "File kabhi server pe jaati hai kya?", a: "Bilkul nahi. Saari processing aapke browser memory mein hoti hai. Page load hone ke liye internet chahiye hota hai, lekin load hone ke baad photo processing bina internet ya data transfer ke aapke device par execute hoti hai." },
@@ -1023,7 +1023,7 @@ Using SarkariPixels, you achieve exact 15KB sizing in milliseconds without sendi
     ],
     faqs: [
       { q: "BPSC signature limit kitni hoti hai?", a: "BPSC portal par Hindi aur English signature ka maximum file size strictly 15KB allow hota hai." },
-      { q: "Signature faint hone ka risk hai?", a: "Nahi, binary canvas compression ink darkness preserve karti hai taaki portal rejection na ho." },
+      { q: "Signature faint hone ka risk hai?", a: "Nahi, binary canvas compression ink contrast aur stroke definition preserve karti hai taaki signature clearly legible rahe." },
     ],
     relatedTools: ["compress-10", "compress-20", "resize-pixel"],
   },
@@ -1062,7 +1062,7 @@ This tool automatically targets 35KB — squarely in the middle of the acceptabl
       "Download compliant image",
     ],
     faqs: [
-      { q: "35KB target kyun rakha gaya hai?", a: "35KB target 20KB minimum aur 50KB maximum ka exact safe center point hai, jo kisi bhi server analysis difference se reject nahi hota." },
+      { q: "35KB target kyun rakha gaya hai?", a: "35KB target 20KB minimum aur 50KB maximum ka safe mid-point hai, jo server-side byte calculation differences ke bavjood safe zone mein rehta hai." },
       { q: "Konsi exams 20-50KB accept karti hain?", a: "SSC CGL, CHSL, MTS, GD, RRB NTPC, Group D, BPSC, aur adhiktar state PSCs." },
     ],
     relatedTools: ["compress-20", "compress-50", "ssc-photo"],
@@ -1142,7 +1142,7 @@ Our intelligent compressor delivers high-fidelity 3.5×4.5cm passport photos tha
       "Download your SSC/IBPS compliant 50KB JPEG",
     ],
     faqs: [
-      { q: "50KB compress karne ke baad photo reject hogi?", a: "Agar dimensions sahi hain (3.5×4.5cm) aur background plain white ya light hai, toh bilkul reject nahi hogi." },
+      { q: "50KB compress karne ke baad photo reject hogi?", a: "Agar dimensions official notification ke anusaar hain (jaise SSC ke liye 3.5×4.5cm), background plain white hai, aur facial features bilkul clear hain, toh photo official technical specs ko fully satisfy karegi." },
       { q: "SSC CGL ke liye kya yeh tool certified hai?", a: "SarkariPixels exact SSC 20-50KB standard follow karta hai client-side verification ke saath." },
     ],
     relatedTools: ["ssc-photo", "compress-20-50", "resize-35-45"],

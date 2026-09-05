@@ -22,7 +22,8 @@
     "test:copy-volume": "node scripts/verify-copy-volume.mjs",
     "test:about-contact": "node scripts/verify-about-contact.mjs",
     "test:browser-matrix": "node scripts/verify-browser-matrix.mjs",
-    "test:internet-claims": "node scripts/verify-internet-claims.mjs"
+    "test:internet-claims": "node scripts/verify-internet-claims.mjs",
+    "test:causal-faqs": "node scripts/verify-causal-faqs.mjs"
   },
   "keywords": [
     "photo-resizer",
