@@ -21,7 +21,8 @@
     "test:target-kb": "node scripts/verify-target-kb-consolidation.mjs",
     "test:copy-volume": "node scripts/verify-copy-volume.mjs",
     "test:about-contact": "node scripts/verify-about-contact.mjs",
-    "test:browser-matrix": "node scripts/verify-browser-matrix.mjs"
+    "test:browser-matrix": "node scripts/verify-browser-matrix.mjs",
+    "test:internet-claims": "node scripts/verify-internet-claims.mjs"
   },
   "keywords": [
     "photo-resizer",

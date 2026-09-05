@@ -144,7 +144,7 @@ Uses iterative client-side compression to hit target thresholds precisely withou
       { q: "50KB se neeche compress karne par quality kharab hogi kya?", a: "Thodi hogi, lekin 20-50KB range mein compress karne par photo acceptable quality mein rehti hai. Form rejection photo quality se nahi, size se hota hai." },
       { q: "PNG compress hogi ya sirf JPG?", a: "PNG bhi compress hoti hai, lekin JPG mein convert karke better compression milti hai exam portals ke liye." },
       { q: "Phone se seedha upload kar sakta hun?", a: "Haan, mobile browser se seedha upload karo. Tool aapke phone par bhi kaam karta hai." },
-      { q: "File kabhi server pe jaati hai kya?", a: "Bilkul nahi. Saari processing aapke browser mein hoti hai. No internet needed after page loads." },
+      { q: "File kabhi server pe jaati hai kya?", a: "Bilkul nahi. Saari processing aapke browser memory mein hoti hai. Page load hone ke liye internet chahiye hota hai, lekin load hone ke baad photo processing bina internet ya data transfer ke aapke device par execute hoti hai." },
     ],
     relatedTools: ["smart-resizer", "compress-50", "compress-20", "ssc-photo"],
   },
