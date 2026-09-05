@@ -81,11 +81,9 @@ export const TOOL_CONTENT: Record<string, ToolContent> = {
     metaTitle: "Smart Image Resizer — Resize in Pixels, CM, MM, Inches | SarkariPixels",
     metaDesc: "Free online image resizer. Enter exact pixel, centimeter, mm or inch dimensions. Perfect for SSC, UPSC, BPSC, RRB exam photo requirements. No upload needed.",
     h1: "Smart Image Resizer — Pixels, CM, MM & Inches",
-    description: `Resize kisi bhi photo ya image ko apni exact manpasand dimensions mein — pixels, centimeters, millimeters, ya inches mein. Chahe SSC ka 3.5 × 4.5 cm ho, UPSC ka 350 × 350 px ho, ya koi bhi aur size — yeh tool seedha browser mein kaam karta hai, koi file upload nahi hoti.
+    description: `Resize photos to exact dimensions in pixels, centimeters, millimeters, or inches. Pre-configured for government exam standards including SSC (3.5 × 4.5 cm) and UPSC (350 × 350 px).
 
-Bahut se students ko resize karte waqt confusion hoti hai: inches chahiye ya cm? Portal ka error baar baar aata hai? Is tool mein aap switch kar sakte hain units ke beech bina quality khoye. Canvas API se processing hoti hai — zero server, 100% private.
-
-Exam form apply karte waqt file size bhi matter karti hai. Resize ke baad agar KB limit cross ho rahi ho, toh neeche "Reduce Size in KB" tool bhi hai jo automatically compress karta hai.`,
+All processing executes locally in your browser memory via HTML5 Canvas — your photos are never uploaded to any server. Toggle between units with aspect ratio lock to prevent facial distortion.`,
     howTo: [
       "Apni photo drag karein ya 'Upload' button dabayein",
       "Units chunein — Pixels, CM, MM ya Inches",
@@ -107,11 +105,9 @@ Exam form apply karte waqt file size bhi matter karti hai. Resize ke baad agar K
     metaTitle: "Passport Photo Maker — Printable 4x6 Grid Sheet | SarkariPixels",
     metaDesc: "Make printable passport photo sheets online. Drag photo, auto-crop to passport size, arrange 6-8 copies on a 4x6 print sheet. Free, no upload, instant download.",
     h1: "Passport Photo Maker — 4×6 Printable Sheet",
-    description: `Studio mein photo sheet banwane ki zaroorat nahi — yeh tool aapki koi bhi photo lekar usse passport size mein crop karta hai aur ek standard 4×6 inch printable sheet par 6-8 copies arrange karta hai.
+    description: `Generate printable 4×6 inch passport photo sheets with 6 to 8 copies arranged in an aligned grid. Centers and crops photos to official 3.5 × 4.5 cm passport proportions with white borders.
 
-Sirf ek achhi quality photo chahiye. Tool automatically face detect karta hai, white background par center karta hai, aur print-ready layout generate karta hai jo aap kisi bhi printer par ya photo lab mein print kara sakte hain.
-
-India mein common use cases: SSC/UPSC/RRB form ke saath physical passport photos submit karna, driving license, ration card, bank account opening, aur school/college admissions.`,
+Download high-resolution print-ready files for physical submission in SSC, UPSC, state PSC, driving license, and bank verification forms. Processes 100% in-browser with zero server uploads.`,
     howTo: [
       "Photo upload karein (minimum 600×800 px recommended)",
       "Face area crop karein ya auto-detect use karein",
@@ -133,11 +129,9 @@ India mein common use cases: SSC/UPSC/RRB form ke saath physical passport photos
     metaTitle: "Reduce Image Size in KB — Compress Photo Under 50KB | SarkariPixels",
     metaDesc: "Compress JPG/PNG to exact KB target. Set 20KB, 50KB, 100KB limit. Perfect for SSC, UPSC, IBPS exam portals. 100% browser-based, files never uploaded.",
     h1: "Reduce Image Size in KB — Target Any KB Limit",
-    description: `Exam portal pe "file size exceeds limit" error aana bahut common frustration hai. SSC chahta hai max 50KB, BPSC max 50KB, IBPS max 50KB — aur aapki phone camera 3MB se 8MB ki photo khichti hai.
+    description: `Compress large camera photos to exact kilobyte limits required by recruitment portals (20KB, 50KB, 100KB).
 
-Yeh tool aapki photo ko exactly aapki di hui KB limit ke andar compress karta hai — automatically. Sirf target KB type karo (jaise 50), photo upload karo, aur tool iterative compression use karta hai to land exactly at or below your target.
-
-Important: compression hamesha visual quality se trade-off hoti hai. 5KB pe photo blocky dikti hai. SSC ke liye 20-50KB ideal hai. 50KB se neeche jaana zaroorat ho toh hi karo.`,
+Uses iterative client-side compression to hit target thresholds precisely without exceeding file size caps. Files remain strictly on your device with no cloud uploads.`,
     howTo: [
       "Photo upload karein (JPG, PNG, WebP)",
       "Target KB value enter karein (jaise 50 for SSC)",
@@ -159,9 +153,9 @@ Important: compression hamesha visual quality se trade-off hoti hai. 5KB pe phot
     metaTitle: "Resize Image in Pixels — Set Exact Width & Height Online | SarkariPixels",
     metaDesc: "Resize any photo to exact pixel dimensions online. Free, instant, browser-based. Enter width & height in pixels for SSC, IBPS, UPSC portals.",
     h1: "Resize Image to Exact Pixel Dimensions",
-    description: `Kuch exam portals pixels mein dimensions maangte hain — IBPS 200×230 px, UPSC 350×350 px, NTA NEET 100×120 px. Yeh tool seedha pixel value accept karta hai.
+    description: `Scale images to exact pixel dimensions required by portals like IBPS (200 × 230 px), UPSC (350 × 350 px), and NTA NEET.
 
-Width aur height dono type karo, aspect ratio lock karo ya free resize karo — canvas par turant result dikta hai. No guessing, no manual calculation.`,
+Supports aspect ratio locking to avoid facial distortion and provides instant canvas preview. Processes locally without uploading files.`,
     howTo: [
       "Photo upload karein",
       "Width pixels enter karein",
@@ -183,9 +177,9 @@ Width aur height dono type karo, aspect ratio lock karo ya free resize karo — 
     metaTitle: "Photo Collage Maker — Create Grid Collage Free Online | SarkariPixels",
     metaDesc: "Make photo collages online. Choose grid layout, drag and drop photos. Free, no signup, no upload. Download high-quality PNG/JPG collage.",
     h1: "Photo Collage Maker — Free Grid Layout Builder",
-    description: `Multiple photos ek grid mein combine karo — 2×1, 2×2, 3×1, ya custom layout. Documents, ID proofs, before/after images, ya koi bhi collage — sab browser mein hota hai.
+    description: `Combine multiple images into customizable grid layouts (2×1, 2×2, 3×1) for document verification and multi-page ID previews.
 
-Sarkari form mein photo aur signature dono ek saath submit karne wale tool "Merge Photo & Signature" tool use karein. Collage Maker general purpose hai.`,
+Adjust spacing, borders, and backgrounds entirely in-browser. For joint photo-and-signature exam submissions, use the dedicated Merge Photo & Signature tool.`,
     howTo: [
       "Grid layout chunein (2×1, 2×2, 3×2 etc.)",
       "Har cell mein photo drag karein ya click karein",
@@ -206,13 +200,9 @@ Sarkari form mein photo aur signature dono ek saath submit karne wale tool "Merg
     metaTitle: "Generate Digital Signature — Type or Draw Online | SarkariPixels",
     metaDesc: "Create digital signature online by typing your name or drawing. Export as JPG/PNG for exam forms. Free, instant, no login needed.",
     h1: "Generate Digital Signature — Type or Draw",
-    description: `Exam form mein signature upload karna hota hai lekin physical signature scan karna mushkil lag raha hai? Yeh tool do tarike se kaam karta hai:
+    description: `Create clean digital signatures for exam applications via handwriting font typing or direct touchscreen/mouse drawing.
 
-**Type:** Apna naam likho, 10+ handwriting-style fonts mein se chunein, color select karo — 2 seconds mein ready.
-
-**Draw:** Mouse ya touchscreen se apna actual signature draw karo — tablet users ke liye best option.
-
-Output white background par clear signature — bilkul waise jaisa portals maangte hain. Transparent PNG bhi available hai.`,
+Exports high-contrast signatures on crisp white or transparent backgrounds conforming to SSC (4 × 2 cm) and state PSC portal standards. Runs entirely in your browser without storing signatures.`,
     howTo: [
       "'Type' ya 'Draw' tab chunein",
       "Naam type karein ya signature draw karein",
@@ -320,9 +310,9 @@ Print ke liye DPI matter karta hai — 300 DPI standard professional quality hai
     metaTitle: "Resize to 3.5cm × 4.5cm — SSC UPSC RRB Passport Photo Size | SarkariPixels",
     metaDesc: "Instantly resize photo to 3.5cm × 4.5cm for SSC, RRB, BPSC, BSSC exams. Free one-click tool. Browser-based, no file upload.",
     h1: "Resize Photo to 3.5 × 4.5 cm (SSC/RRB Standard)",
-    description: `India ka sabse common exam photo size — 3.5 × 4.5 centimeters. SSC CGL, SSC CHSL, RRB NTPC, BPSC, BSSC, aur dozens of state PSCs — sab yahi size use karte hain.
+    description: `Resize photos to the standard 3.5 × 4.5 cm proportion required by SSC (CGL, CHSL, MTS), RRB, BPSC, and state PSC portals.
 
-Ek click mein resize — koi settings nahi, koi confusion nahi. Bas photo upload karo aur download karo. Dimensions automatically 413 × 531 pixels scale hoti hain jo standard 300 DPI print density ke equivalent hain (DPI metadata embed karne ke liye hamara Convert DPI tool use karein).`,
+Automatically scales dimensions to 413 × 531 pixels (equivalent to 300 DPI print clarity). To encode binary JFIF DPI tags into image metadata, use our dedicated Convert DPI tool.`,
     howTo: [
       "Apni photo upload karein",
       "'Resize to 3.5×4.5 cm' button dabayein",

@@ -449,27 +449,27 @@ export default function HomePage() {
               {[
                 {
                   q: "SSC exam ke liye photo size kya honi chahiye?",
-                  a: "SSC CGL, CHSL, MTS aur baaki SSC exams ke liye photo 3.5 cm × 4.5 cm (approximately 413 × 531 pixels at 300 DPI) honi chahiye. File size 20 KB se 50 KB ke beech honi chahiye, JPG/JPEG format mein, white ya light-colored plain background ke saath."
+                  a: "SSC CGL, CHSL, aur MTS ke liye photo 3.5 cm × 4.5 cm (413 × 531 pixels at 300 DPI) honi chahiye. File size 20 KB se 50 KB, JPEG format, aur plain white background mandatory hai."
                 },
                 {
                   q: "Phone ki photo ko 50KB se kam kaise karein?",
-                  a: "SarkariPixels pe 'Compress to 50KB' tool use karo — photo upload karo, aur tool automatically 50KB se kam mein compress kar dega. Koi file upload nahi hoti, sab kuch browser mein hota hai."
+                  a: "SarkariPixels ka 'Compress to 50KB' tool use karein. Photo upload karein aur tool turant 50KB ke andar output produce karega. Saari processing browser memory mein hoti hai."
                 },
                 {
                   q: "UPSC ke liye photo ka size kya hota hai?",
-                  a: "UPSC CSE ke liye photo 350 × 350 pixels (square format) honi chahiye, 20 KB se 300 KB ke beech, JPG format mein, white background ke saath. Signature 350 × 100 pixels, 10-100 KB chahiye."
+                  a: "UPSC CSE ke liye photo square 350 × 350 pixels (up to 1000 × 1000 px), 20 KB se 300 KB, JPEG format mein honi chahiye, white background aur bottom par candidate name/date stamp ke saath."
                 },
                 {
                   q: "Kya yeh tool mobile pe kaam karta hai?",
-                  a: "Haan, SarkariPixels fully mobile-friendly hai. Kisi bhi smartphone browser (Chrome, Firefox, Safari) mein kaam karta hai. 2G/3G slow internet pe bhi, kyunki sab processing device pe hi hoti hai — koi file upload nahi hoti."
+                  a: "Haan, SarkariPixels sabhi modern mobile browsers (Chrome, Safari, Firefox) par chalta hai. Processing device memory mein hoti hai."
                 },
                 {
-                  q: "Kya photo ka data upload hota hai server pe?",
-                  a: "Nahi. SarkariPixels 100% client-side hai — sab kuch aapke browser mein hota hai Canvas API se. Aapki photo kabhi bhi kisi server pe upload nahi hoti — na humare, na kisi aur ke."
+                  q: "Kya photo ka data server pe upload hota hai?",
+                  a: "Nahi. SarkariPixels 100% client-side HTML5 Canvas use karta hai. Aapki photos kisi bhi server ya cloud storage par upload nahi hoti hain."
                 },
                 {
                   q: "IBPS PO ya Clerk ke liye signature resize kaise karein?",
-                  a: "IBPS ke liye signature 140 × 60 pixels, 10-20 KB, JPG format mein chahiye. SarkariPixels ka 'Signature Resize' tool use karo — exact dimensions pehle se set hain, bas upload karo aur download karo."
+                  a: "IBPS ke liye signature 140 × 60 pixels, 10-20 KB, JPG format mein chahiye. SarkariPixels ka 'Signature Resize' tool pre-set IBPS dimensions ke saath turant output deta hai."
                 },
               ].map(({ q, a }, i) => (
                 <div key={i} className={i > 0 ? "pt-5 mt-5" : ""}>
