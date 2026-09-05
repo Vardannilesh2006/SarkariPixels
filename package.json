@@ -19,7 +19,8 @@
     "test:schemas": "node scripts/verify-workflow-schemas.mjs",
     "test:validation": "node scripts/verify-validation-checker.mjs",
     "test:target-kb": "node scripts/verify-target-kb-consolidation.mjs",
-    "test:copy-volume": "node scripts/verify-copy-volume.mjs"
+    "test:copy-volume": "node scripts/verify-copy-volume.mjs",
+    "test:about-contact": "node scripts/verify-about-contact.mjs"
   },
   "keywords": [
     "photo-resizer",

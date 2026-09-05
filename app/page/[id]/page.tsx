@@ -208,7 +208,28 @@ function AboutContent() {
     description: "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications.",
     email: "info@sarkaripixels.online",
     foundingDate: "2024",
-    knowsAbout: ["SSC exam photo requirements", "UPSC photo size", "Government exam photo compression", "Image resizing"],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "info@sarkaripixels.online",
+        availableLanguage: ["en", "hi"],
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "editorial",
+        email: "editorial@sarkaripixels.online",
+        availableLanguage: ["en", "hi"],
+      },
+    ],
+    knowsAbout: [
+      "SSC exam photo requirements",
+      "UPSC photo size",
+      "Government exam photo compression",
+      "Image resizing",
+      "DPI conversion",
+      "Passport photo specifications"
+    ],
   };
 
   return (
@@ -227,23 +248,23 @@ function AboutContent() {
       </div>
 
       <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
-        SarkariPixels was built because photo rejection on government exam portals is genuinely frustrating.
-        You&apos;ve filled the form, you have the photo, but the portal says &quot;file too large&quot; or &quot;invalid dimensions&quot;
-        and you don&apos;t know what to do next.
+        SarkariPixels was built because photo rejection on government exam portals is a major hurdle for candidates.
+        When applicants face errors like &quot;file too large&quot; or &quot;invalid dimensions&quot; during tight application deadlines,
+        traditional photo software is often inaccessible or requires technical knowledge.
       </p>
 
       <p className="t-body mb-8" style={{ color: "var(--color-muted)" }}>
-        This site exists to solve exactly that — with {TOTAL_TOOLS_COUNT} specific tools covering every major Indian exam&apos;s
-        photo and signature requirements. All processing happens in your browser. Your photo never goes anywhere.
+        This site solves that challenge with {TOTAL_TOOLS_COUNT} specialized tools covering major Indian exam photo and signature requirements.
+        All processing executes locally in your browser memory — your photos are never uploaded or stored on any server.
       </p>
 
       <h2 className="t-h3 mb-4">Core Principles</h2>
       <ul className="space-y-3 mb-8">
         {[
-          { icon: "fa-shield-halved", label: "Zero Upload", desc: "Your files never leave your device. Ever." },
-          { icon: "fa-infinity", label: "Free Forever", desc: "No paywalls, no login required for core tools." },
-          { icon: "fa-bullseye", label: "Accurate Specs", desc: "Exam specifications verified against official notifications." },
-          { icon: "fa-mobile-screen", label: "Mobile-First", desc: "Works on slow connections and budget phones." },
+          { icon: "fa-shield-halved", label: "Zero Upload", desc: "Your files never leave your device. All computations run in local browser memory." },
+          { icon: "fa-infinity", label: "Free Forever", desc: "No paywalls, no subscription fees, and no account registration required." },
+          { icon: "fa-bullseye", label: "Accurate Specs", desc: "Specifications verified against official exam notifications and bulletins." },
+          { icon: "fa-mobile-screen", label: "Mobile-First", desc: "Designed for budget smartphones, tablets, and slow internet connections." },
         ].map(({ icon, label, desc }) => (
           <li key={label} className="flex items-start gap-3">
             <i className={`fa-solid ${icon} mt-1 shrink-0`} style={{ color: "var(--color-accent)", fontSize: "14px" }} aria-hidden="true" />
@@ -254,13 +275,49 @@ function AboutContent() {
         ))}
       </ul>
 
-      <h2 className="t-h3 mb-4">Who Built This</h2>
-      <p className="t-body mb-8" style={{ color: "var(--color-muted)" }}>
-        SarkariPixels is an independent project built by a developer who experienced first-hand the frustration of
-        exam portal photo rejections. The goal is simple: make photo preparation the least stressful part of
-        applying for a government job. All exam specifications are manually verified against official notifications
-        before being added to the site.
+      <h2 className="t-h3 mb-4">Editorial Verification &amp; Spec Governance</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        Recruitment boards across India routinely update online portal requirements, introduce live-capture OTR systems, and adjust KB upload limits. To ensure absolute compliance:
       </p>
+      <div className="card p-5 mb-8 space-y-3" style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-border)" }}>
+        <div className="flex items-start gap-3">
+          <i className="fa-solid fa-calendar-check text-blue-600 mt-1 shrink-0" aria-hidden="true" />
+          <div>
+            <strong className="block text-sm font-semibold" style={{ color: "var(--color-text)" }}>90-Day Periodic Review Cycle</strong>
+            <span className="text-xs" style={{ color: "var(--color-muted)" }}>
+              Every exam board profile (SSC, UPSC, BPSC, RRB, NTA, IBPS) is formally audited against the latest official recruitment gazettes and notices every 90 days.
+            </span>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <i className="fa-solid fa-file-pdf text-blue-600 mt-1 shrink-0" aria-hidden="true" />
+          <div>
+            <strong className="block text-sm font-semibold" style={{ color: "var(--color-text)" }}>Direct Source Linking</strong>
+            <span className="text-xs" style={{ color: "var(--color-muted)" }}>
+              We link directly to official portal notices and application bulletins so candidates can independently cross-reference dimension, file size, and background guidelines.
+            </span>
+          </div>
+        </div>
+        <div className="flex items-start gap-3">
+          <i className="fa-solid fa-triangle-exclamation text-blue-600 mt-1 shrink-0" aria-hidden="true" />
+          <div>
+            <strong className="block text-sm font-semibold" style={{ color: "var(--color-text)" }}>Portal Exceptions Disclosed</strong>
+            <span className="text-xs" style={{ color: "var(--color-muted)" }}>
+              Special rules—such as the UPSC 10-day name/date stamp, SSC live webcam capture for 2024–2026 OTR cycles, and NTA NEET postcard formats—are prominently flagged.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <h2 className="t-h3 mb-4">Technical Architecture &amp; Client Privacy</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        Unlike traditional image utilities that upload candidate documents to cloud servers for server-side processing, SarkariPixels runs entirely in your browser:
+      </p>
+      <ul className="space-y-2 text-xs mb-8 list-disc pl-5" style={{ color: "var(--color-muted)" }}>
+        <li><strong>Client Memory Sandbox:</strong> All resizing, bilinear interpolation, Canvas histogram normalization, and iterative JPEG compression execute inside your browser’s local JavaScript sandbox.</li>
+        <li><strong>Zero Image Transmission:</strong> Raw image pixels never leave your device CPU/GPU. No backend server ever receives or caches your biometric documents.</li>
+        <li><strong>Offline-Ready Execution:</strong> Once the page is loaded, core resizing and compression algorithms can execute even without an active data connection.</li>
+      </ul>
 
       <h2 className="t-h3 mb-4">Exams Covered</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-8">
@@ -275,6 +332,27 @@ function AboutContent() {
         ))}
       </div>
 
+      <h2 className="t-h3 mb-4">Contact &amp; Candidate Support</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        Have questions, discovered a portal specification change, or noticed a bug? We welcome feedback from candidates, coaching institutes, and cyber café operators:
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+        <div className="card p-4 border rounded-xl" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">General Inquiries &amp; Feedback</span>
+          <a href="mailto:info@sarkaripixels.online" className="text-sm font-semibold hover:underline" style={{ color: "var(--color-text)" }}>
+            info@sarkaripixels.online
+          </a>
+          <p className="text-xs mt-2" style={{ color: "var(--color-muted)" }}>For general questions, user suggestions, and platform assistance.</p>
+        </div>
+        <div className="card p-4 border rounded-xl" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Editorial &amp; Spec Corrections</span>
+          <a href="mailto:editorial@sarkaripixels.online" className="text-sm font-semibold hover:underline" style={{ color: "var(--color-text)" }}>
+            editorial@sarkaripixels.online
+          </a>
+          <p className="text-xs mt-2" style={{ color: "var(--color-muted)" }}>Priority mailbox for notification updates and portal spec revisions (reviewed within 48 hours).</p>
+        </div>
+      </div>
+
       <h2 className="t-h3 mb-4">Terms of Use</h2>
       <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
         SarkariPixels is provided &quot;as-is&quot; for educational and utility use. While we verify exam specifications
@@ -284,12 +362,6 @@ function AboutContent() {
       <p className="t-body mb-8" style={{ color: "var(--color-muted)" }}>
         You may use the tools for personal, educational, and professional use. Automated scraping,
         reselling processed results, or using our infrastructure to build competing services is not permitted.
-      </p>
-
-      <h2 className="t-h3 mb-4">Contact</h2>
-      <p className="t-body" style={{ color: "var(--color-muted)" }}>
-        For queries, corrections to exam specifications, or feedback:{" "}
-        <a href="mailto:info@sarkaripixels.online" style={{ color: "var(--color-accent)" }}>info@sarkaripixels.online</a>
       </p>
     </article>
   );
