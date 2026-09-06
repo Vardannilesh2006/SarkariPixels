@@ -696,3 +696,206 @@ a.marquee-item:hover {
   .orbit-item-4 { transform: translate(-50%, -50%) rotate(150deg) translateY(-108px) rotate(-150deg); }
   .orbit-item-5 { transform: translate(-50%, -50%) rotate(210deg) translateY(-108px) rotate(-210deg); }
 }
+
+/* ────────────────────────────────────────────────────────────────────
+   PHASE 3: UI/UX PRO MAX ADDITIONS
+   New classes only — zero overlap with existing styles above.
+──────────────────────────────────────────────────────────────────── */
+
+/* ── Hero Ambient Gradient Mesh ────────────────────────────────────── */
+.hero-gradient {
+  position: relative;
+  overflow: hidden;
+}
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 30%, rgba(37, 99, 235, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 80% 70%, rgba(139, 92, 246, 0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 50% 0%, rgba(14, 165, 233, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.dark .hero-gradient::before {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 80% 70%, rgba(139, 92, 246, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 50% 0%, rgba(14, 165, 233, 0.07) 0%, transparent 60%);
+}
+.hero-gradient > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Security Pill (pulsing status badge) ──────────────────────────── */
+@keyframes sp-security-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+}
+.security-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #15803d;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.dark .security-pill {
+  background-color: rgba(21, 128, 61, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #86efac;
+}
+.security-pill__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  flex-shrink: 0;
+  animation: sp-security-pulse 2s ease-in-out infinite;
+}
+
+/* ── Tool Card — Premium Hover Elevation ───────────────────────────── */
+/* Extends existing .tool-card without overriding existing rules */
+.tool-card {
+  box-shadow: var(--shadow-card);
+  transform: translateY(0);
+  transition:
+    border-color .18s ease,
+    background-color .18s ease,
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+.tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.09), 0 2px 6px rgba(37, 99, 235, 0.06);
+}
+
+/* ── Capability Tag (WASM ⚡ / AI ✨) ─────────────────────────────── */
+.capability-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.capability-tag--wasm {
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--color-accent);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+.dark .capability-tag--wasm {
+  background-color: rgba(59, 130, 246, 0.12);
+}
+
+/* ── Trust Counter Strip ──────────────────────────────────────────── */
+.trust-counter {
+  text-align: center;
+}
+.trust-counter__value {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.trust-counter__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 3px;
+}
+
+/* ── Architecture Comparison Bento ───────────────────────────────── */
+.arch-bento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+@media (max-width: 639px) {
+  .arch-bento { grid-template-columns: 1fr; }
+}
+.arch-bento__col {
+  padding: var(--sp-6);
+}
+.arch-bento__col--bad {
+  background-color: #fef2f2;
+  border-right: 1px solid var(--color-border);
+}
+.arch-bento__col--good {
+  background-color: #f0fdf4;
+}
+.dark .arch-bento__col--bad {
+  background-color: rgba(239, 68, 68, 0.07);
+}
+.dark .arch-bento__col--good {
+  background-color: rgba(34, 197, 94, 0.07);
+}
+.arch-bento__col--bad h3 { color: #dc2626; }
+.arch-bento__col--good h3 { color: #16a34a; }
+.dark .arch-bento__col--bad h3 { color: #fca5a5; }
+.dark .arch-bento__col--good h3 { color: #86efac; }
+
+/* ── Cookie Banner (bottom bar) ───────────────────────────────────── */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
+  padding: 14px 24px;
+  animation: sp-fade-up 0.3s ease both;
+}
+.cookie-banner__inner {
+  max-width: 1152px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cookie-banner__text {
+  flex: 1;
+  min-width: 260px;
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+.cookie-banner__text strong {
+  color: var(--color-text);
+}
+.cookie-banner__link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cookie-banner__link:hover {
+  text-decoration: none;
+}
+.cookie-banner__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}

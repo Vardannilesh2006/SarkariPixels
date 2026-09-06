@@ -1,0 +1,23 @@
+﻿/* TEAM */
+Site: SarkariPixels
+Email: info@sarkaripixels.online
+Location: India
+
+/* TECHNOLOGY */
+Language: TypeScript
+Framework: Next.js 15 (App Router, SSG)
+UI: Tailwind CSS v4 + custom design tokens
+Image Processing: HTML5 Canvas API (100% client-side, zero server upload)
+Font: Inter (Google Fonts)
+Hosting: Vercel Edge Network
+Analytics: Google Analytics 4 (with consent mode v2)
+PWA: Service Worker + Web App Manifest
+Performance: Speculation Rules API, AVIF/WebP image formats
+
+/* TOOLS */
+Editor: VS Code
+Version Control: Git + GitHub
+CI/CD: Vercel (auto-deploy on main push)
+
+/* LAST UPDATE */
+2026/09/06

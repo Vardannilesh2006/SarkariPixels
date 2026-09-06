@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -75,7 +76,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_URL,
-    languages: { "en-IN": SITE_URL },
+    languages: {
+      "en": SITE_URL,
+      "en-IN": SITE_URL,
+      "x-default": SITE_URL,
+    },
   },
   manifest: "/manifest.json",
   icons: {
@@ -93,20 +98,29 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google tag (gtag.js) — Direct HTML Head script for instant GA4 verification */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-5EBGBRC049"
-        />
+        {/* GA4 Consent Mode v2 — deny-by-default until user accepts cookie banner */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
+              // Initialize consent mode BEFORE loading GA — deny by default
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500
+              });
               gtag('js', new Date());
               gtag('config', 'G-5EBGBRC049', { send_page_view: true });
             `,
           }}
+        />
+        {/* Load GA4 script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5EBGBRC049"
         />
 
         {/* Google Tag Manager */}
@@ -236,6 +250,9 @@ export default function RootLayout({
         </noscript>
 
         {children}
+
+        {/* GDPR/DPDP Cookie Consent Banner */}
+        <CookieBanner />
 
         {/* Service Worker Registration for Offline PWA Support */}
         <Script id="sw-reg" strategy="lazyOnload">

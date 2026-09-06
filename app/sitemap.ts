@@ -6,8 +6,8 @@ import { getAllGuideKeys } from "@/lib/guides-content";
 import { SITE_URL } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Use meaningful static dates instead of dynamic 'now' to avoid misleading Google
-  const siteLastUpdated = new Date("2026-07-08");
+  // Updated to September 2026 for accurate freshness signaling
+  const siteLastUpdated = new Date("2026-09-06");
   const contentDate = new Date("2026-06-15");
 
   // Home
@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
+      url: `${SITE_URL}/page/cookies`,
+      lastModified: siteLastUpdated,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
       url: `${SITE_URL}/page/about`,
       lastModified: siteLastUpdated,
       changeFrequency: "yearly",
@@ -56,6 +62,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Programmatic long-tail exam compression landing pages (KD < 10)
+  const programmaticPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/compress-to-50kb`, lastModified: siteLastUpdated, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/compress-to-100kb`, lastModified: siteLastUpdated, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/compress-to-200kb`, lastModified: siteLastUpdated, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/compress-to-500kb`, lastModified: siteLastUpdated, changeFrequency: "monthly", priority: 0.80 },
+    { url: `${SITE_URL}/compress-for-ssc-upsc`, lastModified: siteLastUpdated, changeFrequency: "monthly", priority: 0.85 },
+  ] as MetadataRoute.Sitemap;
+
   // Guide pages
   const guidePages: MetadataRoute.Sitemap = getAllGuideKeys().map((slug) => ({
     url: `${SITE_URL}/guides/${slug}`,
@@ -64,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  // All 88 tool pages
+  // All tool pages
   const toolPages: MetadataRoute.Sitemap = TOOLS.map((tool) => ({
     url: `${SITE_URL}/tool/${tool.id}`,
     lastModified: siteLastUpdated,
@@ -80,5 +95,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...guidePages, ...toolPages, ...examPages];
+  return [...staticPages, ...programmaticPages, ...guidePages, ...toolPages, ...examPages];
 }

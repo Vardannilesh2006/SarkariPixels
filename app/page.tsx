@@ -111,21 +111,28 @@ export default function HomePage() {
              Clear whitespace above and below.
         ────────────────────────────────────────────────────────────── */}
         <section
-          className="pt-8 pb-5 sm:pt-10 sm:pb-7 px-4 sm:px-6 text-center hero-anim"
+          className="pt-8 pb-5 sm:pt-10 sm:pb-7 px-4 sm:px-6 text-center hero-anim hero-gradient"
           aria-labelledby="hero-headline"
         >
           <div className="max-w-2xl mx-auto">
+            {/* Security pill — pulsing trust signal */}
+            <div className="flex justify-center mb-4">
+              <div className="security-pill" role="status" aria-label="Privacy status: all image processing is local">
+                <span className="security-pill__dot" aria-hidden="true"></span>
+                100% In-Memory · Zero Server Upload · WebAssembly Canvas
+              </div>
+            </div>
             <h1
               id="hero-headline"
               className="t-h1 mb-3"
             >
-              Resize Exam Photos & Signatures to Exact Specs — 100% Free
+              Resize Exam Photos &amp; Signatures to Exact Specs — 100% Free
             </h1>
             <p
               className="t-body"
               style={{ color: "var(--color-muted)", maxWidth: "560px", margin: "0 auto 1.25rem", lineHeight: "1.6" }}
             >
-              Compress and resize passport photos for <strong>SSC, UPSC, BPSC, RRB, IBPS & NTA</strong>. 
+              Compress and resize passport photos for <strong>SSC, UPSC, BPSC, RRB, IBPS &amp; NTA</strong>. 
               Set exact KB, pixels, or cm in seconds.{" "}
               <span style={{ color: "#059669", fontWeight: 600 }}>100% Private — photos never leave your phone.</span>
             </p>
@@ -141,45 +148,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── TRUST STRIP ────────────────────────────────────────────
-             One row. Three facts. Plain, no competing shadows.
-             Placed directly under the hero section.
+        {/* ── TRUST COUNTER STRIP ─────────────────────────────────────────
+             Premium counter row — replaces static 3-fact strip.
+             4 counters: tool count, local processing, zero storage, free.
         ────────────────────────────────────────────────────────────── */}
         <section
           className="py-6 px-4 sm:px-6 border-b"
           style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}
           aria-label="Key facts about SarkariPixels"
         >
-          <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-4">
+          <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-12 gap-y-5">
             {[
-              { icon: "trust-browser", label: "100% Browser-Based", sub: "No upload. Nothing leaves your device." },
-              { icon: "trust-tools", label: `${TOTAL_TOOLS_COUNT} Specialized Tools`, sub: "Covers major exam and recruitment portals." },
-              { icon: "trust-exams", label: "Major Boards Supported", sub: "SSC, UPSC, BPSC, RRB, IBPS, NTA…" },
+              { value: `${TOTAL_TOOLS_COUNT}`, label: "Free Tools" },
+              { value: "100%", label: "Local Processing" },
+              { value: "0 KB", label: "Server Storage" },
+              { value: "∞", label: "Free Forever" },
             ].map((item) => (
-              <div key={item.label} className="trust-item">
-                <div className="trust-icon" aria-hidden="true">
-                  <div
-                    style={{
-                      width: "18px",
-                      height: "18px",
-                      backgroundColor: "currentColor",
-                      WebkitMaskImage: `url(/icons/${item.icon}.svg)`,
-                      maskImage: `url(/icons/${item.icon}.svg)`,
-                      WebkitMaskSize: "contain",
-                      maskSize: "contain",
-                      WebkitMaskPosition: "center",
-                      maskPosition: "center",
-                      WebkitMaskRepeat: "no-repeat",
-                      maskRepeat: "no-repeat",
-                    }}
-                  />
-                </div>
-                <div>
-                  <span className="block text-sm font-semibold" style={{ color: "var(--color-text)" }}>
-                    {item.label}
-                  </span>
-                  <span className="t-caption">{item.sub}</span>
-                </div>
+              <div key={item.label} className="trust-counter" aria-label={`${item.value} ${item.label}`}>
+                <div className="trust-counter__value">{item.value}</div>
+                <div className="trust-counter__label">{item.label}</div>
               </div>
             ))}
           </div>
@@ -437,6 +424,63 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── ARCHITECTURE BENTO: Browser vs Cloud ────────────────────
+             Side-by-side technical comparison highlighting privacy.
+             No competing shadows — uses arch-bento CSS classes.
+        ────────────────────────────────────────────────────────────── */}
+        <section className="py-14 px-4 sm:px-6" style={{ backgroundColor: "var(--color-surface)" }} aria-labelledby="arch-heading">
+          <div className="max-w-4xl mx-auto">
+            <h2 id="arch-heading" className="t-h2 mb-2 text-center">Why In-Browser Processing?</h2>
+            <p className="t-body mb-8 text-center" style={{ color: "var(--color-muted)" }}>
+              Traditional cloud converters upload your biometric documents to remote servers. SarkariPixels never does.
+            </p>
+            <div className="arch-bento" role="table" aria-label="Browser processing vs cloud uploader comparison">
+              <div className="arch-bento__col arch-bento__col--bad" role="cell">
+                <h3 className="text-base font-bold mb-4">
+                  <i className="fa-solid fa-cloud mr-2" aria-hidden="true" />
+                  Traditional Cloud Converters
+                </h3>
+                <ul className="space-y-3 text-sm" style={{ color: "var(--color-muted)" }}>
+                  {[
+                    "Files uploaded across the internet to remote servers",
+                    "Documents cached on server disks indefinitely",
+                    "Queue delays for free-tier accounts (30–60s)",
+                    "2–5 file hourly limits on free plans",
+                    "Cannot work offline — requires active internet",
+                    "Risk: data breach or server-side snooping",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <i className="fa-solid fa-xmark text-red-500 mt-0.5 shrink-0" style={{ fontSize: "13px" }} aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="arch-bento__col arch-bento__col--good" role="cell">
+                <h3 className="text-base font-bold mb-4">
+                  <i className="fa-solid fa-microchip mr-2" aria-hidden="true" />
+                  SarkariPixels In-Browser Engine
+                </h3>
+                <ul className="space-y-3 text-sm" style={{ color: "var(--color-muted)" }}>
+                  {[
+                    "0 bytes uploaded — runs entirely in browser RAM",
+                    "Executed in an isolated local JavaScript sandbox",
+                    "Instant processing — no queue, no server round-trip",
+                    "Unlimited files, unlimited use, forever free",
+                    "Works offline after first page load (PWA)",
+                    "Impossible to intercept — image never leaves your CPU",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <i className="fa-solid fa-check text-green-600 mt-0.5 shrink-0" style={{ fontSize: "13px" }} aria-hidden="true" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── FAQ SECTION ─────────────────────────────────────────────
              FAQPage schema injected in JSON-LD below.
              Targets: AI Overviews, ChatGPT, Perplexity citations.
@@ -525,6 +569,7 @@ export default function HomePage() {
               heading: "Legal",
               links: [
                 { href: "/page/privacy", label: "Privacy Policy" },
+                { href: "/page/cookies", label: "Cookie Policy" },
                 { href: "/page/about", label: "About & Terms" },
               ],
             },

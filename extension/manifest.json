@@ -1,0 +1,25 @@
+﻿{
+  "manifest_version": 3,
+  "name": "SarkariPixels — Exam Photo Resizer",
+  "version": "1.0.0",
+  "description": "Instantly resize and compress photos for SSC, UPSC, BPSC, RRB, IBPS exam portals. 100% free, browser-based, zero upload.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "SarkariPixels — Free Exam Photo Resizer"
+  },
+  "permissions": [],
+  "host_permissions": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

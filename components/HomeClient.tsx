@@ -6,6 +6,7 @@ import { useEffect } from "react";
 // - Theme toggle (icon swap + class on <html>)
 // - Category sidebar filter (show/hide tool cards)
 // - Search input (live filtering by title/description)
+// - Keyboard shortcut: '/' key focuses the search bar
 export default function HomeClient() {
   useEffect(() => {
     // ── Theme toggle ──────────────────────────────────────────────
@@ -77,9 +78,23 @@ export default function HomeClient() {
       });
     });
 
+    // ── Keyboard shortcut: '/' focuses search ────────────────────
+    function handleKeyDown(e: KeyboardEvent) {
+      // Don't intercept if user is already in an input/textarea
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+      if (e.key === "/" && searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+        searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown);
+
     // Cleanup on unmount
     return () => {
       themeBtn?.replaceWith(themeBtn.cloneNode(true)); // remove listeners
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
