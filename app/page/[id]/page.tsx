@@ -15,6 +15,10 @@ const PAGES: Record<string, { title: string; desc: string }> = {
     title: "Privacy Policy — SarkariPixels",
     desc: "SarkariPixels operates 100% in your browser. No images are ever uploaded to any server. Read our complete privacy policy.",
   },
+  cookies: {
+    title: "Cookie Policy — SarkariPixels",
+    desc: "SarkariPixels cookie policy: what we store in your browser, why, and how to control it. We use localStorage for preferences and Google Analytics for anonymous traffic measurement.",
+  },
   about: {
     title: "About SarkariPixels — Free Exam Photo Resizer",
     desc: `About SarkariPixels — the free browser-based photo resizer built for Indian government exam applicants. Zero upload, ${TOTAL_TOOLS_COUNT} tools, covers SSC, UPSC, BPSC, RRB, IBPS.`,
@@ -111,6 +115,7 @@ export default async function LegalPage({ params }: Props) {
       <PageHeader backHref="/" backLabel="← Home" />
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-12" style={{ color: "var(--color-text)" }}>
         {id === "privacy" && <PrivacyContent />}
+        {id === "cookies" && <CookiesContent />}
         {id === "about" && <AboutContent />}
         {id === "sitemap" && <SitemapContent />}
       </main>
@@ -194,6 +199,87 @@ function PrivacyContent() {
       <p className="t-body" style={{ color: "var(--color-muted)" }}>
         This policy will be updated when exam specifications, ad networks, or functionality changes.
         The version date at the top will be updated. Continued use constitutes acceptance.
+      </p>
+    </article>
+  );
+}
+
+function CookiesContent() {
+  return (
+    <article>
+      <h1 className="t-h1 mb-2">Cookie Policy</h1>
+      <p className="t-caption mb-8">Last updated: September 2026 · Version 1.0</p>
+
+      <div className="card p-5 mb-8" style={{ backgroundColor: "var(--color-surface)", borderLeft: "4px solid var(--color-accent)" }}>
+        <p className="t-body" style={{ color: "var(--color-muted)" }}>
+          <strong style={{ color: "var(--color-text)" }}>Short version:</strong> SarkariPixels never uploads your photos or personal files. We use browser
+          localStorage for your theme preference and Google Analytics for anonymous traffic measurement. Third-party ad
+          networks (Monetag) may set their own cookies for ad serving.
+        </p>
+      </div>
+
+      <h2 className="t-h3 mb-3 mt-8">What We Store</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        Below is a complete table of every item stored in your browser when using SarkariPixels:
+      </p>
+      <div className="overflow-x-auto my-4 card border rounded-xl mb-8" style={{ borderColor: "var(--color-border)" }}>
+        <table className="w-full text-left text-xs border-collapse" style={{ minWidth: "640px" }}>
+          <thead>
+            <tr style={{ backgroundColor: "var(--color-surface)", borderBottom: "1px solid var(--color-border)" }}>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Name</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Type</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Set by</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Purpose</th>
+              <th className="p-3 font-semibold" style={{ color: "var(--color-text)" }}>Expiry</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { name: "sp-theme", type: "localStorage", by: "SarkariPixels", purpose: "Stores your dark/light mode preference so the site loads in your chosen theme.", expiry: "Permanent (until manually cleared)" },
+              { name: "sp-cookie-consent", type: "localStorage", by: "SarkariPixels", purpose: "Records your cookie consent decision (granted/denied) to avoid asking again.", expiry: "Permanent (until manually cleared)" },
+              { name: "_ga, _ga_*", type: "Cookie", by: "Google Analytics", purpose: "Anonymous visitor measurement — pages viewed, session duration, traffic source. IP is anonymized.", expiry: "14 months (GA4 default)" },
+              { name: "FPAU, _gcl_au", type: "Cookie", by: "Google Tag Manager", purpose: "Conversion measurement and attribution for analytics.", expiry: "90 days" },
+              { name: "Monetag / ad cookies", type: "Cookie", by: "Monetag / EffectiveCPM", purpose: "Serve display advertisements to support free hosting. May include interest-based ad targeting.", expiry: "Per ad network policy" },
+            ].map((row, i) => (
+              <tr key={i} style={{ borderBottom: "1px solid var(--color-border)" }}>
+                <td className="p-3 font-mono font-medium" style={{ color: "var(--color-text)", fontSize: "11px" }}>{row.name}</td>
+                <td className="p-3" style={{ color: "var(--color-muted)" }}>{row.type}</td>
+                <td className="p-3" style={{ color: "var(--color-muted)" }}>{row.by}</td>
+                <td className="p-3" style={{ color: "var(--color-muted)" }}>{row.purpose}</td>
+                <td className="p-3" style={{ color: "var(--color-muted)" }}>{row.expiry}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="t-h3 mb-3 mt-8">Your Image Files Are NOT Stored</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        No photo, signature, or document file you process on SarkariPixels is ever stored in cookies,
+        localStorage, IndexedDB, or any server. All image processing runs entirely in your browser&apos;s
+        JavaScript memory (RAM) and is discarded when you close or refresh the page.
+      </p>
+
+      <h2 className="t-h3 mb-3 mt-8">How to Manage Cookies</h2>
+      <p className="t-body mb-3" style={{ color: "var(--color-muted)" }}>You have full control over browser storage:</p>
+      <ul className="space-y-2 mb-6 text-sm" style={{ color: "var(--color-muted)" }}>
+        <li>• <strong style={{ color: "var(--color-text)" }}>Withdraw consent:</strong> Click &ldquo;Decline&rdquo; in the cookie banner on your next visit after clearing localStorage.</li>
+        <li>• <strong style={{ color: "var(--color-text)" }}>Clear localStorage:</strong> Open browser DevTools → Application → Local Storage → delete <code>sp-theme</code> and <code>sp-cookie-consent</code>.</li>
+        <li>• <strong style={{ color: "var(--color-text)" }}>Block all cookies:</strong> Use your browser&apos;s Privacy Settings to block third-party cookies. Core tools still work without cookies.</li>
+        <li>• <strong style={{ color: "var(--color-text)" }}>Opt out of GA:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent)" }}>Google Analytics Opt-out Browser Add-on</a>.</li>
+      </ul>
+
+      <h2 className="t-h3 mb-3 mt-8">Legal Basis</h2>
+      <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
+        We rely on your <strong>consent</strong> (provided via the cookie banner) for analytics and advertising cookies.
+        Strictly necessary localStorage items (theme preference) require no consent as they contain no personal data and
+        are essential for the user experience you explicitly requested.
+      </p>
+
+      <h2 className="t-h3 mb-3 mt-8">Contact</h2>
+      <p className="t-body" style={{ color: "var(--color-muted)" }}>
+        Cookie-related questions or withdrawal requests:{" "}
+        <a href="mailto:privacy@sarkaripixels.online" style={{ color: "var(--color-accent)" }}>privacy@sarkaripixels.online</a>
       </p>
     </article>
   );
@@ -428,6 +514,7 @@ function SitemapContent() {
             { href: "/guides", label: "Guides & Articles" },
             { href: "/page/about", label: "About Us & Terms" },
             { href: "/page/privacy", label: "Privacy Policy" },
+            { href: "/page/cookies", label: "Cookie Policy" },
           ].map((link) => (
             <li key={link.href}>
               <a href={link.href} style={{ color: "var(--color-accent)" }}>{link.label}</a>
