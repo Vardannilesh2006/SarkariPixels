@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 
@@ -60,8 +60,8 @@ export default function CookieBanner() {
       <div className="cookie-banner__inner">
         <div className="cookie-banner__text">
           <p>
-            <strong>We use cookies</strong> for anonymous traffic analytics (Google Analytics) and ads to
-            keep SarkariPixels free.{" "}
+            <strong>We use cookies</strong> only for anonymous traffic analytics (Google Analytics) to
+            improve SarkariPixels.{" "}
             <strong>Your photos are never uploaded</strong> — all processing stays on your device.{" "}
             <a href="/page/cookies" className="cookie-banner__link">Cookie Policy</a>
             {" · "}

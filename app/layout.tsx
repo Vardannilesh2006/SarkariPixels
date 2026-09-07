@@ -70,9 +70,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "98b75bc1f3bc0c44",
-    other: {
-      monetag: "9bcd118f7dcdd00f254abb8b7a3cae70",
-    },
   },
   alternates: {
     canonical: SITE_URL,
@@ -130,15 +127,6 @@ export default function RootLayout({
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KMK8392M');`}
-        </Script>
-
-        {/* Monetag Popunder */}
-        <Script
-          src="https://pl29794526.effectivecpmnetwork.com/5e/68/79/5e68796e38eca04c6316617039221790.js"
-          strategy="afterInteractive"
-        />
-        <Script id="monetag-popunder" strategy="afterInteractive">
-          {`(function(s){s.dataset.zone='11180255',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
         </Script>
 
         {/* Font Awesome — preconnect + async to prevent render-blocking */}
@@ -264,13 +252,6 @@ export default function RootLayout({
             });
           }`}
         </Script>
-
-        {/* Effectivecpmnetwork Banner Ad */}
-        <Script
-          src="https://pl29794697.effectivecpmnetwork.com/7bdd7128495aad86bdf1f0a96fe0d215/invoke.js"
-          data-cfasync="false"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );

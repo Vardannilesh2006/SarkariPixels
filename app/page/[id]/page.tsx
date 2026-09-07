@@ -164,12 +164,6 @@ function PrivacyContent() {
               <td className="p-3" style={{ color: "var(--color-muted)" }}>Anonymized IP, browser/device type, pages visited, button events</td>
               <td className="p-3" style={{ color: "var(--color-muted)" }}>14 months (Google Analytics default)</td>
             </tr>
-            <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
-              <td className="p-3 font-medium" style={{ color: "var(--color-text)" }}>Monetag &amp; EffectiveCPM Network</td>
-              <td className="p-3" style={{ color: "var(--color-muted)" }}>Display advertisements to support free hosting</td>
-              <td className="p-3" style={{ color: "var(--color-muted)" }}>Cookies, non-personal advertising identifiers, click/impression telemetry</td>
-              <td className="p-3" style={{ color: "var(--color-muted)" }}>Per third-party ad network policies</td>
-            </tr>
             <tr>
               <td className="p-3 font-medium" style={{ color: "var(--color-text)" }}>OpenRouter / AI Assistant</td>
               <td className="p-3" style={{ color: "var(--color-muted)" }}>Optional user-initiated chat questions regarding exam guidelines</td>
@@ -194,7 +188,7 @@ function PrivacyContent() {
 
       <h2 className="t-h3 mb-3 mt-8">Cookies</h2>
       <p className="t-body" style={{ color: "var(--color-muted)" }}>
-        We use localStorage (not cookies) for theme preference (dark/light mode). Third-party ad networks (Monetag, EffectiveCPM) may set their own cookies.
+        We use localStorage (not cookies) for theme preference (dark/light mode). SarkariPixels is 100% ad-free — we do not use third-party advertising networks or ad cookies.
       </p>
 
       <h2 className="t-h3 mb-3 mt-8">Children</h2>
@@ -218,8 +212,7 @@ function CookiesContent() {
       <div className="card p-5 mb-8" style={{ backgroundColor: "var(--color-surface)", borderLeft: "4px solid var(--color-accent)" }}>
         <p className="t-body" style={{ color: "var(--color-muted)" }}>
           <strong style={{ color: "var(--color-text)" }}>Short version:</strong> SarkariPixels never uploads your photos or personal files. We use browser
-          localStorage for your theme preference and Google Analytics for anonymous traffic measurement. Third-party ad
-          networks (Monetag) may set their own cookies for ad serving.
+          localStorage for your theme preference and Google Analytics for anonymous traffic measurement. SarkariPixels is 100% ad-free and uses zero third-party advertising cookies.
         </p>
       </div>
 
@@ -244,7 +237,6 @@ function CookiesContent() {
               { name: "sp-cookie-consent", type: "localStorage", by: "SarkariPixels", purpose: "Records your cookie consent decision (granted/denied) to avoid asking again.", expiry: "Permanent (until manually cleared)" },
               { name: "_ga, _ga_*", type: "Cookie", by: "Google Analytics", purpose: "Anonymous visitor measurement — pages viewed, session duration, traffic source. IP is anonymized.", expiry: "14 months (GA4 default)" },
               { name: "FPAU, _gcl_au", type: "Cookie", by: "Google Tag Manager", purpose: "Conversion measurement and attribution for analytics.", expiry: "90 days" },
-              { name: "Monetag / ad cookies", type: "Cookie", by: "Monetag / EffectiveCPM", purpose: "Serve display advertisements to support free hosting. May include interest-based ad targeting.", expiry: "Per ad network policy" },
             ].map((row, i) => (
               <tr key={i} style={{ borderBottom: "1px solid var(--color-border)" }}>
                 <td className="p-3 font-mono font-medium" style={{ color: "var(--color-text)", fontSize: "11px" }}>{row.name}</td>
