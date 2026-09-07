@@ -9,3 +9,5 @@ export const SITE_URL = BASE_URL;
 export const SITE_NAME = "SarkariPixels";
 export const SUPPORT_EMAIL = "info@sarkaripixels.online";
 export const PRIVACY_EMAIL = "privacy@sarkaripixels.online";
+export const INSTAGRAM_URL = "https://www.instagram.com/sarkaripixcel";
+export const INSTAGRAM_HANDLE = "@sarkaripixcel";

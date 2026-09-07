@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
+import InstagramLink from "@/components/InstagramLink";
 
 export const metadata = {
   title: "Page Not Found — SarkariPixels",
@@ -29,6 +30,9 @@ export default function NotFound() {
             </div>
             <span className="text-base font-bold" style={{ color: "var(--color-text)" }}>SarkariPixels</span>
           </a>
+          <div className="flex items-center gap-3">
+            <InstagramLink variant="icon" />
+          </div>
         </div>
       </header>
 
@@ -107,7 +111,8 @@ export default function NotFound() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <a href="/" className="text-base font-bold" style={{ color: "var(--color-text)" }}>SarkariPixels</a>
           <p className="t-caption">© {new Date().getFullYear()} SarkariPixels · 100% Client-Side</p>
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
+            <InstagramLink variant="footer-item" showHandle={false} />
             {[
               { href: "/page/privacy", label: "Privacy" },
               { href: "/page/about", label: "About" },

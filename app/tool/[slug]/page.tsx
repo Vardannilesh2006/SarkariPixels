@@ -17,6 +17,7 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
 };
 
 import { SITE_URL } from "@/lib/constants";
+import InstagramLink from "@/components/InstagramLink";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -223,6 +224,7 @@ export default async function ToolPage({ params }: Props) {
 
           {/* Right side */}
           <div className="flex items-center gap-3">
+            <InstagramLink variant="icon" />
             <a
               href="/"
               className="btn btn-ghost btn-sm hidden sm:inline-flex"
@@ -665,7 +667,8 @@ export default async function ToolPage({ params }: Props) {
           <p className="t-caption">
             &copy; {new Date().getFullYear()} SarkariPixels · 100% Client-Side · Privacy First
           </p>
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
+            <InstagramLink variant="footer-item" showHandle={false} />
             {[
               { href: "/page/privacy", label: "Privacy" },
               { href: "/page/about", label: "About" },

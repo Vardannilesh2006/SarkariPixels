@@ -174,7 +174,9 @@ export default function RootLayout({
         "height": 512
       },
       "description": "SarkariPixels is a free browser-based photo resizer that helps Indian government exam applicants compress and resize photos to exact portal specifications for SSC, UPSC, BPSC, RRB, IBPS, NTA, and state PSC exams.",
-      "sameAs": [],
+      "sameAs": [
+        "https://www.instagram.com/sarkaripixcel"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "info@sarkaripixels.online",

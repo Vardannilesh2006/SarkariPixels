@@ -13,8 +13,9 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
   "most-used": { color: "#2563EB", bg: "#2563eb1a" },
 };
 
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/constants";
 import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
+import InstagramLink from "@/components/InstagramLink";
 
 export const metadata: Metadata = {
   title: "SarkariPixels | Free Photo & Signature Resizer for Govt Exams",
@@ -93,14 +94,17 @@ export default function HomePage() {
             ))}
           </nav>
 
-          {/* Theme toggle */}
-          <button
-            id="theme-toggle"
-            className="btn btn-ghost btn-sm"
-            aria-label="Toggle dark mode"
-          >
-            <i id="theme-icon" className="fa-solid fa-moon" style={{ fontSize: "14px" }} aria-hidden="true" />
-          </button>
+          {/* Header actions: Instagram + Theme toggle */}
+          <div className="flex items-center gap-2">
+            <InstagramLink variant="icon" />
+            <button
+              id="theme-toggle"
+              className="btn btn-ghost btn-sm"
+              aria-label="Toggle dark mode"
+            >
+              <i id="theme-icon" className="fa-solid fa-moon" style={{ fontSize: "14px" }} aria-hidden="true" />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -538,7 +542,7 @@ export default function HomePage() {
         }}
       >
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {[
+          {([
             {
               heading: "Popular Tools",
               links: [
@@ -566,14 +570,15 @@ export default function HomePage() {
               ],
             },
             {
-              heading: "Legal",
+              heading: "Legal & Social",
               links: [
-                { href: "/page/privacy", label: "Privacy Policy" },
-                { href: "/page/cookies", label: "Cookie Policy" },
-                { href: "/page/about", label: "About & Terms" },
+                { href: "/page/privacy", label: "Privacy Policy", external: false },
+                { href: "/page/cookies", label: "Cookie Policy", external: false },
+                { href: "/page/about", label: "About & Terms", external: false },
+                { href: INSTAGRAM_URL, label: "Instagram (@sarkaripixcel)", external: true },
               ],
             },
-          ].map((col) => (
+          ] as { heading: string; links: { href: string; label: string; external?: boolean }[] }[]).map((col) => (
             <div key={col.heading}>
               <h3 className="t-caption font-bold uppercase tracking-wider mb-3" style={{ color: "var(--color-text)" }}>
                 {col.heading}
@@ -583,10 +588,31 @@ export default function HomePage() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="t-caption transition-colors"
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
+                      className="t-caption transition-colors hover:text-blue-600 inline-flex items-center gap-1.5"
                       style={{ color: "var(--color-muted)" }}
                     >
-                      {link.label}
+                      {link.external && (
+                        <span
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "14px",
+                            height: "14px",
+                            borderRadius: "4px",
+                            background: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                            color: "#fff",
+                            fontSize: "8px",
+                            flexShrink: 0,
+                          }}
+                          aria-hidden="true"
+                        >
+                          <i className="fa-brands fa-instagram" />
+                        </span>
+                      )}
+                      <span>{link.label}</span>
                     </a>
                   </li>
                 ))}
@@ -595,12 +621,16 @@ export default function HomePage() {
           ))}
         </div>
         <div
-          className="max-w-6xl mx-auto pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3"
+          className="max-w-6xl mx-auto pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-4"
           style={{ borderColor: "var(--color-border)" }}
         >
-          <span className="t-caption">
-            &copy; {new Date().getFullYear()} SarkariPixels. All rights reserved.
-          </span>
+          <div className="flex flex-wrap items-center gap-4">
+            <span className="t-caption">
+              &copy; {new Date().getFullYear()} SarkariPixels. All rights reserved.
+            </span>
+            <span className="t-caption hidden sm:inline" style={{ color: "var(--color-muted)" }}>•</span>
+            <InstagramLink variant="footer-item" showHandle={true} />
+          </div>
           <span className="t-caption">
             Images are processed locally in your browser.
           </span>

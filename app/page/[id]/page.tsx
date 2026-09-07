@@ -3,8 +3,9 @@ import { TOOLS, CATEGORY_LABELS } from "@/lib/tools-data";
 import { GUIDES } from "@/lib/guides-content";
 import { notFound } from "next/navigation";
 
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/constants";
 import { TOTAL_TOOLS_COUNT } from "@/lib/toolRegistry";
+import InstagramLink, { InstagramBadgeIcon } from "@/components/InstagramLink";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -70,7 +71,10 @@ function PageHeader({ backHref, backLabel }: { backHref: string; backLabel: stri
           >S</div>
           <span className="text-base font-bold" style={{ color: "var(--color-text)" }}>SarkariPixels</span>
         </a>
-        <a href={backHref} className="nav-link text-sm font-medium">{backLabel}</a>
+        <div className="flex items-center gap-3">
+          <InstagramLink variant="icon" />
+          <a href={backHref} className="nav-link text-sm font-medium">{backLabel}</a>
+        </div>
       </div>
     </header>
   );
@@ -82,7 +86,8 @@ function PageFooter() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <a href="/" className="text-base font-bold" style={{ color: "var(--color-text)" }}>SarkariPixels</a>
         <p className="t-caption">© {new Date().getFullYear()} SarkariPixels · 100% Client-Side · Privacy First</p>
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
+          <InstagramLink variant="footer-item" showHandle={false} />
           {[{ href: "/page/privacy", label: "Privacy" }, { href: "/page/about", label: "About" }, { href: "/", label: "All Tools" }].map((link) => (
             <a key={link.href} href={link.href} className="t-caption" style={{ color: "var(--color-muted)" }}>{link.label}</a>
           ))}
@@ -469,7 +474,7 @@ function AboutContent() {
       <p className="t-body mb-4" style={{ color: "var(--color-muted)" }}>
         Have questions, discovered a portal specification change, or noticed a bug? We welcome feedback from candidates, coaching institutes, and cyber café operators:
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <div className="card p-4 border rounded-xl" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">General Inquiries &amp; Feedback</span>
           <a href="mailto:info@sarkaripixels.online" className="text-sm font-semibold hover:underline" style={{ color: "var(--color-text)" }}>
@@ -483,6 +488,20 @@ function AboutContent() {
             editorial@sarkaripixels.online
           </a>
           <p className="text-xs mt-2" style={{ color: "var(--color-muted)" }}>Priority mailbox for notification updates and portal spec revisions (reviewed within 48 hours).</p>
+        </div>
+        <div className="card p-4 border rounded-xl" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+          <span className="text-xs font-bold uppercase tracking-wider text-pink-600 block mb-1">Official Instagram</span>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-semibold hover:underline inline-flex items-center gap-2"
+            style={{ color: "var(--color-text)" }}
+          >
+            <InstagramBadgeIcon size={20} />
+            <span>{INSTAGRAM_HANDLE}</span>
+          </a>
+          <p className="text-xs mt-2" style={{ color: "var(--color-muted)" }}>Follow for latest government exam photo updates, notification alerts, and guides.</p>
         </div>
       </div>
 
