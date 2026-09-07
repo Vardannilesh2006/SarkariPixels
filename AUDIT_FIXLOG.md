@@ -52,3 +52,7 @@
 pm run build (137/137 static pages), 
 pm run test:registry (100% PASS), and 
 pm run test:qa (45/45 PASS). Deployed in commit 41ecd29. |
+
+| ADS-01 | Complete Removal of Monetag Popunder & EffectiveCPM Banner Ads | Done | Removed Monetag popunder script (pl29794526.effectivecpmnetwork.com & l5sm.com/tag.min.js), EffectiveCPM banner ad script (pl29794697.effectivecpmnetwork.com/7bdd7128495aad86bdf1f0a96fe0d215/invoke.js), and monetag verification meta tag from pp/layout.tsx. Updated components/CookieBanner.tsx and pp/page/[id]/page.tsx (Cookie Policy and Privacy Policy) to reflect a 100% ad-free, clean, zero third-party ad tracker architecture. Eliminates unwanted click hijacking, popunders, and US bot scan noise. Verified with 
+pm run build (137/137 static pages) and 
+pm run test:qa (45/45 PASS). Deployed in commit d4e7185. |
