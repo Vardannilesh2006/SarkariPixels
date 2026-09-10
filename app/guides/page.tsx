@@ -121,7 +121,7 @@ export default function GuidesPage() {
           <a href="/" className="text-base font-bold" style={{ color: "var(--color-text)" }}>SarkariPixels</a>
           <p className="t-caption">© {new Date().getFullYear()} SarkariPixels · 100% Client-Side</p>
           <div className="flex gap-4">
-            {[{ href: "/page/privacy", label: "Privacy" }, { href: "/page/about", label: "About" }, { href: "/", label: "All Tools" }].map((link) => (
+            {[{ href: "/blog", label: "Blog" }, { href: "/page/privacy", label: "Privacy" }, { href: "/page/about", label: "About" }, { href: "/", label: "All Tools" }].map((link) => (
               <a key={link.href} href={link.href} className="t-caption" style={{ color: "var(--color-muted)" }}>{link.label}</a>
             ))}
           </div>

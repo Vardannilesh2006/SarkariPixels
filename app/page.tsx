@@ -82,6 +82,7 @@ export default function HomePage() {
             {[
               { href: "/exam-specs", label: "Exam Specs" },
               { href: "/guides", label: "Guides" },
+              { href: "/blog", label: "Blog" },
               { href: "/page/about", label: "About" },
             ].map((link) => (
               <a
@@ -566,6 +567,7 @@ export default function HomePage() {
               links: [
                 { href: "/exam-specs", label: "Exam Specifications" },
                 { href: "/guides", label: "How-To Guides" },
+                { href: "/blog", label: "Sarkari Yojana Blog" },
                 { href: "/page/sitemap", label: "All Tools (Sitemap)" },
               ],
             },
