@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -28,11 +28,51 @@ const howToSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which portals require photo and marksheet uploads under 500KB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Central university admission portals like CUET, Delhi University (DU CSAS), Jawaharlal Nehru University (JNU), National Scholarship Portal (NSP), state public service commissions, and e-court legal document portals commonly mandate file uploads under 500KB."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Will text on scanned marksheets remain readable after compressing to 500KB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. SarkariPixels uses smart canvas-based quantization that maintains high DPI and sharp edge contrast so roll numbers, subject marks, and university stamps remain 100% legible."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Are my educational certificates uploaded to any external server?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Never. All compression computations occur strictly in your local device browser memory sandbox using WebAssembly and HTML5 Canvas. Your confidential marksheet images never leave your phone or laptop."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How do I compress a large 5MB photo to exactly 500KB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Click Open Compress Tool, select your 5MB photo or marksheet scan, enter 500 in the Target KB input box, and hit Compress. Our binary search compression algorithm automatically selects the highest possible visual quality under 500KB."
+      }
+    }
+  ]
+};
+
 export default function CompressTo500KBPage() {
   const canonicalUrl = `${SITE_URL}/compress-to-500kb`;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}>
         <header className="sticky top-0 z-40 border-b" style={{ backgroundColor: "var(--color-bg)", borderColor: "var(--color-border)" }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -60,6 +100,55 @@ export default function CompressTo500KBPage() {
               </a>
             </div>
           </section>
+
+          {/* Portal Requirements Table */}
+          <section className="py-10 px-4 sm:px-6 border-b" style={{ borderColor: "var(--color-border)" }}>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="t-h2 mb-4 text-center">Standard 500KB Admission & Portal Upload Specifications</h2>
+              <p className="text-center text-sm mb-6" style={{ color: "var(--color-muted)" }}>
+                Official file upload guidelines across top academic and administrative portals across India:
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm border-collapse card">
+                  <thead>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+                      <th className="p-3 font-semibold">Portal / Organization</th>
+                      <th className="p-3 font-semibold">Document Type</th>
+                      <th className="p-3 font-semibold">Max File Size</th>
+                      <th className="p-3 font-semibold">Allowed Formats</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">CUET / NTA Admission</td>
+                      <td className="p-3">Category Certificate & Marksheets</td>
+                      <td className="p-3">50KB – 500KB</td>
+                      <td className="p-3">JPG / JPEG / PDF</td>
+                    </tr>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">Delhi University (DU CSAS)</td>
+                      <td className="p-3">Class 10th/12th Marksheet Scan</td>
+                      <td className="p-3">Under 500KB</td>
+                      <td className="p-3">JPG / JPEG</td>
+                    </tr>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">National Scholarship (NSP)</td>
+                      <td className="p-3">Income / Caste / Marksheet Proof</td>
+                      <td className="p-3">Under 500KB</td>
+                      <td className="p-3">JPG / PDF</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 font-medium">State Service Recruitment</td>
+                      <td className="p-3">Identity & Educational Records</td>
+                      <td className="p-3">Under 500KB</td>
+                      <td className="p-3">JPG / JPEG</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
           <section className="py-12 px-4 sm:px-6" aria-labelledby="uses-heading">
             <div className="max-w-4xl mx-auto">
               <h2 id="uses-heading" className="t-h2 mb-6 text-center">Common Use Cases for 500KB Limit</h2>
@@ -78,7 +167,23 @@ export default function CompressTo500KBPage() {
               </div>
             </div>
           </section>
-          <section className="py-10 px-4 sm:px-6 border-t" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+
+          {/* Detailed FAQs Section */}
+          <section className="py-12 px-4 sm:px-6 border-t" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="t-h2 mb-6 text-center">Frequently Asked Questions (FAQs)</h2>
+              <div className="space-y-4">
+                {faqSchema.mainEntity.map((item) => (
+                  <div key={item.name} className="card p-5">
+                    <h3 className="font-semibold text-base mb-2" style={{ color: "var(--color-text)" }}>{item.name}</h3>
+                    <p className="t-caption" style={{ lineHeight: "1.7", color: "var(--color-muted)" }}>{item.acceptedAnswer.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-10 px-4 sm:px-6 border-t" style={{ borderColor: "var(--color-border)" }}>
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="t-h3 mb-6">Other Size Targets</h2>
               <div className="flex flex-wrap justify-center gap-3">

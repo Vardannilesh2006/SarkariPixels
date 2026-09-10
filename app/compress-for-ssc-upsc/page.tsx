@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -21,9 +21,11 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "SSC CGL photo size kya honi chahiye?", acceptedAnswer: { "@type": "Answer", text: "SSC CGL ke liye photo 3.5cm × 4.5cm (413×531 pixels at 300 DPI), 20–50KB, JPEG format, plain white background mandatory. Recent photo (within 3 months) chahiye." } },
-    { "@type": "Question", name: "UPSC photo size kya hoti hai?", acceptedAnswer: { "@type": "Answer", text: "UPSC CSE ke liye photo 350×350 pixels (square), 20KB–300KB, JPEG, white background. Naam aur date stamp last 10 days ki photo pe zaroori hai. Signature 350×100 pixels, 10–100KB." } },
-    { "@type": "Question", name: "Kya ek hi tool se SSC aur UPSC dono ka photo ban sakta hai?", acceptedAnswer: { "@type": "Answer", text: "Nahi — SSC aur UPSC ke dimensions alag hain. SSC ke liye portrait 413×531px aur UPSC ke liye square 350×350px chahiye. SarkariPixels pe alag-alag dedicated tools hain." } },
-    { "@type": "Question", name: "SSC photo reject kyun hoti hai?", acceptedAnswer: { "@type": "Answer", text: "SSC photo rejection ke common reasons: file too large (>50KB), wrong dimensions, colored background, sunglasses, shadow on face, blurred photo, or OTR live webcam required (2024–2026 cycles). SarkariPixels portal-compliant output deta hai." } },
+    { "@type": "Question", name: "UPSC photo size kya hoti hai?", acceptedAnswer: { "@type": "Answer", text: "UPSC CSE ke liye photo 350×350 pixels (square), 20KB–300KB, JPEG, white background. Candidate name aur date stamp (last 10 days ki photo) bottom 20% area pe hona anivarya hai. Signature 350×100 pixels, 10–100KB." } },
+    { "@type": "Question", name: "Kya ek hi tool se SSC aur UPSC dono ka photo ban sakta hai?", acceptedAnswer: { "@type": "Answer", text: "Nahi — SSC aur UPSC ke dimensions aur aspect ratio alag hain. SSC ke liye portrait 413×531px aur UPSC ke liye square 350×350px chahiye. SarkariPixels pe alag-alag dedicated tools hain." } },
+    { "@type": "Question", name: "SSC photo reject kyun hoti hai?", acceptedAnswer: { "@type": "Answer", text: "SSC photo rejection ke common reasons: file size >50KB, wrong dimensions, colored or dark background, wearing spectacles/sunglasses/cap, shadow on face, blurred quality, ya OTR live webcam mismatch. SarkariPixels portal-compliant output deta hai." } },
+    { "@type": "Question", name: "UPSC OTR portal par photo upload fail kyun hota hai?", acceptedAnswer: { "@type": "Answer", text: "UPSC One-Time Registration (OTR) portal file names me special characters ya spaces allow nahi karta. File ka naam simple 'photo.jpg' rakhein aur size 20KB se 300KB ke beech maintain karein." } },
+    { "@type": "Question", name: "Signature compress karte waqt ink light kyun ho jati hai?", acceptedAnswer: { "@type": "Answer", text: "Ordinary compressors signature strokes ko fade kar dete hain. SarkariPixels ka Signature Resizer tool high-contrast thresholding use karta hai jisse white paper aur black ink bilkul clear aur dark rehti hai." } },
   ],
 };
 
@@ -99,15 +101,10 @@ export default function CompressForSSCUPSCPage() {
             <div className="max-w-3xl mx-auto">
               <h2 id="faq-heading" className="t-h2 mb-8 text-center">SSC &amp; UPSC Photo FAQ</h2>
               <dl className="space-y-5 divide-y" style={{ borderColor: "var(--color-border)" }}>
-                {[
-                  { q: "SSC CGL photo size kya honi chahiye?", a: "SSC CGL ke liye photo 413×531 pixels (3.5×4.5 cm at 300 DPI), 20–50KB, JPEG, white background. Recent photo (within 3 months)." },
-                  { q: "UPSC photo size kya hoti hai?", a: "UPSC CSE ke liye photo 350×350 pixels (square), 20KB–300KB, JPEG, white background. Naam aur date stamp zaroori." },
-                  { q: "Kya ek tool se SSC aur UPSC dono ka photo ban sakta hai?", a: "Nahi — SSC portrait (413×531) aur UPSC square (350×350) hain. SarkariPixels pe dedicated tools hain dono ke liye." },
-                  { q: "SSC photo reject kyun hoti hai?", a: "Common reasons: file >50KB, wrong dimensions, colored background, OTR webcam required (2024-2026 cycles). SarkariPixels portal-compliant output deta hai." },
-                ].map(({ q, a }, i) => (
+                {faqSchema.mainEntity.map(({ name, acceptedAnswer }, i) => (
                   <div key={i} className={i > 0 ? "pt-5" : ""}>
-                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{q}</dt>
-                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{a}</dd>
+                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{name}</dt>
+                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{acceptedAnswer.text}</dd>
                   </div>
                 ))}
               </dl>

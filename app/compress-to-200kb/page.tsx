@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -32,9 +32,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "SSC CGL ke liye photo 200KB se compress kaise karein?", acceptedAnswer: { "@type": "Answer", text: "SSC CGL aur CHSL ke liye photo 20KB–50KB honi chahiye, lekin kuch cycle mein 200KB tak allowed hai. SarkariPixels ka Compress to 200KB tool use karo — photo browser mein hi compress hoti hai." } },
-    { "@type": "Question", name: "Does NTA allow 200KB photos for JEE / NEET?", acceptedAnswer: { "@type": "Answer", text: "NTA JEE Main and NEET allow photos up to 200KB in certain cycles (minimum 10KB). JPEG format with white/off-white background. Signature must be 4–30KB." } },
-    { "@type": "Question", name: "Is 200KB enough for high-resolution passport photos?", acceptedAnswer: { "@type": "Answer", text: "Yes. A 413×531 pixel passport photo at JPEG quality 90+ typically occupies 30–80KB. 200KB allows excellent quality for all standard exam photo sizes." } },
+    { "@type": "Question", name: "SSC CGL ke liye photo 200KB se compress kaise karein?", acceptedAnswer: { "@type": "Answer", text: "SSC CGL aur CHSL ke liye photo 20KB–50KB honi chahiye, lekin verification marksheets aur scanned certificates 200KB tak allowed hain. SarkariPixels ka Compress to 200KB tool use karo — photo browser mein hi compress hoti hai." } },
+    { "@type": "Question", name: "Does NTA allow 200KB photos for JEE / NEET?", acceptedAnswer: { "@type": "Answer", text: "NTA JEE Main and NEET allow passport photos between 10KB and 200KB (JPEG format, 80% face coverage, white background). Signatures must be 4KB–30KB." } },
+    { "@type": "Question", name: "Is 200KB enough for high-resolution passport photos?", acceptedAnswer: { "@type": "Answer", text: "Yes. A standard 3.5cm x 4.5cm passport photo at 300 DPI occupies around 40KB–90KB. 200KB gives plenty of room for crystal-clear facial features without portal rejection." } },
+    { "@type": "Question", name: "How to compress scanned marksheet to 200KB without blurring text?", acceptedAnswer: { "@type": "Answer", text: "Upload your scanned PDF or JPG into the SarkariPixels compressor. The tool uses intelligent Lanczos resampling to preserve text sharpness and numerical clarity while fitting under 200KB." } },
+    { "@type": "Question", name: "Are my photos uploaded to any server?", acceptedAnswer: { "@type": "Answer", text: "No. All image processing runs locally in your device browser sandbox. No photo or signature ever leaves your mobile phone or computer." } },
   ],
 };
 
@@ -63,52 +65,88 @@ export default function CompressTo200KBPage() {
               </div>
               <h1 className="t-h1 mb-4">Compress Image to 200KB</h1>
               <p className="t-body mb-6" style={{ color: "var(--color-muted)" }}>
-                Compress photos to <strong style={{ color: "var(--color-text)" }}>200KB or less</strong> instantly — free and private.
-                Trusted for <strong style={{ color: "var(--color-text)" }}>SSC CGL/CHSL, RRB NTPC, NTA JEE/NEET, and Railway</strong> exam portals.
+                Reduce photos and documents to <strong style={{ color: "var(--color-text)" }}>200KB or less</strong> — free, private, instant.
+                Configured for <strong style={{ color: "var(--color-text)" }}>SSC CGL, CHSL, MTS, RRB NTPC, Railway, and NTA 200KB portal limits</strong>.
               </p>
-              <a href="/tool/compress-200" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 36px" }}>
-                Open Compress to 200KB Tool →
+              <a href="/tool/reduce-kb" className="btn btn-primary" style={{ fontSize: "1rem", padding: "14px 36px" }}>
+                Open Compress Tool →
               </a>
             </div>
           </section>
-          <section className="py-12 px-4 sm:px-6" aria-labelledby="portals-heading">
+
+          <section className="py-10 px-4 sm:px-6 border-b" style={{ borderColor: "var(--color-border)" }}>
             <div className="max-w-4xl mx-auto">
-              <h2 id="portals-heading" className="t-h2 mb-6 text-center">Portals With 200KB Photo Limits</h2>
-              <div className="overflow-x-auto card border rounded-xl" style={{ borderColor: "var(--color-border)" }}>
-                <table className="w-full text-left text-sm" style={{ minWidth: "500px" }}>
-                  <thead><tr style={{ backgroundColor: "var(--color-surface)", borderBottom: "1px solid var(--color-border)" }}>
-                    <th className="p-4 font-semibold">Exam</th><th className="p-4 font-semibold">Photo Limit</th><th className="p-4 font-semibold">Notes</th>
-                  </tr></thead>
+              <h2 className="t-h2 mb-4 text-center">Government Exam Portals with 200KB Limits</h2>
+              <p className="text-center text-sm mb-6" style={{ color: "var(--color-muted)" }}>
+                Reference table for exams and recruitment portals requiring documents under 200KB:
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-sm border-collapse card">
+                  <thead>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-surface)" }}>
+                      <th className="p-3 font-semibold">Recruitment Board</th>
+                      <th className="p-3 font-semibold">Permitted File Size</th>
+                      <th className="p-3 font-semibold">Accepted Format</th>
+                      <th className="p-3 font-semibold">Dimensions / DPI</th>
+                    </tr>
+                  </thead>
                   <tbody>
-                    {[
-                      { exam: "SSC CGL / CHSL / MTS (various cycles)", photo: "20–200 KB", notes: "Specific cycle may vary; check current notification" },
-                      { exam: "RRB NTPC / Group D / ALP", photo: "Up to 200 KB", notes: "JPEG, white background, recent photo" },
-                      { exam: "NTA JEE Main / NEET UG", photo: "10–200 KB", notes: "JPEG only, white/off-white background" },
-                      { exam: "Railway Recruitment Board (various boards)", photo: "20–200 KB", notes: "Color photo, formal attire, white background" },
-                    ].map((row, i) => (
-                      <tr key={i} style={{ borderBottom: "1px solid var(--color-border)" }}>
-                        <td className="p-4 font-medium" style={{ color: "var(--color-text)" }}>{row.exam}</td>
-                        <td className="p-4" style={{ color: "var(--color-muted)" }}>{row.photo}</td>
-                        <td className="p-4" style={{ color: "var(--color-muted)" }}>{row.notes}</td>
-                      </tr>
-                    ))}
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">NTA (NEET / JEE Main)</td>
+                      <td className="p-3">10KB – 200KB</td>
+                      <td className="p-3">JPG / JPEG</td>
+                      <td className="p-3">3.5cm × 4.5cm (80% face)</td>
+                    </tr>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">RRB (Railway NTPC / Group D)</td>
+                      <td className="p-3">20KB – 100KB / 200KB docs</td>
+                      <td className="p-3">JPG / JPEG</td>
+                      <td className="p-3">35mm × 45mm</td>
+                    </tr>
+                    <tr className="border-b" style={{ borderColor: "var(--color-border)" }}>
+                      <td className="p-3 font-medium">CTET / Teaching Exams</td>
+                      <td className="p-3">10KB – 100KB (Certificates up to 200KB)</td>
+                      <td className="p-3">JPG / PDF</td>
+                      <td className="p-3">200 DPI scan</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3 font-medium">State Police & Defense Recruitment</td>
+                      <td className="p-3">50KB – 200KB</td>
+                      <td className="p-3">JPG / JPEG</td>
+                      <td className="p-3">Standard Passport Size</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </section>
+
+          <section className="py-12 px-4 sm:px-6" aria-labelledby="uses-heading">
+            <div className="max-w-4xl mx-auto">
+              <h2 id="uses-heading" className="t-h2 mb-6 text-center">Why Portals Require 200KB</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  { title: "Railway Recruitment Board (RRB)", body: "RRB NTPC, ALP, and Group D portals restrict photo uploads to 20KB–50KB and certificates/category proofs to under 200KB." },
+                  { title: "NTA Examination Forms", body: "NTA JEE Main and NEET application forms specify 10KB–200KB for candidate photographs." },
+                  { title: "State Police Constable & SI Forms", body: "UP Police, Bihar Police, and MP Police forms commonly specify 100KB–200KB for domicile and educational certificates." },
+                  { title: "Banking & Insurance (IBPS / SBI / LIC)", body: "IBPS PO and Clerk applications require handwritten declaration and certificates compressed to under 100KB–200KB." },
+                ].map((card) => (
+                  <div key={card.title} className="card p-5">
+                    <h3 className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{card.title}</h3>
+                    <p className="t-caption" style={{ lineHeight: "1.7" }}>{card.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
           <section className="py-12 px-4 sm:px-6 border-t" style={{ borderColor: "var(--color-border)" }} aria-labelledby="faq-heading">
             <div className="max-w-3xl mx-auto">
-              <h2 id="faq-heading" className="t-h2 mb-8 text-center">FAQ</h2>
+              <h2 id="faq-heading" className="t-h2 mb-8 text-center">Frequently Asked Questions</h2>
               <dl className="space-y-5 divide-y" style={{ borderColor: "var(--color-border)" }}>
-                {[
-                  { q: "SSC CGL ke liye photo 200KB se compress kaise karein?", a: "SarkariPixels ka Compress to 200KB tool use karo — photo browser mein hi compress hoti hai, server pe upload nahi hoti." },
-                  { q: "Does NTA allow 200KB photos for JEE / NEET?", a: "NTA JEE Main and NEET allow photos 10KB–200KB (JPEG, white/off-white background). Signature must be 4–30KB." },
-                  { q: "Is 200KB enough for high-resolution passport photos?", a: "Yes. A 413×531 pixel passport photo at JPEG quality 90+ typically occupies 30–80KB. 200KB allows excellent quality." },
-                ].map(({ q, a }, i) => (
+                {faqSchema.mainEntity.map(({ name, acceptedAnswer }, i) => (
                   <div key={i} className={i > 0 ? "pt-5" : ""}>
-                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{q}</dt>
-                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{a}</dd>
+                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{name}</dt>
+                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{acceptedAnswer.text}</dd>
                   </div>
                 ))}
               </dl>

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -38,6 +38,8 @@ const faqSchema = {
     { "@type": "Question", name: "RRB ke liye photo 100KB se kam kaise karein?", acceptedAnswer: { "@type": "Answer", text: "RRB NTPC aur Group D ke liye photo 20KB–100KB, JPEG format mein chahiye. SarkariPixels ka Compress to 100KB tool use karo — photo browser mein compress hoti hai, upload nahi hoti." } },
     { "@type": "Question", name: "Does compression reduce image quality?", acceptedAnswer: { "@type": "Answer", text: "SarkariPixels uses iterative quality reduction to find the highest quality that fits under 100KB. For passport-size photos, 100KB allows excellent JPEG quality (typically Q80–Q90)." } },
     { "@type": "Question", name: "Can I use this for SBI or IBPS applications?", acceptedAnswer: { "@type": "Answer", text: "Yes. SBI PO, SBI Clerk, IBPS PO, and IBPS Clerk all allow photos up to 50KB or 100KB depending on the cycle. The Compress to 100KB tool works for both." } },
+    { "@type": "Question", name: "How to ensure passport photo dimensions remain 3.5cm x 4.5cm under 100KB?", acceptedAnswer: { "@type": "Answer", text: "Use our built-in aspect ratio lock or Passport Maker tool before compression. Our algorithm maintains pixel dimensions (e.g. 413x531 px at 300 DPI) while stripping unnecessary EXIF data to reach exactly under 100KB." } },
+    { "@type": "Question", name: "Are my application documents safe on this website?", acceptedAnswer: { "@type": "Answer", text: "100% safe. SarkariPixels performs client-side compression exclusively inside your browser memory. Your confidential certificates and photos are never uploaded or stored on any server." } },
   ],
 };
 
@@ -106,15 +108,10 @@ export default function CompressTo100KBPage() {
             <div className="max-w-3xl mx-auto">
               <h2 id="faq-heading" className="t-h2 mb-8 text-center">FAQ</h2>
               <dl className="space-y-5 divide-y" style={{ borderColor: "var(--color-border)" }}>
-                {[
-                  { q: "Does UPSC require photos under 100KB?", a: "UPSC CSE requires a photo 20KB–300KB and signature 10KB–100KB in JPEG with white background." },
-                  { q: "RRB ke liye photo 100KB se kam kaise karein?", a: "RRB NTPC aur Group D ke liye photo 20KB–100KB, JPEG. SarkariPixels ka Compress to 100KB tool use karo." },
-                  { q: "Does compression reduce image quality?", a: "For 100KB, quality is typically Q80–Q90 for passport-size photos — well within portal acceptance thresholds." },
-                  { q: "Can I use this for SBI or IBPS?", a: "Yes. SBI PO, SBI Clerk, IBPS PO, and IBPS Clerk all accept photos up to 50KB–100KB. This tool works for both." },
-                ].map(({ q, a }, i) => (
+                {faqSchema.mainEntity.map(({ name, acceptedAnswer }, i) => (
                   <div key={i} className={i > 0 ? "pt-5" : ""}>
-                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{q}</dt>
-                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{a}</dd>
+                    <dt className="font-semibold mb-2" style={{ color: "var(--color-text)" }}>{name}</dt>
+                    <dd style={{ color: "var(--color-muted)", fontSize: "0.875rem", lineHeight: "1.7" }}>{acceptedAnswer.text}</dd>
                   </div>
                 ))}
               </dl>
