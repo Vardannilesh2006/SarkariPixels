@@ -1,4 +1,4 @@
-﻿export interface SarkariArticle {
+export interface SarkariArticle {
   slug: string;
   title: string;
   desc: string;
@@ -60,28 +60,47 @@ export async function fetchSarkariBloggerPosts(): Promise<SarkariArticle[]> {
           .substring(0, 60);
       }
 
-      // STRICT FILTER: Check if this article belongs to SarkariPixels
+      // STRICT EXCLUSION: If an article is tagged WeLovePDF or mentions WeLovePDF, REMOVE IT FROM SARKARIPIXELS
+      if (categories.some((c) => c.toLowerCase().includes("welovepdf"))) {
+        continue;
+      }
+      if (/welovepdf|pdf-tool|adobe|ilovepdf/i.test(slug + " " + title)) {
+        continue;
+      }
+      // Inspect body text (excluding style blocks and URLs)
+      const bodyTextOnly = rawContent
+        .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+        .replace(/https?:\/\/[^\s"'<>]+/gi, "");
+      if (/welovepdf/i.test(bodyTextOnly)) {
+        continue;
+      }
+
+      // Check if this article belongs to SarkariPixels
       const isSarkariTagged = categories.some((c) => c.toLowerCase().includes("sarkaripixels"));
       const isSarkariTopic = SARKARI_KEYWORDS.test(slug + " " + title);
 
-      // Skip WeLovePDF articles
       if (!isSarkariTagged && !isSarkariTopic) {
         continue;
       }
 
-      // Rewrite any broken external images in HTML to /blog-images/
+      // Rewrite ANY GitHub raw or external image URLs to clean local /blog-images/
       const processedContent = rawContent
         .replace(
-          /https?:\/\/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(?:blogger_posts\/)?images\/([^\s"'<>]+)/gi,
+          /https?:\/\/raw\.githubusercontent\.com\/[^\s"'<>]+\/([^\/\s"'<>]+\.(?:jpg|jpeg|png|webp))/gi,
           "/blog-images/$1"
         )
         .replace(
-          /src=["'](?:\/)?images\/([^\s"'<>]+)["']/gi,
+          /src=["'](?:.*?\/)?([^\/\s"'<>]+\.(?:jpg|jpeg|png|webp))["']/gi,
           'src="/blog-images/$1"'
-        );
+        )
+        // Scrub any accidental WeLovePDF text or links if present in Sarkari posts
+        .replace(/https?:\/\/(?:www\.)?welovepdf\.best[^\s"'<>]*/gi, "https://www.sarkaripixels.online")
+        .replace(/welovepdf\.best/gi, "sarkaripixels.online")
+        .replace(/welovepdf/gi, "SarkariPixels");
 
       // Extract plain text snippet
-      const strippedDesc = rawContent
+      const strippedDesc = processedContent
+        .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
         .replace(/<[^>]+>/g, " ")
         .replace(/\s+/g, " ")
         .trim()
@@ -94,7 +113,7 @@ export async function fetchSarkariBloggerPosts(): Promise<SarkariArticle[]> {
         thumbnail = imgMatch[1];
       }
 
-      // Resolve to local or public CDN
+      // Resolve to local
       if (thumbnail) {
         const fnMatch = thumbnail.match(/([^\/\?#]+\.(?:jpg|jpeg|png|webp))/i);
         if (fnMatch && fnMatch[1]) {
@@ -102,19 +121,15 @@ export async function fetchSarkariBloggerPosts(): Promise<SarkariArticle[]> {
         }
       }
 
-      // Smart fallback thumbnail map
+      // Guaranteed fallback thumbnail map
+      const lower = (slug + " " + title).toLowerCase();
       if (!thumbnail || thumbnail.includes("inline_art")) {
-        const lower = (slug + " " + title).toLowerCase();
         if (lower.includes("sarkari-exam-alerts") || lower.includes("admit-card")) {
-          thumbnail = "/blog-images/sarkari-exam-alerts-admit-card-2026.jpg";
-        } else if (lower.includes("aadhaar") || lower.includes("voter") || lower.includes("pan")) {
-          thumbnail = "/blog-images/aadhaar-pan-voter-id-correction-online.jpg";
-        } else if (lower.includes("sarkari-yojana") || lower.includes("yojana")) {
-          thumbnail = "/blog-images/sarkari-yojana-complete-guide.jpg";
+          thumbnail = "/blog-images/competitive-exam-admit-card-result-portal.jpg";
+        } else if (lower.includes("aadhaar") || lower.includes("voter") || lower.includes("pan") || lower.includes("correction")) {
+          thumbnail = "/blog-images/official-documents-correction-portal-guide.jpg";
         } else if (lower.includes("vishwakarma")) {
           thumbnail = "/blog-images/pm-vishwakarma-yojana-online-apply-2026.jpg";
-        } else if (lower.includes("sarkaripixels") || lower.includes("login")) {
-          thumbnail = "/blog-images/sarkaripixels-login-registration-problem.jpg";
         } else {
           thumbnail = "/blog-images/sarkari-yojana-complete-guide.jpg";
         }
