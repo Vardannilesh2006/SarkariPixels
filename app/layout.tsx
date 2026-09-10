@@ -95,6 +95,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google AdSense Ownership & Ads Script */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6714385905703896"
+          crossOrigin="anonymous"
+        />
+
         {/* GA4 Consent Mode v2 — deny-by-default until user accepts cookie banner */}
         <script
           dangerouslySetInnerHTML={{
