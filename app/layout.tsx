@@ -102,20 +102,31 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* GA4 Consent Mode v2 — deny-by-default until user accepts cookie banner */}
+        {/* GA4 Analytics Initialization — High-Fidelity First-Party Measurement */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              // Initialize consent mode BEFORE loading GA — deny by default
-              gtag('consent', 'default', {
-                analytics_storage: 'denied',
-                ad_storage: 'denied',
-                ad_user_data: 'denied',
-                ad_personalization: 'denied',
-                wait_for_update: 500
-              });
+              
+              var consentChoice = null;
+              try { consentChoice = localStorage.getItem('sp-cookie-consent'); } catch(e){}
+              
+              if (consentChoice === 'denied') {
+                gtag('consent', 'default', {
+                  analytics_storage: 'denied',
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied'
+                });
+              } else {
+                gtag('consent', 'default', {
+                  analytics_storage: 'granted',
+                  ad_storage: 'granted',
+                  ad_user_data: 'granted',
+                  ad_personalization: 'granted'
+                });
+              }
               gtag('js', new Date());
               gtag('config', 'G-5EBGBRC049', { send_page_view: true });
             `,

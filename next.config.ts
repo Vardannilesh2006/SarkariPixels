@@ -13,6 +13,20 @@ const nextConfig: NextConfig = {
         destination: "https://www.sarkaripixels.online/:path*",
         permanent: true,
       },
+      // https://sarkaripixels.vercel.app/* → https://www.sarkaripixels.online/*
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "sarkaripixels.vercel.app" }],
+        destination: "https://www.sarkaripixels.online/:path*",
+        permanent: true,
+      },
+      // https://sarkari-pixels.vercel.app/* → https://www.sarkaripixels.online/*
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "sarkari-pixels.vercel.app" }],
+        destination: "https://www.sarkaripixels.online/:path*",
+        permanent: true,
+      },
       // http://www.sarkaripixels.online/* → https://www.sarkaripixels.online/*
       // (handles the http→https upgrade for the www host)
       {

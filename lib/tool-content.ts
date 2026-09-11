@@ -19,39 +19,39 @@ export interface ToolContent {
 
 export const TOOL_CONTENT: Record<string, ToolContent> = {
   "resize-image": {
-    metaTitle: "Resize multiple images at once! — Free Online Tool | SarkariPixels",
-    metaDesc: "Use our free online resize multiple images at once! tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
-    h1: "Resize multiple images at once! Online Free",
-    description: `Resize multiple images at once! tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    metaTitle: "Batch Photo Resizer Online for Govt Exams & Documents | SarkariPixels",
+    metaDesc: "Resize multiple images and photos simultaneously to exact pixels, cm, or mm. 100% free, browser-based batch tool for SSC, UPSC, and State PSC application forms.",
+    h1: "Batch Image Resizer Online Free",
+    description: `Batch photo resizing utility built specifically for exam candidates, cyber cafe operators, and documentation specialists. Resize multiple photos at once to uniform dimensions (such as 3.5cm x 4.5cm or 350x450 px) while locking aspect ratio. Built using high-performance client-side canvas algorithms to preserve face sharpness, text readability on admit cards, and official government portal specifications with zero server upload.`,
     howTo: [
-      "Select your image file by clicking Upload or drag & drop",
-      "Configure your desired dimensions or compression options",
-      "Click Process to execute instant in-browser optimization",
-      "Download your ready-to-use image instantly"
+      "Select one or more photos by clicking Upload or dragging them into the workspace",
+      "Set your desired width, height, and unit (pixels, cm, or mm)",
+      "Toggle Aspect Ratio Lock to ensure photos don't stretch or distort",
+      "Click Process to execute instant in-browser optimization and download all files"
     ],
     faqs: [
-      { q: "Is this Resize multiple images at once! tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
-      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
-      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+      { q: "What dimensions are commonly required for SSC and UPSC exam photos?", a: "Most central and state exam portals require passport-style photos with dimensions of 3.5 cm (width) x 4.5 cm (height), or approximately 350 x 450 pixels at 300 DPI." },
+      { q: "Will resizing multiple images reduce the image quality?", a: "No. SarkariPixels uses bi-cubic canvas interpolation that maintains edge clarity and prevents pixelation even when downsizing photos." },
+      { q: "Can I resize photos and signatures at the same time?", a: "Yes. You can process photos to 3.5x4.5cm and signatures to 4.0x2.0cm in separate batches within seconds." }
     ],
     relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
   },
 
   "crop-image": {
-    metaTitle: "Crop Image Online Free — Free Online Tool | SarkariPixels",
-    metaDesc: "Use our free online crop image online free tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
-    h1: "Crop Image Online Free Online Free",
-    description: `Crop Image Online Free tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    metaTitle: "Free Online Image Cropper for Passport & Govt Exam Forms | SarkariPixels",
+    metaDesc: "Crop photos to exact passport (3.5x4.5cm), square (1:1), or custom aspect ratios for government exam portals. No file uploads, 100% secure in your browser.",
+    h1: "Crop Image Online for Exam & Passport Photos",
+    description: `Precision photo cropper designed for strict exam portal requirements. Remove background clutter, align face boundaries, and crop to exact aspect ratios required by SSC, UPSC, NTA, and State Public Service Commissions without downloading heavy software. All processing executes 100% in your local browser sandbox to keep your private ID photos safe.`,
     howTo: [
-      "Select your image file by clicking Upload or drag & drop",
-      "Configure your desired dimensions or compression options",
-      "Click Process to execute instant in-browser optimization",
-      "Download your ready-to-use image instantly"
+      "Upload your photo from your device storage or camera roll",
+      "Drag the crop box to center your face (head should cover roughly 70-80% of frame)",
+      "Select a preset aspect ratio (1:1, 3.5:4.5 passport, or custom)",
+      "Click Crop to generate your perfectly aligned document photo instantly"
     ],
     faqs: [
-      { q: "Is this Crop Image Online Free tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
-      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
-      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+      { q: "What is the correct face alignment rule for exam application photos?", a: "Official recruitment guidelines state that the candidate's face must occupy 70% to 80% of the photograph with both ears clearly visible and eyes looking directly into the camera." },
+      { q: "Can I crop circular or oval profile photos?", a: "Yes. Our cropping tool supports standard rectangular crops for government forms as well as circular profile crops for online portal avatars." },
+      { q: "Does cropping remove EXIF location metadata from my photo?", a: "Yes. Our canvas rendering cleanly exports a fresh image stream, stripping private GPS and device metadata automatically." }
     ],
     relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
   },
