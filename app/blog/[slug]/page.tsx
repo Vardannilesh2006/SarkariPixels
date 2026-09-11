@@ -13,12 +13,13 @@ export async function generateStaticParams() {
   return articles.map((art) => ({ slug: art.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const article = await getSarkariArticleBySlug(params.slug);
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const article = await getSarkariArticleBySlug(slug);
 
   if (!article) return {};
 
@@ -48,12 +49,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SarkariBlogDetail({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const article = await getSarkariArticleBySlug(params.slug);
+export default async function SarkariBlogDetail({ params }: Props) {
+  const { slug } = await params;
+  const article = await getSarkariArticleBySlug(slug);
 
   if (!article) {
     notFound();
