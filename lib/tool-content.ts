@@ -18,6 +18,306 @@ export interface ToolContent {
 }
 
 export const TOOL_CONTENT: Record<string, ToolContent> = {
+  "guides/crop-signature-from-mobile-photo": {
+    metaTitle: "Guides/Crop Signature From Mobile Photo Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/crop signature from mobile photo online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Crop Signature From Mobile Photo Online Free",
+    description: `Guides/Crop Signature From Mobile Photo utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/remove-background-passport-photo": {
+    metaTitle: "Guides/Remove Background Passport Photo Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/remove background passport photo online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Remove Background Passport Photo Online Free",
+    description: `Guides/Remove Background Passport Photo utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/compress-image-to-20kb": {
+    metaTitle: "Guides/Compress Image To 20Kb Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/compress image to 20kb online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Compress Image To 20Kb Online Free",
+    description: `Guides/Compress Image To 20Kb utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/navy-airforce-photo-slate": {
+    metaTitle: "Guides/Navy Airforce Photo Slate Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/navy airforce photo slate online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Navy Airforce Photo Slate Online Free",
+    description: `Guides/Navy Airforce Photo Slate utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/convert-png-to-jpg-without-software": {
+    metaTitle: "Guides/Convert Png To Jpg Without Software Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/convert png to jpg without software online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Convert Png To Jpg Without Software Online Free",
+    description: `Guides/Convert Png To Jpg Without Software utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/resize-image-mobile-chrome": {
+    metaTitle: "Guides/Resize Image Mobile Chrome Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/resize image mobile chrome online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Resize Image Mobile Chrome Online Free",
+    description: `Guides/Resize Image Mobile Chrome utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/lic-aao-photo-requirements": {
+    metaTitle: "Guides/Lic Aao Photo Requirements Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/lic aao photo requirements online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Lic Aao Photo Requirements Online Free",
+    description: `Guides/Lic Aao Photo Requirements utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/sbi-clerk-photo-rejection": {
+    metaTitle: "Guides/Sbi Clerk Photo Rejection Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/sbi clerk photo rejection online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Sbi Clerk Photo Rejection Online Free",
+    description: `Guides/Sbi Clerk Photo Rejection utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/passport-photo-dimensions-cm-px": {
+    metaTitle: "Guides/Passport Photo Dimensions Cm Px Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/passport photo dimensions cm px online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Passport Photo Dimensions Cm Px Online Free",
+    description: `Guides/Passport Photo Dimensions Cm Px utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/photo-dpi-checker-online": {
+    metaTitle: "Guides/Photo Dpi Checker Online Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/photo dpi checker online online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Photo Dpi Checker Online Online Free",
+    description: `Guides/Photo Dpi Checker Online utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/signature-resize-10-20kb": {
+    metaTitle: "Guides/Signature Resize 10 20Kb Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/signature resize 10 20kb online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Signature Resize 10 20Kb Online Free",
+    description: `Guides/Signature Resize 10 20Kb utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/neet-photo-post-card-size": {
+    metaTitle: "Guides/Neet Photo Post Card Size Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/neet photo post card size online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Neet Photo Post Card Size Online Free",
+    description: `Guides/Neet Photo Post Card Size utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/bpsc-photo-signature-guide": {
+    metaTitle: "Guides/Bpsc Photo Signature Guide Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/bpsc photo signature guide online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Bpsc Photo Signature Guide Online Free",
+    description: `Guides/Bpsc Photo Signature Guide utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/rrb-ntpc-photo-size": {
+    metaTitle: "Guides/Rrb Ntpc Photo Size Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/rrb ntpc photo size online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Rrb Ntpc Photo Size Online Free",
+    description: `Guides/Rrb Ntpc Photo Size utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "guides/bssc-inter-level-photo": {
+    metaTitle: "Guides/Bssc Inter Level Photo Online for Govt Exams — Free & Fast | SarkariPixels",
+    metaDesc: "Resize, compress, and optimize guides/bssc inter level photo online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",
+    h1: "Guides/Bssc Inter Level Photo Online Free",
+    description: `Guides/Bssc Inter Level Photo utility engineered specifically for government job aspirants, cyber cafe operators, and students. Easily prepare document photos and signatures meeting strict official portal constraints (such as 3.5cm x 4.5cm or 20KB to 50KB limits). Built using client-side canvas algorithms to ensure high facial clarity, zero pixelation, and complete privacy with no file uploads to external servers.`,
+    howTo: [
+      "Upload your photo or signature by clicking the file selector or drag & drop",
+      "Set your desired width, height, or maximum file size limit (KB)",
+      "Preview the output in real-time to ensure facial features remain sharp",
+      "Download your compliant image ready for immediate submission on exam portals"
+    ],
+    faqs: [
+      { q: "What are the standard photo specifications for government recruitment exams?", a: "Most central and state recruitment boards (SSC, UPSC, RRB, IBPS) require recent passport photographs (3.5cm x 4.5cm) with a file size strictly between 20KB and 50KB." },
+      { q: "Will using this tool lower the quality or readability of my photo?", a: "No. Our in-browser canvas utilizes advanced bi-cubic interpolation to downscale images smoothly while retaining crisp text and facial details." },
+      { q: "Is it safe to process confidential documents on SarkariPixels?", a: "Yes, 100% safe. All computations occur within your device's browser memory. Your files are never uploaded to any remote server or stored anywhere." },
+      { q: "Can I use this tool directly on an Android or iPhone device?", a: "Yes, our tools are fully responsive and optimized for mobile browsers, allowing you to crop and compress photos straight from your mobile camera roll." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
   "resize-image": {
     metaTitle: "Batch Photo Resizer Online for Govt Exams & Documents | SarkariPixels",
     metaDesc: "Resize multiple images and photos simultaneously to exact pixels, cm, or mm. 100% free, browser-based batch tool for SSC, UPSC, and State PSC application forms.",
