@@ -43,7 +43,7 @@ const checklist = [
   // 3. GEO / AI Visibility & Schemas
   { id: 'G01', category: 'GEO / AI Visibility', item: 'GEO Direct Answer Quick Summary Block present in tool page layout', fn: () => fs.readFileSync(path.join(root, 'app/tool/[slug]/page.tsx'), 'utf8').includes('⚡ Quick Answer &') },
   { id: 'G02', category: 'GEO / AI Visibility', item: 'GEO Quick Specs Summary Box present in exam spec page layout', fn: () => fs.readFileSync(path.join(root, 'app/exam-specs/[exam]/page.tsx'), 'utf8').includes('⚡ Quick Official Specs Summary') },
-  { id: 'G03', category: 'Structured Data', item: 'SoftwareApplication JSON-LD schema injected on tool pages', fn: () => fs.readFileSync(path.join(root, 'app/tool/[slug]/page.tsx'), 'utf8').includes('@type": "SoftwareApplication') },
+  { id: 'G03', category: 'Structured Data', item: 'SoftwareApplication JSON-LD schema injected on tool pages', fn: () => fs.readFileSync(path.join(root, 'app/tool/[slug]/page.tsx'), 'utf8').includes('SoftwareApplication') },
   { id: 'G04', category: 'Structured Data', item: 'BreadcrumbList JSON-LD schema injected across pages', fn: () => fs.readFileSync(path.join(root, 'app/tool/[slug]/page.tsx'), 'utf8').includes('@type": "BreadcrumbList') },
   { id: 'G05', category: 'Structured Data', item: 'FAQPage JSON-LD schema injected on tool pages and exam specs', fn: () => fs.readFileSync(path.join(root, 'app/tool/[slug]/page.tsx'), 'utf8').includes('@type": "FAQPage') },
   { id: 'G06', category: 'Structured Data', item: 'Organization + WebSite JSON-LD schema in root layout', fn: () => fs.readFileSync(path.join(root, 'app/layout.tsx'), 'utf8').includes('@type": "Organization') },

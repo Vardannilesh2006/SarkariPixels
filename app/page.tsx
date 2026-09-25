@@ -131,7 +131,7 @@ export default function HomePage() {
               id="hero-headline"
               className="t-h1 mb-3"
             >
-              Resize Exam Photos &amp; Signatures to Exact Specs — 100% Free
+              Resize Exam Photos & Signatures to Exact Specs — 100% Free
             </h1>
             <p
               className="t-body"
