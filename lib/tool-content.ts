@@ -18,6 +18,91 @@ export interface ToolContent {
 }
 
 export const TOOL_CONTENT: Record<string, ToolContent> = {
+  "sarkari-result-photo-resizer": {
+    metaTitle: "Sarkari Result Photo Resizer — Free Online Image Tool | SarkariPixels",
+    metaDesc: "Free online Sarkari Result photo resizer for SSC, UPSC, IBPS, BPSC & all sarkari exam forms. Resize photo 3.5x4.5 cm & compress to 20-50KB with zero server upload.",
+    h1: "Sarkari Result Photo & Signature Resizer Online",
+    description: "Sarkari Result photo resizer specially engineered for Indian government exam applicants. Easily convert any phone photo or camera image into exact portal dimensions (pixels, cm, mm) and compress file size below 50KB or 20KB without quality loss.",
+    howTo: [
+      "Select your photo or signature file from your phone camera roll or PC",
+      "Choose your exam preset (SSC CGL, UPSC, IBPS, RRB, PAN, etc.) or set custom dimensions",
+      "Preview the pre-download portal validation checker to ensure size compliance",
+      "Click Download to save your portal-ready JPG photo instantly"
+    ],
+    faqs: [
+      { q: "Sarkari Result photo resizer use karna safe hai?", a: "Ha 100% safe hai. Aapki photo hamare server par upload nahi hoti — sabhi resizing aapke browser memory me 100% private hoti hai." },
+      { q: "SSC CGL ke liye photo size kitna hona chahiye?", a: "SSC exams ke liye photo 3.5cm x 4.5cm (413x531 px) aur file size strictly 20KB se 50KB ke beech honi chahiye." }
+    ],
+    relatedTools: ["name-date-photo-generator", "signature-resizer-10-20kb", "smart-resizer"],
+  },
+
+  "name-date-photo-generator": {
+    metaTitle: "Name & Date on Photo Generator — UPSC & SSC Online Tool | SarkariPixels",
+    metaDesc: "Add applicant name and Date of Photo (DOP) on passport photo online for UPSC CSE, SSC & State PSC forms. White strip generator with live preview.",
+    h1: "Name & Date on Photo Generator Online (UPSC & SSC)",
+    description: "Easily generate passport size photos with Candidate Name and Date of Photo (DOP) printed on a clean white strip at the bottom. Mandatory requirement for UPSC CSE 10-day rule, SSC, and Railway exam online applications.",
+    howTo: [
+      "Upload your recent front-facing passport photograph",
+      "Enter candidate Name and Date on Photo (DOP)",
+      "Adjust font size and white banner strip position in real-time",
+      "Download high-resolution passport photo with clear name & date stamp"
+    ],
+    faqs: [
+      { q: "UPSC 10-day photo rule kya hai?", a: "UPSC mandatory rule ke mutabik photo online portal opening date se 10 din se purani nahi honi chahiye aur bottom pe candidate name aur photo date print hona chahiye." }
+    ],
+    relatedTools: ["sarkari-result-photo-resizer", "ssc-cgl-photo-resizer", "passport-maker"],
+  },
+
+  "signature-resizer-10-20kb": {
+    metaTitle: "Signature Resizer 10KB to 20KB — IBPS, SSC & Bank Exams | SarkariPixels",
+    metaDesc: "Resize and compress signature photo between 10KB to 20KB online for IBPS PO, Clerk, SSC CGL, RRB & bank forms. Convert dark photo to white background.",
+    h1: "Signature Resizer 10KB to 20KB Online Free",
+    description: "Dedicated signature resizer tool for IBPS PO/Clerk, SSC, SBI, and State PSC applications. Crops signature to 140x60 pixels (4.0cm x 2.0cm) and compresses file size strictly between 10KB and 20KB.",
+    howTo: [
+      "Upload signature photo taken from smartphone camera",
+      "Use crop tool to select signature region clearly",
+      "Apply 1-click Background Cleaner to remove dark camera shadow",
+      "Download crisp signature image within 10KB-20KB limit"
+    ],
+    faqs: [
+      { q: "Signature background white kaise karein?", a: "SarkariPixels Signature Cleaner tool camera shadow/grey tint ko remove karke background ko pure white aur signature ink ko deep black kar deta hai." }
+    ],
+    relatedTools: ["sarkari-result-photo-resizer", "name-date-photo-generator", "smart-resizer"],
+  },
+
+  "pan-card-photo-resizer-300dpi": {
+    metaTitle: "PAN Card Photo Resizer 300 DPI — NSDL & UTI Online Tool | SarkariPixels",
+    metaDesc: "Resize photo & signature for NSDL / UTI PAN card application at 300 DPI. Format photo to 2.5x3.5 cm (300 DPI) and signature to 2x4.5 cm under 20KB.",
+    h1: "PAN Card Photo & Signature Resizer 300 DPI",
+    description: "Format passport photo and signature images to exact NSDL and UTI PAN card application specifications (300 DPI, 2.5cm x 3.5cm photo, 2cm x 4.5cm signature, file size under 20KB).",
+    howTo: [
+      "Upload photo or signature image",
+      "Select PAN Card preset (300 DPI)",
+      "Verify dimensions and file size under 20KB",
+      "Download compliant JPEG file for NSDL/UTI portal upload"
+    ],
+    faqs: [
+      { q: "PAN card ke liye photo ka DPI kitna hona chahiye?", a: "NSDL aur UTI PAN card portal par photo aur signature 300 DPI resolution me hone zaroori hain." }
+    ],
+    relatedTools: ["sarkari-result-photo-resizer", "signature-resizer-10-20kb", "reduce-kb"],
+  },
+
+  "ssc-cgl-photo-resizer": {
+    metaTitle: "SSC CGL Photo Resizer 3.5 x 4.5 cm (20KB - 50KB) | SarkariPixels",
+    metaDesc: "Format photo for SSC CGL, CHSL, MTS & GD online application. 3.5cm x 4.5cm dimensions (413x531 px) and 20KB to 50KB compression with zero quality loss.",
+    h1: "SSC CGL Photo Resizer 3.5 x 4.5 cm Online",
+    description: "Instant photo resizer for SSC CGL, CHSL, MTS, CPO, and Stenographer examinations. Auto-formats photo to 3.5cm x 4.5cm (413x531 pixels at 300 DPI) and compresses file size strictly between 20KB and 50KB.",
+    howTo: [
+      "Upload your passport photograph",
+      "Verify face coverage (70-80% of photo area)",
+      "Check file size indicator (must be between 20KB and 50KB)",
+      "Click Download to save final SSC compliant JPG"
+    ],
+    faqs: [
+      { q: "SSC form me photo reject kyun hoti hai?", a: "File size >50KB hone par, cap/chashma lene par, blurry photo hone par ya wrong background hone par SSC portal photo reject kar deta hai." }
+    ],
+    relatedTools: ["sarkari-result-photo-resizer", "name-date-photo-generator", "reduce-kb"],
+  },
   "neet-exam-admit-card-photo-size": {
     metaTitle: "Neet Exam Admit Card Photo Size Online for Govt Exams — Free & Fast | SarkariPixels",
     metaDesc: "Resize, compress, and optimize neet exam admit card photo size online to exact KB and pixel specifications for SSC, UPSC, RRB, and State PSC recruitment portals.",

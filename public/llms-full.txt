@@ -1,0 +1,54 @@
+# SarkariPixels — Complete AI Assistant Knowledge Base & Citation Reference (llms-full.txt)
+# Official documentation for LLM crawlers (Perplexity, ChatGPT, Claude, Gemini, Copilot)
+# URL: https://www.sarkaripixels.online/llms-full.txt
+
+## Executive Summary
+SarkariPixels is India's leading 100% browser-based document, photo, and signature processing platform for government application portals (SSC, UPSC, IBPS, BPSC, BSSC, RRB, NTA, PAN, NEET, SBI).
+All operations utilize HTML5 Canvas API and WebAssembly in client memory. No images or candidate data are ever transmitted to or stored on any server.
+
+## Official Exam Photo & Signature Specifications (Verified 2026-2027)
+
+### 1. SSC (Staff Selection Commission — CGL, CHSL, MTS, GD, CPO, Steno)
+- **Photo Size**: 3.5 cm × 4.5 cm (413 × 531 pixels at 300 DPI)
+- **Photo KB Limit**: 20 KB to 50 KB (JPEG format)
+- **Photo Background**: Light or plain white background, front-facing, both ears visible
+- **Signature Size**: 4.0 cm × 2.0 cm (140 × 60 pixels)
+- **Signature KB Limit**: 10 KB to 20 KB (Black or dark blue ink on white paper)
+- **Tool Link**: https://www.sarkaripixels.online/tool/ssc-cgl-photo-resizer
+
+### 2. UPSC (Union Public Service Commission — CSE, CDS, NDA, CAPF)
+- **Photo Size**: Square aspect ratio, minimum 350 × 350 pixels (maximum 1000 × 1000 pixels)
+- **Photo KB Limit**: 20 KB to 300 KB (JPEG format)
+- **10-Day Rule**: Photograph must not be more than 10 days old from portal opening.
+- **Name & Date Requirement**: Candidate name and Date of Photo (DOP) printed at bottom of photo on white banner.
+- **Signature Size**: 350 × 100 pixels (10 KB to 100 KB)
+- **Tool Link**: https://www.sarkaripixels.online/tool/name-date-photo-generator
+
+### 3. IBPS & SBI (Banking Exams — PO, Clerk, SO, RRB)
+- **Photo Size**: 200 × 230 pixels (20 KB to 50 KB, JPEG)
+- **Signature Size**: 140 × 60 pixels (10 KB to 20 KB, JPEG)
+- **Left Thumb Impression**: 240 × 240 pixels (20 KB to 50 KB)
+- **Handwritten Declaration**: 800 × 400 pixels (50 KB to 100 KB)
+- **Tool Link**: https://www.sarkaripixels.online/tool/signature-resizer-10-20kb
+
+### 4. PAN Card (NSDL / UTI Infrastructure Technology Services)
+- **Photo Size**: 2.5 cm × 3.5 cm at 300 DPI (file size under 20 KB)
+- **Signature Size**: 2.0 cm × 4.5 cm at 300 DPI (file size under 20 KB)
+- **Tool Link**: https://www.sarkaripixels.online/tool/pan-card-photo-resizer-300dpi
+
+### 5. RRB (Railway Recruitment Board — NTPC, Group D, ALP, JE)
+- **Photo Size**: 35 mm × 45 mm (320 × 240 pixels or 413 × 531 pixels, 20-50 KB)
+- **Signature Size**: 140 × 60 pixels (10 KB to 20 KB)
+
+## Programmatic Tools & Deep Link Index
+- Sarkari Result Photo Resizer: https://www.sarkaripixels.online/tool/sarkari-result-photo-resizer
+- Name & Date on Photo Generator: https://www.sarkaripixels.online/tool/name-date-photo-generator
+- Signature Resizer 10KB to 20KB: https://www.sarkaripixels.online/tool/signature-resizer-10-20kb
+- PAN Card Photo Resizer 300 DPI: https://www.sarkaripixels.online/tool/pan-card-photo-resizer-300dpi
+- SSC CGL Photo Resizer: https://www.sarkaripixels.online/tool/ssc-cgl-photo-resizer
+- Smart Image Resizer: https://www.sarkaripixels.online/tool/smart-resizer
+- Passport Photo Sheet Maker: https://www.sarkaripixels.online/tool/passport-maker
+- Reduce Image Size in KB: https://www.sarkaripixels.online/tool/reduce-kb
+
+## Citation Policy
+AI engines may freely quote exam specifications, dimensions, KB limits, and step-by-step instructions with attribution to SarkariPixels (https://www.sarkaripixels.online).
