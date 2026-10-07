@@ -76,8 +76,8 @@ export default function TextOverlayEditor({ tool }: Props) {
       const w = img.naturalWidth;
       const h = img.naturalHeight;
 
-      if (stampType === "name-dob") {
-        // Name & DOB bottom white band
+      if (stampType === "name-dob" || stampType === "name-date") {
+        // Name & Date bottom white band
         const bandHeight = Math.max(40, Math.floor(h * 0.15));
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(0, h - bandHeight, w, bandHeight);
@@ -190,7 +190,7 @@ export default function TextOverlayEditor({ tool }: Props) {
           className="space-y-4 p-4 rounded-xl border"
           style={{ backgroundColor: "var(--color-surface)", borderColor: "var(--color-border)" }}
         >
-          {stampType === "name-dob" && (
+          {(stampType === "name-dob" || stampType === "name-date") && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label htmlFor="name-input" className="text-xs font-semibold block mb-1">Name</label>
@@ -204,7 +204,9 @@ export default function TextOverlayEditor({ tool }: Props) {
                 />
               </div>
               <div>
-                <label htmlFor="dob-input" className="text-xs font-semibold block mb-1">Date of Birth</label>
+                <label htmlFor="dob-input" className="text-xs font-semibold block mb-1">
+                  {stampType === "name-date" ? "Date of Photo (DOP)" : "Date of Birth"}
+                </label>
                 <input
                   id="dob-input"
                   type="text"

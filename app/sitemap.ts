@@ -31,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${SITE_URL}/sarkari-age-calculator`,
+      lastModified: siteLastUpdated,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${SITE_URL}/guides`,
       lastModified: siteLastUpdated,
       changeFrequency: "weekly",

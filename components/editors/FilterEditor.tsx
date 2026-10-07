@@ -86,6 +86,17 @@ export default function FilterEditor({ tool }: Props) {
           data[i] = data[i + 1] = data[i + 2] = avg;
         }
         ctx.putImageData(imgData, 0, 0);
+      } else if (fType === "whitener") {
+        for (let i = 0; i < data.length; i += 4) {
+          const avg = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+          if (avg > 140) {
+            data[i] = data[i + 1] = data[i + 2] = 255;
+          } else {
+            const dark = Math.max(0, avg * 0.7);
+            data[i] = data[i + 1] = data[i + 2] = dark;
+          }
+        }
+        ctx.putImageData(imgData, 0, 0);
       } else if (fType === "threshold") {
         for (let i = 0; i < data.length; i += 4) {
           const avg = (data[i] + data[i + 1] + data[i + 2]) / 3;

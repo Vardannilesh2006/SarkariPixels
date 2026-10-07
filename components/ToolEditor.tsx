@@ -24,6 +24,7 @@ import DpiEditor from "@/components/editors/DpiEditor";
 import DpiCheckEditor from "@/components/editors/DpiCheckEditor";
 import ColorPickerEditor from "@/components/editors/ColorPickerEditor";
 import AiFaceEditor from "@/components/editors/AiFaceEditor";
+import AgeCalculatorEditor from "@/components/editors/AgeCalculatorEditor";
 
 interface Props {
   tool: Tool;
@@ -105,6 +106,8 @@ export default function ToolEditor({ tool }: Props) {
         return <ColorPickerEditor tool={tool} />;
       case "ai-face":
         return <AiFaceEditor tool={tool} />;
+      case "age-calc":
+        return <AgeCalculatorEditor tool={tool} />;
       default:
         // Fallback editor for safety
         return <ResizeEditor tool={tool} />;

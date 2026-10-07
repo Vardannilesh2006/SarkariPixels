@@ -451,6 +451,36 @@ export default async function ToolPage({ params }: Props) {
               </div>
             </div>
 
+            {/* ── Viral Aspirant & Cyber Cafe Share Bar ── */}
+            <div className="card p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-gradient-to-r from-emerald-500/10 via-transparent to-blue-500/10 border border-emerald-500/20">
+              <div className="text-center sm:text-left">
+                <p className="text-xs font-bold text-foreground flex items-center justify-center sm:justify-start gap-1.5">
+                  <span>⚡</span> Share {tool.title} with Friends
+                </p>
+                <p className="text-[11px] text-muted-foreground">
+                  Help fellow aspirants and cyber cafes format forms without portal rejection!
+                </p>
+              </div>
+              <div className="flex gap-2 w-full sm:w-auto">
+                <a
+                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`⚡ Sarkari exam forms ke liye ${tool.title} free me use karo: ${SITE_URL}/tool/${slug}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 sm:flex-none px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-transform active:scale-95"
+                >
+                  <span>💬</span> WhatsApp
+                </a>
+                <a
+                  href={`https://t.me/share/url?url=${encodeURIComponent(`${SITE_URL}/tool/${slug}`)}&text=${encodeURIComponent(`⚡ Free ${tool.title} for Sarkari Govt Forms`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 sm:flex-none px-3.5 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-semibold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-transform active:scale-95"
+                >
+                  <span>✈️</span> Telegram
+                </a>
+              </div>
+            </div>
+
             {/* Description */}
             {content && (
               <div className="card p-6">
