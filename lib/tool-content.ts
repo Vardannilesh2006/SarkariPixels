@@ -22,7 +22,7 @@ export const TOOL_CONTENT: Record<string, ToolContent> = {
     metaTitle: "Sarkari Result Photo Resizer — Free Online Image Tool | SarkariPixels",
     metaDesc: "Free online Sarkari Result photo resizer for SSC, UPSC, IBPS, BPSC & all sarkari exam forms. Resize photo 3.5x4.5 cm & compress to 20-50KB with zero server upload.",
     h1: "Sarkari Result Photo & Signature Resizer Online",
-    description: "Sarkari Result photo resizer specially engineered for Indian government exam applicants. Easily convert any phone photo or camera image into exact portal dimensions (pixels, cm, mm) and compress file size below 50KB or 20KB without quality loss.",
+    description: "Sarkari Result photo resizer specially engineered for Indian government exam applicants. Easily convert any phone photo or camera image into exact portal dimensions (pixels, cm, mm) and compress file size below 50KB or 20KB without quality loss. Supports searches: sarkari result photo resizer online, sarkari result tools image maker, sarkari exam photo size reducer.",
     howTo: [
       "Select your photo or signature file from your phone camera roll or PC",
       "Choose your exam preset (SSC CGL, UPSC, IBPS, RRB, PAN, etc.) or set custom dimensions",
@@ -57,7 +57,7 @@ export const TOOL_CONTENT: Record<string, ToolContent> = {
     metaTitle: "Signature Resizer 10KB to 20KB — IBPS, SSC & Bank Exams | SarkariPixels",
     metaDesc: "Resize and compress signature photo between 10KB to 20KB online for IBPS PO, Clerk, SSC CGL, RRB & bank forms. Convert dark photo to white background.",
     h1: "Signature Resizer 10KB to 20KB Online Free",
-    description: "Dedicated signature resizer tool for IBPS PO/Clerk, SSC, SBI, and State PSC applications. Crops signature to 140x60 pixels (4.0cm x 2.0cm) and compresses file size strictly between 10KB and 20KB.",
+    description: "Dedicated signature resizer tool for IBPS PO/Clerk, SSC, SBI, and State PSC applications. Crops signature to 140x60 pixels (4.0cm x 2.0cm) and compresses file size strictly between 10KB and 20KB. Supports searches: signature resize 10 to 20 kb jpg format online, signature resize 10 to 20 kb width and height, signature resize 10 to 20 kb online free.",
     howTo: [
       "Upload signature photo taken from smartphone camera",
       "Use crop tool to select signature region clearly",
@@ -74,7 +74,7 @@ export const TOOL_CONTENT: Record<string, ToolContent> = {
     metaTitle: "PAN Card Photo Resizer 300 DPI — NSDL & UTI Online Tool | SarkariPixels",
     metaDesc: "Resize photo & signature for NSDL / UTI PAN card application at 300 DPI. Format photo to 2.5x3.5 cm (300 DPI) and signature to 2x4.5 cm under 20KB.",
     h1: "PAN Card Photo & Signature Resizer 300 DPI",
-    description: "Format passport photo and signature images to exact NSDL and UTI PAN card application specifications (300 DPI, 2.5cm x 3.5cm photo, 2cm x 4.5cm signature, file size under 20KB).",
+    description: "Format passport photo and signature images to exact NSDL and UTI PAN card application specifications (300 DPI, 2.5cm x 3.5cm photo, 2cm x 4.5cm signature, file size under 20KB). Supports searches: uti pan card photo and signature size online free, uti pan card photo and signature size converter, uti pan application photo signature size tool.",
     howTo: [
       "Upload photo or signature image",
       "Select PAN Card preset (300 DPI)",
@@ -2283,7 +2283,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "UP Police Photo Size Resizer (20KB–50KB) & Signature (5–20KB) | SarkariPixels",
     metaDesc: "Resize photo and signature for UP Police Constable & SI recruitment portal. Formats 35x45mm (20-50KB) and signature (5-20KB) in JPG format with zero server upload.",
     h1: "UP Police Photo & Signature Resizer Online",
-    description: "Dedicated online image formatting tool for Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB). Automatically adjusts candidate photo to 3.5cm x 4.5cm (350x450 px) between 20KB and 50KB, and signature to 3.5cm x 1.5cm between 5KB and 20KB in strict compliance with official UP Police Constable and Sub-Inspector notification criteria.",
+    description: "Dedicated online image formatting tool for Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB). Automatically adjusts candidate photo to 3.5cm x 4.5cm (350x450 px) between 20KB and 50KB, and signature to 3.5cm x 1.5cm between 5KB and 20KB in strict compliance with official UP Police Constable and Sub-Inspector notification criteria. Supports searches: rrb photo and signature size converter online free, uppsc photo and signature resize online free, up police constable photo and signature size.",
     howTo: [
       "Select your passport photo or signature image from phone or PC",
       "The tool auto-applies UP Police 35x45mm dimensions and sets target file size",
@@ -2302,7 +2302,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "CTET Photo & Signature Resizer (10KB–100KB) — CBSE Online Tool | SarkariPixels",
     metaDesc: "Free online photo and signature resizer for CBSE CTET 2026-2027 application forms. Compress photo between 10-100KB (3.5x4.5cm) and signature 3-30KB.",
     h1: "CTET Photo & Signature Resizer Online (CBSE)",
-    description: "Format photo and signature images for Central Teacher Eligibility Test (CTET) conducted by CBSE. Ensures photo is scaled to 3.5 cm x 4.5 cm with file size between 10KB and 100KB, and signature to 3.5 cm x 1.5 cm between 3KB and 30KB. All conversions process locally in browser memory with zero data upload.",
+    description: "Format photo and signature images for Central Teacher Eligibility Test (CTET) conducted by CBSE. Ensures photo is scaled to 3.5 cm x 4.5 cm with file size between 10KB and 100KB, and signature to 3.5 cm x 1.5 cm between 3KB and 30KB. All conversions process locally in browser memory with zero data upload. Supports searches: ctet photo and signature size 2024 in pixel, ctet photo and signature size 2024 resize, ctet photo and signature size in pixels.",
     howTo: [
       "Upload your recent passport photograph or scanned signature",
       "Choose CTET Photo or CTET Signature preset",
@@ -2320,7 +2320,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "UPSSSC PET Photo Resizer Under 50KB & Signature Maker | SarkariPixels",
     metaDesc: "Format photo under 50KB and signature with candidate name below under 30KB for UPSSSC PET, Lekhpal, and VDO application forms.",
     h1: "UPSSSC PET Photo & Signature Resizer Online",
-    description: "Format candidate photo and special dual signature for Uttar Pradesh Subordinate Services Selection Commission (UPSSSC PET, Lekhpal, Junior Assistant). Resizes colored photograph to 3.5cm x 4.5cm under 50KB, and accommodates UPSSSC's signature guideline requiring candidate's full name written below signature under 30KB.",
+    description: "Format candidate photo and special dual signature for Uttar Pradesh Subordinate Services Selection Commission (UPSSSC PET, Lekhpal, Junior Assistant). Resizes colored photograph to 3.5cm x 4.5cm under 50KB, and accommodates UPSSSC's signature guideline requiring candidate's full name written below signature under 30KB. Supports searches: upsssc 50kb photo compressor, upsssc signature name maker, upsssc pet photo size.",
     howTo: [
       "Upload candidate passport photo or signature image",
       "Tool sets dimensions to 3.5x4.5 cm and compresses under 50KB",
@@ -2338,7 +2338,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "MPPEB Vyapam Profile Template Maker — Photo, Signature & Declaration | SarkariPixels",
     metaDesc: "Create 1-sheet combined MP ESB Vyapam Profile Template with Photo, Name & Date, Signature, and Declaration between 100KB and 200KB for MP exams.",
     h1: "MPPEB Vyapam Profile Template Maker Online",
-    description: "Generate the mandatory single-page MP ESB (Vyapam) candidate profile template in one click. Combines candidate passport photo with Candidate Name and Date of Photo (DOP) printed, signature, and two-line self-declaration into one standardized image sheet strictly compressed between 100KB and 200KB.",
+    description: "Generate the mandatory single-page MP ESB (Vyapam) candidate profile template in one click. Combines candidate passport photo with Candidate Name and Date of Photo (DOP) printed, signature, and two-line self-declaration into one standardized image sheet strictly compressed between 100KB and 200KB. Supports searches: mp esb photo signature template maker, vyapam template format generator, vyapam profile pdf download.",
     howTo: [
       "Upload candidate photo and enter Candidate Name & Date of Photo",
       "Upload signature and handwritten declaration sample",
@@ -2356,7 +2356,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Rajasthan CET & RPSC Photo Resizer (50KB–100KB) | SarkariPixels",
     metaDesc: "Format photograph between 50KB-100KB and signature between 20KB-50KB for Rajasthan CET, RSMSSB Patwar, and RPSC recruitment portals.",
     h1: "Rajasthan CET & RPSC Photo & Signature Resizer",
-    description: "Resize and compress images for Rajasthan Staff Selection Board (RSMSSB CET, Patwar, Junior Accountant) and RPSC exams. Sets photograph to 3.5cm x 4.5cm between 50KB and 100KB and signature between 20KB and 50KB, ensuring zero rejection on SSO Rajasthan portals.",
+    description: "Resize and compress images for Rajasthan Staff Selection Board (RSMSSB CET, Patwar, Junior Accountant) and RPSC exams. Sets photograph to 3.5cm x 4.5cm between 50KB and 100KB and signature between 20KB and 50KB, ensuring zero rejection on SSO Rajasthan portals. Supports searches: rajasthan cet photo signature size, signature compressor to 50kb free, signature compressor to 50kb jpg.",
     howTo: [
       "Upload your photo or signature",
       "Tool pre-selects Rajasthan CET standard dimensions",
@@ -2374,7 +2374,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Bihar Police CSBC Photo Resizer Under 50KB & Dual Signature Tool | SarkariPixels",
     metaDesc: "Format colored passport photo under 50KB and English & Hindi signatures under 25KB each for Bihar Police Constable and BPSSC SI applications.",
     h1: "Bihar Police & BSSC Photo & Signature Resizer",
-    description: "Format candidate photographs and dual signatures for Bihar Central Selection Board of Constable (CSBC), BPSSC Sub-Inspector, and BSSC Inter Level exams. Crops colored photo to 3.5cm x 4.5cm under 50KB and formats both English and Hindi signatures under 25KB each.",
+    description: "Format candidate photographs and dual signatures for Bihar Central Selection Board of Constable (CSBC), BPSSC Sub-Inspector, and BSSC Inter Level exams. Crops colored photo to 3.5cm x 4.5cm under 50KB and formats both English and Hindi signatures under 25KB each. Supports searches: bssc inter level photo signature size, bihar ssc inter level signature size, how to resize signature for bis form.",
     howTo: [
       "Select photo or signature file",
       "Preset automatically configures 3.5x4.5cm dimensions under 50KB",
@@ -2392,7 +2392,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "NEET Postcard Photo Resizer (4x6 Inch / 10x15 cm) Under 200KB | SarkariPixels",
     metaDesc: "Resize 4\"x6\" postcard photograph with white background, 80% face coverage, and Name & Date stamp for NTA NEET UG entrance exam.",
     h1: "NEET Postcard Photo Resizer (4x6 Inch / 10x15 cm)",
-    description: "Dedicated formatting tool for the mandatory 4\"x6\" (10x15 cm) postcard size photograph required for NTA NEET UG online applications and admit card pasting. Crops image to standard postcard aspect ratio, embeds candidate Name and Date of Taking Photograph, and compresses file between 10KB and 200KB.",
+    description: "Dedicated formatting tool for the mandatory 4\. Supports searches: nta neet application form 2024 post postcard size photo, neet passport size photo with name and date maker, neet admit card postcard size photo signature."x6\" (10x15 cm) postcard size photograph required for NTA NEET UG online applications and admit card pasting. Crops image to standard postcard aspect ratio, embeds candidate Name and Date of Taking Photograph, and compresses file between 10KB and 200KB.",
     howTo: [
       "Upload high-resolution passport/portrait photo",
       "Enter Candidate Name and Date of Photo",
@@ -2410,7 +2410,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Left Thumb Impression (LTI) Resizer 10KB–20KB & 20KB–50KB | SarkariPixels",
     metaDesc: "Crop and compress left thumb impression image to exact 10KB-20KB or 20KB-50KB with contrast enhancement for SSC, RRB, and IBPS online forms.",
     h1: "Left Thumb Impression (LTI) Resizer Online",
-    description: "Easily crop, enhance, and compress Left Thumb Impression (LTI) scans or phone photographs. Cleans paper background and boosts ridge line contrast for clear fingerprint identification while compressing strictly to 10KB-20KB (SSC/IBPS) or 20KB-50KB (RRB/State PSCs).",
+    description: "Easily crop, enhance, and compress Left Thumb Impression (LTI) scans or phone photographs. Cleans paper background and boosts ridge line contrast for clear fingerprint identification while compressing strictly to 10KB-20KB (SSC/IBPS) or 20KB-50KB (RRB/State PSCs). Supports searches: ssc thumb impression resizer online, ssc signature resize online free, left thumb impression size 20kb.",
     howTo: [
       "Take a clear photo of your ink thumb impression on white paper and upload",
       "Crop tightly around the thumb impression ridges",
@@ -2428,7 +2428,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Handwritten Declaration Compressor 50KB to 100KB — IBPS & SBI | SarkariPixels",
     metaDesc: "Compress handwritten self-declaration image strictly between 50KB and 100KB while keeping black ink handwriting razor sharp for IBPS PO, Clerk & SBI.",
     h1: "Handwritten Declaration Compressor (50KB–100KB)",
-    description: "Compress scanned or photographed handwritten self-declaration notes for IBPS PO, Clerk, SO, and SBI recruitment. Employs adaptive edge preservation so text remains completely legible while compressing file size strictly inside the mandatory 50KB to 100KB portal window.",
+    description: "Compress scanned or photographed handwritten self-declaration notes for IBPS PO, Clerk, SO, and SBI recruitment. Employs adaptive edge preservation so text remains completely legible while compressing file size strictly inside the mandatory 50KB to 100KB portal window. Supports searches: ibps handwritten declaration resize online, ibps handwritten declaration resize 100kb, ibps handwritten declaration resize 20 kb.",
     howTo: [
       "Upload photo of your handwritten declaration written on white paper",
       "Crop out surrounding desk shadows or excess margins",
@@ -2446,7 +2446,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Certificate Photo Compressor Under 100KB & 200KB | SarkariPixels",
     metaDesc: "Compress caste certificate, domicile, EWS certificate or marksheet JPG photo under 100KB or 200KB for state e-district and recruitment portals.",
     h1: "Certificate Photo Compressor Under 100KB & 200KB",
-    description: "Compress scanned government documents, caste certificates (OBC-NCL, SC, ST), EWS certificates, domicile (niwas praman patra), and academic marksheets under 100KB or 200KB. Maintains text and seal clarity without blurring serial numbers or QR codes.",
+    description: "Compress scanned government documents, caste certificates (OBC-NCL, SC, ST), EWS certificates, domicile (niwas praman patra), and academic marksheets under 100KB or 200KB. Maintains text and seal clarity without blurring serial numbers or QR codes. Supports searches: reduce pdf size to 200kb without losing quality online, reduce image size to 200kb without losing quality, reduce photo size to 200kb online free.",
     howTo: [
       "Upload certificate image (JPG, PNG or photo from phone)",
       "Choose target size: Under 100KB or Under 200KB",
@@ -2464,7 +2464,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Name & Date on Photo Generator (DOP Stamp) — SSC & State Exams | SarkariPixels",
     metaDesc: "Add candidate name and Date of Photo (DOP) on bottom white strip for SSC, UPSC 10-day rule, and MP Vyapam online applications.",
     h1: "Name & Date on Photo Generator (DOP Stamp)",
-    description: "Add a crisp, standardized white name and date banner to the bottom of your passport photo. Formats Candidate Full Name and Date of Photograph (DOP) in compliant bold black typography conforming to UPSC 10-day notification rules, SSC requirements, and State Police guidelines.",
+    description: "Add a crisp, standardized white name and date banner to the bottom of your passport photo. Formats Candidate Full Name and Date of Photograph (DOP) in compliant bold black typography conforming to UPSC 10-day notification rules, SSC requirements, and State Police guidelines. Supports searches: passport size photo maker with name and date online free, passport size photo with name and date online free, passport size photo with name and date online.",
     howTo: [
       "Upload passport photograph",
       "Type candidate Name and Date of Photo (DD/MM/YYYY)",
@@ -2482,7 +2482,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Signature Background Whitener & Enhancer Online Free | SarkariPixels",
     metaDesc: "Remove yellow shadows and dirty paper background from phone photos. Converts signature into pure white paper with dark black ink for all exam portals.",
     h1: "Signature Background Whitener & Enhancer Online",
-    description: "Convert dark, shadowed phone photos of signatures on paper into studio-grade pure white backgrounds with rich black ink. Fixes common rejection triggers caused by dim indoor lighting, yellowish paper tones, or desk shadows with zero cloud uploads.",
+    description: "Convert dark, shadowed phone photos of signatures on paper into studio-grade pure white backgrounds with rich black ink. Fixes common rejection triggers caused by dim indoor lighting, yellowish paper tones, or desk shadows with zero cloud uploads. Supports searches: change signature background to white online free, white background signature maker online free, change signature background to white online.",
     howTo: [
       "Upload phone photo of signature on white paper",
       "The tool automatically applies threshold whitening to eliminate background shadows",
@@ -2500,7 +2500,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "SSC Live Webcam Photo Resizer (3.5×4.5 cm, 20-50KB) | SarkariPixels",
     metaDesc: "Crop and resize live webcam photos for SSC OTR portals (CGL, CHSL, MTS, GD). Ensures 80% face coverage and white background compliance.",
     h1: "SSC Live Webcam Photo Resizer (3.5×4.5 cm)",
-    description: "Format webcam capture photographs to the exact Staff Selection Commission (SSC) specifications: 3.5cm width × 4.5cm height, 20KB to 50KB file size, 300 DPI, and compliant frontal face composition without spectacles or caps.",
+    description: "Format webcam capture photographs to the exact Staff Selection Commission (SSC) specifications: 3.5cm width × 4.5cm height, 20KB to 50KB file size, 300 DPI, and compliant frontal face composition without spectacles or caps. Supports searches: ssc otr webcam photo resize 20kb to 50kb, ssc live capture photo tool, ssc live webcam photo size.",
     howTo: [
       "Upload your captured webcam photo or selfie",
       "Crop to standard 3.5cm × 4.5cm passport ratio with 80% face coverage",
@@ -2518,7 +2518,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "PAN Card Photo & Signature Resizer (213×213 px, 300 DPI) | SarkariPixels",
     metaDesc: "Resize photo to 213×213 px (300 DPI, < 30KB) and signature to 400×200 px (< 30KB) for UTI and NSDL PAN card application portals.",
     h1: "PAN Card Photo & Signature Resizer Online",
-    description: "Create pixel-perfect photos and signatures for UTIITSL and Protean (NSDL) PAN card portals. Generates exact 213 × 213 pixels, 300 DPI, under 30KB photo and 400 × 200 pixels, 600 DPI, under 30KB signature with zero quality loss.",
+    description: "Create pixel-perfect photos and signatures for UTIITSL and Protean (NSDL) PAN card portals. Generates exact 213 × 213 pixels, 300 DPI, under 30KB photo and 400 × 200 pixels, 600 DPI, under 30KB signature with zero quality loss. Supports searches: uti pan card photo and signature size online in pixels, pan card photo size 213 x 213 online free, uti nsdl pan photo and sign resize tool.",
     howTo: [
       "Upload passport photograph or signature image",
       "Select PAN Photo (213×213 px) or PAN Signature (400×200 px)",
@@ -2536,7 +2536,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Caste, EWS & Income Certificate Compressor Under 100KB | SarkariPixels",
     metaDesc: "Compress scanned caste, EWS, domicile, and income certificates below 100KB or 200KB for State e-District and central scholarship portals.",
     h1: "Caste, EWS & Income Certificate Compressor",
-    description: "Compress government-issued certificate images (Caste, Non-Creamy Layer, EWS, Domicile/Niwas, Income Certificate) strictly below 100KB or 200KB for state e-District portals, UP e-District, MP Lok Seva, and National Scholarship Portals.",
+    description: "Compress government-issued certificate images (Caste, Non-Creamy Layer, EWS, Domicile/Niwas, Income Certificate) strictly below 100KB or 200KB for state e-District portals, UP e-District, MP Lok Seva, and National Scholarship Portals. Supports searches: income certificate 100kb resize online, caste certificate compress 100kb, compress community certificate.",
     howTo: [
       "Upload certificate photo or scan (JPG, PNG)",
       "Set target size to 100KB or 200KB",
@@ -2554,7 +2554,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Mask Aadhaar Card & Compress Under 200KB Online | SarkariPixels",
     metaDesc: "Black out or blur the first 8 digits of your Aadhaar card for privacy and compress the document under 200KB for government job verification.",
     h1: "Mask Aadhaar Card & Compress Under 200KB",
-    description: "Protect your personal privacy by masking the first 8 digits of your Aadhaar number (XXXX-XXXX-1234) before sharing copies for job applications. Complies with UIDAI guidelines and reduces document size below 200KB in your browser.",
+    description: "Protect your personal privacy by masking the first 8 digits of your Aadhaar number (XXXX-XXXX-1234) before sharing copies for job applications. Complies with UIDAI guidelines and reduces document size below 200KB in your browser. Supports searches: mask aadhaar card download online pdf, mask aadhaar pvc card online apply, masked aadhaar card online check.",
     howTo: [
       "Upload Aadhaar card image or scan",
       "Use the mask cursor to black out or blur the first 8 digits of the Aadhaar number",
@@ -2572,7 +2572,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Voter ID Card Front & Back Joiner & Compressor (200KB) | SarkariPixels",
     metaDesc: "Join the front and back sides of your Voter ID (EPIC) card onto a single page and compress under 200KB for government exam verification.",
     h1: "Voter ID Card Front & Back Joiner Online",
-    description: "Combine the front side and back side of your Voter ID card (EPIC) vertically or horizontally into a single clean sheet. Auto-compresses the combined document below 200KB for hassle-free online recruitment verification.",
+    description: "Combine the front side and back side of your Voter ID card (EPIC) vertically or horizontally into a single clean sheet. Auto-compresses the combined document below 200KB for hassle-free online recruitment verification. Supports searches: voter id front back joiner online, join voter card front and back, epic card 200kb compressor.",
     howTo: [
       "Upload Front Side and Back Side of your Voter ID card",
       "Choose layout: Vertical (stacked) or Horizontal (side-by-side)",
@@ -2589,7 +2589,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "Sarkari Exam Age Calculator with Category Relaxation | SarkariPixels",
     metaDesc: "Calculate your exact age as on notification cut-off date with official category age relaxation (OBC +3 yrs, SC/ST +5 yrs, PwD +10 yrs).",
     h1: "Sarkari Exam Age Calculator Online",
-    description: "Free official government exam age calculator. Accurately determines your exact age in Years, Months, and Days as on the notification cut-off date. Includes built-in reservation relaxation filters for OBC (+3 years), SC/ST (+5 years), PwBD (+10 to +15 years), and Ex-Servicemen with instant eligibility checks for SSC, UPSC, State Police, Railway, and Banking exams.",
+    description: "Free official government exam age calculator. Accurately determines your exact age in Years, Months, and Days as on the notification cut-off date. Includes built-in reservation relaxation filters for OBC (+3 years), SC/ST (+5 years), PwBD (+10 to +15 years), and Ex-Servicemen with instant eligibility checks for SSC, UPSC, State Police, Railway, and Banking exams. Supports searches: ssc age calculator with category relaxation, age calculator as on date for govt exam, age calculator for government exam.",
     howTo: [
       "Enter your Date of Birth (DOB)",
       "Select Cut-Off Date from notification (e.g., 01/07/2026 or 01/01/2026)",
