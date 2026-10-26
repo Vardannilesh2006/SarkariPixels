@@ -1,170 +1,5 @@
 [
   {
-    "id": "rrb-alp-recruitment-2026",
-    "slug": "rrb-alp-photo-signature-resizer",
-    "title": "RRB Assistant Loco Pilot (ALP) Recruitment 2026",
-    "shortTitle": "RRB ALP 2026",
-    "board": "Railway Recruitment Board (RRB)",
-    "vacancies": 18799,
-    "category": "railway",
-    "notificationDate": "2026-01-20",
-    "lastDateToApply": "2026-12-31",
-    "officialNotificationUrl": "https://www.rrbapply.gov.in",
-    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
-    "status": "active",
-    "photo": {
-      "widthCm": 3.5,
-      "heightCm": 4.5,
-      "widthPx": 320,
-      "heightPx": 412,
-      "minKB": 30,
-      "maxKB": 70,
-      "dpi": 300,
-      "format": "JPG/JPEG",
-      "background": "Plain white background only",
-      "notes": "Recent passport photograph (not older than 6 months). Face must occupy at least 80% of photo area without shadow or glare. No caps or sunglasses."
-    },
-    "signature": {
-      "widthCm": 5.0,
-      "heightCm": 2.0,
-      "widthPx": 140,
-      "heightPx": 60,
-      "minKB": 30,
-      "maxKB": 70,
-      "dpi": 300,
-      "format": "JPG/JPEG",
-      "inkColor": "Black ink on white paper (Running handwriting only, no block capital letters)",
-      "notes": "Sign in running handwriting using a black ballpoint pen on plain white paper."
-    },
-    "additionalDocs": [
-      {
-        "name": "SC/ST Caste Certificate (for Free Travel Pass)",
-        "minKB": 100,
-        "maxKB": 500,
-        "format": "PDF"
-      }
-    ],
-    "rules": [
-      "White background is mandatory for RRB photograph.",
-      "Selfie or mobile snapshots with colored backgrounds will lead to outright rejection.",
-      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
-      "Spectacles must not have any reflection or tinted glass."
-    ],
-    "keywords": [
-      "rrb alp photo size",
-      "rrb alp signature size",
-      "rrb alp photo resize 30 to 70 kb",
-      "railway alp photo 3.5x4.5 cm",
-      "rrb alp photo upload problem"
-    ],
-    "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-10-26"
-  },
-  {
-    "id": "ssc-gd-constable-2026",
-    "slug": "ssc-gd-photo-signature-resizer",
-    "title": "SSC GD Constable Recruitment 2026 (CAPFs, SSF, Rifleman)",
-    "shortTitle": "SSC GD 2026",
-    "board": "Staff Selection Commission (SSC)",
-    "vacancies": 39481,
-    "category": "ssc",
-    "notificationDate": "2026-09-05",
-    "lastDateToApply": "2026-12-15",
-    "officialNotificationUrl": "https://ssc.gov.in",
-    "applyOnlineUrl": "https://ssc.gov.in",
-    "status": "active",
-    "photo": {
-      "widthCm": 3.5,
-      "heightCm": 4.5,
-      "widthPx": 413,
-      "heightPx": 531,
-      "minKB": 20,
-      "maxKB": 50,
-      "dpi": 300,
-      "format": "JPG/JPEG",
-      "background": "White or very light grey background",
-      "notes": "SSC OTR live capture or standard 3.5cm x 4.5cm photo. Both ears must be clearly visible. No caps, spectacles or masks.",
-      "isLiveWebcamRequired": true
-    },
-    "signature": {
-      "widthCm": 4.0,
-      "heightCm": 2.0,
-      "widthPx": 140,
-      "heightPx": 60,
-      "minKB": 10,
-      "maxKB": 20,
-      "dpi": 200,
-      "format": "JPG/JPEG",
-      "inkColor": "Black or dark blue ballpoint pen",
-      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
-    },
-    "rules": [
-      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
-      "Frontal view with neutral expression, open eyes, and closed mouth.",
-      "Live webcam capture on ssc.gov.in requires good lighting without harsh shadows."
-    ],
-    "keywords": [
-      "ssc gd photo size",
-      "ssc gd signature 10 to 20 kb",
-      "ssc gd photo resize 3.5x4.5 cm",
-      "ssc gd photo upload error",
-      "ssc live photo resizer"
-    ],
-    "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-10-26"
-  },
-  {
-    "id": "rrb-technician-recruitment-2026",
-    "slug": "rrb-technician-photo-signature-resizer",
-    "title": "RRB Technician Grade I & Grade III Recruitment 2026",
-    "shortTitle": "RRB Technician 2026",
-    "board": "Railway Recruitment Board (RRB)",
-    "vacancies": 14298,
-    "category": "railway",
-    "notificationDate": "2026-03-09",
-    "lastDateToApply": "2026-11-30",
-    "officialNotificationUrl": "https://www.rrbapply.gov.in",
-    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
-    "status": "active",
-    "photo": {
-      "widthCm": 3.5,
-      "heightCm": 4.5,
-      "widthPx": 320,
-      "heightPx": 412,
-      "minKB": 30,
-      "maxKB": 70,
-      "dpi": 300,
-      "format": "JPG/JPEG",
-      "background": "Plain white background",
-      "notes": "Passport size photograph (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible."
-    },
-    "signature": {
-      "widthCm": 5.0,
-      "heightCm": 2.0,
-      "widthPx": 140,
-      "heightPx": 60,
-      "minKB": 30,
-      "maxKB": 70,
-      "dpi": 300,
-      "format": "JPG/JPEG",
-      "inkColor": "Black ink on white paper",
-      "notes": "Sign in running handwriting with black ink. Unclear or capital letter signatures will be rejected."
-    },
-    "rules": [
-      "Keep 12 identical copies of the uploaded photograph for verification rounds.",
-      "Photo must be recent (taken within the last 6 months).",
-      "Strict file size window of 30KB to 70KB for both photo and signature."
-    ],
-    "keywords": [
-      "rrb technician photo size",
-      "rrb technician signature 30 to 70 kb",
-      "railway technician photo resize online",
-      "rrb technician photo 35x45 mm"
-    ],
-    "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-10-26"
-  },
-  {
     "id": "up-police-constable-recruitment-2026",
     "slug": "up-police-constable-photo-signature-resizer",
     "title": "UP Police Constable Recruitment 2026",
@@ -268,17 +103,274 @@
     "lastUpdated": "2026-10-26"
   },
   {
-    "id": "rpf-constable-si-recruitment-2026",
-    "slug": "rpf-constable-si-photo-signature-resizer",
-    "title": "RPF Sub-Inspector & Constable Recruitment 2026",
-    "shortTitle": "RPF Constable & SI 2026",
-    "board": "Railway Protection Force (RPF) / RRB",
-    "vacancies": 4660,
+    "id": "ssc-gd-constable-2026",
+    "slug": "ssc-gd-photo-signature-resizer",
+    "title": "SSC GD Constable Recruitment 2026 (CAPFs, SSF, Rifleman)",
+    "shortTitle": "SSC GD 2026",
+    "board": "Staff Selection Commission (SSC)",
+    "vacancies": 39481,
+    "category": "ssc",
+    "notificationDate": "2026-09-05",
+    "lastDateToApply": "2026-12-15",
+    "officialNotificationUrl": "https://ssc.gov.in",
+    "applyOnlineUrl": "https://ssc.gov.in",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC OTR live capture or standard 3.5cm x 4.5cm photo. Both ears must be clearly visible. No caps, spectacles or masks.",
+      "isLiveWebcamRequired": true
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Frontal view with neutral expression, open eyes, and closed mouth.",
+      "Live webcam capture on ssc.gov.in requires good lighting without harsh shadows."
+    ],
+    "keywords": [
+      "ssc gd photo size",
+      "ssc gd signature 10 to 20 kb",
+      "ssc gd photo resize 3.5x4.5 cm",
+      "ssc gd photo upload error",
+      "ssc live photo resizer"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-bpsc-school-teacher-form-33320",
+    "slug": "sarkari-bpsc-school-teacher-form-33320-photo-signature-resizer",
+    "title": "BPSC School Teacher Form (33,320 Posts)",
+    "shortTitle": "BPSC School Teacher Form (33,320 Po",
+    "board": "Government Commission",
+    "vacancies": 33320,
+    "category": "teaching",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/bpsc-school-teacher-tre-4-0-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/bpsc-school-teacher-tre-4-0-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
+    },
+    "rules": [
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
+    ],
+    "keywords": [
+      "sarkari bpsc school teacher form 33320 photo signature resizer",
+      "bpsc school teacher form (33,320 po photo size",
+      "bpsc school teacher form (33,320 po signature size",
+      "government commission photo resizer",
+      "bpsc school teacher form (33,320 po photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "bpsc-bpsc-primary-teacher-middle-school-teacher-more",
+    "slug": "bpsc-bpsc-primary-teacher-middle-school-teacher-more-photo-signature-resizer",
+    "title": "BPSC Primary Teacher, Middle School Teacher and More",
+    "shortTitle": "BPSC Primary Teacher, Middle School",
+    "board": "BPSC",
+    "vacancies": 32388,
+    "category": "teaching",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "26-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bpsc-tre-40-notification-2026-32-388-school-teacher-posts-3063451",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bpsc-tre-40-notification-2026-32-388-school-teacher-posts-3063451",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
+    },
+    "rules": [
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
+    ],
+    "keywords": [
+      "bpsc bpsc primary teacher middle school teacher more photo signature resizer",
+      "bpsc primary teacher, middle school photo size",
+      "bpsc primary teacher, middle school signature size",
+      "bpsc photo resizer",
+      "bpsc primary teacher, middle school photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "department-of-local-self-government-rajasthan-department-of-local-self-governmen",
+    "slug": "department-of-local-self-government-rajasthan-department-of-local-self-governmen",
+    "title": "Department of Local Self Government Rajasthan Safai Karmachari",
+    "shortTitle": "Department of Local Self Government",
+    "board": "Department of Local Self Government Rajasthan",
+    "vacancies": 24752,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "28-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/rajasthan-safai-karmachari-recruitment-2026-apply-online-for-24752-posts-3060551",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/rajasthan-safai-karmachari-recruitment-2026-apply-online-for-24752-posts-3060551",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "department of local self government rajasthan department of local self governmen",
+      "department of local self government photo size",
+      "department of local self government signature size",
+      "department of local self government rajasthan photo resizer",
+      "department of local self government photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-rajasthan-safai-karmchari-24752",
+    "slug": "sarkari-rajasthan-safai-karmchari-24752-photo-signature-resizer",
+    "title": "Rajasthan Safai Karmchari (24,752 Posts)",
+    "shortTitle": "Rajasthan Safai Karmchari (24,752 P",
+    "board": "Government Commission",
+    "vacancies": 24752,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rajasthan-safai-karmchari-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rajasthan-safai-karmchari-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "sarkari rajasthan safai karmchari 24752 photo signature resizer",
+      "rajasthan safai karmchari (24,752 p photo size",
+      "rajasthan safai karmchari (24,752 p signature size",
+      "government commission photo resizer",
+      "rajasthan safai karmchari (24,752 p photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrb-alp-recruitment-2026",
+    "slug": "rrb-alp-photo-signature-resizer",
+    "title": "RRB Assistant Loco Pilot (ALP) Recruitment 2026",
+    "shortTitle": "RRB ALP 2026",
+    "board": "Railway Recruitment Board (RRB)",
+    "vacancies": 18799,
     "category": "railway",
-    "notificationDate": "2026-04-15",
-    "lastDateToApply": "2026-12-10",
+    "notificationDate": "2026-01-20",
+    "lastDateToApply": "2026-12-31",
     "officialNotificationUrl": "https://www.rrbapply.gov.in",
-    "applyOnlineUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
     "status": "active",
     "photo": {
       "widthCm": 3.5,
@@ -289,12 +381,175 @@
       "maxKB": 70,
       "dpi": 300,
       "format": "JPG/JPEG",
-      "background": "White background only",
-      "notes": "Passport size (35mm x 45mm), 30KB - 70KB. No caps, sunglasses, or head coverings that obscure facial features."
+      "background": "Plain white background only",
+      "notes": "Recent passport photograph (not older than 6 months). Face must occupy at least 80% of photo area without shadow or glare. No caps or sunglasses."
     },
     "signature": {
-      "widthCm": 5.0,
-      "heightCm": 2.0,
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper (Running handwriting only, no block capital letters)",
+      "notes": "Sign in running handwriting using a black ballpoint pen on plain white paper."
+    },
+    "additionalDocs": [
+      {
+        "name": "SC/ST Caste Certificate (for Free Travel Pass)",
+        "minKB": 100,
+        "maxKB": 500,
+        "format": "PDF"
+      }
+    ],
+    "rules": [
+      "White background is mandatory for RRB photograph.",
+      "Selfie or mobile snapshots with colored backgrounds will lead to outright rejection.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Spectacles must not have any reflection or tinted glass."
+    ],
+    "keywords": [
+      "rrb alp photo size",
+      "rrb alp signature size",
+      "rrb alp photo resize 30 to 70 kb",
+      "railway alp photo 3.5x4.5 cm",
+      "rrb alp photo upload problem"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upessc-upessc-assistant-teacher-graduate-pay-scale",
+    "slug": "upessc-upessc-assistant-teacher-graduate-pay-scale-photo-signature-resizer",
+    "title": "UPESSC Assistant Teacher (Graduate Pay Scale)",
+    "shortTitle": "UPESSC Assistant Teacher (Graduate ",
+    "board": "UPESSC",
+    "vacancies": 17735,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "23-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upessc-tgt-recruitment-2026-17735-posts-3075551",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upessc-tgt-recruitment-2026-17735-posts-3075551",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upessc upessc assistant teacher graduate pay scale photo signature resizer",
+      "upessc assistant teacher (graduate  photo size",
+      "upessc assistant teacher (graduate  signature size",
+      "upessc photo resizer",
+      "upessc assistant teacher (graduate  photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-upessc-up-tgt-2026-17735",
+    "slug": "sarkari-upessc-up-tgt-2026-17735-photo-signature-resizer",
+    "title": "UPESSC UP TGT Recruitment 2026 (17,735 Posts)",
+    "shortTitle": "UPESSC UP TGT Recruitment 2026 (17,",
+    "board": "Government Commission",
+    "vacancies": 17735,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/upessc-up-tgt-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/upessc-up-tgt-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sarkari upessc up tgt 2026 17735 photo signature resizer",
+      "upessc up tgt recruitment 2026 (17, photo size",
+      "upessc up tgt recruitment 2026 (17, signature size",
+      "government commission photo resizer",
+      "upessc up tgt recruitment 2026 (17, photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrb-technician-recruitment-2026",
+    "slug": "rrb-technician-photo-signature-resizer",
+    "title": "RRB Technician Grade I & Grade III Recruitment 2026",
+    "shortTitle": "RRB Technician 2026",
+    "board": "Railway Recruitment Board (RRB)",
+    "vacancies": 14298,
+    "category": "railway",
+    "notificationDate": "2026-03-09",
+    "lastDateToApply": "2026-11-30",
+    "officialNotificationUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background",
+      "notes": "Passport size photograph (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
       "widthPx": 140,
       "heightPx": 60,
       "minKB": 30,
@@ -302,19 +557,326 @@
       "dpi": 300,
       "format": "JPG/JPEG",
       "inkColor": "Black ink on white paper",
-      "notes": "Running handwriting with black pen. File size 30KB to 70KB."
+      "notes": "Sign in running handwriting with black ink. Unclear or capital letter signatures will be rejected."
     },
     "rules": [
-      "Follows standard RRB photo guidelines (white background, 30KB-70KB).",
-      "Signature must be crisp and clearly legible on plain white background."
+      "Keep 12 identical copies of the uploaded photograph for verification rounds.",
+      "Photo must be recent (taken within the last 6 months).",
+      "Strict file size window of 30KB to 70KB for both photo and signature."
     ],
     "keywords": [
-      "rpf constable photo size",
-      "rpf si signature size",
-      "rpf photo resize 30 to 70 kb",
-      "rpf photo upload 35x45 mm"
+      "rrb technician photo size",
+      "rrb technician signature 30 to 70 kb",
+      "railway technician photo resize online",
+      "rrb technician photo 35x45 mm"
     ],
     "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upessc-upessc-primary-assistant-teacher",
+    "slug": "upessc-upessc-primary-assistant-teacher-photo-signature-resizer",
+    "title": "UPESSC Primary Assistant Teacher",
+    "shortTitle": "UPESSC Primary Assistant Teacher",
+    "board": "UPESSC",
+    "vacancies": 12405,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "28-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upessc-primary-assistant-teacher-recruitment-2026-apply-online-for-12405-posts-3067782",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upessc-primary-assistant-teacher-recruitment-2026-apply-online-for-12405-posts-3067782",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upessc upessc primary assistant teacher photo signature resizer",
+      "upessc primary assistant teacher photo size",
+      "upessc primary assistant teacher signature size",
+      "upessc photo resizer",
+      "upessc primary assistant teacher photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-upessc-assistant-teacher-form-12405",
+    "slug": "sarkari-upessc-assistant-teacher-form-12405-photo-signature-resizer",
+    "title": "UPESSC Assistant Teacher Form (12405 Posts)",
+    "shortTitle": "UPESSC Assistant Teacher Form (1240",
+    "board": "Government Commission",
+    "vacancies": 12405,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/upessc-prt-assistant-teacher-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/upessc-prt-assistant-teacher-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sarkari upessc assistant teacher form 12405 photo signature resizer",
+      "upessc assistant teacher form (1240 photo size",
+      "upessc assistant teacher form (1240 signature size",
+      "government commission photo resizer",
+      "upessc assistant teacher form (1240 photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-upessc-prt-assistant-teacher-2026-12405",
+    "slug": "sarkari-upessc-prt-assistant-teacher-2026-12405-photo-signature-resizer",
+    "title": "UPESSC PRT Assistant Teacher Recruitment 2026 (12405 Posts)",
+    "shortTitle": "UPESSC PRT Assistant Teacher Recrui",
+    "board": "Government Commission",
+    "vacancies": 12405,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/upessc-prt-assistant-teacher-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/upessc-prt-assistant-teacher-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sarkari upessc prt assistant teacher 2026 12405 photo signature resizer",
+      "upessc prt assistant teacher recrui photo size",
+      "upessc prt assistant teacher recrui signature size",
+      "government commission photo resizer",
+      "upessc prt assistant teacher recrui photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "bssc-inter-level-recruitment-2026",
+    "slug": "bssc-inter-level-photo-signature-resizer",
+    "title": "BSSC 2nd Inter Level Combined Recruitment 2026",
+    "shortTitle": "BSSC Inter Level 2026",
+    "board": "Bihar Staff Selection Commission (BSSC)",
+    "vacancies": 12199,
+    "category": "state-psc",
+    "notificationDate": "2026-09-20",
+    "lastDateToApply": "2026-12-20",
+    "officialNotificationUrl": "https://bssc.bihar.gov.in",
+    "applyOnlineUrl": "https://onlinebssc.com",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or light background",
+      "notes": "Recent passport photograph (3.5cm x 4.5cm) with 20KB to 50KB size limit. Live photo upload also required."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Both Hindi & English signature separate uploads required",
+      "notes": "BSSC mandates TWO separate signature uploads: one in Hindi and one in English (10KB to 20KB each)."
+    },
+    "rules": [
+      "BSSC requires BOTH English signature AND Hindi signature separately.",
+      "Photo must be clear frontal shot with both ears visible.",
+      "File size must strictly not exceed 50KB for photo and 20KB for signatures."
+    ],
+    "keywords": [
+      "bssc photo size",
+      "bssc signature size hindi english",
+      "bssc inter level photo 20 to 50 kb",
+      "bssc photo resizer online"
+    ],
+    "primaryToolId": "bpsc-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-mpesb-mp-police-constable-2026-7500",
+    "slug": "sarkari-mpesb-mp-police-constable-2026-7500-photo-signature-resizer",
+    "title": "MPESB MP Police Constable Recruitment 2026 (7500 Posts)",
+    "shortTitle": "MPESB MP Police Constable Recruitme",
+    "board": "Government Commission",
+    "vacancies": 7500,
+    "category": "police",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/2026-mp-police-constable-sep26/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/2026-mp-police-constable-sep26/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "sarkari mpesb mp police constable 2026 7500 photo signature resizer",
+      "mpesb mp police constable recruitme photo size",
+      "mpesb mp police constable recruitme signature size",
+      "government commission photo resizer",
+      "mpesb mp police constable recruitme photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "ousssc-ousssc-constable-firefighter-driver",
+    "slug": "ousssc-ousssc-constable-firefighter-driver-photo-signature-resizer",
+    "title": "OUSSSC Constable, Firefighter and Driver",
+    "shortTitle": "OUSSSC Constable, Firefighter and D",
+    "board": "OUSSSC",
+    "vacancies": 7268,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "12-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/odisha-police-constable-recruitment-2026-3075546",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/odisha-police-constable-recruitment-2026-3075546",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "ousssc ousssc constable firefighter driver photo signature resizer",
+      "ousssc constable, firefighter and d photo size",
+      "ousssc constable, firefighter and d signature size",
+      "ousssc photo resizer",
+      "ousssc constable, firefighter and d photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
     "lastUpdated": "2026-10-26"
   },
   {
@@ -384,17 +946,170 @@
     "lastUpdated": "2026-10-26"
   },
   {
-    "id": "bssc-inter-level-recruitment-2026",
-    "slug": "bssc-inter-level-photo-signature-resizer",
-    "title": "BSSC 2nd Inter Level Combined Recruitment 2026",
-    "shortTitle": "BSSC Inter Level 2026",
-    "board": "Bihar Staff Selection Commission (BSSC)",
-    "vacancies": 12199,
+    "id": "rpf-constable-si-recruitment-2026",
+    "slug": "rpf-constable-si-photo-signature-resizer",
+    "title": "RPF Sub-Inspector & Constable Recruitment 2026",
+    "shortTitle": "RPF Constable & SI 2026",
+    "board": "Railway Protection Force (RPF) / RRB",
+    "vacancies": 4660,
+    "category": "railway",
+    "notificationDate": "2026-04-15",
+    "lastDateToApply": "2026-12-10",
+    "officialNotificationUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White background only",
+      "notes": "Passport size (35mm x 45mm), 30KB - 70KB. No caps, sunglasses, or head coverings that obscure facial features."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "Running handwriting with black pen. File size 30KB to 70KB."
+    },
+    "rules": [
+      "Follows standard RRB photo guidelines (white background, 30KB-70KB).",
+      "Signature must be crisp and clearly legible on plain white background."
+    ],
+    "keywords": [
+      "rpf constable photo size",
+      "rpf si signature size",
+      "rpf photo resize 30 to 70 kb",
+      "rpf photo upload 35x45 mm"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-rrb-ntpc-graduate-level-form-3548",
+    "slug": "sarkari-rrb-ntpc-graduate-level-form-3548-photo-signature-resizer",
+    "title": "RRB NTPC Graduate Level Form (3548 Posts)",
+    "shortTitle": "RRB NTPC Graduate Level Form (3548 ",
+    "board": "Government Commission",
+    "vacancies": 3548,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rrb-ntpc-graduate-level-06-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rrb-ntpc-graduate-level-06-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "sarkari rrb ntpc graduate level form 3548 photo signature resizer",
+      "rrb ntpc graduate level form (3548  photo size",
+      "rrb ntpc graduate level form (3548  signature size",
+      "government commission photo resizer",
+      "rrb ntpc graduate level form (3548  photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "jkssb-jkssb-mts-sanitation-worker",
+    "slug": "jkssb-jkssb-mts-sanitation-worker-photo-signature-resizer",
+    "title": "JKSSB MTS, Sanitation Worker",
+    "shortTitle": "JKSSB MTS, Sanitation Worker",
+    "board": "JKSSB",
+    "vacancies": 2863,
     "category": "state-psc",
-    "notificationDate": "2026-09-20",
-    "lastDateToApply": "2026-12-20",
-    "officialNotificationUrl": "https://bssc.bihar.gov.in",
-    "applyOnlineUrl": "https://onlinebssc.com",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "12-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/jkssb-class-iv-recruitment-2026-apply-online-for-2863-mts-sanitation-worker-posts-3065802",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/jkssb-class-iv-recruitment-2026-apply-online-for-2863-mts-sanitation-worker-posts-3065802",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "jkssb jkssb mts sanitation worker photo signature resizer",
+      "jkssb mts, sanitation worker photo size",
+      "jkssb mts, sanitation worker signature size",
+      "jkssb photo resizer",
+      "jkssb mts, sanitation worker photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "ap-dsc-ap-dsc-tgt-pgt-sgt-more",
+    "slug": "ap-dsc-ap-dsc-tgt-pgt-sgt-more-photo-signature-resizer",
+    "title": "AP DSC TGT, PGT, SGT and More",
+    "shortTitle": "AP DSC TGT, PGT, SGT and More",
+    "board": "AP DSC",
+    "vacancies": 2721,
+    "category": "teaching",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "n/a",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/ap-dsc-teacher-notification-2026-3073393",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/ap-dsc-teacher-notification-2026-3073393",
     "status": "active",
     "photo": {
       "widthCm": 3.5,
@@ -405,33 +1120,1823 @@
       "maxKB": 50,
       "dpi": 300,
       "format": "JPG/JPEG",
-      "background": "White or light background",
-      "notes": "Recent passport photograph (3.5cm x 4.5cm) with 20KB to 50KB size limit. Live photo upload also required."
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
     },
     "signature": {
-      "widthCm": 4.0,
-      "heightCm": 2.0,
+      "widthCm": 4,
+      "heightCm": 2,
       "widthPx": 140,
       "heightPx": 60,
       "minKB": 10,
       "maxKB": 20,
       "dpi": 200,
       "format": "JPG/JPEG",
-      "inkColor": "Both Hindi & English signature separate uploads required",
-      "notes": "BSSC mandates TWO separate signature uploads: one in Hindi and one in English (10KB to 20KB each)."
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
     },
     "rules": [
-      "BSSC requires BOTH English signature AND Hindi signature separately.",
-      "Photo must be clear frontal shot with both ears visible.",
-      "File size must strictly not exceed 50KB for photo and 20KB for signatures."
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
     ],
     "keywords": [
-      "bssc photo size",
-      "bssc signature size hindi english",
-      "bssc inter level photo 20 to 50 kb",
-      "bssc photo resizer online"
+      "ap dsc ap dsc tgt pgt sgt more photo signature resizer",
+      "ap dsc tgt, pgt, sgt and more photo size",
+      "ap dsc tgt, pgt, sgt and more signature size",
+      "ap dsc photo resizer",
+      "ap dsc tgt, pgt, sgt and more photo upload guidelines"
     ],
-    "primaryToolId": "bpsc-photo-resizer",
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upessc-upessc-principal-headmaster",
+    "slug": "upessc-upessc-principal-headmaster-photo-signature-resizer",
+    "title": "UPESSC Principal, Headmaster",
+    "shortTitle": "UPESSC Principal, Headmaster",
+    "board": "UPESSC",
+    "vacancies": 2647,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "22-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upessc-2647-principal-headmaster-recruitment-2026-3075555",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upessc-2647-principal-headmaster-recruitment-2026-3075555",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upessc upessc principal headmaster photo signature resizer",
+      "upessc principal, headmaster photo size",
+      "upessc principal, headmaster signature size",
+      "upessc photo resizer",
+      "upessc principal, headmaster photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-ssc-chsl-10-2-2026-2536",
+    "slug": "sarkari-ssc-chsl-10-2-2026-2536-photo-signature-resizer",
+    "title": "SSC CHSL 10+2 Recruitment 2026 (2536 Posts)",
+    "shortTitle": "SSC CHSL 10+2 Recruitment 2026 (253",
+    "board": "Government Commission",
+    "vacancies": 2536,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/ssc-chsl-sep-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/ssc-chsl-sep-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sarkari ssc chsl 10 2 2026 2536 photo signature resizer",
+      "ssc chsl 10+2 recruitment 2026 (253 photo size",
+      "ssc chsl 10+2 recruitment 2026 (253 signature size",
+      "government commission photo resizer",
+      "ssc chsl 10+2 recruitment 2026 (253 photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrc-north-western-railway-rrc-north-western-railway-act-apprentice-photo-signatu",
+    "slug": "rrc-north-western-railway-rrc-north-western-railway-act-apprentice-photo-signatu",
+    "title": "RRC North Western Railway Act Apprentice",
+    "shortTitle": "RRC North Western Railway Act Appre",
+    "board": "RRC North Western Railway",
+    "vacancies": 2008,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "06-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/rrc-north-western-railway-act-apprentice-recruitment-2026-3074741",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/rrc-north-western-railway-act-apprentice-recruitment-2026-3074741",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrc north western railway rrc north western railway act apprentice photo signatu",
+      "rrc north western railway act appre photo size",
+      "rrc north western railway act appre signature size",
+      "rrc north western railway photo resizer",
+      "rrc north western railway act appre photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upsssc-upsssc-store-keeper-cum-clerk-farm-clerk-more",
+    "slug": "upsssc-upsssc-store-keeper-cum-clerk-farm-clerk-more-photo-signature-resizer",
+    "title": "UPSSSC Store Keeper cum Clerk, Farm Clerk and More",
+    "shortTitle": "UPSSSC Store Keeper cum Clerk, Farm",
+    "board": "UPSSSC",
+    "vacancies": 1784,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "01-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upssc-combined-lower-subordinate-services-intermediate-level-main-examination-2026-3074209",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upssc-combined-lower-subordinate-services-intermediate-level-main-examination-2026-3074209",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upsssc upsssc store keeper cum clerk farm clerk more photo signature resizer",
+      "upsssc store keeper cum clerk, farm photo size",
+      "upsssc store keeper cum clerk, farm signature size",
+      "upsssc photo resizer",
+      "upsssc store keeper cum clerk, farm photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-upsssc-inter-level-form-1784",
+    "slug": "sarkari-upsssc-inter-level-form-1784-photo-signature-resizer",
+    "title": "UPSSSC Inter Level Form (1784 Posts)",
+    "shortTitle": "UPSSSC Inter Level Form (1784 Posts",
+    "board": "Government Commission",
+    "vacancies": 1784,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/upsssc-inter-12th-level-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/upsssc-inter-12th-level-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sarkari upsssc inter level form 1784 photo signature resizer",
+      "upsssc inter level form (1784 posts photo size",
+      "upsssc inter level form (1784 posts signature size",
+      "government commission photo resizer",
+      "upsssc inter level form (1784 posts photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "cg-vyapam-cg-vyapam-deo-si-assistant-more",
+    "slug": "cg-vyapam-cg-vyapam-deo-si-assistant-more-photo-signature-resizer",
+    "title": "CG Vyapam DEO, SI, Assistant and More",
+    "shortTitle": "CG Vyapam DEO, SI, Assistant and Mo",
+    "board": "CG Vyapam",
+    "vacancies": 1710,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "N/A",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/cg-vyapam-group-2-sub-group-2-recruitment-2026-apply-online-for-1710-deo-si-assistant-and-more-posts-3071510",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/cg-vyapam-group-2-sub-group-2-recruitment-2026-apply-online-for-1710-deo-si-assistant-and-more-posts-3071510",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "cg vyapam cg vyapam deo si assistant more photo signature resizer",
+      "cg vyapam deo, si, assistant and mo photo size",
+      "cg vyapam deo, si, assistant and mo signature size",
+      "cg vyapam photo resizer",
+      "cg vyapam deo, si, assistant and mo photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "mpesb-mpesb-sub-engineer-draftsman-more",
+    "slug": "mpesb-mpesb-sub-engineer-draftsman-more-photo-signature-resizer",
+    "title": "MPESB Sub Engineer, Draftsman and More",
+    "shortTitle": "MPESB Sub Engineer, Draftsman and M",
+    "board": "MPESB",
+    "vacancies": 1700,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "27-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/mpesb-group-3-sub-engineer-recruitment-2026-apply-online-for-1700-posts-3065085",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/mpesb-group-3-sub-engineer-recruitment-2026-apply-online-for-1700-posts-3065085",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "mpesb mpesb sub engineer draftsman more photo signature resizer",
+      "mpesb sub engineer, draftsman and m photo size",
+      "mpesb sub engineer, draftsman and m signature size",
+      "mpesb photo resizer",
+      "mpesb sub engineer, draftsman and m photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-rrb-ntpc-ug-level-form-1688",
+    "slug": "sarkari-rrb-ntpc-ug-level-form-1688-photo-signature-resizer",
+    "title": "RRB NTPC UG Level Form (1688 Posts)",
+    "shortTitle": "RRB NTPC UG Level Form (1688 Posts)",
+    "board": "Government Commission",
+    "vacancies": 1688,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rrb-ntpc-inter-level-07-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rrb-ntpc-inter-level-07-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "sarkari rrb ntpc ug level form 1688 photo signature resizer",
+      "rrb ntpc ug level form (1688 posts) photo size",
+      "rrb ntpc ug level form (1688 posts) signature size",
+      "government commission photo resizer",
+      "rrb ntpc ug level form (1688 posts) photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sarkari-rrb-ntpc-10-2-ug-2026-1688",
+    "slug": "sarkari-rrb-ntpc-10-2-ug-2026-1688-photo-signature-resizer",
+    "title": "RRB NTPC 10+2 UG Recruitment 2026 (1688 Posts)",
+    "shortTitle": "RRB NTPC 10+2 UG Recruitment 2026 (",
+    "board": "Government Commission",
+    "vacancies": 1688,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rrb-ntpc-inter-level-07-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rrb-ntpc-inter-level-07-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "sarkari rrb ntpc 10 2 ug 2026 1688 photo signature resizer",
+      "rrb ntpc 10+2 ug recruitment 2026 ( photo size",
+      "rrb ntpc 10+2 ug recruitment 2026 ( signature size",
+      "government commission photo resizer",
+      "rrb ntpc 10+2 ug recruitment 2026 ( photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "gsssb-gsssb-work-assistant",
+    "slug": "gsssb-gsssb-work-assistant-photo-signature-resizer",
+    "title": "GSSSB Work Assistant",
+    "shortTitle": "GSSSB Work Assistant",
+    "board": "GSSSB",
+    "vacancies": 1663,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "29-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/gsssb-work-assistant-recruitment-2026-3074190",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/gsssb-work-assistant-recruitment-2026-3074190",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "gsssb gsssb work assistant photo signature resizer",
+      "gsssb work assistant photo size",
+      "gsssb work assistant signature size",
+      "gsssb photo resizer",
+      "gsssb work assistant photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sssc-punjab-haryana-high-court-sssc-punjab-haryana-high-court-clerk-photo-signat",
+    "slug": "sssc-punjab-haryana-high-court-sssc-punjab-haryana-high-court-clerk-photo-signat",
+    "title": "SSSC Punjab and Haryana High Court Clerk",
+    "shortTitle": "SSSC Punjab and Haryana High Court ",
+    "board": "SSSC Punjab and Haryana High Court",
+    "vacancies": 1270,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "04-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/punjab-and-haryana-high-court-clerk-recruitment-2026-apply-online-for-1270-posts-3070846",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/punjab-and-haryana-high-court-clerk-recruitment-2026-apply-online-for-1270-posts-3070846",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "sssc punjab haryana high court sssc punjab haryana high court clerk photo signat",
+      "sssc punjab and haryana high court  photo size",
+      "sssc punjab and haryana high court  signature size",
+      "sssc punjab and haryana high court photo resizer",
+      "sssc punjab and haryana high court  photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrb-rrb-station-master",
+    "slug": "rrb-rrb-station-master-photo-signature-resizer",
+    "title": "RRB Station Master",
+    "shortTitle": "RRB Station Master",
+    "board": "RRB",
+    "vacancies": 1250,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "25-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/rrb-station-master-recruitment-2026-3074679",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/rrb-station-master-recruitment-2026-3074679",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrb rrb station master photo signature resizer",
+      "rrb station master photo size",
+      "rrb station master signature size",
+      "rrb photo resizer",
+      "rrb station master photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upsssc-upsssc-junior-engineer-technical-assistant-more",
+    "slug": "upsssc-upsssc-junior-engineer-technical-assistant-more-photo-signature-resizer",
+    "title": "UPSSSC Junior Engineer, Technical Assistant and More",
+    "shortTitle": "UPSSSC Junior Engineer, Technical A",
+    "board": "UPSSSC",
+    "vacancies": 1156,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "25-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upsssc-recruitment-2026-apply-online-for-1156-junior-engineer-technical-assistant-and-more-posts-3072932",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upsssc-recruitment-2026-apply-online-for-1156-junior-engineer-technical-assistant-and-more-posts-3072932",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upsssc upsssc junior engineer technical assistant more photo signature resizer",
+      "upsssc junior engineer, technical a photo size",
+      "upsssc junior engineer, technical a signature size",
+      "upsssc photo resizer",
+      "upsssc junior engineer, technical a photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "wbpsc-wbpsc-sub-surveyor",
+    "slug": "wbpsc-wbpsc-sub-surveyor-photo-signature-resizer",
+    "title": "WBPSC Sub Surveyor",
+    "shortTitle": "WBPSC Sub Surveyor",
+    "board": "WBPSC",
+    "vacancies": 1145,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "09-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/wbpsc-sub-surveyor-recruitment-2026-3074526",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/wbpsc-sub-surveyor-recruitment-2026-3074526",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "wbpsc wbpsc sub surveyor photo signature resizer",
+      "wbpsc sub surveyor photo size",
+      "wbpsc sub surveyor signature size",
+      "wbpsc photo resizer",
+      "wbpsc sub surveyor photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "nagaland-police-nagaland-police-constable",
+    "slug": "nagaland-police-nagaland-police-constable-photo-signature-resizer",
+    "title": "Nagaland Police Constable",
+    "shortTitle": "Nagaland Police Constable",
+    "board": "Nagaland Police",
+    "vacancies": 1137,
+    "category": "police",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "30-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/nagaland-police-constable-recruitment-2026-3074062",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/nagaland-police-constable-recruitment-2026-3074062",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "nagaland police nagaland police constable photo signature resizer",
+      "nagaland police constable photo size",
+      "nagaland police constable signature size",
+      "nagaland police photo resizer",
+      "nagaland police constable photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "nlc-india-nlc-india-iti-graduate-apprentice",
+    "slug": "nlc-india-nlc-india-iti-graduate-apprentice-photo-signature-resizer",
+    "title": "NLC India ITI and Graduate Apprentice",
+    "shortTitle": "NLC India ITI and Graduate Apprenti",
+    "board": "NLC India",
+    "vacancies": 1067,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "09-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/nlc-india-apprentice-recruitment-2026-1067-posts-3075682",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/nlc-india-apprentice-recruitment-2026-1067-posts-3075682",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "nlc india nlc india iti graduate apprentice photo signature resizer",
+      "nlc india iti and graduate apprenti photo size",
+      "nlc india iti and graduate apprenti signature size",
+      "nlc india photo resizer",
+      "nlc india iti and graduate apprenti photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "mp-police-mp-police-constable-driver",
+    "slug": "mp-police-mp-police-constable-driver-photo-signature-resizer",
+    "title": "MP Police Constable (Driver)",
+    "shortTitle": "MP Police Constable (Driver)",
+    "board": "MP Police",
+    "vacancies": 1000,
+    "category": "police",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "29-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/mp-police-constable-driver-recruitment-2026-apply-online-for-1000-posts-3071517",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/mp-police-constable-driver-recruitment-2026-apply-online-for-1000-posts-3071517",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "mp police mp police constable driver photo signature resizer",
+      "mp police constable (driver) photo size",
+      "mp police constable (driver) signature size",
+      "mp police photo resizer",
+      "mp police constable (driver) photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "cg-vyapam-cg-vyapam-lecturer",
+    "slug": "cg-vyapam-cg-vyapam-lecturer-photo-signature-resizer",
+    "title": "CG Vyapam Lecturer",
+    "shortTitle": "CG Vyapam Lecturer",
+    "board": "CG Vyapam",
+    "vacancies": 854,
+    "category": "teaching",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "26-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/cg-vyapam-lecturer-recruitment-2026-apply-online-for-854-posts-3070213",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/cg-vyapam-lecturer-recruitment-2026-apply-online-for-854-posts-3070213",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
+    },
+    "rules": [
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
+    ],
+    "keywords": [
+      "cg vyapam cg vyapam lecturer photo signature resizer",
+      "cg vyapam lecturer photo size",
+      "cg vyapam lecturer signature size",
+      "cg vyapam photo resizer",
+      "cg vyapam lecturer photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "cdac-cdac-project-associate-project-engineer-more",
+    "slug": "cdac-cdac-project-associate-project-engineer-more-photo-signature-resizer",
+    "title": "CDAC Project Associate, Project Engineer and More",
+    "shortTitle": "CDAC Project Associate, Project Eng",
+    "board": "CDAC",
+    "vacancies": 844,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "26-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/c-dac-recruitment-2026-apply-online-for-project-engineer-project-manager-and-more-posts-3070943",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/c-dac-recruitment-2026-apply-online-for-project-engineer-project-manager-and-more-posts-3070943",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "cdac cdac project associate project engineer more photo signature resizer",
+      "cdac project associate, project eng photo size",
+      "cdac project associate, project eng signature size",
+      "cdac photo resizer",
+      "cdac project associate, project eng photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "oavs-oavs-principals-teachers",
+    "slug": "oavs-oavs-principals-teachers-photo-signature-resizer",
+    "title": "OAVS Principals and Teachers",
+    "shortTitle": "OAVS Principals and Teachers",
+    "board": "OAVS",
+    "vacancies": 815,
+    "category": "teaching",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "11-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/oavs-teacher-recruitment-2026-apply-online-for-815-principals-and-teachers-posts-3069031",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/oavs-teacher-recruitment-2026-apply-online-for-815-principals-and-teachers-posts-3069031",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
+    },
+    "rules": [
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
+    ],
+    "keywords": [
+      "oavs oavs principals teachers photo signature resizer",
+      "oavs principals and teachers photo size",
+      "oavs principals and teachers signature size",
+      "oavs photo resizer",
+      "oavs principals and teachers photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "jharkhand-home-defense-corps-jharkhand-home-defense-corps-home-guard-photo-signa",
+    "slug": "jharkhand-home-defense-corps-jharkhand-home-defense-corps-home-guard-photo-signa",
+    "title": "Jharkhand Home Defense Corps Home Guard",
+    "shortTitle": "Jharkhand Home Defense Corps Home G",
+    "board": "Jharkhand Home Defense Corps",
+    "vacancies": 772,
+    "category": "police",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "26-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/jharkhand-home-guard-recruitment-2026-apply-online-for-772-home-guard-rural-and-urban-posts-3067607",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/jharkhand-home-guard-recruitment-2026-apply-online-for-772-home-guard-rural-and-urban-posts-3067607",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "jharkhand home defense corps jharkhand home defense corps home guard photo signa",
+      "jharkhand home defense corps home g photo size",
+      "jharkhand home defense corps home g signature size",
+      "jharkhand home defense corps photo resizer",
+      "jharkhand home defense corps home g photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "opsc-opsc-assistant-executive-engineer",
+    "slug": "opsc-opsc-assistant-executive-engineer-photo-signature-resizer",
+    "title": "OPSC Assistant Executive Engineer",
+    "shortTitle": "OPSC Assistant Executive Engineer",
+    "board": "OPSC",
+    "vacancies": 758,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "11-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/opsc-aee-recruitment-2026-apply-online-for-758-posts-3072480",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/opsc-aee-recruitment-2026-apply-online-for-758-posts-3072480",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "opsc opsc assistant executive engineer photo signature resizer",
+      "opsc assistant executive engineer photo size",
+      "opsc assistant executive engineer signature size",
+      "opsc photo resizer",
+      "opsc assistant executive engineer photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "kfd-kfd-forest-observer",
+    "slug": "kfd-kfd-forest-observer-photo-signature-resizer",
+    "title": "KFD Forest Observer",
+    "shortTitle": "KFD Forest Observer",
+    "board": "KFD",
+    "vacancies": 750,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "30-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/karnataka-forest-department-kfd-forest-observer-recruitment-2026-apply-online-for-750-posts-3071391",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/karnataka-forest-department-kfd-forest-observer-recruitment-2026-apply-online-for-750-posts-3071391",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "kfd kfd forest observer photo signature resizer",
+      "kfd forest observer photo size",
+      "kfd forest observer signature size",
+      "kfd photo resizer",
+      "kfd forest observer photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "appsc-appsc-junior-accountant-assistant-section-officer-more-photo-signature-res",
+    "slug": "appsc-appsc-junior-accountant-assistant-section-officer-more-photo-signature-res",
+    "title": "APPSC Junior Accountant, Assistant Section Officer and More",
+    "shortTitle": "APPSC Junior Accountant, Assistant ",
+    "board": "APPSC",
+    "vacancies": 686,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "30-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/appsc-group-ii-recruitment-2026-3073316",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/appsc-group-ii-recruitment-2026-3073316",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "appsc appsc junior accountant assistant section officer more photo signature res",
+      "appsc junior accountant, assistant  photo size",
+      "appsc junior accountant, assistant  signature size",
+      "appsc photo resizer",
+      "appsc junior accountant, assistant  photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "bhel-bhel-artisan",
+    "slug": "bhel-bhel-artisan-photo-signature-resizer",
+    "title": "BHEL Artisan",
+    "shortTitle": "BHEL Artisan",
+    "board": "BHEL",
+    "vacancies": 660,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "N/A",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bhel-artisan-recruitment-2026-3073301",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bhel-artisan-recruitment-2026-3073301",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "bhel bhel artisan photo signature resizer",
+      "bhel artisan photo size",
+      "bhel artisan signature size",
+      "bhel photo resizer",
+      "bhel artisan photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrc-ncr-gdce-rrc-ncr-gdce-je-clerk-assistant-loco-pilot-more-photo-signature-res",
+    "slug": "rrc-ncr-gdce-rrc-ncr-gdce-je-clerk-assistant-loco-pilot-more-photo-signature-res",
+    "title": "RRC NCR GDCE JE, Clerk, Assistant Loco Pilot and More",
+    "shortTitle": "RRC NCR GDCE JE, Clerk, Assistant L",
+    "board": "RRC NCR GDCE",
+    "vacancies": 656,
+    "category": "railway",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "30-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/rrc-north-central-railway-gdce-recruitment-2026-apply-online-for-656-je-alp-clerk-technicians-and-more-posts-3070245",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/rrc-north-central-railway-gdce-recruitment-2026-apply-online-for-656-je-alp-clerk-technicians-and-more-posts-3070245",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrc ncr gdce rrc ncr gdce je clerk assistant loco pilot more photo signature res",
+      "rrc ncr gdce je, clerk, assistant l photo size",
+      "rrc ncr gdce je, clerk, assistant l signature size",
+      "rrc ncr gdce photo resizer",
+      "rrc ncr gdce je, clerk, assistant l photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "dsssb-dsssb-peon-personal-assistant-more",
+    "slug": "dsssb-dsssb-peon-personal-assistant-more-photo-signature-resizer",
+    "title": "DSSSB Peon, Personal Assistant and More",
+    "shortTitle": "DSSSB Peon, Personal Assistant and ",
+    "board": "DSSSB",
+    "vacancies": 641,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "04-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "dsssb dsssb peon personal assistant more photo signature resizer",
+      "dsssb peon, personal assistant and  photo size",
+      "dsssb peon, personal assistant and  signature size",
+      "dsssb photo resizer",
+      "dsssb peon, personal assistant and  photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "sggu-sggu-principal-assistant-professor-more",
+    "slug": "sggu-sggu-principal-assistant-professor-more-photo-signature-resizer",
+    "title": "SGGU Principal, Assistant Professor and More",
+    "shortTitle": "SGGU Principal, Assistant Professor",
+    "board": "SGGU",
+    "vacancies": 632,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "30-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/sggu-recruitment-2026-apply-online-for-632-principal-assistant-professor-and-more-posts-3074414",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/sggu-recruitment-2026-apply-online-for-632-principal-assistant-professor-and-more-posts-3074414",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "sggu sggu principal assistant professor more photo signature resizer",
+      "sggu principal, assistant professor photo size",
+      "sggu principal, assistant professor signature size",
+      "sggu photo resizer",
+      "sggu principal, assistant professor photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "dlrs-assam-dlrs-assam-land-record-assistant",
+    "slug": "dlrs-assam-dlrs-assam-land-record-assistant-photo-signature-resizer",
+    "title": "DLRS Assam Land Record Assistant",
+    "shortTitle": "DLRS Assam Land Record Assistant",
+    "board": "DLRS Assam",
+    "vacancies": 579,
+    "category": "postal",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "31-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/dlrs-assam-land-record-assistant-recruitment-2026-apply-online-for-579-posts-3068452",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/dlrs-assam-land-record-assistant-recruitment-2026-apply-online-for-579-posts-3068452",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "dlrs assam dlrs assam land record assistant photo signature resizer",
+      "dlrs assam land record assistant photo size",
+      "dlrs assam land record assistant signature size",
+      "dlrs assam photo resizer",
+      "dlrs assam land record assistant photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "uco-bank-uco-bank-apprentice",
+    "slug": "uco-bank-uco-bank-apprentice-photo-signature-resizer",
+    "title": "UCO Bank Apprentice",
+    "shortTitle": "UCO Bank Apprentice",
+    "board": "UCO Bank",
+    "vacancies": 530,
+    "category": "banking",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "29-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302",
+    "status": "active",
+    "photo": {
+      "widthPx": 200,
+      "heightPx": 230,
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "Dimensions 200 x 230 pixels, file size 20KB - 50KB. Neutral facial expression."
+    },
+    "signature": {
+      "widthPx": 140,
+      "heightPx": 60,
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink pen on white paper",
+      "notes": "Dimensions 140 x 60 pixels, file size 10KB - 20KB. Running handwriting only."
+    },
+    "rules": [
+      "Banking portals strictly reject signatures in CAPITAL LETTERS.",
+      "Left thumb impression and handwritten declaration are also required separately."
+    ],
+    "keywords": [
+      "uco bank uco bank apprentice photo signature resizer",
+      "uco bank apprentice photo size",
+      "uco bank apprentice signature size",
+      "uco bank photo resizer",
+      "uco bank apprentice photo upload guidelines"
+    ],
+    "primaryToolId": "signature-resizer-10-20kb",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "crpf-crpf-sports-quota",
+    "slug": "crpf-crpf-sports-quota-photo-signature-resizer",
+    "title": "CRPF Sports Quota",
+    "shortTitle": "CRPF Sports Quota",
+    "board": "CRPF",
+    "vacancies": 521,
+    "category": "police",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "11-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "crpf crpf sports quota photo signature resizer",
+      "crpf sports quota photo size",
+      "crpf sports quota signature size",
+      "crpf photo resizer",
+      "crpf sports quota photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "appsc-appsc-assistant-executive-engineer-aee",
+    "slug": "appsc-appsc-assistant-executive-engineer-aee-photo-signature-resizer",
+    "title": "APPSC Assistant Executive Engineer (AEE)",
+    "shortTitle": "APPSC Assistant Executive Engineer ",
+    "board": "APPSC",
+    "vacancies": 503,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "22-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/appsc-assistant-executive-engineer-aee-recruitment-2026-3073308",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/appsc-assistant-executive-engineer-aee-recruitment-2026-3073308",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "appsc appsc assistant executive engineer aee photo signature resizer",
+      "appsc assistant executive engineer  photo size",
+      "appsc assistant executive engineer  signature size",
+      "appsc photo resizer",
+      "appsc assistant executive engineer  photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "odisha-ssb-odisha-ssb-laboratory-assistant-cum-storekeeper-photo-signature-resiz",
+    "slug": "odisha-ssb-odisha-ssb-laboratory-assistant-cum-storekeeper-photo-signature-resiz",
+    "title": "Odisha SSB Laboratory Assistant-Cum-Storekeeper",
+    "shortTitle": "Odisha SSB Laboratory Assistant-Cum",
+    "board": "Odisha SSB",
+    "vacancies": 435,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "16-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/odisha-ssb-laboratory-assistant-cum-storekeeper-recruitment-2026-apply-online-for-435-posts-3070923",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/odisha-ssb-laboratory-assistant-cum-storekeeper-recruitment-2026-apply-online-for-435-posts-3070923",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "odisha ssb odisha ssb laboratory assistant cum storekeeper photo signature resiz",
+      "odisha ssb laboratory assistant-cum photo size",
+      "odisha ssb laboratory assistant-cum signature size",
+      "odisha ssb photo resizer",
+      "odisha ssb laboratory assistant-cum photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "mphc-mphc-stenographer-grade-ii-stenographer-grade-iii-stenographer-grade-iii-co",
+    "slug": "mphc-mphc-stenographer-grade-ii-stenographer-grade-iii-stenographer-grade-iii-co",
+    "title": "MPHC Stenographer Grade-II, Stenographer Grade-III, Stenographer Grade-III (Court Manager Staff), and Assistant Grade-III (English Knowing)",
+    "shortTitle": "MPHC Stenographer Grade-II, Stenogr",
+    "board": "MPHC",
+    "vacancies": 418,
+    "category": "state-psc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "27-10-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/mphc-recruitment-2026-notification-out-apply-online-for-418-stenographer-grade-ii-iii-assistant-posts-3071137",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/mphc-recruitment-2026-notification-out-apply-online-for-418-stenographer-grade-ii-iii-assistant-posts-3071137",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "mphc mphc stenographer grade ii stenographer grade iii stenographer grade iii co",
+      "mphc stenographer grade-ii, stenogr photo size",
+      "mphc stenographer grade-ii, stenogr signature size",
+      "mphc photo resizer",
+      "mphc stenographer grade-ii, stenogr photo upload guidelines"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "upsssc-upsssc-regional-youth-welfare-pradeshik-vikas-dal-officer-exercise-traine",
+    "slug": "upsssc-upsssc-regional-youth-welfare-pradeshik-vikas-dal-officer-exercise-traine",
+    "title": "UPSSSC Regional Youth Welfare and Pradeshik Vikas Dal Officer & Exercise Trainer",
+    "shortTitle": "UPSSSC Regional Youth Welfare and P",
+    "board": "UPSSSC",
+    "vacancies": 412,
+    "category": "ssc",
+    "notificationDate": "2026-10-26",
+    "lastDateToApply": "06-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/upsssc-regional-youth-welfare-officer-recruitment-2026-apply-online-for-412-posts-3070585",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/upsssc-regional-youth-welfare-officer-recruitment-2026-apply-online-for-412-posts-3070585",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upsssc upsssc regional youth welfare pradeshik vikas dal officer exercise traine",
+      "upsssc regional youth welfare and p photo size",
+      "upsssc regional youth welfare and p signature size",
+      "upsssc photo resizer",
+      "upsssc regional youth welfare and p photo upload guidelines"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
     "lastUpdated": "2026-10-26"
   }
 ]
