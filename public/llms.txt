@@ -54,6 +54,21 @@ URL pattern: /exam-specs/[exam-key]
 Content: Official verified photo and signature requirements per exam.
 Exam keys: ssc, upsc, bpsc, bssc, rrb, nta, ibps, pan, sbi, railway, state-psc, defence
 
+
+### Govt Job Alerts & Photo Resizer Hub (Mega Recruitments >= 400 Vacancies)
+URL pattern: /jobs and /jobs/[slug]
+Content: Automated real-time recruitment photo and signature specifications for high-vacancy Indian government jobs. Includes 1-click photo and signature formatting tools pre-configured to exact official notification guidelines.
+Key Hub URL: https://www.sarkaripixels.online/jobs
+Active Job Tool Pages:
+- /jobs/rrb-alp-photo-signature-resizer — RRB ALP 18,799 Posts (35x45mm, 30-70KB)
+- /jobs/ssc-gd-constable-photo-signature-resizer — SSC GD 39,481 Posts (20-50KB live webcam/upload)
+- /jobs/rrb-technician-photo-signature-resizer — RRB Technician 14,298 Posts (35x45mm, 30-70KB)
+- /jobs/up-police-constable-photo-signature-resizer — UP Police 60,244 Posts (35x45mm, 20-50KB)
+- /jobs/india-post-gds-photo-signature-resizer — India Post GDS 44,228 Posts (200x230px, under 50KB)
+- /jobs/rpf-constable-si-photo-signature-resizer — RPF Constable & SI 4,660 Posts (35x45mm, 30-70KB)
+- /jobs/ibps-clerk-photo-signature-thumb-resizer — IBPS Clerk 6,128 Posts (200x230px, 140x60px)
+- /jobs/bssc-inter-level-photo-signature-resizer — BSSC Inter Level 12,199 Posts (20-50KB with webcam guidelines)
+
 ### Guides (5 articles)
 URL pattern: /guides/[slug]
 Content: How-to guides for common exam photo problems.

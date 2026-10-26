@@ -35,6 +35,52 @@ export default function ResizeEditor({ tool }: Props) {
   const [processing, setProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  const customPresetApplied = useRef<boolean>(false);
+
+  // Read URL query parameters for 1-click presets (e.g. from /jobs/[slug])
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const w = params.get("w") || params.get("width");
+      const h = params.get("h") || params.get("height");
+      const u = params.get("unit");
+      const d = params.get("dpi");
+      const lock = params.get("lockAspect");
+
+      if (w) {
+        const parsedW = parseFloat(w);
+        if (!isNaN(parsedW) && parsedW > 0) {
+          setWidth(parsedW);
+          customPresetApplied.current = true;
+        }
+      }
+      if (h) {
+        const parsedH = parseFloat(h);
+        if (!isNaN(parsedH) && parsedH > 0) {
+          setHeight(parsedH);
+          customPresetApplied.current = true;
+        }
+      }
+      if (u === "px" || u === "cm" || u === "mm" || u === "inch") {
+        setUnit(u);
+      }
+      if (d) {
+        const parsedDpi = parseInt(d, 10);
+        if (!isNaN(parsedDpi) && parsedDpi > 0) {
+          setDpi(parsedDpi);
+        }
+      }
+      if (lock === "false" || lock === "0") {
+        setLockAspect(false);
+      } else if (lock === "true" || lock === "1") {
+        setLockAspect(true);
+      } else if (w && h) {
+        // If both w and h were explicitly supplied, disable aspect lock to avoid dimension distortion
+        setLockAspect(false);
+      }
+    }
+  }, []);
+
   const isUniversal = tool.group === "universal-resize";
 
   const handleFileChange = async (f: File) => {
@@ -53,7 +99,7 @@ export default function ResizeEditor({ tool }: Props) {
       setAspectRatio(aspect);
 
       // Initialize dimensions based on natural dimensions if no tool defaults
-      if (!tool.defaultW) {
+      if (!tool.defaultW && !customPresetApplied.current) {
         if (unit === "px") {
           setWidth(img.naturalWidth);
           setHeight(img.naturalHeight);

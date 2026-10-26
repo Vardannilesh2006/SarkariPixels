@@ -40,6 +40,18 @@ All operations utilize HTML5 Canvas API and WebAssembly in client memory. No ima
 - **Photo Size**: 35 mm × 45 mm (320 × 240 pixels or 413 × 531 pixels, 20-50 KB)
 - **Signature Size**: 140 × 60 pixels (10 KB to 20 KB)
 
+
+### 6. Active Mega Recruitment Alert Tools (400+ Vacancies Daily Engine)
+- **Central Jobs Hub**: https://www.sarkaripixels.online/jobs
+- **RRB ALP (18,799 Posts)**: Photo: 35×45 mm (320×240 px, 30–70 KB, white background), Signature: 140×60 px (30–70 KB, black ink). URL: https://www.sarkaripixels.online/jobs/rrb-alp-photo-signature-resizer
+- **SSC GD Constable (39,481 Posts)**: Photo: 3.5×4.5 cm (20–50 KB, clean background, both ears visible), Signature: 4×2 cm (10–20 KB). URL: https://www.sarkaripixels.online/jobs/ssc-gd-constable-photo-signature-resizer
+- **RRB Technician (14,298 Posts)**: Photo: 35×45 mm (320×240 px, 30–70 KB), Signature: 140×60 px (30–70 KB). URL: https://www.sarkaripixels.online/jobs/rrb-technician-photo-signature-resizer
+- **UP Police Constable (60,244 Posts)**: Photo: 35×45 mm (20–50 KB, light grey/white background, 70% face), Signature: 3.5×1.5 cm (5–20 KB, black ink). URL: https://www.sarkaripixels.online/jobs/up-police-constable-photo-signature-resizer
+- **India Post GDS (44,228 Posts)**: Photo: 200×230 px (max 50 KB), Signature: 140×60 px (max 20 KB). URL: https://www.sarkaripixels.online/jobs/india-post-gds-photo-signature-resizer
+- **RPF Constable & SI (4,660 Posts)**: Photo: 35×45 mm (30–70 KB, white background), Signature: 140×60 px (30–70 KB). URL: https://www.sarkaripixels.online/jobs/rpf-constable-si-photo-signature-resizer
+- **IBPS Clerk (6,128 Posts)**: Photo: 200×230 px (20–50 KB), Signature: 140×60 px (10–20 KB), Left Thumb: 240×240 px (20–50 KB), Declaration: 800×400 px (50–100 KB). URL: https://www.sarkaripixels.online/jobs/ibps-clerk-photo-signature-thumb-resizer
+- **BSSC Inter Level (12,199 Posts)**: Photo: 3.5×4.5 cm (20–50 KB), Hindi & English Signature: 200×60 px (10–20 KB each). URL: https://www.sarkaripixels.online/jobs/bssc-inter-level-photo-signature-resizer
+
 ## Programmatic Tools & Deep Link Index
 - Sarkari Result Photo Resizer: https://www.sarkaripixels.online/tool/sarkari-result-photo-resizer
 - Name & Date on Photo Generator: https://www.sarkaripixels.online/tool/name-date-photo-generator

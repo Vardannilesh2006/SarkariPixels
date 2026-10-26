@@ -1,0 +1,437 @@
+[
+  {
+    "id": "rrb-alp-recruitment-2026",
+    "slug": "rrb-alp-photo-signature-resizer",
+    "title": "RRB Assistant Loco Pilot (ALP) Recruitment 2026",
+    "shortTitle": "RRB ALP 2026",
+    "board": "Railway Recruitment Board (RRB)",
+    "vacancies": 18799,
+    "category": "railway",
+    "notificationDate": "2026-01-20",
+    "lastDateToApply": "2026-12-31",
+    "officialNotificationUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Recent passport photograph (not older than 6 months). Face must occupy at least 80% of photo area without shadow or glare. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5.0,
+      "heightCm": 2.0,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper (Running handwriting only, no block capital letters)",
+      "notes": "Sign in running handwriting using a black ballpoint pen on plain white paper."
+    },
+    "additionalDocs": [
+      {
+        "name": "SC/ST Caste Certificate (for Free Travel Pass)",
+        "minKB": 100,
+        "maxKB": 500,
+        "format": "PDF"
+      }
+    ],
+    "rules": [
+      "White background is mandatory for RRB photograph.",
+      "Selfie or mobile snapshots with colored backgrounds will lead to outright rejection.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Spectacles must not have any reflection or tinted glass."
+    ],
+    "keywords": [
+      "rrb alp photo size",
+      "rrb alp signature size",
+      "rrb alp photo resize 30 to 70 kb",
+      "railway alp photo 3.5x4.5 cm",
+      "rrb alp photo upload problem"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "ssc-gd-constable-2026",
+    "slug": "ssc-gd-photo-signature-resizer",
+    "title": "SSC GD Constable Recruitment 2026 (CAPFs, SSF, Rifleman)",
+    "shortTitle": "SSC GD 2026",
+    "board": "Staff Selection Commission (SSC)",
+    "vacancies": 39481,
+    "category": "ssc",
+    "notificationDate": "2026-09-05",
+    "lastDateToApply": "2026-12-15",
+    "officialNotificationUrl": "https://ssc.gov.in",
+    "applyOnlineUrl": "https://ssc.gov.in",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC OTR live capture or standard 3.5cm x 4.5cm photo. Both ears must be clearly visible. No caps, spectacles or masks.",
+      "isLiveWebcamRequired": true
+    },
+    "signature": {
+      "widthCm": 4.0,
+      "heightCm": 2.0,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Frontal view with neutral expression, open eyes, and closed mouth.",
+      "Live webcam capture on ssc.gov.in requires good lighting without harsh shadows."
+    ],
+    "keywords": [
+      "ssc gd photo size",
+      "ssc gd signature 10 to 20 kb",
+      "ssc gd photo resize 3.5x4.5 cm",
+      "ssc gd photo upload error",
+      "ssc live photo resizer"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rrb-technician-recruitment-2026",
+    "slug": "rrb-technician-photo-signature-resizer",
+    "title": "RRB Technician Grade I & Grade III Recruitment 2026",
+    "shortTitle": "RRB Technician 2026",
+    "board": "Railway Recruitment Board (RRB)",
+    "vacancies": 14298,
+    "category": "railway",
+    "notificationDate": "2026-03-09",
+    "lastDateToApply": "2026-11-30",
+    "officialNotificationUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in/#/auth/home",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background",
+      "notes": "Passport size photograph (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible."
+    },
+    "signature": {
+      "widthCm": 5.0,
+      "heightCm": 2.0,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "Sign in running handwriting with black ink. Unclear or capital letter signatures will be rejected."
+    },
+    "rules": [
+      "Keep 12 identical copies of the uploaded photograph for verification rounds.",
+      "Photo must be recent (taken within the last 6 months).",
+      "Strict file size window of 30KB to 70KB for both photo and signature."
+    ],
+    "keywords": [
+      "rrb technician photo size",
+      "rrb technician signature 30 to 70 kb",
+      "railway technician photo resize online",
+      "rrb technician photo 35x45 mm"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "up-police-constable-recruitment-2026",
+    "slug": "up-police-constable-photo-signature-resizer",
+    "title": "UP Police Constable Recruitment 2026",
+    "shortTitle": "UP Police Constable 2026",
+    "board": "Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB)",
+    "vacancies": 60244,
+    "category": "police",
+    "notificationDate": "2026-01-01",
+    "lastDateToApply": "2026-12-25",
+    "officialNotificationUrl": "https://uppbpb.gov.in",
+    "applyOnlineUrl": "https://uppbpb.gov.in",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm (minimum 70% face visibility). Both ears and eyes must be clearly visible."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "UPPRPB strictly mandates black ink for signature; blue ink is rejected.",
+      "Clear white or light grey background only.",
+      "No scarves, caps or tinted glasses allowed."
+    ],
+    "keywords": [
+      "up police photo size",
+      "up police signature 5 to 20 kb",
+      "up police photo resizer online",
+      "uppbpb photo size 3.5x4.5",
+      "up police photo white background"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "india-post-gds-recruitment-2026",
+    "slug": "india-post-gds-photo-signature-resizer",
+    "title": "India Post Gramin Dak Sevak (GDS) Recruitment 2026",
+    "shortTitle": "India Post GDS 2026",
+    "board": "Department of Posts, Ministry of Communications",
+    "vacancies": 44228,
+    "category": "postal",
+    "notificationDate": "2026-07-15",
+    "lastDateToApply": "2026-11-25",
+    "officialNotificationUrl": "https://indiapostgdsonline.gov.in",
+    "applyOnlineUrl": "https://indiapostgdsonline.gov.in",
+    "status": "active",
+    "photo": {
+      "widthPx": 200,
+      "heightPx": 230,
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "minKB": 10,
+      "maxKB": 50,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "background": "Light plain or white background",
+      "notes": "Maximum 50KB file size, 200x230 pixels recommended."
+    },
+    "signature": {
+      "widthPx": 140,
+      "heightPx": 60,
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Dark blue or black ink",
+      "notes": "Maximum 20KB, 140x60 pixels."
+    },
+    "rules": [
+      "Clear photo without borders or blur.",
+      "Photo file size strictly under 50KB; signature under 20KB.",
+      "Ensure candidate name on certificate matches photo identity."
+    ],
+    "keywords": [
+      "india post gds photo size",
+      "post office gds signature 20kb",
+      "gds photo 50kb resizer",
+      "india post gds photo upload error"
+    ],
+    "primaryToolId": "reduce-kb",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "rpf-constable-si-recruitment-2026",
+    "slug": "rpf-constable-si-photo-signature-resizer",
+    "title": "RPF Sub-Inspector & Constable Recruitment 2026",
+    "shortTitle": "RPF Constable & SI 2026",
+    "board": "Railway Protection Force (RPF) / RRB",
+    "vacancies": 4660,
+    "category": "railway",
+    "notificationDate": "2026-04-15",
+    "lastDateToApply": "2026-12-10",
+    "officialNotificationUrl": "https://www.rrbapply.gov.in",
+    "applyOnlineUrl": "https://www.rrbapply.gov.in",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White background only",
+      "notes": "Passport size (35mm x 45mm), 30KB - 70KB. No caps, sunglasses, or head coverings that obscure facial features."
+    },
+    "signature": {
+      "widthCm": 5.0,
+      "heightCm": 2.0,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "Running handwriting with black pen. File size 30KB to 70KB."
+    },
+    "rules": [
+      "Follows standard RRB photo guidelines (white background, 30KB-70KB).",
+      "Signature must be crisp and clearly legible on plain white background."
+    ],
+    "keywords": [
+      "rpf constable photo size",
+      "rpf si signature size",
+      "rpf photo resize 30 to 70 kb",
+      "rpf photo upload 35x45 mm"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "ibps-clerk-recruitment-2026",
+    "slug": "ibps-clerk-photo-signature-resizer",
+    "title": "IBPS Clerk CRP XIV Recruitment 2026",
+    "shortTitle": "IBPS Clerk 2026",
+    "board": "Institute of Banking Personnel Selection (IBPS)",
+    "vacancies": 6128,
+    "category": "banking",
+    "notificationDate": "2026-06-30",
+    "lastDateToApply": "2026-11-15",
+    "officialNotificationUrl": "https://www.ibps.in",
+    "applyOnlineUrl": "https://ibpsonline.ibps.in",
+    "status": "active",
+    "photo": {
+      "widthPx": 200,
+      "heightPx": 230,
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "Dimensions 200 x 230 pixels, file size 20KB - 50KB."
+    },
+    "signature": {
+      "widthPx": 140,
+      "heightPx": 60,
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink pen on white paper",
+      "notes": "Dimensions 140 x 60 pixels, file size 10KB - 20KB. Running handwriting only."
+    },
+    "additionalDocs": [
+      {
+        "name": "Left Thumb Impression (LTI)",
+        "minKB": 20,
+        "maxKB": 50,
+        "format": "JPG/JPEG (240x240 pixels)"
+      },
+      {
+        "name": "Handwritten Declaration",
+        "minKB": 50,
+        "maxKB": 100,
+        "format": "JPG/JPEG (800x400 pixels)"
+      }
+    ],
+    "rules": [
+      "IBPS strictly rejects signatures in CAPITAL LETTERS.",
+      "Left thumb impression must be clearly visible on white paper with black or blue ink.",
+      "Handwritten declaration must be in candidate's own English handwriting (not capital letters)."
+    ],
+    "keywords": [
+      "ibps clerk photo size",
+      "ibps clerk signature 10 to 20 kb",
+      "ibps clerk thumb impression size",
+      "ibps clerk handwritten declaration resize",
+      "ibps photo 200x230 px"
+    ],
+    "primaryToolId": "signature-resizer-10-20kb",
+    "lastUpdated": "2026-10-26"
+  },
+  {
+    "id": "bssc-inter-level-recruitment-2026",
+    "slug": "bssc-inter-level-photo-signature-resizer",
+    "title": "BSSC 2nd Inter Level Combined Recruitment 2026",
+    "shortTitle": "BSSC Inter Level 2026",
+    "board": "Bihar Staff Selection Commission (BSSC)",
+    "vacancies": 12199,
+    "category": "state-psc",
+    "notificationDate": "2026-09-20",
+    "lastDateToApply": "2026-12-20",
+    "officialNotificationUrl": "https://bssc.bihar.gov.in",
+    "applyOnlineUrl": "https://onlinebssc.com",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or light background",
+      "notes": "Recent passport photograph (3.5cm x 4.5cm) with 20KB to 50KB size limit. Live photo upload also required."
+    },
+    "signature": {
+      "widthCm": 4.0,
+      "heightCm": 2.0,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Both Hindi & English signature separate uploads required",
+      "notes": "BSSC mandates TWO separate signature uploads: one in Hindi and one in English (10KB to 20KB each)."
+    },
+    "rules": [
+      "BSSC requires BOTH English signature AND Hindi signature separately.",
+      "Photo must be clear frontal shot with both ears visible.",
+      "File size must strictly not exceed 50KB for photo and 20KB for signatures."
+    ],
+    "keywords": [
+      "bssc photo size",
+      "bssc signature size hindi english",
+      "bssc inter level photo 20 to 50 kb",
+      "bssc photo resizer online"
+    ],
+    "primaryToolId": "bpsc-photo-resizer",
+    "lastUpdated": "2026-10-26"
+  }
+]

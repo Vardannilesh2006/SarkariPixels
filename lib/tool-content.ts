@@ -18,6 +18,63 @@ export interface ToolContent {
 }
 
 export const TOOL_CONTENT: Record<string, ToolContent> = {
+  "resize-image-to-passport-size": {
+    metaTitle: "Resize Image to Passport Size Photo Online Free | ImResizer — Free Online Tool | SarkariPixels",
+    metaDesc: "Use our free online resize image to passport size photo online free | imresizer tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
+    h1: "Resize Image to Passport Size Photo Online Free | ImResizer Online Free",
+    description: `Resize Image to Passport Size Photo Online Free | ImResizer tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    howTo: [
+      "Select your image file by clicking Upload or drag & drop",
+      "Configure your desired dimensions or compression options",
+      "Click Process to execute instant in-browser optimization",
+      "Download your ready-to-use image instantly"
+    ],
+    faqs: [
+      { q: "Is this Resize Image to Passport Size Photo Online Free | ImResizer tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
+      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
+      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "resize-image-size-in-kb": {
+    metaTitle: "Reduce Image Size in KB — Image Size Reducer | ImResizer — Free Online Tool | SarkariPixels",
+    metaDesc: "Use our free online reduce image size in kb — image size reducer | imresizer tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
+    h1: "Reduce Image Size in KB — Image Size Reducer | ImResizer Online Free",
+    description: `Reduce Image Size in KB — Image Size Reducer | ImResizer tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    howTo: [
+      "Select your image file by clicking Upload or drag & drop",
+      "Configure your desired dimensions or compression options",
+      "Click Process to execute instant in-browser optimization",
+      "Download your ready-to-use image instantly"
+    ],
+    faqs: [
+      { q: "Is this Reduce Image Size in KB — Image Size Reducer | ImResizer tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
+      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
+      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
+  "image-tools": {
+    metaTitle: "imresizer.com - All Your Image Tools in One Place — Free Online Tool | SarkariPixels",
+    metaDesc: "Use our free online imresizer.com - all your image tools in one place tool. 100% client-side, zero file upload needed. Fast, high quality, and perfect for exam application forms.",
+    h1: "imresizer.com - All Your Image Tools in One Place Online Free",
+    description: `imresizer.com - All Your Image Tools in One Place tool allows you to process and optimize photos directly in your browser. All computations run 100% locally via HTML5 Canvas and Web APIs. Your confidential images never leave your computer or phone.`,
+    howTo: [
+      "Select your image file by clicking Upload or drag & drop",
+      "Configure your desired dimensions or compression options",
+      "Click Process to execute instant in-browser optimization",
+      "Download your ready-to-use image instantly"
+    ],
+    faqs: [
+      { q: "Is this imresizer.com - All Your Image Tools in One Place tool completely free?", a: "Yes, it is 100% free with unlimited usage and zero registration required." },
+      { q: "Are my files uploaded to your servers?", a: "No. All processing happens 100% locally in your web browser memory sandbox." },
+      { q: "Can I use this on mobile devices?", a: "Yes, this tool works seamlessly on Android, iOS, Windows, and Mac browsers." }
+    ],
+    relatedTools: ["smart-resizer", "reduce-kb", "passport-maker"],
+  },
+
   "sarkari-result-photo-resizer": {
     metaTitle: "Sarkari Result Photo Resizer — Free Online Image Tool | SarkariPixels",
     metaDesc: "Free online Sarkari Result photo resizer for SSC, UPSC, IBPS, BPSC & all sarkari exam forms. Resize photo 3.5x4.5 cm & compress to 20-50KB with zero server upload.",
@@ -2392,7 +2449,7 @@ Specific state PSC notification zaroor check karo — kuch slight variations ho 
     metaTitle: "NEET Postcard Photo Resizer (4x6 Inch / 10x15 cm) Under 200KB | SarkariPixels",
     metaDesc: "Resize 4\"x6\" postcard photograph with white background, 80% face coverage, and Name & Date stamp for NTA NEET UG entrance exam.",
     h1: "NEET Postcard Photo Resizer (4x6 Inch / 10x15 cm)",
-    description: "Dedicated formatting tool for the mandatory 4\. Supports searches: nta neet application form 2024 post postcard size photo, neet passport size photo with name and date maker, neet admit card postcard size photo signature."x6\" (10x15 cm) postcard size photograph required for NTA NEET UG online applications and admit card pasting. Crops image to standard postcard aspect ratio, embeds candidate Name and Date of Taking Photograph, and compresses file between 10KB and 200KB.",
+    description: "Dedicated formatting tool for the mandatory 4\"x6\" (10x15 cm) postcard size photograph required for NTA NEET UG online applications and admit card pasting. Crops image to standard postcard aspect ratio, embeds candidate Name and Date of Taking Photograph, and compresses file between 10KB and 200KB. Supports searches: nta neet application form 2024 post postcard size photo, neet passport size photo with name and date maker, neet admit card postcard size photo signature.",
     howTo: [
       "Upload high-resolution passport/portrait photo",
       "Enter Candidate Name and Date of Photo",

@@ -80,6 +80,7 @@ export default function HomePage() {
           {/* Nav */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
             {[
+              { href: "/jobs", label: "Govt Jobs" },
               { href: "/exam-specs", label: "Exam Specs" },
               { href: "/guides", label: "Guides" },
               { href: "/blog", label: "Blog" },

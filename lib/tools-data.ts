@@ -1161,6 +1161,33 @@ export const TOOLS: Tool[] = [
     desc: "Calculate your exact age as on notification cut-off date with official category age relaxation (OBC +3 yrs, SC/ST +5 yrs, PwD +10 yrs).",
     group: "age-calc",
   },
+  {
+    id: "image-tools",
+    category: "general-compress",
+    icon: "fa-compress",
+    title: "imresizer.com - All Your Image Tools in One Place",
+    desc: "Free online imresizer.com - all your image tools in one place tool. Fast, 100% private in-browser processing with zero server uploads.",
+    group: "compress",
+    targetKB: 50,
+  },
+  {
+    id: "resize-image-size-in-kb",
+    category: "general-compress",
+    icon: "fa-expand",
+    title: "Reduce Image Size in KB — Image Size Reducer | ImResizer",
+    desc: "Free online reduce image size in kb — image size reducer | imresizer tool. Fast, 100% private in-browser processing with zero server uploads.",
+    group: "resize",
+    targetKB: 50,
+  },
+  {
+    id: "resize-image-to-passport-size",
+    category: "general-compress",
+    icon: "fa-expand",
+    title: "Resize Image to Passport Size Photo Online Free | ImResizer",
+    desc: "Free online resize image to passport size photo online free | imresizer tool. Fast, 100% private in-browser processing with zero server uploads.",
+    group: "resize",
+    targetKB: 50,
+  },
 ];
 
 // Tool count verification — 106 tools total ✅

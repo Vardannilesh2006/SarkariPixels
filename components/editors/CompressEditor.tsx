@@ -29,6 +29,20 @@ export default function CompressEditor({ tool }: Props) {
   const [processing, setProcessing] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Read URL query parameters for 1-click presets (e.g. from /jobs/[slug])
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const kbParam = params.get("targetKB") || params.get("kb");
+      if (kbParam) {
+        const parsed = parseInt(kbParam, 10);
+        if (!isNaN(parsed) && parsed > 0) {
+          setTargetKB(parsed);
+        }
+      }
+    }
+  }, []);
+
   const processImage = useCallback(async (imageFile: File, currentTarget: number) => {
     setError(null);
     setProcessing(true);

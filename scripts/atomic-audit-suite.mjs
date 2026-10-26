@@ -64,7 +64,19 @@ const checklist = [
     }
   },
 
-  // 6. Analytics & Privacy Compliance
+  // 6. Sarkari Job Alerts & Programmatic Engine
+  { id: 'J01', category: 'Jobs Engine', item: 'data/jobs.json has verified jobs >= 400 vacancies with upload specs', fn: () => {
+      const data = JSON.parse(fs.readFileSync(path.join(root, 'data/jobs.json'), 'utf8'));
+      return Array.isArray(data) && data.length > 0 && data.every(j => j.vacancies >= 400 && j.photo && j.signature);
+    }
+  },
+  { id: 'J02', category: 'Jobs Engine', item: '.github/workflows/daily-jobs-sync.yml configures automated daily sync', fn: () => {
+      return fs.existsSync(path.join(root, '.github/workflows/daily-jobs-sync.yml')) &&
+             fs.readFileSync(path.join(root, '.github/workflows/daily-jobs-sync.yml'), 'utf8').includes('jobs-fetcher.mjs');
+    }
+  },
+
+  // 7. Analytics & Privacy Compliance
   { id: 'A01', category: 'Analytics', item: 'GA4 analytics helper lib/analytics.ts exists with privacy-compliant events', fn: () => fs.existsSync(path.join(root, 'lib/analytics.ts')) },
   { id: 'A02', category: 'Trust & Privacy', item: 'Privacy policy and About pages exist in app/page/[id]/page.tsx', fn: () => {
       const p = fs.readFileSync(path.join(root, 'app/page/[id]/page.tsx'), 'utf8');

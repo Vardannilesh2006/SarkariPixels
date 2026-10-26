@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { TOOLS, CATEGORY_LABELS } from "@/lib/tools-data";
 import { GUIDES } from "@/lib/guides-content";
+import { getAllJobs } from "@/lib/jobs/store";
 import { notFound } from "next/navigation";
 
 import { SITE_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/constants";
@@ -512,6 +513,7 @@ function AboutContent() {
 }
 
 function SitemapContent() {
+  const jobs = getAllJobs();
   return (
     <div style={{ color: "var(--color-text)" }}>
       <h1 className="t-h1 mb-8">HTML Sitemap</h1>
@@ -521,6 +523,7 @@ function SitemapContent() {
         <ul className="space-y-1 text-sm">
           {[
             { href: "/", label: "Home — All Tools" },
+            { href: "/jobs", label: "Govt Job Alerts & Photo Resizer Hub (400+ Vacancies)" },
             { href: "/exam-specs", label: "Exam Specifications Hub" },
             { href: "/guides", label: "Guides & Articles" },
             { href: "/page/about", label: "About Us & Terms" },
@@ -529,6 +532,19 @@ function SitemapContent() {
           ].map((link) => (
             <li key={link.href}>
               <a href={link.href} style={{ color: "var(--color-accent)" }}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="t-h3 mb-3">Active Mega Recruitments (400+ Vacancies)</h2>
+        <ul className="space-y-1 text-sm grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {jobs.map((job) => (
+            <li key={job.slug}>
+              <a href={`/jobs/${job.slug}`} style={{ color: "var(--color-accent)" }} className="hover:underline">
+                {job.title} ({job.vacancies.toLocaleString("en-IN")} Posts)
+              </a>
             </li>
           ))}
         </ul>

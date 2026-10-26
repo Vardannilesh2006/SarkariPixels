@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools-data";
 import { getAllExamKeys } from "@/lib/exam-specs";
 import { getAllGuideKeys } from "@/lib/guides-content";
+import { getAllJobSlugs } from "@/lib/jobs/store";
 
 import { SITE_URL } from "@/lib/constants";
 
@@ -66,6 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
+    {
+      url: `${SITE_URL}/jobs`,
+      lastModified: siteLastUpdated,
+      changeFrequency: "daily",
+      priority: 0.95,
+    },
   ];
 
   // Programmatic long-tail exam compression landing pages (KD < 10)
@@ -101,5 +108,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...programmaticPages, ...guidePages, ...toolPages, ...examPages];
+  // Dynamic Active Mega Recruitment Pages (>= 400 posts)
+  const jobPages: MetadataRoute.Sitemap = getAllJobSlugs().map((slug) => ({
+    url: `${SITE_URL}/jobs/${slug}`,
+    lastModified: siteLastUpdated,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...programmaticPages, ...guidePages, ...toolPages, ...examPages, ...jobPages];
 }
