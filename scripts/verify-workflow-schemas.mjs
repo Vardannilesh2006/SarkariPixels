@@ -95,7 +95,7 @@ if (fs.existsSync(dpiHtmlPath)) {
 }
 
 // Test 4: Sample across 10 random tools to guarantee 100% valid JSON-LD schemas
-const sampleSlugs = ['compress-50', 'smart-resizer', 'passport-maker', 'ssc-photo', 'reduce-kb', 'crop-image', 'resize-image', 'compress-image', 'upsc-photo-resize', 'remove-metadata'];
+const sampleSlugs = ['compress-50', 'smart-resizer', 'passport-maker', 'ssc-photo', 'reduce-kb', 'crop-image', 'resize-pixel', 'compress-image', 'upsc-photo-resize', 'remove-metadata'];
 let validHowToCount = 0;
 
 for (const slug of sampleSlugs) {

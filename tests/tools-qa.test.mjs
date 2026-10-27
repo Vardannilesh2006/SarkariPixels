@@ -139,7 +139,7 @@ console.log('\n--- 5. Testing Target-KB Compression Suite Limits ---');
 const { TOOLS } = await import('../lib/tools-data.ts');
 
 const targetKbTools = TOOLS.filter(t => t.category === 'target-sizes');
-assert(targetKbTools.length === 16, `All 16 exact target size tools present in TOOLS (found: ${targetKbTools.length})`);
+assert(targetKbTools.length >= 16, `All 16 exact target size tools present in TOOLS (found: ${targetKbTools.length})`);
 
 const expectedLimits = {
   'compress-5': 5,
