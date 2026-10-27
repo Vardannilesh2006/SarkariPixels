@@ -2,8 +2,10 @@ name: Daily Sarkari Jobs Sync
 
 on:
   schedule:
-    # 23:30 UTC = 05:00 AM IST every morning
+    # 23:30 UTC = 05:00 AM IST (Morning release batch)
     - cron: '30 23 * * *'
+    # 11:30 UTC = 05:00 PM IST (Evening release batch)
+    - cron: '30 11 * * *'
   workflow_dispatch:
 
 permissions:
@@ -28,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch and update job notifications
+      - name: Fetch and update job notifications across all 4 portals
         run: node scripts/jobs-fetcher.mjs
 
       - name: Check for changes in data/jobs.json
@@ -41,15 +43,19 @@ jobs:
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Run verification audit
+        if: steps.git_status.outputs.has_changes == 'true'
+        run: node scripts/atomic-audit-suite.mjs
+
       - name: Verify build with updated jobs
         if: steps.git_status.outputs.has_changes == 'true'
         run: npm run build
 
-      - name: Commit and push changes
+      - name: Commit and push changes to trigger production deployment
         if: steps.git_status.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/jobs.json
-          git commit -m "chore(jobs): daily sarkari recruitment alerts sync (>= 400 posts) [skip ci]"
+          git commit -m "chore(jobs): daily sarkari recruitment alerts sync (>= 400 posts)"
           git push origin main

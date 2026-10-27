@@ -221,7 +221,7 @@ function cleanText(str) {
   if (!str) return '';
   return str
     .replace(/&#8211;|&#8212;|&ndash;|&mdash;/g, '-')
-    .replace(/&amp;/g, '&')
+    .replace(/&#038;|&amp;/g, '&')
     .replace(/&nbsp;/g, ' ')
     .replace(/<[^>]+>/g, '')
     .replace(/\s+/g, ' ')
@@ -239,13 +239,13 @@ function detectCategory(board, title) {
   if (text.includes('police') || text.includes('crpf') || text.includes('bsf') || text.includes('cisf') || text.includes('constable') || text.includes('sub inspector') || text.includes('si ') || text.includes('home guard') || text.includes('fireman') || text.includes('firefighter')) {
     return 'police';
   }
-  if (text.includes('bank') || text.includes('ibps') || text.includes('sbi') || text.includes('pnb') || text.includes('uco') || text.includes('rbi')) {
+  if (text.includes('bank') || text.includes('ibps') || text.includes('sbi') || text.includes('pnb') || text.includes('uco') || text.includes('canara') || text.includes('rbi')) {
     return 'banking';
   }
-  if (text.includes('teacher') || text.includes('dsc') || text.includes('lecturer') || text.includes('school') || text.includes('oavs') || text.includes('upessc') || text.includes('tgt') || text.includes('pgt') || text.includes('shikshak')) {
+  if (text.includes('teacher') || text.includes('dsc') || text.includes('lecturer') || text.includes('school') || text.includes('oavs') || text.includes('upessc') || text.includes('tgt') || text.includes('pgt') || text.includes('shikshak') || text.includes('bahaali') || text.includes('bahali')) {
     return 'teaching';
   }
-  if (text.includes('psc') || text.includes('sssc') || text.includes('vyapam') || text.includes('ssb') || text.includes('court') || text.includes('high court') || text.includes('bssc') || text.includes('mpesb') || text.includes('gsssb') || text.includes('jkssb')) {
+  if (text.includes('psc') || text.includes('sssc') || text.includes('vyapam') || text.includes('ssb') || text.includes('court') || text.includes('high court') || text.includes('bssc') || text.includes('mpesb') || text.includes('gsssb') || text.includes('jkssb') || text.includes('ro aro')) {
     return 'state-psc';
   }
   if (text.includes('post') || text.includes('dak sevak') || text.includes('gds')) {
@@ -267,9 +267,9 @@ function generateCleanSlug(title) {
   return `${simplified}-photo-signature-resizer`.replace(/-+/g, '-');
 }
 
-// Scrape live notifications from FreeJobAlert
+// 1. Scrape live notifications from FreeJobAlert
 async function fetchFreeJobAlert() {
-  console.log('\n[1/3] Fetching live notifications from FreeJobAlert...');
+  console.log('\n[1/4] Fetching live notifications from FreeJobAlert...');
   const results = [];
   try {
     const res = await fetch('https://www.freejobalert.com/latest-notifications/', {
@@ -331,9 +331,9 @@ async function fetchFreeJobAlert() {
   return results;
 }
 
-// Scrape live notifications from SarkariResult
+// 2. Scrape live notifications from SarkariResult
 async function fetchSarkariResult() {
-  console.log('\n[2/3] Fetching latest announcements from SarkariResult...');
+  console.log('\n[2/4] Fetching latest announcements from SarkariResult...');
   const results = [];
   try {
     const res = await fetch('https://sarkariresult.com.cm/', {
@@ -377,12 +377,151 @@ async function fetchSarkariResult() {
   return results;
 }
 
+// 3. Scrape live notifications from DSHelpingForever
+async function fetchDSHelpingForever() {
+  console.log('\n[3/4] Fetching state & mega notices from DSHelpingForever...');
+  const results = [];
+  try {
+    const res = await fetch('https://dshelpingforever.co.in/', {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+      signal: AbortSignal.timeout(10000)
+    });
+    if (!res.ok) return results;
+    const html = await res.text();
+    const linkRegex = /<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    let match;
+
+    while ((match = linkRegex.exec(html)) !== null) {
+      const link = match[1];
+      const text = cleanText(match[2]);
+
+      // Look for vacancy count in English or Hindi (e.g., 501 पदों, 33,320 पदों, 1,215 Posts)
+      const vacMatch = text.match(/(\d[\d,]{2,})\s*(?:Post|Posts|Vacancy|Vacancies|पदों|पद)/i);
+      if (vacMatch) {
+        const vacancies = parseInt(vacMatch[1].replace(/,/g, ''), 10);
+        if (vacancies >= MIN_VACANCIES && link.startsWith('https://dshelpingforever.co.in/')) {
+          const cleanTitle = text
+            .replace(/:\s*आवेदन[\s\S]*/, '')
+            .replace(/:\s*Notification Out[\s\S]*/i, '')
+            .replace(/\(Increased\)/gi, '')
+            .replace(/\(Last Date Extend\)/gi, '')
+            .trim();
+          const category = detectCategory('', cleanTitle);
+
+          results.push({
+            title: cleanTitle,
+            board: 'State Recruitment Commission',
+            vacancies,
+            category,
+            lastDateToApply: 'Check Notification',
+            officialNotificationUrl: link,
+            applyOnlineUrl: link
+          });
+        }
+      }
+    }
+    console.log(`[DSHelpingForever] Discovered ${results.length} recruitments meeting >= ${MIN_VACANCIES} vacancies.`);
+  } catch (err) {
+    console.warn(`[DSHelpingForever] Scrape skipped: ${err.message}`);
+  }
+  return results;
+}
+
+// 4. Scrape live notifications from OnlineUpdateSTM
+async function fetchOnlineUpdateSTM() {
+  console.log('\n[4/4] Fetching latest drives from OnlineUpdateSTM...');
+  const results = [];
+  try {
+    const res = await fetch('https://onlineupdatestm.in/', {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' },
+      signal: AbortSignal.timeout(10000)
+    });
+    if (!res.ok) return results;
+    const html = await res.text();
+    const linkRegex = /<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+    let match;
+
+    while ((match = linkRegex.exec(html)) !== null) {
+      const link = match[1];
+      const text = cleanText(match[2]);
+
+      const vacMatch = text.match(/(\d[\d,]{3,})\s*(?:Post|Posts|Vacancy|Vacancies|पदों|पद)/i);
+      if (vacMatch) {
+        const vacancies = parseInt(vacMatch[1].replace(/,/g, ''), 10);
+        if (vacancies >= MIN_VACANCIES && link.startsWith('https://onlineupdatestm.in/')) {
+          const cleanTitle = text
+            .replace(/:\s*\d+[\s\S]*/, '')
+            .trim();
+          const category = detectCategory('', cleanTitle);
+
+          results.push({
+            title: cleanTitle,
+            board: 'Government Recruitment Board',
+            vacancies,
+            category,
+            lastDateToApply: 'Check Notification',
+            officialNotificationUrl: link,
+            applyOnlineUrl: link
+          });
+        }
+      }
+    }
+    console.log(`[OnlineUpdateSTM] Discovered ${results.length} recruitments meeting >= ${MIN_VACANCIES} vacancies.`);
+  } catch (err) {
+    console.warn(`[OnlineUpdateSTM] Scrape skipped: ${err.message}`);
+  }
+  return results;
+}
+
+// Update job status based on expiration date
+function updateJobStatuses(jobs) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  for (const job of jobs) {
+    if (!job.lastDateToApply || job.lastDateToApply === 'Check Notification') {
+      job.status = 'active';
+      continue;
+    }
+
+    // Attempt to parse dates like DD-MM-YYYY or YYYY-MM-DD
+    let expiryDate = null;
+    const partsDash = job.lastDateToApply.split('-');
+    const partsSlash = job.lastDateToApply.split('/');
+
+    if (partsDash.length === 3) {
+      if (partsDash[0].length === 4) {
+        // YYYY-MM-DD
+        expiryDate = new Date(parseInt(partsDash[0]), parseInt(partsDash[1]) - 1, parseInt(partsDash[2]));
+      } else {
+        // DD-MM-YYYY
+        expiryDate = new Date(parseInt(partsDash[2]), parseInt(partsDash[1]) - 1, parseInt(partsDash[0]));
+      }
+    } else if (partsSlash.length === 3) {
+      expiryDate = new Date(parseInt(partsSlash[2]), parseInt(partsSlash[1]) - 1, parseInt(partsSlash[0]));
+    }
+
+    if (expiryDate && !isNaN(expiryDate.getTime())) {
+      const diffDays = Math.ceil((expiryDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+      if (diffDays < 0) {
+        job.status = 'closed';
+      } else if (diffDays <= 7) {
+        job.status = 'closing-soon';
+      } else {
+        job.status = 'active';
+      }
+    } else {
+      job.status = 'active';
+    }
+  }
+}
+
 // Fuzzy normalizer to find duplicate jobs across sources
 function getSimilarityKey(title, vacancies) {
   const simplified = title
     .toLowerCase()
     .replace(/[^a-z0-9]/g, ' ')
-    .replace(/\b(recruitment|online|form|posts?|vacancies|apply|board|commission|exam|latest|new)\b/g, '')
+    .replace(/\b(recruitment|online|form|posts?|vacancies|apply|board|commission|exam|latest|new|bharti|bahaali|bahali)\b/g, '')
     .trim()
     .split(/\s+/)
     .filter(w => w.length > 2)
@@ -413,7 +552,6 @@ export function deduplicateAndMerge(existingJobs, incomingJobs) {
     const existing = simMap.get(simKey);
 
     if (existing) {
-      // Already present from prior seed or other source - refresh timestamp & details
       existing.lastUpdated = new Date().toISOString().split('T')[0];
       if (inc.lastDateToApply && inc.lastDateToApply !== 'Check Notification') {
         existing.lastDateToApply = inc.lastDateToApply;
@@ -464,6 +602,9 @@ export function deduplicateAndMerge(existingJobs, incomingJobs) {
     }
   }
 
+  // Check and update active/closed statuses
+  updateJobStatuses(existingJobs);
+
   return { added, updated, total: existingJobs.length };
 }
 
@@ -477,12 +618,14 @@ async function run() {
   }
   console.log(`[Status] Existing verified jobs in database: ${existingJobs.length}`);
 
-  // 2. Fetch live notifications from approved sources
+  // 2. Fetch live notifications from approved 4 sources
   const fjaJobs = await fetchFreeJobAlert();
   const srJobs = await fetchSarkariResult();
-  const incomingJobs = [...fjaJobs, ...srJobs];
+  const dsJobs = await fetchDSHelpingForever();
+  const stmJobs = await fetchOnlineUpdateSTM();
+  const incomingJobs = [...fjaJobs, ...srJobs, ...dsJobs, ...stmJobs];
 
-  console.log(`\n[Status] Total live candidate recruitments fetched: ${incomingJobs.length}`);
+  console.log(`\n[Status] Total live candidate recruitments fetched across all 4 sources: ${incomingJobs.length}`);
 
   // 3. Deduplicate by vacancy + semantic keywords, filter (>=400 vacancies), and merge
   const stats = deduplicateAndMerge(existingJobs, incomingJobs);
@@ -499,7 +642,7 @@ async function run() {
 
   console.log('\n[Top High-Vacancy Active Recruitment Tool Pages]:');
   existingJobs.slice(0, 15).forEach((j, i) => {
-    console.log(` ${i+1}. [${j.vacancies.toLocaleString()} Posts] ${j.title}`);
+    console.log(` ${i+1}. [${j.vacancies.toLocaleString()} Posts] [${j.status.toUpperCase()}] ${j.title}`);
     console.log(`    Route: /jobs/${j.slug}`);
     console.log(`    Photo: ${j.photo.minKB}-${j.photo.maxKB}KB (${j.photo.widthCm || j.photo.widthPx}x${j.photo.heightCm || j.photo.heightPx}) | Sig: ${j.signature.minKB}-${j.signature.maxKB}KB`);
   });

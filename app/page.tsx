@@ -154,6 +154,41 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── LIVE MEGA RECRUITMENT TOOL SHORTCUTS ────────────────────── */}
+        <section
+          className="py-3 px-4 sm:px-6 border-b"
+          style={{ borderColor: "var(--color-border)", backgroundColor: "rgba(59, 130, 246, 0.05)" }}
+          aria-label="Active Mega Government Recruitment Photo Tools"
+        >
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="flex h-2.5 w-2.5 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              <span className="font-semibold text-blue-600 dark:text-blue-400">🔥 Live Mega Recruitments (400+ Posts):</span>
+              <span className="text-xs text-slate-500 dark:text-slate-400 hidden md:inline">Instant photo &amp; signature formatting for active forms</span>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap justify-center">
+              <a href="/jobs/up-police-constable-photo-signature-resizer" className="text-xs px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 font-medium hover:underline">
+                UP Police (60k)
+              </a>
+              <a href="/jobs/india-post-gds-photo-signature-resizer" className="text-xs px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 font-medium hover:underline">
+                India Post (44k)
+              </a>
+              <a href="/jobs/ssc-gd-photo-signature-resizer" className="text-xs px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 font-medium hover:underline">
+                SSC GD (39k)
+              </a>
+              <a href="/jobs/rrb-alp-photo-signature-resizer" className="text-xs px-2.5 py-1 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 font-medium hover:underline">
+                RRB ALP (18k)
+              </a>
+              <a href="/jobs" className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+                All 50+ Jobs &rarr;
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ── TRUST COUNTER STRIP ─────────────────────────────────────────
              Premium counter row — replaces static 3-fact strip.
              4 counters: tool count, local processing, zero storage, free.
