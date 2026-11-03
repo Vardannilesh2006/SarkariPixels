@@ -1712,6 +1712,57 @@
     "lastUpdated": "2026-11-03"
   },
   {
+    "id": "hprca-teacher",
+    "slug": "hprca-teacher-photo-signature-resizer",
+    "title": "HPRCA Teacher",
+    "shortTitle": "HPRCA Teacher",
+    "board": "HPRCA",
+    "vacancies": 2423,
+    "category": "teaching",
+    "notificationDate": "2026-11-03",
+    "lastDateToApply": "05-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/hprca-recruitment-2026-teacher-3077937",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/hprca-recruitment-2026-teacher-3077937",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or off-white background",
+      "notes": "Standard passport format 3.5 x 4.5 cm, recent photograph taken within 3 months."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or blue ink on white paper",
+      "notes": "Signature size 10KB to 20KB in running script."
+    },
+    "rules": [
+      "Photograph must not have dark glasses, cap, or religious headgear covering face contours.",
+      "Ensure clear signature scan with high contrast."
+    ],
+    "keywords": [
+      "hprca teacher photo signature resizer",
+      "hprca teacher photo size",
+      "hprca teacher signature size",
+      "hprca photo resizer",
+      "hprca teacher photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-03"
+  },
+  {
     "id": "rrc-north-western-railway-rrc-north-western-railway-act-apprentice-photo-signatu",
     "slug": "rrc-north-western-railway-rrc-north-western-railway-act-apprentice-photo-signatu",
     "title": "RRC North Western Railway Act Apprentice",
