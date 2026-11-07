@@ -204,7 +204,7 @@
       "bpsc school teacher form (33,320 po photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "bpsc-school-teacher-33-320",
@@ -357,7 +357,7 @@
       "ssc gd constable result 2026: out for 25487 posts in capfs, download merit list pdf photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "department-of-local-self-government-rajasthan-department-of-local-self-governmen",
@@ -571,7 +571,7 @@
       "upessc up tgt recruitment 2026 (17, photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upessc-assistant-teacher-graduate-pay-scale",
@@ -622,7 +622,7 @@
       "upessc assistant teacher (graduate pay scale) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upessc-tgt-17-735",
@@ -673,7 +673,7 @@
       "upessc tgt recruitment (17,735 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "karnataka-education-department-teacher",
@@ -724,7 +724,7 @@
       "karnataka education department teacher photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrb-technician-recruitment-2026",
@@ -928,7 +928,7 @@
       "upessc prt assistant teacher recruitment 2026 (12405 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "bssc-inter-level-recruitment-2026",
@@ -1030,7 +1030,7 @@
       "bihar health department vacancy 2026: बिहार स्वास्थ्य विभाग में cho, staff nurse और lab technician सहित 11,000 पदों पर भर्ती - जाने योग्यता,आयु सीमा,आवेदन तिथि photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sarkari-mpesb-mp-police-constable-2026-7500",
@@ -1081,7 +1081,7 @@
       "mpesb mp police constable recruitme photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "ousssc-ousssc-constable-firefighter-driver",
@@ -1132,7 +1132,7 @@
       "ousssc constable, firefighter and d photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "ibps-clerk-recruitment-2026",
@@ -1251,6 +1251,58 @@
     "lastUpdated": "2026-10-26"
   },
   {
+    "id": "rrc-nr-act-apprentice",
+    "slug": "rrc-nr-act-apprentice-photo-signature-resizer",
+    "title": "RRC NR Act Apprentice",
+    "shortTitle": "RRC NR Act Apprentice",
+    "board": "RRC NR",
+    "vacancies": 4651,
+    "category": "railway",
+    "notificationDate": "2026-11-07",
+    "lastDateToApply": "11-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrc nr act apprentice photo signature resizer",
+      "rrc nr act apprentice photo size",
+      "rrc nr act apprentice signature size",
+      "rrc nr photo resizer",
+      "rrc nr act apprentice photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-07"
+  },
+  {
     "id": "rrb-junior-engineer-je-4-487-for-je-dms-cma-pdf-eligibi",
     "slug": "rrb-junior-engineer-je-4-487-for-je-dms-cma-pdf-eligibi-photo-signature-resizer",
     "title": "RRB Junior Engineer (JE) Recruitment 2026: 4,487 Vacancies for JE, DMS & CMA Posts, Notification PDF, Eligibility, Post-Wise Vacancy",
@@ -1300,7 +1352,7 @@
       "rrb junior engineer (je) recruitment 2026: 4,487 vacancies for je, dms & cma posts, notification pdf, eligibility, post-wise vacancy photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sarkari-rrb-ntpc-graduate-level-form-3548",
@@ -1404,7 +1456,7 @@
       "rrb ntpc graduate level form (3548 posts) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrb-ntpc-graduate-level-date-extend",
@@ -1456,7 +1508,7 @@
       "rrb ntpc graduate level recruitment 2026 (3548 posts) - date extend photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "canara-bank-apprentice",
@@ -1507,7 +1559,7 @@
       "canara bank apprentice recruitment 2026 photo upload specifications"
     ],
     "primaryToolId": "signature-resizer-10-20kb",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "ongc-apprentice",
@@ -1558,7 +1610,7 @@
       "ongc apprentice photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "ongc-apprentice-for-check-eligibility-age-limit-and-las",
@@ -1660,7 +1712,7 @@
       "jkssb mts, sanitation worker photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrc-central-railway-act-apprentice",
@@ -1712,7 +1764,7 @@
       "rrc central railway act apprentice photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "railway-rrc-cr-apprentice",
@@ -1764,7 +1816,7 @@
       "railway rrc cr apprentice recruitment 2026 (2861 posts) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "ap-dsc-ap-dsc-tgt-pgt-sgt-more",
@@ -1815,7 +1867,7 @@
       "ap dsc tgt, pgt, sgt and more photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "manipur-police-constable-si-and-other",
@@ -1866,7 +1918,7 @@
       "manipur police constable, si and other posts photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upessc-upessc-principal-headmaster",
@@ -1917,7 +1969,7 @@
       "upessc principal, headmaster photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sarkari-ssc-chsl-10-2-2026-2536",
@@ -1968,7 +2020,7 @@
       "ssc chsl 10+2 recruitment 2026 (253 photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "hprca-english-teacher-mathematics-teacher-teacher-hindi",
@@ -2070,7 +2122,7 @@
       "hprca teacher photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrc-north-western-railway-rrc-north-western-railway-act-apprentice-photo-signatu",
@@ -2122,7 +2174,7 @@
       "rrc north western railway act appre photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "bihar-pacs-manager-bharti",
@@ -2224,7 +2276,7 @@
       "upsssc store keeper cum clerk, farm photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sarkari-upsssc-inter-level-form-1784",
@@ -2326,7 +2378,7 @@
       "upsssc inter 12th level form (1784 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "cg-vyapam-cg-vyapam-deo-si-assistant-more",
@@ -2377,7 +2429,7 @@
       "cg vyapam deo, si, assistant and mo photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "cgssb-assistant-stenographer-and-more",
@@ -2428,7 +2480,7 @@
       "cgssb assistant, stenographer and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "mpesb-mpesb-sub-engineer-draftsman-more",
@@ -2531,7 +2583,7 @@
       "rrb ntpc ug level form (1688 posts) photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sarkari-rrb-ntpc-10-2-ug-2026-1688",
@@ -2583,7 +2635,7 @@
       "rrb ntpc 10+2 ug recruitment 2026 ( photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "gsssb-gsssb-work-assistant",
@@ -2685,7 +2737,7 @@
       "indian bank apprentices photo upload specifications"
     ],
     "primaryToolId": "signature-resizer-10-20kb",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sssc-punjab-haryana-high-court-sssc-punjab-haryana-high-court-clerk-photo-signat",
@@ -2787,7 +2839,7 @@
       "dsssb junior engineer and multi-tasking staff photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrb-rrb-station-master",
@@ -2890,7 +2942,7 @@
       "gsssb sub registrar, assistant tribal development officer and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrb-station-master",
@@ -2942,7 +2994,7 @@
       "rrb station master photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upsssc-upsssc-junior-engineer-technical-assistant-more",
@@ -2993,7 +3045,7 @@
       "upsssc junior engineer, technical a photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upsssc-junior-engineer-technical-assistant-and-more",
@@ -3044,7 +3096,7 @@
       "upsssc junior engineer, technical assistant and more photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upsssc-je",
@@ -3095,7 +3147,7 @@
       "upsssc je recruitment (1156 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "wbpsc-wbpsc-sub-surveyor",
@@ -3146,7 +3198,7 @@
       "wbpsc sub surveyor photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "nagaland-police-nagaland-police-constable",
@@ -3197,7 +3249,7 @@
       "nagaland police constable photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "olm-block-accountant-cum-mis-assistant-block-manager-an",
@@ -3248,7 +3300,7 @@
       "olm block accountant cum mis assistant, block manager and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "nlc-india-nlc-india-iti-graduate-apprentice",
@@ -3299,7 +3351,7 @@
       "nlc india iti and graduate apprenti photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "jrhms-community-health-officer",
@@ -3350,7 +3402,7 @@
       "jrhms community health officer photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "mp-police-mp-police-constable-driver",
@@ -3554,7 +3606,7 @@
       "bob group head, head investment, territory head, investment product manager, senior relationship manager photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rmc-apprentice",
@@ -3605,7 +3657,7 @@
       "rmc apprentice photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "oavs-oavs-principals-teachers",
@@ -3656,7 +3708,7 @@
       "oavs principals and teachers photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "jharkhand-home-defense-corps-jharkhand-home-defense-corps-home-guard-photo-signa",
@@ -3758,7 +3810,7 @@
       "opsc assistant executive engineer photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "kfd-kfd-forest-observer",
@@ -3860,7 +3912,7 @@
       "appsc junior accountant, assistant  photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "dpo-hardoi-anganwadi-worker-and-anganwadi-helper",
@@ -3911,7 +3963,7 @@
       "dpo hardoi anganwadi worker and anganwadi helper photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "bhel-bhel-artisan",
@@ -3962,7 +4014,7 @@
       "bhel artisan photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "rrc-ncr-gdce-rrc-ncr-gdce-je-clerk-assistant-loco-pilot-more-photo-signature-res",
@@ -4116,7 +4168,7 @@
       "jshps assistant, block assistant and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "sggu-sggu-principal-assistant-professor-more",
@@ -4269,7 +4321,7 @@
       "bceceb senior resident / tutor photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "uco-bank-uco-bank-apprentice",
@@ -4371,7 +4423,7 @@
       "crpf sports quota photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "appsc-appsc-assistant-executive-engineer-aee",
@@ -4422,7 +4474,7 @@
       "appsc assistant executive engineer  photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "uppsc-samiksha-adhikari-aro-care-taker-and-more",
@@ -4524,7 +4576,7 @@
       "tnpdcl diploma (technician) apprentice photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "iocl-technician-apprentice-trade-apprentice-and-more",
@@ -4575,7 +4627,7 @@
       "iocl technician apprentice, trade apprentice and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "jkssb-junior-engineer-civil",
@@ -4626,7 +4678,7 @@
       "jkssb junior engineer (civil) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "jharkhand-home-guard-rural-home-guard-urban-home-guard",
@@ -4677,7 +4729,7 @@
       "jharkhand home guard rural home guard, urban home guard photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "jharkhand-home-guard-457-apply",
@@ -4779,7 +4831,7 @@
       "odisha ssb laboratory assistant-cum photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "mphc-mphc-stenographer-grade-ii-stenographer-grade-iii-stenographer-grade-iii-co",
@@ -4881,7 +4933,7 @@
       "cg police bilaspur bastar fighter constable photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "upsssc-upsssc-regional-youth-welfare-pradeshik-vikas-dal-officer-exercise-traine",
@@ -4895,7 +4947,7 @@
     "lastDateToApply": "06-11-2026",
     "officialNotificationUrl": "https://www.freejobalert.com/articles/upsssc-regional-youth-welfare-officer-recruitment-2026-apply-online-for-412-posts-3070585",
     "applyOnlineUrl": "https://www.freejobalert.com/articles/upsssc-regional-youth-welfare-officer-recruitment-2026-apply-online-for-412-posts-3070585",
-    "status": "closing-soon",
+    "status": "closed",
     "photo": {
       "widthCm": 3.5,
       "heightCm": 4.5,
@@ -4983,7 +5035,7 @@
       "sdsc shar trade apprentice, diploma and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   },
   {
     "id": "isro-sdsc-shar-apprentice",
@@ -5034,6 +5086,6 @@
       "isro sdsc shar apprentice recruitment 2026 photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-06"
+    "lastUpdated": "2026-11-07"
   }
 ]
