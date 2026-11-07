@@ -1303,6 +1303,110 @@
     "lastUpdated": "2026-11-07"
   },
   {
+    "id": "railway-rrc-nr-apprentice",
+    "slug": "railway-rrc-nr-apprentice-photo-signature-resizer",
+    "title": "Railway RRC NR Apprentice Recruitment 2026 (4651 Posts)",
+    "shortTitle": "Railway RRC NR Apprentice Recruitme",
+    "board": "Government Recruitment Board",
+    "vacancies": 4651,
+    "category": "railway",
+    "notificationDate": "2026-11-07",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/railway-rrc-nr-apprentice-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/railway-rrc-nr-apprentice-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "railway rrc nr apprentice photo signature resizer",
+      "railway rrc nr apprentice recruitment 2026 (4651 posts) photo size",
+      "railway rrc nr apprentice recruitment 2026 (4651 posts) signature size",
+      "government recruitment board photo resizer",
+      "railway rrc nr apprentice recruitment 2026 (4651 posts) photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-07"
+  },
+  {
+    "id": "rrc-northern-railway-nr-apprentice-apply-for-4-651-for",
+    "slug": "rrc-northern-railway-nr-apprentice-apply-for-4-651-for-photo-signature-resizer",
+    "title": "RRC Northern Railway (NR) Apprentice Recruitment 2026: Apply For 4,651 Posts for 10th Pass and ITI Candidates, Apply from November 11",
+    "shortTitle": "RRC Northern Railway (NR) Apprentic",
+    "board": "State Recruitment Commission",
+    "vacancies": 4651,
+    "category": "railway",
+    "notificationDate": "2026-11-07",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://dshelpingforever.co.in/rrc-northern-railway-nr-apprentice-recruitment.html",
+    "applyOnlineUrl": "https://dshelpingforever.co.in/rrc-northern-railway-nr-apprentice-recruitment.html",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrc northern railway nr apprentice apply for 4 651 for photo signature resizer",
+      "rrc northern railway (nr) apprentice recruitment 2026: apply for 4,651 posts for 10th pass and iti candidates, apply from november 11 photo size",
+      "rrc northern railway (nr) apprentice recruitment 2026: apply for 4,651 posts for 10th pass and iti candidates, apply from november 11 signature size",
+      "state recruitment commission photo resizer",
+      "rrc northern railway (nr) apprentice recruitment 2026: apply for 4,651 posts for 10th pass and iti candidates, apply from november 11 photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-07"
+  },
+  {
     "id": "rrb-junior-engineer-je-4-487-for-je-dms-cma-pdf-eligibi",
     "slug": "rrb-junior-engineer-je-4-487-for-je-dms-cma-pdf-eligibi-photo-signature-resizer",
     "title": "RRB Junior Engineer (JE) Recruitment 2026: 4,487 Vacancies for JE, DMS & CMA Posts, Notification PDF, Eligibility, Post-Wise Vacancy",
@@ -2837,6 +2941,57 @@
       "dsssb junior engineer and multi-tasking staff signature size",
       "dsssb photo resizer",
       "dsssb junior engineer and multi-tasking staff photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-07"
+  },
+  {
+    "id": "dsssb-je-mts",
+    "slug": "dsssb-je-mts-photo-signature-resizer",
+    "title": "DSSSB JE & MTS Recruitment 2026",
+    "shortTitle": "DSSSB JE & MTS Recruitment 2026",
+    "board": "State Recruitment Commission",
+    "vacancies": 1260,
+    "category": "state-psc",
+    "notificationDate": "2026-11-07",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://dshelpingforever.co.in/dsssb-je-mts-recruitment.html",
+    "applyOnlineUrl": "https://dshelpingforever.co.in/dsssb-je-mts-recruitment.html",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "dsssb je mts photo signature resizer",
+      "dsssb je & mts recruitment 2026 photo size",
+      "dsssb je & mts recruitment 2026 signature size",
+      "state recruitment commission photo resizer",
+      "dsssb je & mts recruitment 2026 photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-07"
