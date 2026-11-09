@@ -786,10 +786,10 @@
     "vacancies": 12405,
     "category": "ssc",
     "notificationDate": "2026-11-02",
-    "lastDateToApply": "04-11-2026",
+    "lastDateToApply": "11-11-2026",
     "officialNotificationUrl": "https://www.freejobalert.com/articles/upessc-primary-assistant-teacher-recruitment-2026-apply-online-for-12405-posts-3067782",
     "applyOnlineUrl": "https://www.freejobalert.com/articles/upessc-primary-assistant-teacher-recruitment-2026-apply-online-for-12405-posts-3067782",
-    "status": "closed",
+    "status": "closing-soon",
     "photo": {
       "widthCm": 3.5,
       "heightCm": 4.5,
@@ -826,7 +826,7 @@
       "upessc primary assistant teacher photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-04"
+    "lastUpdated": "2026-11-09"
   },
   {
     "id": "upessc-assistant-teacher",
@@ -4780,6 +4780,57 @@
       "iocl technician apprentice, trade apprentice and more signature size",
       "iocl photo resizer",
       "iocl technician apprentice, trade apprentice and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-09"
+  },
+  {
+    "id": "vmmc-safdarjung-hospital-senior-resident",
+    "slug": "vmmc-safdarjung-hospital-senior-resident-photo-signature-resizer",
+    "title": "VMMC & Safdarjung Hospital Senior Resident",
+    "shortTitle": "VMMC & Safdarjung Hospital Senior R",
+    "board": "VMMC & Safdarjung Hospital",
+    "vacancies": 470,
+    "category": "postal",
+    "notificationDate": "2026-11-09",
+    "lastDateToApply": "25-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/vmmc-safdarjung-hospital-senior-resident-recruitment-2026-3079717",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/vmmc-safdarjung-hospital-senior-resident-recruitment-2026-3079717",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "vmmc safdarjung hospital senior resident photo signature resizer",
+      "vmmc & safdarjung hospital senior resident photo size",
+      "vmmc & safdarjung hospital senior resident signature size",
+      "vmmc & safdarjung hospital photo resizer",
+      "vmmc & safdarjung hospital senior resident photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-09"
