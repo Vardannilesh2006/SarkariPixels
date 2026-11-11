@@ -204,7 +204,7 @@
       "bpsc school teacher form (33,320 po photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "bpsc-school-teacher-33-320",
@@ -571,7 +571,7 @@
       "upessc up tgt recruitment 2026 (17, photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "upessc-assistant-teacher-graduate-pay-scale",
@@ -673,7 +673,7 @@
       "upessc tgt recruitment (17,735 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "karnataka-education-department-teacher",
@@ -928,7 +928,7 @@
       "upessc prt assistant teacher recruitment 2026 (12405 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "bssc-inter-level-recruitment-2026",
@@ -1081,7 +1081,7 @@
       "mpesb mp police constable recruitme photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "ousssc-ousssc-constable-firefighter-driver",
@@ -1352,7 +1352,7 @@
       "railway rrc nr apprentice recruitment 2026 (4651 posts) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "rrc-northern-railway-nr-apprentice-apply-for-4-651-for",
@@ -1560,7 +1560,7 @@
       "rrb ntpc graduate level form (3548 posts) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "rrb-ntpc-graduate-level-date-extend",
@@ -1776,10 +1776,10 @@
     "vacancies": 2863,
     "category": "state-psc",
     "notificationDate": "2026-10-26",
-    "lastDateToApply": "12-11-2026",
+    "lastDateToApply": "27-11-2026",
     "officialNotificationUrl": "https://www.freejobalert.com/articles/jkssb-class-iv-recruitment-2026-apply-online-for-2863-mts-sanitation-worker-posts-3065802",
     "applyOnlineUrl": "https://www.freejobalert.com/articles/jkssb-class-iv-recruitment-2026-apply-online-for-2863-mts-sanitation-worker-posts-3065802",
-    "status": "closing-soon",
+    "status": "active",
     "photo": {
       "widthCm": 3.5,
       "heightCm": 4.5,
@@ -1920,7 +1920,7 @@
       "railway rrc cr apprentice recruitment 2026 (2861 posts) photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "ap-dsc-ap-dsc-tgt-pgt-sgt-more",
@@ -2124,7 +2124,7 @@
       "ssc chsl 10+2 recruitment 2026 (253 photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "hprca-english-teacher-mathematics-teacher-teacher-hindi",
@@ -2224,6 +2224,58 @@
       "hprca teacher signature size",
       "hprca photo resizer",
       "hprca teacher photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-11"
+  },
+  {
+    "id": "rrb-alp-cen-01-increased",
+    "slug": "rrb-alp-cen-01-increased-photo-signature-resizer",
+    "title": "RRB ALP CEN 01/2026 Vacancy Increased 2026",
+    "shortTitle": "RRB ALP CEN 01/2026 Vacancy Increas",
+    "board": "Government Recruitment Board",
+    "vacancies": 2026,
+    "category": "railway",
+    "notificationDate": "2026-11-11",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rrb-alp-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rrb-alp-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrb alp cen 01 increased photo signature resizer",
+      "rrb alp cen 01/2026 vacancy increased 2026 photo size",
+      "rrb alp cen 01/2026 vacancy increased 2026 signature size",
+      "government recruitment board photo resizer",
+      "rrb alp cen 01/2026 vacancy increased 2026 photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-11"
@@ -2482,7 +2534,7 @@
       "upsssc inter 12th level form (1784 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "cg-vyapam-cg-vyapam-deo-si-assistant-more",
@@ -2687,7 +2739,7 @@
       "rrb ntpc ug level form (1688 posts) photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "sarkari-rrb-ntpc-10-2-ug-2026-1688",
@@ -2739,7 +2791,7 @@
       "rrb ntpc 10+2 ug recruitment 2026 ( photo upload guidelines"
     ],
     "primaryToolId": "smart-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "gsssb-gsssb-work-assistant",
@@ -2841,6 +2893,57 @@
       "indian bank apprentices photo upload specifications"
     ],
     "primaryToolId": "signature-resizer-10-20kb",
+    "lastUpdated": "2026-11-11"
+  },
+  {
+    "id": "asrb-technical-assistant-and-senior-technical-assistant",
+    "slug": "asrb-technical-assistant-and-senior-technical-assistant-photo-signature-resizer",
+    "title": "ASRB Technical Assistant and Senior Technical Assistant",
+    "shortTitle": "ASRB Technical Assistant and Senior",
+    "board": "ASRB",
+    "vacancies": 1393,
+    "category": "postal",
+    "notificationDate": "2026-11-11",
+    "lastDateToApply": "17-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/asrb-recruitment-2026-apply-online-for-1393-posts-3080372",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/asrb-recruitment-2026-apply-online-for-1393-posts-3080372",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "asrb technical assistant and senior technical assistant photo signature resizer",
+      "asrb technical assistant and senior technical assistant photo size",
+      "asrb technical assistant and senior technical assistant signature size",
+      "asrb photo resizer",
+      "asrb technical assistant and senior technical assistant photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-11"
   },
   {
@@ -3152,6 +3255,57 @@
     "lastUpdated": "2026-11-11"
   },
   {
+    "id": "bsf-sub-inspector-gd",
+    "slug": "bsf-sub-inspector-gd-photo-signature-resizer",
+    "title": "BSF Sub Inspector (GD)",
+    "shortTitle": "BSF Sub Inspector (GD)",
+    "board": "BSF",
+    "vacancies": 1167,
+    "category": "police",
+    "notificationDate": "2026-11-11",
+    "lastDateToApply": "31-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bsf-recruitment-2026-sub-inspector-gd-3080239",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bsf-recruitment-2026-sub-inspector-gd-3080239",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "bsf sub inspector gd photo signature resizer",
+      "bsf sub inspector (gd) photo size",
+      "bsf sub inspector (gd) signature size",
+      "bsf photo resizer",
+      "bsf sub inspector (gd) photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-11"
+  },
+  {
     "id": "upsssc-upsssc-junior-engineer-technical-assistant-more",
     "slug": "upsssc-upsssc-junior-engineer-technical-assistant-more-photo-signature-resizer",
     "title": "UPSSSC Junior Engineer JE (Mechanical) Recruitment 2026 (1156 Posts)",
@@ -3200,7 +3354,7 @@
       "upsssc junior engineer, technical a photo upload guidelines"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "upsssc-junior-engineer-technical-assistant-and-more",
@@ -3302,7 +3456,7 @@
       "upsssc je recruitment (1156 posts) photo upload specifications"
     ],
     "primaryToolId": "ssc-cgl-photo-resizer",
-    "lastUpdated": "2026-11-10"
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "wbpsc-wbpsc-sub-surveyor",
@@ -4017,6 +4171,57 @@
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-10-27"
+  },
+  {
+    "id": "appsc-junior-accountant-assistant-section-officer-and-m",
+    "slug": "appsc-junior-accountant-assistant-section-officer-and-m-photo-signature-resizer",
+    "title": "APPSC Junior Accountant, Assistant Section Officer and More",
+    "shortTitle": "APPSC Junior Accountant, Assistant ",
+    "board": "APPSC",
+    "vacancies": 720,
+    "category": "state-psc",
+    "notificationDate": "2026-11-11",
+    "lastDateToApply": "11-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/appsc-group-ii-recruitment-2026-3073316",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/appsc-group-ii-recruitment-2026-3073316",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "appsc junior accountant assistant section officer and m photo signature resizer",
+      "appsc junior accountant, assistant section officer and more photo size",
+      "appsc junior accountant, assistant section officer and more signature size",
+      "appsc photo resizer",
+      "appsc junior accountant, assistant section officer and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-11"
   },
   {
     "id": "appsc-appsc-junior-accountant-assistant-section-officer-more-photo-signature-res",
