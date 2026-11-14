@@ -1982,7 +1982,7 @@
     "vacancies": 2698,
     "category": "police",
     "notificationDate": "2026-11-06",
-    "lastDateToApply": "20-12-2026",
+    "lastDateToApply": "10-12-2026",
     "officialNotificationUrl": "https://www.freejobalert.com/articles/manipur-police-recruitment-2026-2698-constable-si-and-other-posts-3079176",
     "applyOnlineUrl": "https://www.freejobalert.com/articles/manipur-police-recruitment-2026-2698-constable-si-and-other-posts-3079176",
     "status": "active",
@@ -2892,6 +2892,58 @@
       "rrb ntpc 10+2 ug recruitment 2026 (1688 posts) - last date today signature size",
       "government recruitment board photo resizer",
       "rrb ntpc 10+2 ug recruitment 2026 (1688 posts) - last date today photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-14"
+  },
+  {
+    "id": "rrb-ntpc-ug-for-out-check-last-date-extended-to-15th-no",
+    "slug": "rrb-ntpc-ug-for-out-check-last-date-extended-to-15th-no-photo-signature-resizer",
+    "title": "RRB NTPC UG Online Form 2026: Apply Online for 1688 Posts, Notification Out, Check Last Date Extended To 15th November",
+    "shortTitle": "RRB NTPC UG Online Form 2026: Apply",
+    "board": "State Recruitment Commission",
+    "vacancies": 1688,
+    "category": "railway",
+    "notificationDate": "2026-11-14",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://dshelpingforever.co.in/rrb-ntpc-ug-online-form-2026.html",
+    "applyOnlineUrl": "https://dshelpingforever.co.in/rrb-ntpc-ug-online-form-2026.html",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrb ntpc ug for out check last date extended to 15th no photo signature resizer",
+      "rrb ntpc ug online form 2026: apply online for 1688 posts, notification out, check last date extended to 15th november photo size",
+      "rrb ntpc ug online form 2026: apply online for 1688 posts, notification out, check last date extended to 15th november signature size",
+      "state recruitment commission photo resizer",
+      "rrb ntpc ug online form 2026: apply online for 1688 posts, notification out, check last date extended to 15th november photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-14"
@@ -5190,6 +5242,57 @@
       "iocl technician apprentice, trade apprentice and more signature size",
       "iocl photo resizer",
       "iocl technician apprentice, trade apprentice and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-14"
+  },
+  {
+    "id": "iocl-pipeline-division-apprentice",
+    "slug": "iocl-pipeline-division-apprentice-photo-signature-resizer",
+    "title": "IOCL Pipeline Division Apprentice Recruitment 2026",
+    "shortTitle": "IOCL Pipeline Division Apprentice R",
+    "board": "State Recruitment Commission",
+    "vacancies": 500,
+    "category": "state-psc",
+    "notificationDate": "2026-11-14",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://dshelpingforever.co.in/iocl-pipeline-division-apprentice-recruitment.html",
+    "applyOnlineUrl": "https://dshelpingforever.co.in/iocl-pipeline-division-apprentice-recruitment.html",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "iocl pipeline division apprentice photo signature resizer",
+      "iocl pipeline division apprentice recruitment 2026 photo size",
+      "iocl pipeline division apprentice recruitment 2026 signature size",
+      "state recruitment commission photo resizer",
+      "iocl pipeline division apprentice recruitment 2026 photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-14"
