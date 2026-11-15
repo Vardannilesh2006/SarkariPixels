@@ -1459,6 +1459,58 @@
     "lastUpdated": "2026-11-12"
   },
   {
+    "id": "rrc-sr-apprentice",
+    "slug": "rrc-sr-apprentice-photo-signature-resizer",
+    "title": "RRC SR Apprentice Recruitment 2026 (4471 Posts)",
+    "shortTitle": "RRC SR Apprentice Recruitment 2026 ",
+    "board": "Government Recruitment Board",
+    "vacancies": 4471,
+    "category": "railway",
+    "notificationDate": "2026-11-15",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/rrc-sr-apprentice-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/rrc-sr-apprentice-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 320,
+      "heightPx": 412,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white background only",
+      "notes": "Passport size photo (35mm x 45mm), 30KB - 70KB JPEG. Frontal view showing full face with both ears visible. No caps or sunglasses."
+    },
+    "signature": {
+      "widthCm": 5,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 30,
+      "maxKB": 70,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on plain white paper",
+      "notes": "Sign in running handwriting with black ballpoint pen. Capital letter signatures will be rejected."
+    },
+    "rules": [
+      "White background is mandatory for Railway recruitment photograph.",
+      "Signature in BLOCK CAPITAL letters is strictly rejected by RRB AI screening.",
+      "Photo must be taken within last 6 months with clear facial visibility."
+    ],
+    "keywords": [
+      "rrc sr apprentice photo signature resizer",
+      "rrc sr apprentice recruitment 2026 (4471 posts) photo size",
+      "rrc sr apprentice recruitment 2026 (4471 posts) signature size",
+      "government recruitment board photo resizer",
+      "rrc sr apprentice recruitment 2026 (4471 posts) photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-15"
+  },
+  {
     "id": "sarkari-rrb-ntpc-graduate-level-form-3548",
     "slug": "sarkari-rrb-ntpc-graduate-level-form-3548-photo-signature-resizer",
     "title": "RRB NTPC Graduate Level Recruitment 2026 (3548 Posts)",
