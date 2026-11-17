@@ -2793,6 +2793,57 @@
     "lastUpdated": "2026-10-27"
   },
   {
+    "id": "uksssc-uttarakhand-constable-civil-police-fireman-and-m",
+    "slug": "uksssc-uttarakhand-constable-civil-police-fireman-and-m-photo-signature-resizer",
+    "title": "UKSSSC Uttarakhand Constable Civil Police, Fireman and More",
+    "shortTitle": "UKSSSC Uttarakhand Constable Civil ",
+    "board": "UKSSSC",
+    "vacancies": 1694,
+    "category": "ssc",
+    "notificationDate": "2026-11-17",
+    "lastDateToApply": "25-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/uksssc-recruitment-2026-uttarakhand-constable-civil-police-3082036",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/uksssc-recruitment-2026-uttarakhand-constable-civil-police-3082036",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "uksssc uttarakhand constable civil police fireman and m photo signature resizer",
+      "uksssc uttarakhand constable civil police, fireman and more photo size",
+      "uksssc uttarakhand constable civil police, fireman and more signature size",
+      "uksssc photo resizer",
+      "uksssc uttarakhand constable civil police, fireman and more photo upload specifications"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-11-17"
+  },
+  {
     "id": "sarkari-rrb-ntpc-ug-level-form-1688",
     "slug": "sarkari-rrb-ntpc-ug-level-form-1688-photo-signature-resizer",
     "title": "RRB NTPC UG Level Form (1688 Posts)",
@@ -5093,6 +5144,57 @@
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-11"
+  },
+  {
+    "id": "wcl-clerk-junior-deo-and-more",
+    "slug": "wcl-clerk-junior-deo-and-more-photo-signature-resizer",
+    "title": "WCL Clerk, Junior DEO and More",
+    "shortTitle": "WCL Clerk, Junior DEO and More",
+    "board": "WCL",
+    "vacancies": 514,
+    "category": "postal",
+    "notificationDate": "2026-11-17",
+    "lastDateToApply": "01-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/wcl-recruitment-2026-clerk-jr-data-entry-operator-t-s-3081692",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/wcl-recruitment-2026-clerk-jr-data-entry-operator-t-s-3081692",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "wcl clerk junior deo and more photo signature resizer",
+      "wcl clerk, junior deo and more photo size",
+      "wcl clerk, junior deo and more signature size",
+      "wcl photo resizer",
+      "wcl clerk, junior deo and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-17"
   },
   {
     "id": "appsc-appsc-assistant-executive-engineer-aee",
