@@ -3511,6 +3511,57 @@
     "lastUpdated": "2026-11-14"
   },
   {
+    "id": "dsssb-mts-je",
+    "slug": "dsssb-mts-je-photo-signature-resizer",
+    "title": "DSSSB MTS & JE Form (1260 Posts)",
+    "shortTitle": "DSSSB MTS & JE Form (1260 Posts)",
+    "board": "Government Recruitment Board",
+    "vacancies": 1260,
+    "category": "state-psc",
+    "notificationDate": "2026-11-18",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/dsssb-mts-je-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/dsssb-mts-je-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "dsssb mts je photo signature resizer",
+      "dsssb mts & je form (1260 posts) photo size",
+      "dsssb mts & je form (1260 posts) signature size",
+      "government recruitment board photo resizer",
+      "dsssb mts & je form (1260 posts) photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-18"
+  },
+  {
     "id": "rrb-rrb-station-master",
     "slug": "rrb-rrb-station-master-photo-signature-resizer",
     "title": "RRB Station Master",
@@ -4988,6 +5039,57 @@
       "jshps assistant, block assistant and more signature size",
       "jshps photo resizer",
       "jshps assistant, block assistant and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-18"
+  },
+  {
+    "id": "bhu-medical-officer-nursing-officer-and-more",
+    "slug": "bhu-medical-officer-nursing-officer-and-more-photo-signature-resizer",
+    "title": "BHU Medical Officer, Nursing Officer and More",
+    "shortTitle": "BHU Medical Officer, Nursing Office",
+    "board": "BHU",
+    "vacancies": 633,
+    "category": "postal",
+    "notificationDate": "2026-11-18",
+    "lastDateToApply": "15-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bhu-recruitment-2026-apply-online-for-601-group-a-b-and-c-posts-3082050",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bhu-recruitment-2026-apply-online-for-601-group-a-b-and-c-posts-3082050",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "bhu medical officer nursing officer and more photo signature resizer",
+      "bhu medical officer, nursing officer and more photo size",
+      "bhu medical officer, nursing officer and more signature size",
+      "bhu photo resizer",
+      "bhu medical officer, nursing officer and more photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-18"
