@@ -1820,6 +1820,57 @@
     "lastUpdated": "2026-11-03"
   },
   {
+    "id": "gprb-police-constable-motor-transport-supervisor-and-mo",
+    "slug": "gprb-police-constable-motor-transport-supervisor-and-mo-photo-signature-resizer",
+    "title": "GPRB Police Constable, Motor Transport Supervisor and More",
+    "shortTitle": "GPRB Police Constable, Motor Transp",
+    "board": "GPRB",
+    "vacancies": 3000,
+    "category": "police",
+    "notificationDate": "2026-11-20",
+    "lastDateToApply": "16-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/gujarat-police-recruitment-2026-3082915",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/gujarat-police-recruitment-2026-3082915",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Plain white or light grey background",
+      "notes": "3.5 cm x 4.5 cm with minimum 70% to 80% face coverage. Clear frontal view without shadow."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 5,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white paper",
+      "notes": "3.5cm x 1.5cm signature strictly between 5KB and 20KB."
+    },
+    "rules": [
+      "Clear white or light grey background only.",
+      "Signature must be in black ink on white paper; blue gel pen or blurry images cause rejection."
+    ],
+    "keywords": [
+      "gprb police constable motor transport supervisor and mo photo signature resizer",
+      "gprb police constable, motor transport supervisor and more photo size",
+      "gprb police constable, motor transport supervisor and more signature size",
+      "gprb photo resizer",
+      "gprb police constable, motor transport supervisor and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-20"
+  },
+  {
     "id": "jkssb-jkssb-mts-sanitation-worker",
     "slug": "jkssb-jkssb-mts-sanitation-worker-photo-signature-resizer",
     "title": "JKSSB MTS, Sanitation Worker",
@@ -2842,6 +2893,57 @@
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-10-27"
+  },
+  {
+    "id": "tn-nhm-staff-nurse",
+    "slug": "tn-nhm-staff-nurse-photo-signature-resizer",
+    "title": "TN NHM Staff Nurse",
+    "shortTitle": "TN NHM Staff Nurse",
+    "board": "TN NHM",
+    "vacancies": 1695,
+    "category": "postal",
+    "notificationDate": "2026-11-20",
+    "lastDateToApply": "04-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/tn-nhm-staff-nurse-recruitment-2026-3083085",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/tn-nhm-staff-nurse-recruitment-2026-3083085",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "tn nhm staff nurse photo signature resizer",
+      "tn nhm staff nurse photo size",
+      "tn nhm staff nurse signature size",
+      "tn nhm photo resizer",
+      "tn nhm staff nurse photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-20"
   },
   {
     "id": "uksssc-uttarakhand-constable-civil-police-fireman-and-m",
