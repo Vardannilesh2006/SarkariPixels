@@ -676,6 +676,57 @@
     "lastUpdated": "2026-11-21"
   },
   {
+    "id": "upessc-up-tgt-17-735-extended",
+    "slug": "upessc-up-tgt-17-735-extended-photo-signature-resizer",
+    "title": "UPESSC UP TGT Recruitment 2026 (17,735 Posts) - Extended",
+    "shortTitle": "UPESSC UP TGT Recruitment 2026 (17,",
+    "board": "Government Recruitment Board",
+    "vacancies": 17735,
+    "category": "ssc",
+    "notificationDate": "2026-11-21",
+    "lastDateToApply": "Check Notification",
+    "officialNotificationUrl": "https://sarkariresult.com.cm/upessc-up-tgt-2026/",
+    "applyOnlineUrl": "https://sarkariresult.com.cm/upessc-up-tgt-2026/",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 413,
+      "heightPx": 531,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "White or very light grey background",
+      "notes": "SSC standard 3.5cm x 4.5cm photo or live webcam capture. Both ears must be visible without cap or spectacles."
+    },
+    "signature": {
+      "widthCm": 4,
+      "heightCm": 2,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black or dark blue ballpoint pen",
+      "notes": "Signature must be 4.0cm width x 2.0cm height with file size strictly between 10KB and 20KB."
+    },
+    "rules": [
+      "SSC portal strictly rejects signature if size is less than 10KB or more than 20KB.",
+      "Both ears must be clearly visible, looking directly at the camera with neutral expression."
+    ],
+    "keywords": [
+      "upessc up tgt 17 735 extended photo signature resizer",
+      "upessc up tgt recruitment 2026 (17,735 posts) - extended photo size",
+      "upessc up tgt recruitment 2026 (17,735 posts) - extended signature size",
+      "government recruitment board photo resizer",
+      "upessc up tgt recruitment 2026 (17,735 posts) - extended photo upload specifications"
+    ],
+    "primaryToolId": "ssc-cgl-photo-resizer",
+    "lastUpdated": "2026-11-21"
+  },
+  {
     "id": "karnataka-education-department-teacher",
     "slug": "karnataka-education-department-teacher-photo-signature-resizer",
     "title": "Karnataka Education Department Teacher",
@@ -4286,10 +4337,10 @@
     "vacancies": 1038,
     "category": "postal",
     "notificationDate": "2026-11-02",
-    "lastDateToApply": "22-11-2026",
+    "lastDateToApply": "15-12-2026",
     "officialNotificationUrl": "https://www.freejobalert.com/articles/jrhms-community-health-officer-recruitment-2026-3076571",
     "applyOnlineUrl": "https://www.freejobalert.com/articles/jrhms-community-health-officer-recruitment-2026-3076571",
-    "status": "closing-soon",
+    "status": "active",
     "photo": {
       "widthCm": 3.5,
       "heightCm": 4.5,
@@ -5756,6 +5807,57 @@
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-19"
+  },
+  {
+    "id": "district-programme-officer-icds-ballia-anganwadi-sahayi",
+    "slug": "district-programme-officer-icds-ballia-anganwadi-sahayi-photo-signature-resizer",
+    "title": "District Programme Officer, ICDS, Ballia Anganwadi Sahayika",
+    "shortTitle": "District Programme Officer, ICDS, B",
+    "board": "District Programme Officer, ICDS, Ballia",
+    "vacancies": 486,
+    "category": "postal",
+    "notificationDate": "2026-11-21",
+    "lastDateToApply": "14-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/district-programme-officer-icds-ballia-anganwadi-recruitment-2026-3083555",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/district-programme-officer-icds-ballia-anganwadi-recruitment-2026-3083555",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "district programme officer icds ballia anganwadi sahayi photo signature resizer",
+      "district programme officer, icds, ballia anganwadi sahayika photo size",
+      "district programme officer, icds, ballia anganwadi sahayika signature size",
+      "district programme officer, icds, ballia photo resizer",
+      "district programme officer, icds, ballia anganwadi sahayika photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-21"
   },
   {
     "id": "vmmc-safdarjung-hospital-senior-resident",
