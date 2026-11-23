@@ -6115,6 +6115,57 @@
     "lastUpdated": "2026-11-21"
   },
   {
+    "id": "iaf-electrician-aircraft-electrician-and-more",
+    "slug": "iaf-electrician-aircraft-electrician-and-more-photo-signature-resizer",
+    "title": "IAF Electrician Aircraft, Electrician and More",
+    "shortTitle": "IAF Electrician Aircraft, Electrici",
+    "board": "IAF",
+    "vacancies": 446,
+    "category": "postal",
+    "notificationDate": "2026-11-23",
+    "lastDateToApply": "30-11-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/iaf-chandigarh-apprentice-recruitment-2026-3083904",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/iaf-chandigarh-apprentice-recruitment-2026-3083904",
+    "status": "closing-soon",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "iaf electrician aircraft electrician and more photo signature resizer",
+      "iaf electrician aircraft, electrician and more photo size",
+      "iaf electrician aircraft, electrician and more signature size",
+      "iaf photo resizer",
+      "iaf electrician aircraft, electrician and more photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-23"
+  },
+  {
     "id": "dwcd-bidar-anganwadi-worker-anganwadi-helper",
     "slug": "dwcd-bidar-anganwadi-worker-anganwadi-helper-photo-signature-resizer",
     "title": "DWCD Bidar Anganwadi Worker, Anganwadi Helper",
@@ -6365,6 +6416,57 @@
       "cg police bilaspur bastar fighter constable signature size",
       "cg police bilaspur photo resizer",
       "cg police bilaspur bastar fighter constable photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-23"
+  },
+  {
+    "id": "bhel-engineer-executive-trainee-supervisor-trainee",
+    "slug": "bhel-engineer-executive-trainee-supervisor-trainee-photo-signature-resizer",
+    "title": "BHEL Engineer/Executive Trainee & Supervisor Trainee",
+    "shortTitle": "BHEL Engineer/Executive Trainee & S",
+    "board": "BHEL",
+    "vacancies": 415,
+    "category": "postal",
+    "notificationDate": "2026-11-23",
+    "lastDateToApply": "28-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bhel-engineer-executive-supervisor-trainee-recruitment-2026-27-3083737",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bhel-engineer-executive-supervisor-trainee-recruitment-2026-27-3083737",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "bhel engineer executive trainee supervisor trainee photo signature resizer",
+      "bhel engineer/executive trainee & supervisor trainee photo size",
+      "bhel engineer/executive trainee & supervisor trainee signature size",
+      "bhel photo resizer",
+      "bhel engineer/executive trainee & supervisor trainee photo upload specifications"
     ],
     "primaryToolId": "smart-resizer",
     "lastUpdated": "2026-11-23"
