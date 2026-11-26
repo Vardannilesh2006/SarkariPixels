@@ -4533,6 +4533,57 @@
     "lastUpdated": "2026-10-27"
   },
   {
+    "id": "bpsc-assistant-education-development-officer",
+    "slug": "bpsc-assistant-education-development-officer-photo-signature-resizer",
+    "title": "BPSC Assistant Education Development Officer",
+    "shortTitle": "BPSC Assistant Education Developmen",
+    "board": "BPSC",
+    "vacancies": 935,
+    "category": "state-psc",
+    "notificationDate": "2026-11-26",
+    "lastDateToApply": "30-12-2026",
+    "officialNotificationUrl": "https://www.freejobalert.com/articles/bpsc-aedo-recruitment-2026-3084924",
+    "applyOnlineUrl": "https://www.freejobalert.com/articles/bpsc-aedo-recruitment-2026-3084924",
+    "status": "active",
+    "photo": {
+      "widthCm": 3.5,
+      "heightCm": 4.5,
+      "widthPx": 350,
+      "heightPx": 450,
+      "minKB": 20,
+      "maxKB": 50,
+      "dpi": 300,
+      "format": "JPG/JPEG",
+      "background": "Light or white background",
+      "notes": "3.5 x 4.5 cm with clear frontal lighting. File size 20KB to 50KB."
+    },
+    "signature": {
+      "widthCm": 3.5,
+      "heightCm": 1.5,
+      "widthPx": 140,
+      "heightPx": 60,
+      "minKB": 10,
+      "maxKB": 20,
+      "dpi": 200,
+      "format": "JPG/JPEG",
+      "inkColor": "Black ink on white background",
+      "notes": "140 x 60 pixels, file size 10KB - 20KB."
+    },
+    "rules": [
+      "Check commission-specific guidelines for Hindi and English signature requirements.",
+      "File format must strictly be JPEG/JPG."
+    ],
+    "keywords": [
+      "bpsc assistant education development officer photo signature resizer",
+      "bpsc assistant education development officer photo size",
+      "bpsc assistant education development officer signature size",
+      "bpsc photo resizer",
+      "bpsc assistant education development officer photo upload specifications"
+    ],
+    "primaryToolId": "smart-resizer",
+    "lastUpdated": "2026-11-26"
+  },
+  {
     "id": "cg-vyapam-cg-vyapam-lecturer",
     "slug": "cg-vyapam-cg-vyapam-lecturer-photo-signature-resizer",
     "title": "CG Vyapam Lecturer",
